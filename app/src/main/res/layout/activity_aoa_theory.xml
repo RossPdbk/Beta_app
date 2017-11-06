@@ -14,7 +14,8 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginBottom="5dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -145,6 +146,7 @@
                 android:id="@id/aoaTheoryQ12"
                 android:textAllCaps="false"
                 android:layout_below="@id/aoaTheoryQ11"
+                android:gravity="left"
                 android:text="Q12. Explain N-Queen problem using backtracking with algorithm."/>
 
             <Button
@@ -173,7 +175,7 @@
                 android:textAllCaps="false"
                 android:layout_below="@id/aoaTheoryQ14"
                 android:gravity="left"
-                android:text="Q15. Find the Huffman code for the following message.COLLEGE OF ENGINEERING"/>
+                android:text="Q15. Find the Huffman code for the following message. COLLEGE OF ENGINEERING"/>
 
             <Button
                 android:layout_width="match_parent"
