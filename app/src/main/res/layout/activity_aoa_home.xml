@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mumbaiengineers.beta_app.AoaHome"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analysis of Algorithms"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="60">
+
+        <Button
+            android:id="@id/aoaTheory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="12.5"
+            android:text="Theory">
+
+        </Button>
+
+        <Button
+            android:id="@id/aoaPractical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="12.5"
+            android:text="Practical"></Button>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@id/mfaTextAoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Most frequently asked questions"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mfaTextAoa">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@id/aoaMfaQ1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Q1">
+
+                </Button>
+
+                <Button
+                    android:id="@id/aoaMfaQ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aoaMfaQ1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Q2">
+
+                </Button>
+
+                <Button
+                    android:id="@id/aoaMfaQ3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aoaMfaQ2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="12.5"
+                    android:text="OS">
+
+                </Button>
+
+                <Button
+                    android:id="@id/aoaMfaQ4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aoaMfaQ3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="OS">
+
+                </Button>
+
+                <Button
+                    android:id="@id/aoaMfaQ5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aoaMfaQ4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="12.5"
+                    android:text="OS">
+
+                </Button>
+
+                <Button
+                    android:id="@id/aoaMfaQ6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aoaMfaQ5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="OS">
+
+                </Button>
+
+                <Button
+                    android:id="@id/aoaMfaQ7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aoaMfaQ6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="OS">
+
+                </Button>
+
+                <Button
+                    android:id="@id/aoaMfaQ8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aoaMfaQ7"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="OS">
+
+                </Button>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

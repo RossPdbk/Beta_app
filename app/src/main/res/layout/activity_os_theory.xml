@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mumbaiengineers.beta_app.osTheory">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OS Theory"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ1"
+            android:text="Q1">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ2"
+            android:layout_below="@id/osTheoryQ1"
+            android:text="Q2">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ3"
+            android:layout_below="@id/osTheoryQ2"
+            android:text="Q3">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ4"
+            android:layout_below="@id/osTheoryQ3"
+            android:text="Q4">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ5"
+            android:layout_below="@id/osTheoryQ4"
+            android:text="Q5">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ6"
+            android:layout_below="@id/osTheoryQ5"
+            android:text="Q6">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ7"
+            android:layout_below="@id/osTheoryQ6"
+            android:text="Q7">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ8"
+            android:layout_below="@id/osTheoryQ7"
+            android:text="Q8">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ9"
+            android:layout_below="@id/osTheoryQ8"
+            android:text="Q9">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ10"
+            android:layout_below="@id/osTheoryQ9"
+            android:text="Q10">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ11"
+            android:layout_below="@id/osTheoryQ10"
+            android:text="Q11">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ12"
+            android:layout_below="@id/osTheoryQ11"
+            android:text="Q12">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ13"
+            android:layout_below="@id/osTheoryQ12"
+            android:text="Q13">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ14"
+            android:layout_below="@id/osTheoryQ13"
+            android:text="Q14">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ15"
+            android:layout_below="@id/osTheoryQ14"
+            android:text="Q15">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ16"
+            android:layout_below="@id/osTheoryQ15"
+            android:text="Q16">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ17"
+            android:layout_below="@id/osTheoryQ16"
+            android:text="Q17">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ18"
+            android:layout_below="@id/osTheoryQ17"
+            android:text="Q18">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ19"
+            android:layout_below="@id/osTheoryQ18"
+            android:text="Q19">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ20"
+            android:layout_below="@id/osTheoryQ19"
+            android:text="Q20">
+        </Button>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

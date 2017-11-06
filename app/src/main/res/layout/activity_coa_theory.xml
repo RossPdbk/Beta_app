@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mumbaiengineers.beta_app.coaTheory"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COA Theory"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ1"
+            android:text="Q1">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ2"
+            android:layout_below="@id/coaTheoryQ1"
+            android:text="Q2">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ3"
+            android:layout_below="@id/coaTheoryQ2"
+            android:text="Q3">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ4"
+            android:layout_below="@id/coaTheoryQ3"
+            android:text="Q4">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ5"
+            android:layout_below="@id/coaTheoryQ4"
+            android:text="Q5">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ6"
+            android:layout_below="@id/coaTheoryQ5"
+            android:text="Q6">
+        </Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ7"
+            android:layout_below="@id/coaTheoryQ6"
+            android:text="Q7">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ8"
+            android:layout_below="@id/coaTheoryQ7"
+            android:text="Q8">
+        </Button>
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/coaTheoryQ9"
+        android:layout_below="@id/coaTheoryQ8"
+        android:text="Q9">
+        </Button>
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/coaTheoryQ10"
+        android:layout_below="@id/coaTheoryQ9"
+        android:text="Q10">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ11"
+            android:layout_below="@id/coaTheoryQ10"
+            android:text="Q11">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ12"
+            android:layout_below="@id/coaTheoryQ11"
+            android:text="Q12">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ13"
+            android:layout_below="@id/coaTheoryQ12"
+            android:text="Q13">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ14"
+            android:layout_below="@id/coaTheoryQ13"
+            android:text="Q14">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ15"
+            android:layout_below="@id/coaTheoryQ14"
+            android:text="Q15">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ16"
+            android:layout_below="@id/coaTheoryQ15"
+            android:text="Q16">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ17"
+            android:layout_below="@id/coaTheoryQ16"
+            android:text="Q17">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ18"
+            android:layout_below="@id/coaTheoryQ17"
+            android:text="Q18">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ19"
+            android:layout_below="@id/coaTheoryQ18"
+            android:text="Q19">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ20"
+            android:layout_below="@id/coaTheoryQ19"
+            android:text="Q20">
+        </Button>
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

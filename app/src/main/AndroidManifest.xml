@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mumbaiengineers.beta_app">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AoaHome" />
+        <activity android:name=".coaHome" />
+        <activity android:name=".cgHome" />
+        <activity android:name=".osHome" />
+        <activity android:name=".aoaTheory" />
+        <activity android:name=".webviewAnswer" />
+        <activity android:name=".coaTheory" />
+        <activity android:name=".osTheory" />
+        <activity android:name=".cgTheory" />
+        <activity android:name=".aoaPractical" />
+        <activity android:name=".coaPractical" />
+        <activity android:name=".cgPractical" />
+        <activity android:name=".osPractical"></activity>
+    </application>
+
+</manifest>

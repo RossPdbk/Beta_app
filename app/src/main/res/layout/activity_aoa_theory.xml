@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mumbaiengineers.beta_app.aoaTheory"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AOA Theory"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ1"
+            android:textAllCaps="false"
+            android:text="Q1. Explain Big-Oh, Omega and Theta notation with the help of diagram.">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ2"
+            android:layout_below="@id/aoaTheoryQ1"
+            android:textAllCaps="false"
+            android:text="Q2. Explain three cases of master method.">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ3"
+            android:layout_below="@id/aoaTheoryQ2"
+            android:textAllCaps="false"
+            android:text="Q3. Explain Knapsack problem.">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ4"
+            android:layout_below="@id/aoaTheoryQ3"
+            android:textAllCaps="false"
+            android:text="Q4. Explain 0/1 Knapsack problem">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ5"
+            android:layout_below="@id/aoaTheoryQ4"
+            android:textAllCaps="false"
+            android:text="Q5. Explain flow shop scheduling with example."/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ6"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ5"
+            android:text="Q6. Explain Prim's Algorithm with example."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ7"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ6"
+            android:text="Q7. Explain Krushkal's Algorithm with example.">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ8"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ7"
+            android:text="Q8. Optimal storage on tapes."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ9"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ8"
+            android:text="Q9. Multistage Graphs"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ10"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ9"
+            android:text="Q10. Write a note on all pair shortest path algorithm.">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ11"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ10"
+            android:text="Q11. Explain Graph coloring algorithm with backtracking."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ12"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ11"
+            android:text="Q12. Explain N-Queen problem using backtracking with algorithm."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ13"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ12"
+            android:text="Q13. Write an algorithm to find minimum and maximum value using divide and conquer and also derive its complexity.">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ14"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ13"
+            android:text="Q14.  Write an algorithm of sum of subsets."/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ15"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ14"
+            android:text="Q15. Find the Huffman code for the following message.COLLEGE OF ENGINEERING"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ16"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ15"
+            android:text="Q16. Explain Naive string matching algorithm.">
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ17"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ16"
+            android:text="Q17. Explain Rabin-Karp string matching algotithm."/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaTheoryQ18"
+            android:textAllCaps="false"
+            android:layout_below="@id/aoaTheoryQ17"
+            android:text="Q18.Explain 15 puzzle problem."/>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
