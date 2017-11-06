@@ -33,6 +33,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:layout_weight="12.5"
             android:id="@id/osTheory"
             android:text="Theory">
@@ -42,6 +43,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:layout_weight="12.5"
             android:id="@id/osPractical"
             android:text="Practical">
@@ -63,7 +65,9 @@
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="20sp"
-            android:id="@id/mfaTextOs"/>
+            android:id="@id/mfaTextOs"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -78,6 +82,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/osMfaQ1"
@@ -87,6 +93,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/osMfaQ2"
@@ -98,6 +106,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/osMfaQ3"
@@ -108,6 +118,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/osMfaQ4"
@@ -118,6 +130,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/osMfaQ5"
@@ -128,6 +142,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/osMfaQ6"
@@ -138,6 +154,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/osMfaQ7"

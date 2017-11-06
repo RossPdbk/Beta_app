@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="Computer Organization and Architecture"
             android:gravity="center"
-            android:textSize="18sp"
+            android:textSize="19sp"
             android:textColor="@android:color/black"/>
 
     </android.support.v7.widget.Toolbar>
@@ -33,6 +33,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:layout_weight="12.5"
             android:id="@id/coaTheory"
             android:text="Theory"
@@ -43,6 +44,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:layout_weight="12.5"
             android:id="@id/coaPractical"
             android:text="Practical">
@@ -64,7 +66,9 @@
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="20sp"
-            android:id="@id/mfaTextCoa" />
+            android:id="@id/mfaTextCoa"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -79,6 +83,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:id="@id/coaMfaQ1"
                     android:text="OS"
                     android:textAllCaps="false"
@@ -89,6 +95,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:id="@id/coaMfaQ2"
                     android:text="OS"
                     android:layout_below="@id/coaMfaQ1"
@@ -99,6 +107,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:id="@id/coaMfaQ3"
                     android:layout_below="@id/coaMfaQ2"
                     android:text="OS"
@@ -109,6 +119,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:id="@id/coaMfaQ4"
                     android:layout_below="@id/coaMfaQ3"
                     android:text="OS"
@@ -119,6 +131,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:id="@id/coaMfaQ5"
                     android:layout_below="@id/coaMfaQ4"
                     android:text="OS"
@@ -129,6 +143,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:id="@id/coaMfaQ6"
                     android:layout_below="@id/coaMfaQ5"
                     android:text="OS"
@@ -139,6 +155,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:id="@id/coaMfaQ7"
                     android:layout_below="@id/coaMfaQ6"
                     android:text="OS"

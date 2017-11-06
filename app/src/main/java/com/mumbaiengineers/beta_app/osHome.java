@@ -9,7 +9,6 @@ import android.widget.Button;
 public class osHome extends AppCompatActivity implements View.OnClickListener {
     Button osTheory, osPractical, osMfaQ1, osMfaQ2, osMfaQ3, osMfaQ4, osMfaQ5, osMfaQ6, osMfaQ7;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

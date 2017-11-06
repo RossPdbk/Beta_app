@@ -33,6 +33,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:layout_weight="12.5"
             android:id="@id/cgTheory"
             android:text="Theory">
@@ -42,6 +43,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="10dp"
             android:layout_weight="12.5"
             android:id="@id/cgPractical"
             android:text="Practical">
@@ -58,6 +60,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
             android:text="Most frequently asked questions"
             android:textAlignment="center"
             android:textColor="@android:color/black"
@@ -77,6 +81,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:id="@id/cgMfaQ1"
                     android:text="OS"
                     android:textAllCaps="false"
@@ -87,6 +93,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/cgMfaQ2"
@@ -98,6 +106,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/cgMfaQ3"
@@ -108,6 +118,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/cgMfaQ4"
@@ -118,6 +130,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/cgMfaQ5"
@@ -128,6 +142,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/cgMfaQ6"
@@ -138,6 +154,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/cgMfaQ7"
