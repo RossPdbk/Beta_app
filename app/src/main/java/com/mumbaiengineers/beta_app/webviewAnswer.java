@@ -32,6 +32,32 @@ WebView webviewAnswer;
             //AoA cases ends here
 
 
+
+            //AOA MFA starts here
+            case R.id.aoaMfaQ1:
+                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
+                break;
+            case R.id.aoaMfaQ2 :
+                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                break;
+            case R.id.aoaMfaQ3 :
+                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                break;
+            case R.id.aoaMfaQ4 :
+                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                break;
+            case R.id.aoaMfaQ5 :
+                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                break;
+            case R.id.aoaMfaQ6 :
+                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                break;
+            case R.id.aoaMfaQ7 :
+                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                break;
+            //AOA MFA ends here
+
+
             //COA cases srarts here
             case R.id.coaTheoryQ1:
                 webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");

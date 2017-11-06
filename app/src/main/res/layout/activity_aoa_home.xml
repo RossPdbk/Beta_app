@@ -46,7 +46,9 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="12.5"
-            android:text="Practical"></Button>
+            android:text="Practical">
+
+        </Button>
 
     </LinearLayout>
 
@@ -83,7 +85,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:text="Q1">
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:text="Q1. Explain Big-Oh, Omega and Theta notation with the help of diagram.">
 
                 </Button>
 
@@ -94,7 +98,9 @@
                     android:layout_below="@id/aoaMfaQ1"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:text="Q2">
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:text="Q2. Explain 0/1 Knapsack problem">
 
                 </Button>
 
@@ -105,8 +111,9 @@
                     android:layout_below="@id/aoaMfaQ2"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_weight="12.5"
-                    android:text="OS">
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:text="Q3. Explain flow shop scheduling with example.">
 
                 </Button>
 
@@ -117,7 +124,9 @@
                     android:layout_below="@id/aoaMfaQ3"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:text="OS">
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:text="Q4. Explain N-Queen problem using backtracking with algorithm.">
 
                 </Button>
 
@@ -128,8 +137,9 @@
                     android:layout_below="@id/aoaMfaQ4"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_weight="12.5"
-                    android:text="OS">
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:text="Q5. Explain Prim's Algorithm with example.">
 
                 </Button>
 
@@ -140,7 +150,9 @@
                     android:layout_below="@id/aoaMfaQ5"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:text="OS">
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:text="Q6. Explain three cases of master method.">
 
                 </Button>
 
@@ -151,18 +163,9 @@
                     android:layout_below="@id/aoaMfaQ6"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:text="OS">
-
-                </Button>
-
-                <Button
-                    android:id="@id/aoaMfaQ8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ7"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:text="OS">
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:text="Q7. Write a note on all pair shortest path algorithm.">
 
                 </Button>
 
