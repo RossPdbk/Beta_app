@@ -55,7 +55,6 @@
         android:layout_weight="40"
         android:orientation="vertical">
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,17 +77,18 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                     
                     android:id="@id/cgMfaQ1"
                     android:text="OS"
-
+                    android:textAllCaps="false"
+                    android:gravity="left"
                     >
                 </Button>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                     
+                    android:textAllCaps="false"
+                    android:gravity="left"
                     android:id="@id/cgMfaQ2"
                     android:text="OS"
                     android:layout_below="@id/cgMfaQ1"
@@ -98,7 +98,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                     
+                    android:textAllCaps="false"
+                    android:gravity="left"
                     android:id="@id/cgMfaQ3"
                     android:layout_below="@id/cgMfaQ2"
                     android:text="OS">
@@ -107,7 +108,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                     
+                    android:textAllCaps="false"
+                    android:gravity="left"
                     android:id="@id/cgMfaQ4"
                     android:layout_below="@id/cgMfaQ3"
                     android:text="OS">
@@ -116,7 +118,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                     
+                    android:textAllCaps="false"
+                    android:gravity="left"
                     android:id="@id/cgMfaQ5"
                     android:layout_below="@id/cgMfaQ4"
                     android:text="OS">
@@ -125,7 +128,8 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                     
+                    android:textAllCaps="false"
+                    android:gravity="left"
                     android:id="@id/cgMfaQ6"
                     android:layout_below="@id/cgMfaQ5"
                     android:text="OS">
@@ -134,27 +138,16 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                     
+                    android:textAllCaps="false"
+                    android:gravity="left"
                     android:id="@id/cgMfaQ7"
                     android:layout_below="@id/cgMfaQ6"
                     android:text="OS">
                 </Button>
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                     
-                    android:id="@id/cgMfaQ8"
-                    android:layout_below="@id/cgMfaQ7"
-                    android:text="OS">
-                </Button>
-
             </RelativeLayout>
 
-
-
         </ScrollView>
-
 
     </RelativeLayout>
 

@@ -79,76 +79,74 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="12.5"
                     android:id="@id/coaMfaQ1"
                     android:text="OS"
-
+                    android:textAllCaps="false"
+                    android:gravity="left"
                     >
                 </Button>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="12.5"
                     android:id="@id/coaMfaQ2"
                     android:text="OS"
                     android:layout_below="@id/coaMfaQ1"
-                    >
+                    android:textAllCaps="false"
+                    android:gravity="left">
                 </Button>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="12.5"
                     android:id="@id/coaMfaQ3"
                     android:layout_below="@id/coaMfaQ2"
-                    android:text="OS">
+                    android:text="OS"
+                    android:textAllCaps="false"
+                    android:gravity="left">
                 </Button>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="12.5"
                     android:id="@id/coaMfaQ4"
                     android:layout_below="@id/coaMfaQ3"
-                    android:text="OS">
+                    android:text="OS"
+                    android:textAllCaps="false"
+                    android:gravity="left">
                 </Button>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="12.5"
                     android:id="@id/coaMfaQ5"
                     android:layout_below="@id/coaMfaQ4"
-                    android:text="OS">
+                    android:text="OS"
+                    android:textAllCaps="false"
+                    android:gravity="left">
                 </Button>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="12.5"
                     android:id="@id/coaMfaQ6"
                     android:layout_below="@id/coaMfaQ5"
-                    android:text="OS">
+                    android:text="OS"
+                    android:textAllCaps="false"
+                    android:gravity="left">
                 </Button>
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="12.5"
                     android:id="@id/coaMfaQ7"
                     android:layout_below="@id/coaMfaQ6"
-                    android:text="OS">
+                    android:text="OS"
+                    android:textAllCaps="false"
+                    android:gravity="left">
                 </Button>
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="12.5"
-                    android:id="@id/coaMfaQ8"
-                    android:layout_below="@id/coaMfaQ7"
-                    android:text="OS">
-                </Button>
+
 
             </RelativeLayout>
 

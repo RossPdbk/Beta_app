@@ -16,9 +16,6 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aoa_home);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        setSupportActionBar(myToolbar);
-
         aoaTheory = (Button) findViewById(R.id.aoaTheory);
         aoaPractical = (Button) findViewById(R.id.aoaPractical);
 
