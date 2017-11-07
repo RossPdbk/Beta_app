@@ -141,16 +141,52 @@ WebView webviewAnswer;
 
             //CG cases srarts here
             case R.id.cgTheoryQ1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
+                webviewAnswer.loadUrl("file:///android_asset/cg/que1.html");
                 break;
             case R.id.cgTheoryQ2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/cg/que2.html");
                 break;
             case R.id.cgTheoryQ3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/cg/q3.html");
                 break;
             case R.id.cgTheoryQ4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/cg/q4.html");
+                break;
+            case R.id.cgTheoryQ5 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q5.html");
+                break;
+            case R.id.cgTheoryQ6 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q6.html");
+                break;
+            case R.id.cgTheoryQ7 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q7.html");
+                break;
+            case R.id.cgTheoryQ8 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q10.html");
+                break;
+            case R.id.cgTheoryQ9 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q9.html");
+                break;
+            case R.id.cgTheoryQ10 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q14.html");
+                break;
+            case R.id.cgTheoryQ11 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q8.html");
+                break;
+            case R.id.cgTheoryQ12 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q12.html");
+                break;
+            case R.id.cgTheoryQ13 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q16.html");
+                break;
+            case R.id.cgTheoryQ14 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q11.html");
+                break;
+            case R.id.cgTheoryQ15 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q13.html");
+                break;
+            case R.id.cgTheoryQ16 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q15.html");
                 break;
             //CG cases ends here
 
