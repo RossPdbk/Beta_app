@@ -1,20 +1,35 @@
 <!doctype html> 
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
+<div class="header">
 <p><h3>Q2. Explain three cases of master method.</h3></p>
-<hr>
-The Master method is a general method for solving (getting a closed form solution to) recurrence relations that arise frequently in divide and conquer algorithms, which have the following form:<br>
-<h4>T(n) = aT(n/b) + f(n)</h4>
-where a ≥ 1, b > 1 are constants, and f(n) is function of non-negative integer n.<br>
+</div>
+<div class="card">
+<p>The Master method is a general method for solving (getting a closed form solution to) recurrence relations that arise frequently
+    in divide and conquer algorithms, which have the following form:<br>
+<b>T(n) = aT(n/b) + f(n)</b>
+where a ≥ 1, b > 1 are constants, and f(n) is function of non-negative integer n.</p>
+</div>
+<div class="card">
 <p>There are three cases.<br><br>
 (a) If f(n) = O(n logb a− ε ), for some ε > 0, then T(n) = Θ(n logba ).<br> <br>
 (b) If f(n) = Θ(n logb a ), then T(n) = Θ(n logb a log n).<br> <br>
-(c) If f(n) = Ω(n logb a+ ε ) for some ε > 0, and af(n/b) ≤ cf(n), for some c < 1 and for all n greater than some value n 0 , Then T(n) = Θ(f(n)).<br></p>
+(c) If f(n) = Ω(n logb a+ ε ) for some ε > 0, and af(n/b) ≤ cf(n), for some c < 1 and for all n greater than some value n 0 ,
+    Then T(n) = Θ(f(n)).<br></p>
+</div>
+<div class="card">
 <p>Example 1 : <strong>T(n) = 4T(n/2) + n</strong><br>
-For this recurrence, there are a=4, b=2, and f(n)=n. Thus n<sup>log<sub>b</sub>a</sup> is n<sup>2</sup>, and f(n) is O(n<sup>2-ε</sup>) for ε=1, and Case 1 applies. Thus T(n) is Θ(n<sup>2</sup>).<br></p>
+For this recurrence, there are a=4, b=2, and f(n)=n. Thus n<sup>log<sub>b</sub>a</sup> is n<sup>2</sup>,
+    and f(n) is O(n<sup>2-ε</sup>) for ε=1, and Case 1 applies. Thus T(n) is Θ(n<sup>2</sup>).<br></p>
 <p>Example 2 : <strong>(n) = 4T(n/2) + n<sup>2</sup></strong><br>
-For this recurrence, there are again a=4, b=2, but now f(n)=n<sup>2</sup>. Again n<sup>log<sub>b</sub>a</sup> is n<sup>2</sup>, and f(n) is thus Θ(n<sup>2</sup>), so Case 2 applies. Thus T(n) is Θ(n<sup>2</sup> log n).<br></p>
+For this recurrence, there are again a=4, b=2, but now f(n)=n<sup>2</sup>. Again n<sup>log<sub>b</sub>a</sup> is n<sup>2</sup>,
+    and f(n) is thus Θ(n<sup>2</sup>), so Case 2 applies. Thus T(n) is Θ(n<sup>2</sup> log n).<br></p>
 <p>Example 3 : <strong>T(n) = 4T(n/2) + n<sup>3</sup></strong><br>
-For this recurrence, there are again a=4, b=2, but now f(n)=n<sup>3</sup>. Again n<sup>log<sub>b</sub>a</sup> is n<sup>2</sup>, and f(n) is thus Ω(n<sup>2+ε</sup>) for ε=1. Moreover, 4(n/2)3 ≤ kn3 for k=1/2, so Case 3 applies. Thus T(n) is Θ(n<sup>3</sup>).</p>
+For this recurrence, there are again a=4, b=2, but now f(n)=n<sup>3</sup>. Again n<sup>log<sub>b</sub>a</sup> is n<sup>2</sup>,
+    and f(n) is thus Ω(n<sup>2+ε</sup>) for ε=1. Moreover, 4(n/2)3 ≤ kn3 for k=1/2, so Case 3 applies. Thus T(n) is Θ(n<sup>3</sup>).</p>
+</div>
 </body>
 </html>

@@ -283,10 +283,10 @@ WebView webviewAnswer;
 
             //AOA Prac starts here
             case R.id.aoaPracticalP1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac01.html");
                 break;
             case R.id.aoaPracticalP2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac02.html");
                 break;
             case R.id.aoaPracticalP3 :
                 webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
