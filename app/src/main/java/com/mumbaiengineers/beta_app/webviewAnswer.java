@@ -75,30 +75,6 @@ WebView webviewAnswer;
 
 
 
-            //AOA MFA starts here
-           // case R.id.aoaMfaQ1:
-            //    webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
-             //   break;
-            /*case R.id.aoaMfaQ2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.aoaMfaQ3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.aoaMfaQ4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.aoaMfaQ5 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.aoaMfaQ6 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.aoaMfaQ7 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;*/
-            //AOA MFA ends here
-
 
             //COA cases srarts here
             case R.id.coaTheoryQ1:
@@ -115,69 +91,70 @@ WebView webviewAnswer;
                 break;
             //CoA cases ends here
 
-            //COA MFA starts here
-            case R.id.coaMfaQ1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
-                break;
-            case R.id.coaMfaQ2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.coaMfaQ3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.coaMfaQ4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.coaMfaQ5 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.coaMfaQ6 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.coaMfaQ7 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            //COA MFA ends here
+
 
 
             //OS cases srarts here
             case R.id.osTheoryQ1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ1.html");
                 break;
             case R.id.osTheoryQ2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ2.html");
                 break;
             case R.id.osTheoryQ3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ3.html");
                 break;
             case R.id.osTheoryQ4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ4.html");
+                break;
+            case R.id.osTheoryQ5:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ5.html");
+                break;
+            case R.id.osTheoryQ6 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ6.html");
+                break;
+            case R.id.osTheoryQ7 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ7.html");
+                break;
+            case R.id.osTheoryQ8 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ8.html");
+                break;
+            case R.id.osTheoryQ9:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ9.html");
+                break;
+            case R.id.osTheoryQ10 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ10.html");
+                break;
+            case R.id.osTheoryQ11:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ11.html");
+                break;
+            case R.id.osTheoryQ12:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ12.html");
+                break;
+            case R.id.osTheoryQ13:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ13.html");
+                break;
+            case R.id.osTheoryQ14:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ14.html");
+                break;
+            case R.id.osTheoryQ15:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ15.html");
+                break;
+            case R.id.osTheoryQ16:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ16.html");
+                break;
+            case R.id.osTheoryQ17:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ17.html");
+                break;
+            case R.id.osTheoryQ18:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ18.html");
+                break;
+            case R.id.osTheoryQ19:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ19.html");
                 break;
             //OS cases ends here
 
-            //OS MFA starts here
-            case R.id.osMfaQ1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
-                break;
-            case R.id.osMfaQ2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.osMfaQ3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.osMfaQ4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.osMfaQ5 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.osMfaQ6 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.osMfaQ7 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            //OS MFA ends here
+
 
 
 
@@ -231,30 +208,6 @@ WebView webviewAnswer;
                 webviewAnswer.loadUrl("file:///android_asset/cg/q15.html");
                 break;
             //CG cases ends here
-
-            //CG MFA starts here
-            case R.id.cgMfaQ1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
-                break;
-            case R.id.cgMfaQ2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.cgMfaQ3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.cgMfaQ4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.cgMfaQ5 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.cgMfaQ6 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            case R.id.cgMfaQ7 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
-            //CG MFA ends here
 
 
 

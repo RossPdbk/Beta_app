@@ -56,7 +56,6 @@ public class osTheory extends AppCompatActivity implements View.OnClickListener 
         osTheoryQ18.setOnClickListener(this);
         osTheoryQ19.setOnClickListener(this);
 
-
     }
 
     @Override
