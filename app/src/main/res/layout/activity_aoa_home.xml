@@ -92,7 +92,7 @@
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ2"
+                    android:id="@id/aoaTheoryQ4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/aoaTheoryQ1"
@@ -105,10 +105,10 @@
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ3"
+                    android:id="@id/aoaTheoryQ5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ2"
+                    android:layout_below="@id/aoaTheoryQ4"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textAllCaps="false"
@@ -118,10 +118,10 @@
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ4"
+                    android:id="@id/aoaTheoryQ12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ3"
+                    android:layout_below="@id/aoaTheoryQ5"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textAllCaps="false"
@@ -131,10 +131,10 @@
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ5"
+                    android:id="@id/aoaTheoryQ6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ4"
+                    android:layout_below="@id/aoaTheoryQ12"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textAllCaps="false"
@@ -144,10 +144,10 @@
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ6"
+                    android:id="@id/aoaTheoryQ2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ5"
+                    android:layout_below="@id/aoaTheoryQ6"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textAllCaps="false"
@@ -157,10 +157,10 @@
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ7"
+                    android:id="@id/aoaTheoryQ10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ6"
+                    android:layout_below="@id/aoaTheoryQ2"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textAllCaps="false"

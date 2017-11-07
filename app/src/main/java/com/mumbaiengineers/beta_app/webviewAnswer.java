@@ -17,17 +17,59 @@ WebView webviewAnswer;
         int value = mintent.getIntExtra("Qid",0);
         switch(value) {
             //AoA cases starts here
-            case (R.id.aoaTheoryQ1):
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
+            case R.id.aoaTheoryQ1:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ1.html");
                 break;
             case R.id.aoaTheoryQ2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ2.html");
                 break;
             case R.id.aoaTheoryQ3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ3.html");
                 break;
             case R.id.aoaTheoryQ4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ4.html");
+                break;
+            case R.id.aoaTheoryQ5:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ5.html");
+                break;
+            case R.id.aoaTheoryQ6 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ6.html");
+                break;
+            case R.id.aoaTheoryQ7 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ7.html");
+                break;
+            case R.id.aoaTheoryQ8 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ8.html");
+                break;
+            case R.id.aoaTheoryQ9:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ9.html");
+                break;
+            case R.id.aoaTheoryQ10 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ10.html");
+                break;
+            case R.id.aoaTheoryQ11:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ11.html");
+                break;
+            case R.id.aoaTheoryQ12:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ12.html");
+                break;
+            case R.id.aoaTheoryQ13:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ13.html");
+                break;
+            case R.id.aoaTheoryQ14:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ14.html");
+                break;
+            case R.id.aoaTheoryQ15:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ15.html");
+                break;
+            case R.id.aoaTheoryQ16:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ16.html");
+                break;
+            case R.id.aoaTheoryQ17:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ17.html");
+                break;
+            case R.id.aoaTheoryQ18:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ18.html");
                 break;
             //AoA cases ends here
 
@@ -37,7 +79,7 @@ WebView webviewAnswer;
            // case R.id.aoaMfaQ1:
             //    webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
              //   break;
-            case R.id.aoaMfaQ2 :
+            /*case R.id.aoaMfaQ2 :
                 webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
                 break;
             case R.id.aoaMfaQ3 :
@@ -54,7 +96,7 @@ WebView webviewAnswer;
                 break;
             case R.id.aoaMfaQ7 :
                 webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
-                break;
+                break;*/
             //AOA MFA ends here
 
 

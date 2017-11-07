@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class AoaHome extends AppCompatActivity implements View.OnClickListener {
 
-    Button aoaTheory, aoaPractical, aoaTheoryQ1, aoaMfaQ2, aoaMfaQ3, aoaMfaQ4, aoaMfaQ5, aoaMfaQ6, aoaMfaQ7;
+    Button aoaTheory, aoaPractical, aoaMfaQ1, aoaMfaQ2, aoaMfaQ3, aoaMfaQ4, aoaMfaQ5, aoaMfaQ6, aoaMfaQ7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,18 +19,18 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
         aoaTheory = (Button) findViewById(R.id.aoaTheory);
         aoaPractical = (Button) findViewById(R.id.aoaPractical);
 
-        aoaTheoryQ1 = (Button) findViewById(R.id.aoaTheoryQ1);
-        aoaMfaQ2 = (Button) findViewById(R.id.aoaMfaQ2);
-        aoaMfaQ3 = (Button) findViewById(R.id.aoaMfaQ3);
-        aoaMfaQ4 = (Button) findViewById(R.id.aoaMfaQ4);
-        aoaMfaQ5 = (Button) findViewById(R.id.aoaMfaQ5);
-        aoaMfaQ6 = (Button) findViewById(R.id.aoaMfaQ6);
-        aoaMfaQ7 = (Button) findViewById(R.id.aoaMfaQ7);
+        aoaMfaQ1 = (Button) findViewById(R.id.aoaTheoryQ1);
+        aoaMfaQ2 = (Button) findViewById(R.id.aoaTheoryQ4);
+        aoaMfaQ3 = (Button) findViewById(R.id.aoaTheoryQ5);
+        aoaMfaQ4 = (Button) findViewById(R.id.aoaTheoryQ12);
+        aoaMfaQ5 = (Button) findViewById(R.id.aoaTheoryQ6);
+        aoaMfaQ6 = (Button) findViewById(R.id.aoaTheoryQ2);
+        aoaMfaQ7 = (Button) findViewById(R.id.aoaTheoryQ10);
 
         aoaTheory.setOnClickListener(this);
         aoaPractical.setOnClickListener(this);
 
-        aoaTheoryQ1.setOnClickListener(this);
+        aoaMfaQ1.setOnClickListener(this);
         aoaMfaQ2.setOnClickListener(this);
         aoaMfaQ3.setOnClickListener(this);
         aoaMfaQ4.setOnClickListener(this);
@@ -58,37 +58,37 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
                     startActivity(intent2);
                     break;
 
-                case R.id.aoaMfaQ2:
+                case R.id.aoaTheoryQ4:
                     Intent intent3 = new Intent(this, webviewAnswer.class);
                     intent3.putExtra("Qid",id);
                     startActivity(intent3);
                     break;
 
-                case R.id.aoaMfaQ3:
+                case R.id.aoaTheoryQ5:
                     Intent intent4 = new Intent(this, webviewAnswer.class);
                     intent4.putExtra("Qid",id);
                     startActivity(intent4);
                     break;
 
-                case R.id.aoaMfaQ4:
+                case R.id.aoaTheoryQ12:
                     Intent intent5 = new Intent(this, webviewAnswer.class);
                     intent5.putExtra("Qid",id);
                     startActivity(intent5);
                     break;
 
-                case R.id.aoaMfaQ5:
+                case R.id.aoaTheoryQ6:
                     Intent intent6 = new Intent(this, webviewAnswer.class);
                     intent6.putExtra("Qid",id);
                     startActivity(intent6);
                     break;
 
-                case R.id.aoaMfaQ6:
+                case R.id.aoaTheoryQ2:
                     Intent intent7 = new Intent(this, webviewAnswer.class);
                     intent7.putExtra("Qid",id);
                     startActivity(intent7);
                     break;
 
-                case R.id.aoaMfaQ7:
+                case R.id.aoaTheoryQ10:
                     Intent intent8 = new Intent(this, webviewAnswer.class);
                     intent8.putExtra("Qid",id);
                     startActivity(intent8);

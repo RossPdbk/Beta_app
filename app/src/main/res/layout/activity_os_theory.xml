@@ -37,7 +37,9 @@
             android:layout_height="match_parent"
             android:id="@id/osTheoryQ1"
             android:text="What is Operating system? Explain different function of OS?"
-            
+            android:textAllCaps="false"
+            android:gravity="left"
+
             >
         </Button>
 
@@ -46,7 +48,9 @@
             android:layout_height="match_parent"
             android:id="@id/osTheoryQ2"
             android:layout_below="@id/osTheoryQ1"
-            android:text="Q2">
+            android:textAllCaps="false"
+            android:gravity="left"
+            android:text="What are various services provided by OS?">
         </Button>
 
         <Button
@@ -54,6 +58,8 @@
             android:layout_height="match_parent"
             android:id="@id/osTheoryQ3"
             android:layout_below="@id/osTheoryQ2"
+            android:textAllCaps="false"
+            android:gravity="left"
             android:text="Q3">
         </Button>
 
@@ -62,6 +68,8 @@
             android:layout_height="match_parent"
             android:id="@id/osTheoryQ4"
             android:layout_below="@id/osTheoryQ3"
+            android:textAllCaps="false"
+            android:gravity="left"
             android:text="Q4">
         </Button>
 

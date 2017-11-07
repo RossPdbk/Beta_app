@@ -36,8 +36,6 @@ public class osTheory extends AppCompatActivity implements View.OnClickListener 
         osTheoryQ19 = (Button) findViewById(R.id.osTheoryQ19);
 
 
-
-
         osTheoryQ1.setOnClickListener(this);
         osTheoryQ2.setOnClickListener(this);
         osTheoryQ3.setOnClickListener(this);
