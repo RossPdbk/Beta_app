@@ -36,7 +36,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/osTheoryQ1"
-            android:text="Q1">
+            android:text="What is Operating system? Explain different function of OS?"
+            
+            >
         </Button>
 
         <Button
