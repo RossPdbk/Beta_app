@@ -1,0 +1,141 @@
+<!doctype html> 
+<html>
+<body>
+<p><h3>Q3. Explain Knapsack problem </h3></p>
+<hr>
+<p>Ans:<br>
+<p>
+	<ul>
+		<li>We are given 'n' number of objects and a knapsack ( bag ). Each object has differect weight and cost.</li> <br>
+		<li>The knapsack or bag has the capacity of 'm'. That is the bag can hold total weight of 'm'.</li><br>
+		<li>Our job is to fill the bag with those objects. But while doing so we should make sure that the total cost 
+			of all the objects must be as high as possible. </li><br>
+		<li>The objective is to maximise the total profit earned</li><br>
+	</ul>
+</p>
+<p>
+	<strong>Example</strong><br>
+	Let us consider that the capacity of the knapsack W = 60 and the list of provided items are shown in the following table −<br>
+	<table border = "1" cellpadding="0px" cellspacing="0px" >
+         <tr>
+            <td width="60px"><center>Item</center></td>
+            <td width="60px"><center>Profit</center></td>
+			<td width="60px"><center>Weight</center></td>
+         </tr>
+			
+         <tr>
+            <td>A</td>
+            <td>280</td>
+			<td>40</td>
+         </tr>
+		 
+		 <tr>
+            <td>B</td>
+            <td>100</td>
+			<td>10</td>
+         </tr>
+		 
+		 <tr>
+            <td>C</td>
+            <td>120</td>
+			<td>20</td>
+         </tr>
+		 
+		 <tr>
+            <td>D</td>
+            <td>120</td>
+			<td>24</td>
+         </tr>	 
+    </table>
+</p>
+<p>	
+	<strong>Step 1 :</strong> First we will add a column which will have the ratio of profit/weight<br>
+	<table border = "1" cellpadding="0px" cellspacing="0px" >
+         <tr>
+            <td width="60px"><center>Item</center></td>
+            <td width="60px"><center>Profit</center></td>
+			<td width="60px"><center>Weight</center></td>
+			<td width="60px"><center>Ratio(Profit/Weight)</center></td>
+         </tr>
+			
+         <tr>
+            <td>A</td>
+            <td>280</td>
+			<td>40</td>
+			<td>7</td
+         </tr>
+		 
+		 <tr>
+            <td>B</td>
+            <td>100</td>
+			<td>10</td>
+			<td>10</td
+         </tr>
+		 
+		 <tr>
+            <td>C</td>
+            <td>120</td>
+			<td>20</td>
+			<td>6</td
+         </tr>
+		 
+		 <tr>
+            <td>D</td>
+            <td>120</td>
+			<td>24</td>
+			<td>5</td
+         </tr>	 
+    </table>
+</p>	
+<p>
+	<Strong>Step 2 :</Strong> Sort the table in decreasing order of Ratio. 
+	<table border = "1" cellpadding="0px" cellspacing="0px" >
+         <tr>
+            <td width="60px"><center>Item</center></td>
+            <td width="60px"><center>Profit</center></td>
+			<td width="60px"><center>Weight</center></td>
+			<td width="60px"><center>Ratio(Profit/Weight)</center></td>
+         </tr>
+			
+		<tr>
+            <td>B</td>
+            <td>100</td>
+			<td>10</td>
+			<td>10</td
+         </tr>
+         <tr>
+            <td>A</td>
+            <td>280</td>
+			<td>40</td>
+			<td>7</td
+         </tr>
+		  
+		 <tr>
+            <td>C</td>
+            <td>120</td>
+			<td>20</td>
+			<td>6</td
+         </tr>
+		 
+		 <tr>
+            <td>D</td>
+            <td>120</td>
+			<td>24</td>
+			<td>5</td
+         </tr>	 
+    </table>
+</p>
+<p>
+	<strong>Step 3 :</strong> Now start adding the items in the bag strating with item having highest ratio.<br><br>
+	Weight avaible=60 and Profit=0<br><br>
+	Add item B , Weight avaible = 60 - 10 = 50 Profit=100<br><br>
+	Add item A , Weight avaible = 50 - 40 = 10 Profit=100 + 280 = 380<br><br>
+	Now, C is chosen as the next item. However, the whole item cannot be chosen as the remaining capacity of the knapsack is less than the weight of C.<br><br>
+	Hence, fraction of C (i.e. (60 − 50)/20) is chosen.<br><br>
+	Now, the capacity of the Knapsack is equal to the selected items. Hence, no more item can be selected.<br><br>
+	The total weight of the selected items is<br> 10 + 40 + 20 * (10/20) = 60<br><br>
+	And the total profit is <br>100 + 280 + 120 * (10/20) = 380 + 60 = 440<br><br>
+	This is the optimal solution. We cannot gain more profit selecting any different combination of items.<br>
+<p>
+</body>
+</html>

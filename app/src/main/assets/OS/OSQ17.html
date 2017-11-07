@@ -1,0 +1,35 @@
+<html>
+
+	<body>
+	
+		<b>Q. What are different File   access   methods? </b><hr>
+		
+		The   information   stored   in   the   file   needs   to   be   accessed   and   read   into   the   computer   memory.
+		There   are   different   methods   available   to   do   it.   Some   of   them   are : <br> <br>
+		
+		1. Sequential   Access : <br>
+		<ul>
+		<li>This   is   the   most   common   method. Here   the   information   present   in   the   file   is   accessed   in   a   sequential   fashion,   one   record   after the   other. 
+		<li>It   is   a   very   common   approach   which   is   used   by   editors   and   compilers   usually.
+		<li>The   Read   and   Write   operations   form   the   major   part   of   the   operations   done   on   a   file. 
+		<li>A   read   operation   reads   the   next   portion   of   the   file   and   automatically   advances   the   file pointer,   which   tracks   the   I/O   location.
+		<li>A   write   operation   appends   to   the   end   of   the   file   and   advances   to   the   end   of   the   newly   written material.
+		</ul>
+		
+		2. Direct   Access : <br>
+		<ul>
+		<li>This   type   of   access   method   provides   a   speedy   access   to   the   file.   
+		<li>It   provides   immediate access   to   large   amount   of   information. Here   a   file   is   made   up   of   logical   records   that   allow   programs   to   read   and   write.
+		<li>It   allows   the   programs   to  read   and   write   the   records   in   a   rapid   manner   in   no   particular   (or pre-defined)   order. 
+		<li>It   is   based   on   the   disk-model   of   a   file,   as   a   disk   allows   random   access   to   any   block. For   direct   access,   we   can   view   the   file   as   a   numbered   sequence   of   blocks   or   records.
+		<li>This   method   is   usually   used   in   databases.
+		</ul>
+
+		3. Indexed   access :  <br>
+		<ul>
+		<li>This   method   is   built   on   top   of   Direct   access   method. 
+		<li>Here   an   index   contains   the  pointers   to   various   blocks   of   the   file.
+		<li>So,   to   find   a   record   inside   a   file,   we   firstly   search   the   index   and   later   use   the   pointer   obtained to   access   the   file   directly   and   find   the   record   we   have   been   searching   for. 
+		</ul>
+		<hr>
+	</body>

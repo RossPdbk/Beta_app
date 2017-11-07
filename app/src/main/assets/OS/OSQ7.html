@@ -1,0 +1,140 @@
+<html>
+
+	<head>
+		<style>
+		body{
+			text-align : justify;
+		}
+		</style>
+	</head>
+	<body>
+
+		<h3>Q. What is deadlock? Explain necessary and sufficient condition for deadlock to occur.
+		Explain deadlock avoidance, prevention and detection.</h3><hr>
+
+
+		<b>Deadlock : </b><br>
+
+			<p>The computer system uses many types of resource which are then used by various processes to carry out their individual functions.
+
+			But problem is that the amount of resources available is limited and many process needs to use it. </p>
+
+			<p><i>A set of process is said to be in a deadlocked state when every process in the set is waiting for an event that can be caused only by another process in the set.
+			The event can be resource acquisition, resource release etc. The resource can be physical (printers, memory space) or logical (semaphores, files).</i></p><br>
+
+
+
+			<p><b>The necessary and sufficient conditions for deadlock to occur are : </b></p>
+			
+			<ol>
+
+				<li><t>Mutual Exclusion. </t><br>
+
+				A resource at a time can only be used by one process.
+
+				If another process is requesting for the same resource, then it must be delayed until that resource is released.
+				</li><br>
+
+				<li><t>Hold and Wait</t><br>
+
+				A process is holding a resource and waiting to acquire additional resources that are currently being held by other processes.
+				</li><br>
+				
+				<li><t>No Pre-emption </t><br>
+
+				Resources cannot be pre-empted
+
+				Resource can be released only by the process currently holding it based on its voluntary decision after completing the task
+				</li><br>
+				
+				<li><t>Circular wait </t><br>
+
+				A set of processes { P0,P1,….,Pn-1,Pn } such that the process P0 is waiting for resource held by P1,P1 is waiting for P2 ,and Pn is waiting for P0 to release its resources.
+
+				Every process holds a resource needed by the next process.
+				</li><br>
+				
+			</ol>
+
+			<p>All the four above mentioned conditions should occur for a deadlock to occur.</p><hr>
+
+
+
+		<p><b>The three major approaches for handling deadlocks are as follows : </b></p>
+
+			<ol>
+
+			<li><t>Deadlock Prevention </t><br><br> 
+			<ul>
+
+			<li>It ensures that the system never enters a deadlock state. </li><br>
+
+			<li>It provides a set of methods to make sure that at least one of the four necessary conditions for a deadlock is never satisfied.</li><br>
+
+			<li>Mutual Exclusion : This condition is needed to be checked for non-sharable resources (e.g. Printer)</li><br>
+
+			<li>Hold and Wait :  It requires a process to request a resource and get allocated before execution or allow process to request resources when the process has none.</li><br>
+
+			<li>No preemption :  If a process that is holding some resources requests another resource that cannot be immediately allocated to it, then all resources currently being held are released. </li><br>
+
+			<li>Circular Wait : we can impose a total ordering of all resource types, and ask that each process requests resources in an increasing order of enumeration.</li><br>
+
+			<li>Disadvantage is that it can lead to low device utilization and reduced system throughput.</li><br> 
+			
+			</ul>
+
+			</li>
+			<li>Deadlock Avoidance<br><br>
+			<ul>
+
+			<li>It is the simplest and most friendly method.</li><br>
+
+			<li>It requires that each process declare the maximum number of resources of each type that it will need.</li><br>
+
+			<li>The deadlock-avoidance algorithm dynamically checks the resource-allocation state to ensure the system can never be in a circular-wait condition.</li><br>
+
+			<li>When a process requests a resource, the system must make sure that the allocation would leave the system in a safe state.</li><br>
+
+			<li>It the system is in a safe state, then there would be no deadlock. However, if it is in an unsafe state, that there is a possibility (not certainty) of a deadlock.</li><br>
+
+			<li>The avoidance approach requires that knowledge of all processes, all the resources available, the resources allocated presently and the future requests by the processes.</li><br>
+
+			<li>For a single instance of a resource type we use the resource allocation graph.</li><br>
+
+			<li>For multiple instance of a resource type, we use the banker’s algorithm.</li><br>
+
+			<li>A major drawback of this method is that it is difficult to know at the beginning itself of the maximum resource required.</li><br>
+			</ul>
+
+			</li><br>
+
+			<li><t>Deadlock detection and recovery </t><br>
+			<ul>
+
+			<li>Here we allow the system to enter into a deadlock state and then try to recover the system back from it.</li><br>
+
+			<li>This method has two parts:<br>
+
+			i. Detection: an algorithm to check the system state whether in deadlock<br>
+
+			ii. Recovery: initiated when deadlock detected, to recover from that deadlock.</li><br>
+
+			<li>This method doesn’t require the maximum need MAX or the Need matrix. It works using the Available, Allocation and Request data structures.</li><br>
+
+			<li>For single instance of a resource type we use the wait-for graphs and search for cycles in the graph.</li><br>
+
+			<li>For multiple instances of each resource type, we use the Deadlock-detection algorithm.</li><br>
+
+			<li>To recover we have two options : <br>
+
+			i. Abort one or more processes <br>
+
+			ii. Pre-empt one or more resources from one or more deadlocked process</li><br>
+			</ul>
+
+			</li><br>
+			
+			</ol>
+
+	</body>
+</html>

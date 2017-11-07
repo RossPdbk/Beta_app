@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title>COA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h4> Show IEEE 754 standards for Binary Floating Point Representation for 32 bit single format and 64 bit double format. </h4>
+<p>The standards for representing floating point numbers in 32-bits and 64-bits have been developed by
+ the institute of Electrical and Electronics Engineers (IEEE), referred to as IEEE 754 standards.
+<br><b>1.Floating Point Representation:</b><br>
+IEEE floating point representation for binary real numbers consists
+of three parts.<br>
+<img src="floating1.jpg"/><br><br>
+	1. Sign, for which 1 bit is allocated. 0 represents a positive number and 1 for negative number.<br>
+	2. Exponent is allocated 8 bits. <br>
+	3. Mantissa (called significand in the standard) is allocated 23 bits.<br>As both positive and negative
+	numbers are required for the exponent, instead of using a separate sign bit for the exponent, the standard uses a biased
+	representation. The value of the bias 127.<br><br>
+
+	<b>2. Double Precision Floating Point Representation:</b><br>
+	The IEEE 754 floating point standard for 64-bit (called doubleprecision) numbers is very similar to the 32-bit standard.The
+	main difference is the allocation bits for the exponent and the significand.
+		<img src="floating3.jpg"/><br>
+	1. Sign, for which 1 bit is allocated. 0 represents a positive number and 1 for negative number.<br>
+	2. Exponent is allocated 11 bits.<br>
+	3. Mantissa (called significand in the standard) is allocated 52 bits.<br>
+	The value of the bias 1023
+ </html>

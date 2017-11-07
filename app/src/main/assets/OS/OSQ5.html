@@ -1,0 +1,35 @@
+<html>
+	<body>
+	
+		<h3>Q. Explain Critical section problem.</h3><hr>
+		
+		<p>A Critical Section is a code segment that accesses shared variables and has to be executed as an atomic action.\
+		It means that in a group of cooperating processes, at a given point of time, only one process must be executing its critical section.
+		If any other process also wants to execute its critical section, it must wait until the first one finishes. 
+		</p>
+		
+		<img src="Critical_section.jpg" width=100%><br>
+		
+ 
+		<p><b>Solution to Critical Section Problem A solution to the critical section problem must satisfy the following three conditions : </b></p><br>
+		<ol>
+		
+		<li><u>Mutual Exclusion </u><br>
+		Out of a group of cooperating processes, only one process can be in its critical section 
+		at a given point of time. </li><br>
+
+		<li><u>Progress </u><br>
+		If no process is in its critical section, and if one or more threads want to execute their 
+		critical section then any one of these threads must be allowed to get into its critical 
+		section. </li><br>
+
+		<li><u>Bounded Waiting </u><br>
+		After a process makes a request for getting into its critical section, there is a limit for 
+		how many other processes can get into their critical section, before this process's 
+		request is granted. So after the limit is reached, system must grant the process 
+		permission to get into its critical section. </li><br>
+
+		</ol>
+ 
+	</body>
+</html>

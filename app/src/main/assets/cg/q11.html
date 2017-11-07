@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <body>
+	  <p><h3>Q11.Define halftoning and dithering techniques?</h3>
+	  <p><h4> Ans:</h4><br>
+	  <b><u>Halftoning Technique</b></u>
+	  <ol type="1">
+	  <img src="q11h.jpg">
+
+<li>Newspaper, photographs simulate a grey-scale image that can printed using only black ink.</li>
+
+<li>A newspaper picture is, in fact, made up of a pattern of tiny black dots of varying size.</li>
+
+<li>The human visual system has a tendency to average brightness over small areas, so the black dots and their white background merge and are perceived as an intermediate shade of grey.</li>
+
+<li>The process of generating a binary pattern of black and white dots from an image is termed half toning.</li>
+
+<li>In traditional newspaper and magazine production, this process is carried out photographically by projection of a transparency through a 'halftone screen' onto film.</li>
+
+<li>The screen is a glass plate with a grid etched into it.</li>
+
+<li>Different screens can be used to control the size and shape of the dots in the half toned image.</li>
+
+<li>In computer graphics, half toning reproductions are approximated using rectangular pixel region say 2 x 2 pixels or 3 x 3 pixels.</li>
+
+<li>These regions are called as “Halftone Patters” or “Pixel Patterns”.</li>
+
+<li>2 x 2 pixel patterns for creating five intensity levels are shown in figure</li></ol>
+
+<b><u>Dithering Technique</u></b><br>
+<img src="q11d.jpg">
+<ol type="1">
+<li>Another technique for digital half toning is dithering.</li>
+
+<li>It is the technique for approximating halftones without reducing resolution, as pixel grid patterns do.</li>
+
+<lli>Dithering can be accomplished by Thresholding the image against a dither matrix.</li>
+
+<li>To obtain n2 intensity levels, it is necessary to setup an n x n dither matrix Dn whose elements are distinct positive integers in the range of 0 to n2 – 1.</li>
+
+<li>Matrix for 4 intensity level and 9 intensity level is shown below.</li></ol>
+<img src="q11 1st.png">
+
+<ol type="1">
+<li>The elements of a dither matrix are thresholds.</li>
+
+<li>The matrix is laid like a tile over the entire image and each pixel value is compared with the corresponding threshold from the matrix.</li>
+
+<li>The pixel becomes white if its value exceeds the threshold or black otherwise.</li>
+
+<li>This approach produces an output image with the same dimensions as the input image, but with less detail visible.</li>
+
+<li>High order dither matrices can be obtained from lower order matrices with the recurrence relation.</li></ol>
+<img src="q11 2nd.png">
+
+	  
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+
+
+
+</html>

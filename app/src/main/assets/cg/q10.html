@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <body>
+	  <p><h3>Q10.Derive matrix for 2D rotation about an arbitary axis?</h3>
+	  <p><h4> Ans:</h4><br>
+	  <ol type="1">
+	  <img src="q10.png">
+	  <li>2D rotation section aims at enabling the transformation matrix for rotating any object by some angle Ө.
+
+<li>Rotation of a geometric model about an arbitrary axis, other than any of the coordinate axes, involves several rotational and translation transformations.</li>
+
+<li>When we rotate an object about the origin (in 2-D), we in fact rotate it about the z-axis.</li>
+
+<li>Every point on the object rotates along a circular path, with the center of rotation at the origin.</li>
+
+<li>If we wish to rotate an object about an arbitrary axis, which is perpendicular to the xy-plane, we will have to first translate the axis to the origin and then rotate the model, and finally, translate so that the axis of rotation is restored to its initial position.</li>
+
+<li>If we erroneously use the equation (2.9) directly, to rotate the object about a fixed axis, and skip the translation of this point to the origin, we will in fact end up rotating the object about the z-axis, and not about the fixed axis.<li>
+
+<li>Thus, the rotation of an object about an arbitrary axis, involves three steps:</li>
+<ol type="1">
+ <li>Translate the fixed axis so that it coincides with the z-axis</li>
+
+ <li>Rotate the object about the axis</li>
+
+ <li>Translate the fixed axis back to the original position</li></ol>
+ </ol><br>
+ 
+	  
+	<b><u>Derivation of matrix of 2D object about an arbitrary axis</u></b>
+	<ol type="1">
+	<li> Assume that we have to rotate a point P1 with respect to (Xm,Ym) then we have to perform three steps.First we have to translate the (Xm,Ym) to origin.<br>
+	T1 = <table><tr><td>1 </td> <td>0</td> <td>0</td></tr>
+	      <tr><td> 0 </td> <td>1</td>  <td>0</td></tr>
+	       <tr><td>-Xm</td> <td> -Ym</td> <td>1</td></tr></table>
+	   
+	   Tx = -Xm and Ty = -Ym
+	</li>
+	<li> Then we have to follow second step i.e. rotate it in clockwise or anticlockwise.<br>
+	Let's assume as anticlockwise rotation by angle &#920.So our rotation matrix will be<br>
+	
+	
+    R = <table><tr><td>cos&#920</td> <td> sin&#920</td>  <td>0</td></tr>
+            <tr><td>-sin&#920</td> <td>cos&#920</td>  <td>0</td></tr>	
+		    <tr><td> 0</td>   <td>   0 </td>    <td>  1</td></tr></table></li>
+
+
+			 <li> Now the third step is to translate back to original position.So the translation matrix (T2) will become<br>
+			      T2 =<table><tr><td> 1</td> </td> 0</td> <td> 0</td></tr>
+                       <tr><td>0</td> <td> 1</td> <td> 0</td></tr>
+					   
+			           <tr><td>Xm</td> <td>Ym</td> <td>1</td></tr></table>
+now let us form a combined matrix<br>	
+    = Translation * Rotation * Translation	<br>
+
+    = T1 * R * T2<br>
+<table>
+    = <tr><td>	1 0 0</td>                       <td> cos&#920  sin&#920  0</td>            <td>    1 0 0</td></tr>
+       <tr><td> 0 1 0</td>                       <td> -sin&#920 cos&#920  0</td>	           <td>  0 1 0</td></tr>
+	  <tr><td>-Xm -Ym 1</td>                      <td>   0      0       1</td>               <td> Xm Ym 1</td></tr></table><br><br>
+	  
+	  
+	  <table>
+	  <tr> <td>cos&#920</td>
+            <td>sin&#920</td>
+            <td>0</td>			</tr>
+			<tr><td>-sin&#920</td>
+                <td>cos&#920</td>
+				<td>0</td>
+			</tr>
+			<tr><td>-Xm*cos&#920+Ym*sin&#920+Xm</td>
+                <td>-Xm*sin&#920-Ymcos&#920+Ym</td>
+				<td>1</td>
+			</tr>
+			
+	  
+	  </table><br>
+	  This transformation matrix is the overall transformation matrix for rotation about an arbitrary point(Xm,Ym)
+	    
+	  
+			
+	
+	
+	</body>
+
+
+
+
+
+</html>

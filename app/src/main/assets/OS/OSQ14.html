@@ -1,0 +1,92 @@
+<html>
+
+	<head>
+		<style>
+		th,td{
+			border : 1px  solid  black;
+			padding : 3px;
+		}
+		</style>
+	</head>
+
+	<body>
+	
+		<b>Q. Compare Process and Thread.</b><hr>
+		
+		<table width=100% cellspacing=0>
+		<tr>
+				<th align = center>Process</th> 
+				<th align = center>Thread </th>
+		</tr>
+
+		<tr>
+			<td>1. An   executing   instance   of   a   program   is   called   a   process.</td>
+			<td>1. A   thread   is   a   subset   of   the   process.</td>
+		</tr>
+	
+		<tr>
+			<td>2. It   has   its   own   copy   of   the  data   segment   of   the   parent   process. </td>
+			<td>2. It   has   direct   access   to   the   data   segment   of   its   process.</td>
+		</tr>
+
+		<tr>
+			<td>3. Processes   must   use   inter-process   communication   to   communicate   with   sibling   processes.</td> 
+			<td>3. Threads   can   directly   communicate   with   other   threads   of   its   process.</td>
+		</tr>
+
+		<tr>
+			<td>4. Processes   have   considerable   overhead.</td>
+			<td>4. Threads   have   almost   no   overhead. </td>
+ 		</tr>
+
+
+		<tr>
+			<td>5. New   processes   require   duplication   of   the   parent   process.</td>
+			<td>5. New   threads   are   easily   created. </td>
+		</tr>
+
+		<tr>
+			<td>6. Processes   can   only   exercise   control   over   child   processes. </td>
+			<td>6. Threads   can   exercise   considerable   control  over   threads   of   the   same   process.</td>
+		</tr>
+
+		<tr>
+			<td>7. Any   change   in   the   parent   process   does   not   affect   child   processes.</td>
+			<td>7. Any   change   in   the   main   thread   may   affect   the   behavior   of   the   other   threads   of   the   process.</td>
+		</tr>
+
+		<tr>
+			<td>8. Run   in   separate   memory   spaces.</td>
+			<td>8. Run   in   shared   memory   spaces.</td>
+		</tr>
+	
+		<tr>
+			<td>9. Most   file   descriptors   are   not   shared.</td>
+			<td>9. It   shares   file   descriptors. </td>
+ 		</tr>
+
+		<tr>
+			<td>10. There   is   no   sharing   of   file   system   context.</td>
+			<td>10. It   shares   file   system   context.</td>
+		</tr>
+
+		<tr>
+			<td>11. It   does   not   share   signal   handling.</td>
+			<td>11. It   shares   signal   handling. </td>
+ 		</tr>
+
+		<tr>
+			<td>12. Process   is   controlled   by   the   operating   system. </td>
+			<td>12. Threads   are   controlled   by   programmer   in   a   program. </td>
+		</tr>
+
+		<tr>
+			<td>13. Processes   are   independent. </td>
+			<td>13. Threads   are   dependent.</td>
+		</tr>
+		
+	</body>
+	
+</html>
+
+

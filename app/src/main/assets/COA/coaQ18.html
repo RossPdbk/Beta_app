@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<title>COA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h4>Explian flynn's classification.</h4>
+	<p> Flynn's classification for computer architectures is based on the number of <b>instruction steams</b> and <b>data streams</b> also called as Flynn's Taxonomy.<br>
+		An instruction stream is a sequence of instruction while a data stream is a sequence of data which includes input data or temporary results.<br>
+		They are classified into 4 types:
+	<ul>
+		<li>SISD (Single Instruction Single Data)</li>
+		<li>SIMD (Single Instruction Multiple Data)</li>
+		<li>MISD (Multiple Instruction Multiple Data)</li>
+		<li>MIMD (Multiple Instruction Multiple Data)</li>
+	</ul>
+	<br>
+	<b> SISD (Single Instruction Single Data)</b>
+		<ul>
+		<li>A single-processor computer (Conventional computer) in which a single stream of instructions is fetched and executed using single data stream.</li>
+		<li>It has no parallelism either in instructions or in data.</li>
+		</ul>
+		<img src="flynn.jpg"/><br>
+	<b> SIMD (Single Instruction Multiple Data)</b>
+		<ul>
+		<li>A single stream of instructions is fetched and executed using multiple data stream.</li>
+		<li>So each processing unit can operate independently on a different data stream.</li>
+		<li> This group is dedicated to array processing machines.</li>
+		</ul>
+	<img src="flynn2.jpg"/><br>
+	<b>MISD (Multiple Instruction Multiple Data)</b>
+		<ul>
+		<li> In case of MISD computers, multiple processing units operate on one single-data stream .</li>
+		<li>Few parallel computers fits into this class but in practice, this kind of organization has never been used.</li>
+		</ul>
+	<img src="flynn3.jpg"/><br>
+	<b>MIMD (Multiple Instruction Multiple Data)</b>
+		<ul>
+		<li> Each processor has a separate program.</li>
+		<li> An instruction stream is generated from each program.</li>
+		<li> Each instruction operates on different data.</li>
+		<li>Most parallel computers are based on MIMD architecture. There are two major categories</li>
+		1)Shared memory multiprocessor.<br>
+		2)Message passing multi-computers.
+		</ul>
+	<img src="flynn4.jpg"/><br>
+	</p>
+
+
+</body>
+</html>

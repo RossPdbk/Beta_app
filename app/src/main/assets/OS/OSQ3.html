@@ -1,0 +1,91 @@
+<html>
+
+	<body>
+	
+	<h3>Q. What are different page replacement policies? </h3><hr>
+	
+	
+	<b>1. FIFO algorithm</b>
+	<ul>
+	
+	<li>The simplest page replacement algorithm and work on the basis of first in first out. It throws out the pages in the order in 
+	which they were brought in.</li><br>
+	
+	<li>This algorithm always chooses the oldest page for replacement.</li><br>
+	
+	<li>Since the replacement is FIFO, a queue can be maintained to hold all the pages in main memory.</li><br>
+	
+	<li>The time is associated with each page when it is brought into the main memory.</li><br>
+	
+	<li>This algorithm does not care about which pages are accessed frequently and which are not.</li><br>
+	
+	</ul>
+	
+	
+	<b>2. Optimal page replacement</b>
+	<ul>
+	
+	<li>This algorithm replaces the page which will not be used for longest perios of time.</li><br>
+	
+	<li>This algorithm checks whether the page will be used in future or not.</li><br>
+	
+	<li>As page repacement are done on basis of future uses, it is impossible to implement as it is impossible to determine
+	number of instructions that will be executed in future.</li><br>
+	
+	<li>Optimal page replacement algorithm has lowest page fault rate among all algorithms.</li><br>
+		
+	</ul>
+
+	
+	
+	<b>3. LRU page replacement</b>
+	<ul>
+	
+	<li>LRU - Least Recently used.</li><br>
+	
+	<li>The time of page's last use is associated with each page.</li><br>
+	
+	<li>LRU first determines which pages were recently used and then chooses that page that was used farthest back in the past.</li><br>
+	
+	<li>This algorithm replaces page on basis of past use of the page which is possible as we can determine how many pages were used in the past.</li><br>
+	
+	<li>This algorithm is consider to be one of the best page replacement algorithm.</li><br>
+	
+	<li>this algorithm does not suffer through Belady's anamoly.</li><br>
+	
+	</ul>
+	
+	
+	<b>4. NFU page replacement</b>
+	<ul>
+	
+	<li>NFU - Not Frequently Used.</li><br>
+	
+	<li>This policy assumes that the pages which are used more frequently will be needed again in the future. </li><br>
+	
+	<li>A counter is used to keep track of number of times a page was used.</li><br>
+	
+	<li>The page which has less ccounter value should be replaced.</li><br>
+	
+	<li>the main drawback of this policy is if initially page is used frequently and then there is no reference again to this page, it will still remain in memory.</li><br>
+	
+	</ul>
+	
+	
+	<b>5. Most frequently used page replacement</b>
+	<ul>
+	
+	<li>This algorithm works opposite of NFU algorithm.</li><br>
+	
+	<li>This policy assumes that page which is least frequently used will be needed again in the future.</li><br>
+	
+	<li>Thus, Page which has lower ccount value should be kept in memory and page with more count value should be replaced.</li><br>
+	
+	</ul>
+	
+	<hr>
+	
+	
+	</body>
+	
+</html>

@@ -1,0 +1,22 @@
+<!doctype html> 
+<html>
+<body>
+<p><h3>Q7. Explain Krushkal's Algorithm with example.</h3></p>
+<hr>
+<p>Kruskal's algorithm is a greedy algorithm in graph theory that finds a minimum spanning tree for a connected weighted graph. 
+It finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized.
+This algorithm is directly based on the MST( minimum spanning tree) property.<br></p>
+<p>The steps for implementing Kruskal's algorithm are as follows:<br>
+<ul>
+<li>Sort all the edges from low weight to high</li><br>
+<li>Take the edge with the lowest weight and add it to the spanning tree. If adding the edge created a cycle, then reject this edge.</li><br>
+<li>Keep adding edges until we reach all vertices.</li><br>
+</ul></p>
+<p>
+Consider the following example :<br><br>
+Start by taking a pair of nodes with smallest weight.<br>
+Then select another pair with small weight but it should not form a cycle.<br>
+Continue untill all nodes are covered.<br>
+<img src="AOAQ7.jpg" width="300px"></img>
+</body>
+</html>

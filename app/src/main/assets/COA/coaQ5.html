@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>COA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h4>Express (127.125)10 in the IEEE single precision standard of floating point representation</h4>
+	<p>
+	<h4>Single precision </h4>
+	<b>Convert decimal to binary : </b>
+		first convert 127 in to binary format.<br>
+		127=1111111<br>
+		then convert .125 in to binary. for that,<br>
+		0.125*2 =0.250 -->0  ^<br>
+		0.250*2 =0.500 -->0  |<br>
+		0.500*2 =1.000 -->1  |<br>
+		0.125 = 100 <br>
+		Binary format of 127.125=1111111.100<br>
+		<b>Normalize the binary fractional number :</b><br>
+		1.111111100 X 2^6<br>
+		(mantissa= 111111100)
+		<b>Calculate Exponent :</b><br>
+		E=127+6=133<br>
+		<b>Convert Exponent into binary :</b><br>
+		(133)<small>10</small> = (10000101)<small>2</small><br>
+		Exponent=10000101<br>
+		<b>Representation:</b><br>
+		<img src="f_eg1.jpg"/><br>
+		
+		Binary result (32 bits): 01000010111111110000000000000000
+		<h4>Double precision</h4>
+		first convert 127 in to binary format.<br>
+		127=1111111<br>
+		then convert .125 in to binary. for that,<br>
+		0.125*2 =0.250 -->0  ^<br>
+		0.250*2 =0.500 -->0  |<br>
+		0.500*2 =1.000 -->1  |<br>
+		0.125 = 100 <br>
+		Binary format of 127.125=1111111.100<br>
+		<b>Normalize the binary fractional number :</b><br>
+		1.111111100 * 2^6<br>
+		<b>Calculate Exponent :</b><br>
+		E=1023+6=1029<br>
+		<b>Convert Exponent into binary :</b><br>
+		(1029)<small>10</small> = (10000000101)<small>2</small><br>
+		Exponent=10000000101<br>
+		<b>Representation:</b><br>
+		<img src="f_eg2.jpg"/><br>
+		
+		Binary result (32 bits):0100000001011111111000000000000000000000000000000000000000000000
+		</p>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+	<body>
+		<h3>Q. Explain various techniques for structuring page tables.</h3>
+		<hr>
+		<p>Following are various techniques for structuring page tables</p><br><br>
+		
+		<b>1. Hierarchical/Multi-level paging </b><br><br>
+		
+		<ul>	
+			<li>Most modern computer architectures support larger address spaces.
+			A single page table itself, corresponding to a process can only take up space in megabytes. 
+			If so then, a large amount of space would be required to accommodate the page tables of all processes contiguously.</li><br>
+			<li>A solution to it is to make it non-contiguous and maintain another table which keeps the record of where in memory is the table stored.
+			This is called two-level paging. Here the page table is also paged. </li><br>
+			<li>However if this second level memory is also not sufficient for our needs, then we create another level. And so on it goes. 
+			This is called as Hierarchical or Multi-level paging.In two-level page table, the page table is paged and its data is scattered in the memory. 
+			There is another table which contain the entries of page table.
+			This table is called as directory table. Refer figure below. </li><br>
+			
+			<img src="Structure_paging_2.jpg" width=100%><br>
+ 
+			<li>To implement a two-level page structure, the logical address is modified into two parts, one for the Directory table (Outer page table) and other for the inner page table. </li><br>
+			<li>It is as follows: <br>
+			<img src="Structure_paging_1.jpg" width=80%><br>
+			Here, p1 --> index to the outer page table<br>
+			p2 --> displacement within the page of the outer page table<br> 
+			d --> page offset.</li><br> 
+			<li>This method is not considered appropriate for 64-bit architectures.</li><br> 
+			<li> The disadvantage of this is that increases that number of memory accesses. </li><br> 
+			
+		</ul>	
+			
+		<b>2. Inverted page table structure </b><br><br>
+		<img src="Structure_paging_4.jpg" width=100%><br><br>
+		
+		<ul>
+			<li>The page table size in OS is directly proportional to the virtual address space. 
+			The page table has one entry for each page that the process is using. </li><br> 
+			<li>In this design method, a real page frame is taken as the page table entry.</li><br> 
+			<li>An inverted page table has one entry for each real page(or frame) of memory.</li><br> 
+			<li>Each of the entry contains the virtual address of the page stored in the real memory location with information about the process that owns the page.</li><br> 
+			<li>Thus, there is only one page table in the system and for each page of physical memory it has only one entry.</li><br> 
+			<li>Although this scheme decreases the amount of memory needed to store each page table, the time taken to search in case of a page reference increases. </li><br> 
+
+		</ul>
+ 
+		<b>3. Hashed Page tables </b><br><br>
+		<img src="Structure_paging_3.jpg" width=100%><br>
+		
+		<ul>
+			<li>For handling address spaces larger than 32-bits we use hashed page table where has value is the virtual page number.</li><br> 
+			<li>Every entry in the hashed table has a linked list of elements that hash to the same location.</li><br> 
+			<li>The linked list element has three fields o The virtual page number o Value of mapped page-frame o Pointer to next element.</li><br> 
+			<li>Working: The virtual page number in the virtual address is hashed into the table.</li><br> 
+			<li> Now, this virtual page number is compared with field 1 of the first element of the linked list. </li><br> 
+			<li>If there is a match, the next page frame (field 2) is used to form the desired physical address. </li><br> 
+			<li>If the matching failed, then the next entries in the linked list are searched to find the matching pair.</li><br> 
+	
+		</ul>
+		
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<! DOCTYPE html>
+<html>
+<body>  
+ <p><H3>Q5. Explain mid-point circle algorithm .<br>Using same ,plot the circle whose radius is 10 units.</h3>
+<p><h4>Ans:-<br></h4>
+<b><u> Steps for midpoint circle algorithm are as follows:-<br></u></b>
+<ol type =”1”>
+<li> Accept radius 'r' and center of circle (Xc,Yc) from user and plot first point on circumference of circle .<br> (X0,Y0)=(0,r)</li>
+<li>Calculate the initial value of the decision parameter.<br>P0=1-r</li>
+<li>If we are using octant symmetry property to plot the pixels ,then until (X<Y) we have to perform following steps .<br>
+If Pk <0 <br> modify Pk as Pk=Pk+2X+1 and then increase X by 1 ie X++<br> otherwise <br> modify Pk as Pk= Pk+2(X-Y)+1 and increase X by 1 and decrease Y by 1</li>
+<li>Determine the symmetry point in other octant also.</li>
+<li>calculate all points as <br> X=X+Xc and <br> Y=Y+Yc</li></ol><br><br>
+
+<p> <b> <u>Plotting of circle whose radius is 10 units. </u></b><br>
+Since center of the circle is not specified we will assume it as Origin.<br>
+r=10, Xc=0, Yc=0<br>
+Plot 1st point as(0,r) i.e. y=r<br>
+hence Plot(0,10)<br>
+Like that find out other points from symmetry property from (0.10)<br>
+So,  Plot(10,0)<br>
+     Plot(0,-10)<br>
+     Plot(-10,0)<br>
+
+Find P=1-r     so, P=1-10=-9<br>
+Till (X<Y) we have to perform following<br>
+If(P<0)<br>
+    In this case P= -9<br>
+so we have to increase X by 1 and<br>
+Modify P as P= P+2X+1<br>
+i.e. P= -9+1= -8<br>
+We are not updating Y<br>
+Plot(X+1,Y)  i.e. (1,10)<br>
+Continue this process till (X=Y)<br><br>
+<table style border=1  rules="all" frame="box">
+<tr><center>
+  <th>X</th>
+  <th>Y</th>
+  
+</tr>
+
+<tr>
+  <td>0</td>
+  <td>10</td>
+
+</tr>
+
+<tr>
+  <td>1</td>
+  <td>10</td>
+
+</tr>
+
+<tr>
+  <td>2</td>
+  <td>10</td>
+
+</tr>
+
+<tr>
+  <td>3</td>
+  <td>9</td>
+
+</tr>
+
+<tr>
+  <td>4</td>
+  <td>9</td>
+
+</tr>
+
+<tr>
+  <td>5</td>
+  <td>8</td>
+
+</tr>
+
+<tr>
+  <td>6</td>
+  <td>8</td>
+
+</tr>
+<tr>
+  <td>7</td>
+  <td>7</td>
+
+</tr>
+
+</table>
+	
+   	 
+</body>
+</html>

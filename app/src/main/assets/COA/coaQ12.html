@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>COA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h4>Write short note on Inetrleaved Memory.</h4>
+	<p>
+	<ol>
+	<li>Interleaved memory is a design made to compensate for the relatively slow speed of dynamic 
+	random-access memory (DRAM) or core memory, by spreading memory addresses evenly across memory banks. 
+		</li>
+	<li>For example: If we have 4 memory banks(4-way Interleaved memory), with each containing 256 bytes, then, the Block Oriented scheme(no interleaving), will assign virtual address 0 to 255 to the first bank, 256 to 511 to the second bank. But in Interleaved memory, 
+	virtual address 0 will be with the first bank, 1 with the second memory bank,
+	2 with the third bank and 3 with the fourt, and then 4 with the first memory bank again. </li>
+	<li>Hence, CPU can access alternate sections immediately without waiting for memory to be cached. There are multiple memory banks which take turns for supply of data. </li>
+	<li>An interleaved memory with n banks is said to be n-way interleaved. In an interleaved memory system, 
+	there are still two banks of DRAM but logically the system seems one bank of memory that is twice as large. </li>
+	<li>In the interleaved bank representation below with 2 memory banks, the first long word of bank 0 is floowed by that of bank 1, which is followed by the second long word of bank 0,
+	which is followed by the second long word of bank 1 and so on.</li>
+	<li>The following figure shows the organization of two physical banks of n long words. 
+	All even long words of logical bank are located in physical bank 0 and all odd long words are located in physical bank 1.</li>
+	</p>
+	<img src="interleave.jpg"/><br>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<Body>
+<p><h3>Q4.Explain DDA line drawing algorithm and write its advantages and disadvantages?</h3>
+<p><h4>Ans:<br></h4>
+Digital differential analyzer (DDA) is based on incremental method.<br>
+Steps for DDA algorithm are as follows <br>
+<ol type=”1”>
+<li>&nbspAccept two end points . Say (Xa,Ya) and (Xb,Yb)</li>
+<li>&nbspFind out horizontal and vertical difference between end points<br> Dx=Xb-Xa and Dy=Yb-Ya</li>
+<li>&nbspDifference between greater magnitude determines the value of parameter steps.</li>
+<li>&nbspDetermine the offset needed at each step.</li>
+<li>&nbsp If |Dx|> |Dy| and Xa <Xb , then the value of the increment in the x and y – direction are 1 and m respectively.</li>
+<li>&nbsp If |Dx|>|Dy| and Xa >Xb, then the decrement -1 and -m are used to generate new point .</li>
+<li>&nbsp similarly if |Dx|<|Dy| and Ya<Yb then the values of increments in x and y – direction are 1/m and 1 respectively.</li>
+<li>&nbsp Similarly if |Dx|<|Dy| and Ya>Yb ,then the values of increments in x and y- direction are -1/m and -1 .</li>
+</ol><br><br>
+<ul type=”circle ”>
+<li>&nbsp Advantages:-</li></ul><br>
+<ol type=”1”>
+<li>&nbspThe DDA algorithm is a faster method for calculating pixel positions than the direct use of line equation y=md+b</li>
+<li>&nbspIt is very easy to understand.</li>
+<li>&nbspIt requires no special skills for implementation</li></ol><br><br>
+
+<ul type=”circle ”>
+<li>&nbsp Disadvantages:-</li></ul><br>
+<ol type=”1”>
+<li>&nbspBecause of round off,errors are introduced and causes the calculated position to drift away from the true line path.</li>
+<li>&nbspBecause of floating point operations the algorithm is time-consuming.</li>
+</ol>
+</Body></html>
+
+
+

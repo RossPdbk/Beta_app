@@ -1,0 +1,23 @@
+<!doctype html> 
+<html>
+<body>
+<p><h3>Q10. Write a note on all pair shortest path algorithm.</h3></p>
+<hr>
+<p>
+<ul>
+<li>Also famously known as Floyd–Warshall algorithm.<br></li>
+<li>We are given a weighted graph consisting of negative and positive weights but not cycles.<br></li>
+<li>The problem is to find shortest distances between every pair of vertices in a given edge weighted directed Graph.<br></li>
+</ul>
+</p>
+<p>
+<b>For Example:</b><br><br>
+<img src="floyd.jpg" width="200px"  height="150px"  /><br><br>
+<img src="eg.jpg" width="350px"  height="300px"  /><br><br>
+<ul>
+<li>With adjacency matrix representation, Floyd's algorithm has a worst case complexity of O(n3) where n is the number of vertices.</li><br>
+<li>If Dijkstra's algorithm is used for the same purpose, then with an adjacency list representation, the worst case complexity will be O(nelog n).</li><br> 
+<li>Thus if e is O(n<sup>2</sup>), then the complexity will be O(n<sup>3</sup>log n) while if e is O(n), then the complexity is O(n<sup>2</sup>log n).</li><br>
+</ul>
+</body>
+</html>

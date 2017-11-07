@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>COA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h4>Draw the flow chart for Restoring division algorithm.show the division of 1100/0011. </h4>
+	<p>
+		<b>The flow chart for Restoring division algorithm:</b><br>
+			<img src="restore.jpg"/><br>
+		<b>Numerical :</b>	<br>
+		Dividend Q = 1100 ( n=4 bits) <br>
+		Divisor M = 00011 (n=1=5 bits are required)<br>
+	</p>
+	<table>
+		<tr><th>C</th>
+			<th>AC</th>
+			<th>Q<br>Q<small>3</small>,Q<small>2</small>,Q<small>1</small>,Q<small>0</small></th>
+			<th>Operation</th>
+		</tr>
+		<tr><td>0</td>
+			<td>0000</td>
+			<td>1110</td> 
+			<td>Initial</td>
+		</tr>
+		<tr><td>0<br><b>1</b><br>0</td>
+			<td>0001<br>1110<br>0001</td>
+			<td>100<b>_</b><br>100<b>0</b><br>100<b>0</b></td>
+			<td>shift left <br> AC=AC-M<br> Restore</td>
+		</tr>
+		<tr><td>0<br><b>0</b></td>
+			<td>0011<br>0000</td>
+			<td>000<b>_</b><br>000<b>1</b></td>
+			<td>shift left <br> AC=AC-M</td>
+		</tr>
+		<tr><td>0<br><b>1</b><br>0</td>
+			<td>0000<br>1101<br>0000</td>
+			<td>001<b>_</b><br>001<b>0</b><br>001<b>0</b></td>
+			<td>shift left <br> AC=AC-M<br> Restore</td>
+		</tr>
+		<tr><td>0<br><b>1</b><br>0</td>
+			<td>0000<br>1101<br>0000<br> Remainder</td>
+			<td>010<b>_</b><br>010<b>0</b><br>010<b>0</b><br>Quotient</td>
+			<td>shift left <br> AC=AC-M<br> Restore</td>
+		</tr>
+		
+		</table>
+		<b>
+		result:<br>Remainder=0000<br>
+		Quotient=0100=4</b>
+		
+	</body>
+	</html>

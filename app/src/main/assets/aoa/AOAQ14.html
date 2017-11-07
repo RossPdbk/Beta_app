@@ -1,0 +1,19 @@
+<!doctype html> 
+<html>
+<body>
+<p><h3>Q14.  Write an algorithm of sum of subsets.</h3></p>
+<hr>
+<p>
+<b>Algorithm:</b><br>
+Let, S is a set of elements and m is the expected sum of subsets. Then:
+<ol type="number">
+<li>Start with an empty set.</li><br>
+<li>Add to the subset, the next element from the list.</li><br>
+<li>If the subset is having sum m then stop with that subset as solution.</li><br>
+<li>If the subset is not feasible or if we have reached the end of the set then backtrack through the subset until we find the most suitable value.</li><br>
+<li>If the subset is feasible then repeat step 2.</li><br>
+<li>If we have visited all the elements without finding a suitable subset and if no backtracking is possible then stop without solution.</li><br>
+</ol>
+</p>
+</body>
+</html>

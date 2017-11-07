@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+	  <p><h3>Q6.Explain Back surface detection?</h3>
+	  <p><h4> Ans:</h4><br>
+	  <ul type="circle">
+	 <li> Object surfaces that are oriented away from viewer are called as back surfaces or faces.<br>the back surfaces of cube are completely blocked by the cube itself
+	  and hiddenfrom viewer.<br>Therefore,we can identify and remove these back surfaces.We know that equation of plane is given by,<br>
+	  <br><b>Ax+By+Cz+D=0</b>                                   (1)<br></li><br>
+	  <li>In object space method,the identification of back surfaces is based on above equation.From above equation,<br>
+	  we can say,if a point (X,Y,Z) satisfies the equation then the point (X,Y,Z)is lying on the plane.But,<br><br>
+	  if <b>Ax+By+Cz+D < 0</b>                                     (2)<br><br>
+	  It means (X,Y,Z) lies on negative side.<br>
+	  And if<br><br><b> Ax+By+Cz+d > 0</b>                                    (3)<br><br>It means (X,Y,Z) lies on positive side.
+	  </li>
+	  <li>If we consider any point (X,Y,Z) as viewing point,then any plane which satisfies the equation (2) must be back face.<br>After finalizing back sarface we have to remove it.</li>
+	  <li>Let <b> N = (A,B,C)</b> be the normal vector.In right handed system with viewing direction along the negative Z-axix,the polugon is back face if C<0
+	  <img src="q16.jpg"></li>
+	  <li>Also we cannot see any surface whose normal has z component C=0.<br>Thus we can say any polygon is classified as a back surface when its normalnvector is negative
+	  </li></ul>
+	  
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+
+
+
+</html>

@@ -1,0 +1,70 @@
+<!doctype html> 
+<html>
+<body>
+<p><h3>Q8. Optimal storage on tapes.</h3></p>
+<hr>
+<p>We are given ‘n’ problem that are to be stored on computer tape of length 'l'. For each program i, l<sub>i</sub> is length
+and 1<i<n. All the programs can be stored on the tape if and only if the total length of all the programs is less than the 
+tape size (i.e. l).<br>
+Here we have to find the correct order of programs to be stored on the tapes so as to minimize the mean retrival time(MRT).<br>
+Minimizing MRT is equivalent to minimize d(I).<br>
+</p>
+<p>Example:<br><br>
+Let n = 3, (l<sub>1</sub>, l<sub>2</sub>, l<sub>3</sub>) = (7, 12, 3). As n = 3, there are 3! =6 possible ordering.<br><br>
+All these orderings and their respective d value are given below:<br><br>
+d(I) = l<sub>1</sub> + (l<sub>1</sub>+l<sub>2</sub>) + (l<sub>1</sub>+l<sub>2</sub>+l<sub>3</sub>).<br><br> 
+<table border = "1" cellpadding="0px" cellspacing="0px">
+	<tr>
+		<td width="160px">Ordering I</td>
+		<td width="160px">d(I)</td>
+		<td width="160px">Value</td>
+	</tr>
+	<tr>
+		<td>1,2,3</td>
+		<td>7+(7+12)+(7+12+3)</td>
+		<td>48</td>
+	</tr>
+	<tr>
+		<td>1, 3, 2 </td>
+		<td>7+(7+3)+(7+3+12)</td>
+		<td>39</td>
+	</tr>
+	<tr>
+		<td>2, 1, 3 </td>
+		<td>12+(7+12)+(7+12+3)</td>
+		<td>53</td>
+	</tr>
+	<tr>
+		<td>2, 3, 1 </td>
+		<td>12+(12+3)+(12+3+7)</td>
+		<td>49</td>
+	</tr>
+	<tr>
+		<td>3, 1, 2 </td>
+		<td>3+(3+7)+(3+7+12)</td>
+		<td>35</td>
+	</tr>
+	<tr>
+		<td>3, 2, 1</td>
+		<td>3+(3+12)+(3+12+7)</td>
+		<td>40</td>
+	</tr>
+</table>
+</p>
+<p><b>The optimal ordering is 3, 1, 2.</b><br>
+The greedy method is now applied to solve this problem.
+It requires that the programs are stored in non-decreasing order which can be done in O (nlogn) time.
+<br><br>
+<b>Greedy solution:</b><br><br>
+i. Make tape empty<br><br>
+ii. Fori = 1 to n do;<br><br>
+iii. Grab the next shortest path<br><br>
+iv. Put it on next tape.<br><br>
+
+The algorithm takes the best shortest term choice without checking to see whether it is a big long term decision.
+</p>
+<b>Algorithm:<b>
+<br>
+<img src="algo.jpg" width="400px"  height="200px" />
+</body>
+</html>

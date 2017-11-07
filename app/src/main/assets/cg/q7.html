@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <body>
+	  <p><h3>Q7.Explain Bresenham line drawing algorithm?</h3>
+	  <p><h4> Ans:</h4><br>
+	     <ol type="1">
+	       <li> Bresenham’s Algorithm was developed by J. E. Bresenham in 1962.</li>
+           <li>It is much accurate and much more efficient than DDA.</li>
+           <li>It scans the coordinates but instead of rounding them off it takes the incremental value in account by adding or subtracting and therefore can be used for drawing circle and curves.</li>
+           <li>Therefore if a line is to be drawn between two points x and y then next coordinates will be<br>
+                (xa+1,ya)  and  (xa+1,ya+1)(xa+1,ya)  and  (xa+1,ya+1)<li>
+           <li>Where ‘a’ is the incremental value of the next coordinates and difference between these two will be calculated by subtracting or adding the equations formed by them.</li>
+         </ol><br>	
+<b><u>Basic Algorithm</u></b><br> 
+         <ol type="1">
+		 <img src="q7.png">
+		<li> Considering the figure 1, from start point we have to decide A or B.</li>
+
+<li> For a given value of x as shown in figure 2<br>
+
+one pixel lies at distance titi above the line, and<br>
+
+one pixel lies at distance sisi below the line</li>
+
+<li> Using Decision parameter formula find out the closest pixel.</li>
+
+<li> Decision parameter Formula: di=(si−ti)di=(si−ti)<br>
+If didi 0, then closest pixel is below true line (sisi smaller).<br>
+
+If di≥0di≥0, then closest pixel is above true line (titi smaller).</li>
+
+<li> We must calculate the new values for didi as we move along the line.</li>
+
+
+
+
+
+		 </ol>
+	
+	
+
+	
+	
+	</body>
+
+
+
+
+
+</html>

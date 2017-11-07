@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>COA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h4>Explain six stage Instruction pipeline with suitable diagram.</h4>
+	<p>
+	<ol>
+	<li>Instruction pipelining is a technique for implementing instruction-level parallelism within a single processor.</li>
+	<li>The more are the stages in the pipeline, the more the throughput is of the CPU.</li>
+	<li>An instruction execution can be broken up into 6 stages </li>
+	<ul>
+	<li><b>Fetch instruction:(FI)</b> Instructions are fetched from the memory into a temporary buffer before it gets executed.</li>
+	<li><b>Decode instruction:(DI)</b> The instruction is decoded by the CPU so that the necessary op codes and operands can be determined.</li>
+	<li><b>Calculate operand: CO)</b>Based on the addressing scheme used, either operands are directly provided in the instruction or the effective address has to be calculated.</li>
+	<li><b>Fetch Operand: (FO)</b> Once the address is calculated, the operands need to be fetched from the address that was calculated. This is done in this phase.</li>	
+	<li><b>Execute Instruction: (EI) </b>The instruction can now be executed.</li>
+	<li><b>Write operand: (WO)</b> Once the instruction is executed, the result from the execution needs to be stored or written back in the memory.</li>
+	</ul>
+	<li>consider various stage have almost equal duration of execution</li>
+	<li>Effect of conditional branch on instruction pipeline is shown below : </li>
+	</ol>
+	<img src="ipipe.jpg"/><br>
+	<b>Timing daigram for instruction pipeline operation</b>
+ 	</p>
+</body>
+</html>

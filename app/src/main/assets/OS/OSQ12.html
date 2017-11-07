@@ -1,0 +1,23 @@
+<html>
+	<body>
+	
+	<h3>Q. Explain role of Process Control Block.</h3><hr>
+	
+	<b>Role of process control block : </b><br><br>
+	<ul>
+	<li>At any instance, a process will be having various information associated with it like identifier, state, priority, program counters, memory pointers, accounting information etc. Such information are stored in a data structure called as Process Control block (PCB).</li><br>
+	<li>It is an important tool that helps the OS support multiple processes and provide for multiprocessing.</li><br>
+	<li>It contains sufficient information such that if an interrupt occurs, the process can begin from the point where it left later as if nothing had happened.</li><br>
+	<li>The blocks are read and/or modified by every module in the OS including
+		<ol>
+		<li>Scheduling </li>
+		<li>Resource allocation</li>
+		<li>Interrupt processing </li>
+		<li>Performance monitoring and analysis</li>
+		</ol></li><br>
+	<li>It can be said that the process control block defines the state of OS.</li><br>
+	<li>However, there comes the issue of Security; a bug in a single routine say the interrupt handler could damage the PCB which in turn can make it difficult for OS to manage the affected process.</li><br>
+	<li>Changes made to the Process control block (like semantics or design changes) can affect various modules. </li><br>
+	</ul>
+	</body>
+</html>

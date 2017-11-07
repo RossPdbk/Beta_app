@@ -1,0 +1,50 @@
+<!doctype html> 
+<html>
+<body>
+<p><h3>Q9. Multistage Graphs </h3></p>
+<hr>
+<p>
+A multistage graph G = {V, E} is a directed graph in which the vertices are partitioned into k>=2 disjoint sets 
+Vi, 1 <= i <= k. Here V = set of vertices and E = set of Edges.<br>
+<ul><li>Also for each edge <u,v> in E, u belongs to Vi and v belongs to Vi+1, for 1 <= i <= k.</li>
+<li>The sets V1 and Vk have cardinality one.<br></li>
+<li>Let <b>'s'</b> and <b>'t'</b> be two vertices, such that s belongs to V1 and t belongs to Vk.<br></li>
+<li><b>'s'</b> is the source vertex and t is the sink vertex. <br></li>
+</ul>
+</p>
+<p>
+<img src="graph.jpg" width="400px"  height="200px" ><br>
+Here Source node and the next node is considered at every stage.<br><br>
+Minimum Spanning of Multistage graph using Dynamic Programming.<br><br>
+<b>1 -> 2</b><br><br>
+
+Source node S to next nodes A, F and C<br><br>
+d(S,A) = 1<br><br>
+d(S,F) = 2<br><br>
+d(S,C) = 5<br><br><br><br>
+<b>1 -> 2 -> 3</b><br><br>
+Source node S to next nodes B, G and E<br><br>
+d(S,B) = min{ 1 + d(A,B) ; 2 + d(F,B)}<br>
+		= min{ 1 + 4 ; 2 + 9}<br>
+		= min{ 5 ; 11} <br><br>
+ d(S,B) = 5<br>
+d(S,G) = min{ 1 + d(A,G) ; 2 + d(F,G)}<br>
+            = min{ 1 + 11 ; 2 + 5}<br>
+            = min{ 12 ; 7} <br>
+ d(S,G) = 7<br><br>
+d(S,E) = min{ 2 + d(F,E) ; 5 + d(C,E)}<br>
+            = min{ 1 + 16 ; 5 + 2}<br>
+            = min{ 17 ; 7} <br>
+ d(S,E) = 7<br><br><br><br>
+
+<b>1 -> 2 -> 3 -> 4</b><br><br>
+
+d(S,D) = min{ 5 + d(B,D) ; 7 + d(G,D) ; 7 + d(E,D)}<br>
+            = min{ 5 + 18 ; 7 + 13 ; 7 + 2}<br>
+            = min{ 23 ; 20 ; 9} <br>
+ d(S,D) = 9<br>
+<br><br>
+Hence minimum spanning path from S to D is<br> 
+   S -> C -> E -> D according to Backward Approach
+</body>
+</html>
