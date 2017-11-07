@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class AoaHome extends AppCompatActivity implements View.OnClickListener {
 
-    Button aoaTheory, aoaPractical, aoaMfaQ1, aoaMfaQ2, aoaMfaQ3, aoaMfaQ4, aoaMfaQ5, aoaMfaQ6, aoaMfaQ7;
+    Button aoaTheory, aoaPractical, aoaTheoryQ1, aoaMfaQ2, aoaMfaQ3, aoaMfaQ4, aoaMfaQ5, aoaMfaQ6, aoaMfaQ7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
         aoaTheory = (Button) findViewById(R.id.aoaTheory);
         aoaPractical = (Button) findViewById(R.id.aoaPractical);
 
-        aoaMfaQ1 = (Button) findViewById(R.id.aoaMfaQ1);
+        aoaTheoryQ1 = (Button) findViewById(R.id.aoaTheoryQ1);
         aoaMfaQ2 = (Button) findViewById(R.id.aoaMfaQ2);
         aoaMfaQ3 = (Button) findViewById(R.id.aoaMfaQ3);
         aoaMfaQ4 = (Button) findViewById(R.id.aoaMfaQ4);
@@ -30,7 +30,7 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
         aoaTheory.setOnClickListener(this);
         aoaPractical.setOnClickListener(this);
 
-        aoaMfaQ1.setOnClickListener(this);
+        aoaTheoryQ1.setOnClickListener(this);
         aoaMfaQ2.setOnClickListener(this);
         aoaMfaQ3.setOnClickListener(this);
         aoaMfaQ4.setOnClickListener(this);
@@ -52,7 +52,7 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
                     startActivity(intent1);
                     break;
 
-                case R.id.aoaMfaQ1:
+                case R.id.aoaTheoryQ1:
                     Intent intent2 = new Intent(this, webviewAnswer.class);
                     intent2.putExtra("Qid",id);
                     startActivity(intent2);

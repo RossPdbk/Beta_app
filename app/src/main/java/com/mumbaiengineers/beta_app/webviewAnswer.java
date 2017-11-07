@@ -17,7 +17,7 @@ WebView webviewAnswer;
         int value = mintent.getIntExtra("Qid",0);
         switch(value) {
             //AoA cases starts here
-            case R.id.aoaTheoryQ1:
+            case (R.id.aoaTheoryQ1):
                 webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
                 break;
             case R.id.aoaTheoryQ2 :
@@ -34,9 +34,9 @@ WebView webviewAnswer;
 
 
             //AOA MFA starts here
-            case R.id.aoaMfaQ1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
-                break;
+           // case R.id.aoaMfaQ1:
+            //    webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
+             //   break;
             case R.id.aoaMfaQ2 :
                 webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
                 break;
