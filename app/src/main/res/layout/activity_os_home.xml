@@ -81,13 +81,13 @@
 
                 <Button
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/osMfaQ1"
-                    android:text="OS">
+                    android:text=" What is deadlock? Explain necessary and sufficient condition for deadlock to occur.Explain deadlock avoidance, prevention and detection.">
                 </Button>
 
                 <Button
