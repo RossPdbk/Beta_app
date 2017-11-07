@@ -63,8 +63,22 @@ iv. Put it on next tape.<br><br>
 
 The algorithm takes the best shortest term choice without checking to see whether it is a big long term decision.
 </p>
+<p>
 <b>Algorithm:<b>
+<pre>
+<code><br>
+1.Algorithm(n,m)<br>
+2.//n is the number of programs and m is the number of tapes
+3.{	j=1; //next tape to store on
+4.	for i=1 to n
+5.	{
+6.	 write("append program",i,"to permutation for tape",j);
+7.	 j=(j+1)mod m;
+8.	}	
+9.}
+</code>
+</pre>
+</p>
 <br>
-<img src="algo.jpg" width="400px"  height="200px" />
 </body>
 </html>

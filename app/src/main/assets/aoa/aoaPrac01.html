@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<body >
+0/1Knapsack Algorithm
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#define MAX 7
+void knapsack(float x[],float w[],float p[],int n,int m,int in[])
+{
+	int i;
+	float weight,profit;
+	weight=0.0;
+	profit=0.0;
+	for(i=0;i&lt;n&amp;&amp;weight&lt;m;i++)
+    {
+		if(weight+w[in[i]]&lt;m)
+		{
+			x[in[i]]=1;
+			weight+=w[in[i]];
+		}
+		else
+		{
+			x[in[i]]=((m-weight)/w[in[i]]);
+			weight+=x[in[i]]*w[in[i]];
+		}
+		profit+=x[in[i]]*p[in[i]];
+	}
+}
+void main()
+{
+	int n,i,j,m,t,in[MAX]={0};
+	float ratio[MAX]={0.00},x[MAX]={0.00},p[MAX],w[MAX],temp;
+	clrscr();
+	printf("\nEnter no. of objects:");
+	scanf("%d",&amp;n);
+	printf("\nEnter weight &amp; profit of each object.");;
+	for(i=0;i&lt;n;i++)
+	{
+		printf("\nobject-%d\nweight[%d]=",i+1,i+1);
+		scanf("%f",&amp;w[i]);
+		printf("Profit[%d]=",i+1);
+		scanf("%f",&amp;p[i]);
+    }
+	printf("\nEnter capacity of knapsack:");
+	scanf("%d",&amp;m);
+	for(i=0;i&lt;n;i++)
+	{
+		ratio[i]=p[i]/w[i];
+		in[i]=i;
+    }
+	for(i=0;i&lt;n;i++)
+	{
+		for(j=i+1;j&lt;n;j++)
+		{
+			if(ratio[i]&lt;ratio[j])
+			{
+				temp=ratio[i];
+				ratio[i]=ratio[j];
+				ratio[j]=temp;
+				t=in[i];
+				in[i]=in[j];
+				in[j]=t;
+			}
+		}
+    }
+	knapsack(x,w,p,n,m,in);
+	printf("\nFraction of objects for maximum profit :(");
+	for(i=0;i&lt;n;i++)
+    {
+		printf("%.2f,",x[i]);
+    }
+	printf(")");
+	getch();
+}
+
+<b>OUTPUT:</b>
+
+C:\Users\Shubham\Desktop>gcc -o knapsack knapsack.c
+
+C:\Users\Shubham\Desktop>knapsack
+
+Enter no. of objects:4
+
+Enter weight & profit of each object.
+object-1
+weight[1]=3
+Profit[1]=5
+
+object-2
+weight[2]=1
+Profit[2]=6
+
+object-3
+weight[3]=4
+Profit[3]=8
+
+object-4
+weight[4]=2
+Profit[4]=2
+
+Enter capacity of knapsack:6
+
+Fraction of objects for maximum profit :(0.33,1.00,1.00,0.00)
+</pre>
+</body>
+</html>

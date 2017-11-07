@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<body >
+Travelling Salesman Problem
+<pre >
+#include&lt;stdio.h&gt; 
+int a[10][10],visited[10],n,cost=0; 
+void get() 
+{ 
+    int i,j; 
+    printf("Enter No. of Cities: "); 
+    scanf("%d",&amp;n); 
+    printf("\nEnter Cost Matrix\n"); 
+    for( i=0;i &lt; n;i++) 
+    { 
+        printf("\nEnter Elements of Row # : %d\n",i+1); 
+        for( j=0;j &lt; n;j++) 
+            scanf("%d",&amp;a[i][j]); 
+        visited[i]=0; 
+    } 
+    printf("\n\nThe cost list is:\n\n"); 
+    for( i=0;i &lt; n;i++) 
+    { 
+        printf("\n\n"); 
+        for(j=0;j &lt; n;j++) 
+            printf("\t%d",a[i][j]); 
+    } 
+} 
+void mincost(int city) 
+{ 
+    int i,ncity; 
+    visited[city]=1;     
+    printf("%d --&gt;",city+1); 
+    ncity=least(city); 
+    if(ncity==999) 
+    { 
+        ncity=0; 
+        printf("%d",ncity+1); 
+        cost+=a[city][ncity]; 
+        return; 
+    } 
+    mincost(ncity); 
+} 
+int least(int c) 
+{ 
+    int i,nc=999; 
+    int min=999,kmin; 
+    for(i=0;i &lt; n;i++) 
+    { 
+        if((a[c][i]!=0)&amp;&amp;(visited[i]==0)) 
+            if(a[c][i] &lt; min) 
+            { 
+                min=a[i][0]+a[c][i]; 
+                kmin=a[c][i]; 
+                nc=i; 
+            } 
+    } 
+    if(min!=999) 
+        cost+=kmin; 
+    return nc; 
+} 
+void put() 
+{ 
+    printf("\n\nMinimum cost:"); 
+    printf("%d",cost); 
+} 
+void main() 
+{ 
+
+    get(); 
+    printf("\n\nThe Path is:\n\n"); 
+    mincost(0); 
+    put(); 
+
+}
+
+<b>OUTPUT:</b>
+
+guest-msHG1T@system-03:~/Desktop$ gcc tsp.c 
+
+guest-msHG1T@system-03:~/Desktop$ ./a.out 
+
+Enter No. of Cities: 4 
+
+Enter Cost Matrix 
+
+Enter Elements of Row # : 1 
+1 
+5 
+4 
+2 
+
+Enter Elements of Row # : 2 
+2 
+1 
+5 
+4 
+
+Enter Elements of Row # : 3 
+9 
+6 
+2 
+4 
+
+Enter Elements of Row # : 4 
+7 
+5 
+3 
+4 
+
+The cost list is: 
+
+	1	5	4	2 
+	2	1	5	4 
+	9	6	2	4 
+	7	5	3	4 
+
+The Path is: 
+1 -->4 -->3 -->2 -->1 
+</pre>
+</body>
+</html>
