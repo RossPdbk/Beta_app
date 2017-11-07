@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ1"
-            android:text="Q1">
+            android:text="Q1.Differentiate between Computer Architecture and Computer Organization.">
         </Button>
 
         <Button
@@ -45,7 +45,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ2"
             android:layout_below="@id/coaTheoryQ1"
-            android:text="Q2">
+            android:text="Q2.Write short note on PCI Bus.">
         </Button>
 
         <Button
@@ -53,7 +53,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ3"
             android:layout_below="@id/coaTheoryQ2"
-            android:text="Q3">
+            android:text="Q3.Differentiate between RISC and CISC.">
         </Button>
 
         <Button
@@ -61,7 +61,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ4"
             android:layout_below="@id/coaTheoryQ3"
-            android:text="Q4">
+            android:text="Q4.Show IEEE 754 standards for Binary Floating Point Representation for 32 bit single format and 64 bit double format.">
         </Button>
 
         <Button
@@ -69,21 +69,21 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ5"
             android:layout_below="@id/coaTheoryQ4"
-            android:text="Q5">
+            android:text="Q5.Express (127.125)10 in the IEEE single precision standard of floating point representation">
         </Button>
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ6"
             android:layout_below="@id/coaTheoryQ5"
-            android:text="Q6">
+            android:text="Q6.Explian Booth's algorithm. Draw flow chart.">
         </Button>
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ7"
             android:layout_below="@id/coaTheoryQ6"
-            android:text="Q7">
+            android:text="Q7.Draw the flow chart for Booth's Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5.">
         </Button>
 
         <Button
@@ -91,7 +91,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ8"
             android:layout_below="@id/coaTheoryQ7"
-            android:text="Q8">
+            android:text="Q8.Draw the flow chart for Restoring division algorithm.show the division of 1100/0011.">
         </Button>
 
         <Button
@@ -99,7 +99,7 @@
         android:layout_height="match_parent"
         android:id="@id/coaTheoryQ9"
         android:layout_below="@id/coaTheoryQ8"
-        android:text="Q9">
+        android:text="Q9.Explain Addressing modes.">
         </Button>
 
         <Button
@@ -107,7 +107,7 @@
         android:layout_height="match_parent"
         android:id="@id/coaTheoryQ10"
         android:layout_below="@id/coaTheoryQ9"
-        android:text="Q10">
+        android:text="Q10.Explain Hardwired Control unit.">
         </Button>
 
         <Button
@@ -115,7 +115,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ11"
             android:layout_below="@id/coaTheoryQ10"
-            android:text="Q11">
+            android:text="Q11.Explain in details Cache Coherency.">
         </Button>
 
         <Button
@@ -123,7 +123,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ12"
             android:layout_below="@id/coaTheoryQ11"
-            android:text="Q12">
+            android:text="Q12.Write short note on Inetrleaved Memory.">
         </Button>
 
         <Button
@@ -131,7 +131,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ13"
             android:layout_below="@id/coaTheoryQ12"
-            android:text="Q13">
+            android:text="Q13.Write short note on Associative Memory.">
         </Button>
 
         <Button
@@ -139,7 +139,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ14"
             android:layout_below="@id/coaTheoryQ13"
-            android:text="Q14">
+            android:text="Q14.Explain Virtual Memory.">
         </Button>
 
         <Button
@@ -147,7 +147,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ15"
             android:layout_below="@id/coaTheoryQ14"
-            android:text="Q15">
+            android:text="Q15.Explain paging.">
         </Button>
 
         <Button
@@ -155,7 +155,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ16"
             android:layout_below="@id/coaTheoryQ15"
-            android:text="Q16">
+            android:text="Q16 Explain Segmentation.">
         </Button>
 
         <Button
@@ -163,7 +163,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ17"
             android:layout_below="@id/coaTheoryQ16"
-            android:text="Q17">
+            android:text="Q17.Explain DMA based data transfer technique for I/O devices.also Explain Need of DMA.">
         </Button>
 
         <Button
@@ -171,7 +171,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ18"
             android:layout_below="@id/coaTheoryQ17"
-            android:text="Q18">
+            android:text="Q18.Explian flynn's classification.">
         </Button>
 
         <Button
@@ -179,7 +179,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ19"
             android:layout_below="@id/coaTheoryQ18"
-            android:text="Q19">
+            android:text="Q19. Explain six stage Instruction pipeline with suitable diagram.">
         </Button>
 
         <Button
@@ -187,7 +187,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ20"
             android:layout_below="@id/coaTheoryQ19"
-            android:text="Q20">
+            android:text="Q20.Explain different pipelining Hazards.">
         </Button>
 
         <Button
@@ -195,7 +195,7 @@
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ21"
             android:layout_below="@id/coaTheoryQ20"
-            android:text="Q21">
+            android:text="Q21.Write short note on Inetrleaved Memory.">
         </Button>
 
 
