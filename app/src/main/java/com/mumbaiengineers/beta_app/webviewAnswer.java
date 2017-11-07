@@ -78,17 +78,85 @@ WebView webviewAnswer;
 
             //COA cases srarts here
             case R.id.coaTheoryQ1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ1.html");
                 break;
             case R.id.coaTheoryQ2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ2.html");
                 break;
             case R.id.coaTheoryQ3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ3.html");
                 break;
             case R.id.coaTheoryQ4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ4.html");
                 break;
+            case R.id.coaTheoryQ5 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ5.html");
+                break;
+            case R.id.coaTheoryQ6 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ6.html");
+                break;
+
+            case R.id.coaTheoryQ7 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ7.html");
+                break;
+
+            case R.id.coaTheoryQ8 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ8.html");
+                break;
+
+            case R.id.coaTheoryQ9 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ9.html");
+                break;
+
+            case R.id.coaTheoryQ10 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ10.html");
+                break;
+
+            case R.id.coaTheoryQ11 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ11.html");
+                break;
+
+            case R.id.coaTheoryQ12 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ12.html");
+                break;
+
+            case R.id.coaTheoryQ13 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ13.html");
+                break;
+
+            case R.id.coaTheoryQ14:
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ14.html");
+                break;
+
+            case R.id.coaTheoryQ15:
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ15.html");
+                break;
+
+            case R.id.coaTheoryQ16 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ16.html");
+                break;
+
+            case R.id.coaTheoryQ17:
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ17.html");
+                break;
+
+            case R.id.coaTheoryQ18 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ18.html");
+                break;
+
+            case R.id.coaTheoryQ19:
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ19.html");
+                break;
+
+            case R.id.coaTheoryQ20 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ20.html");
+                break;
+
+            case R.id.coaTheoryQ21 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ21.html");
+                break;
+
+
             //CoA cases ends here
 
 

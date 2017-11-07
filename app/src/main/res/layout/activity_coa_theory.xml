@@ -190,6 +190,13 @@
             android:text="Q20">
         </Button>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ21"
+            android:layout_below="@id/coaTheoryQ20"
+            android:text="Q21">
+        </Button>
 
 
 
