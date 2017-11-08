@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mumbaiengineers.beta_app.coaHome">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer Organization and Architecture"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@android:color/black"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="60">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="12.5"
+            android:id="@id/coaTheory"
+            android:text="Theory"
+            android:textAllCaps="false">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="12.5"
+            android:id="@id/coaPractical"
+            android:text="Practical">
+        </Button>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Most frequently asked questions"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:id="@id/mfaTextCoa"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mfaTextCoa"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@id/coaMfaQ1"
+                    android:text="Show IEEE 754 standards for Binary Floating Point Representation for 32 bit single format and 64 bit double format."
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    >
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@id/coaMfaQ2"
+                    android:text="Draw the flow chart for Booth's Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5. "
+                    android:layout_below="@id/coaMfaQ1"
+                    android:textAllCaps="false"
+                    android:gravity="left">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@id/coaMfaQ3"
+                    android:layout_below="@id/coaMfaQ2"
+                    android:text="Differentiate between RISC and CISC."
+                    android:textAllCaps="false"
+                    android:gravity="left">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@id/coaMfaQ4"
+                    android:layout_below="@id/coaMfaQ3"
+                    android:text="Explian flynn's classification."
+                    android:textAllCaps="false"
+                    android:gravity="left">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@id/coaMfaQ5"
+                    android:layout_below="@id/coaMfaQ4"
+                    android:text="Explain different pipelining Hazards."
+                    android:textAllCaps="false"
+                    android:gravity="left">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@id/coaMfaQ6"
+                    android:layout_below="@id/coaMfaQ5"
+                    android:text="Explain paging."
+                    android:textAllCaps="false"
+                    android:gravity="left">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@id/coaMfaQ7"
+                    android:layout_below="@id/coaMfaQ6"
+                    android:text="Explain segmentation."
+                    android:textAllCaps="false"
+                    android:gravity="left">
+                </Button>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
