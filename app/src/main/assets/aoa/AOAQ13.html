@@ -1,61 +1,74 @@
 <!doctype html> 
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
+<div class="header">
 <p><h3>Q13. Write an algorithm to find minimum and maximum value using divide and conquer and also derive its complexity.</h3></p>
-<hr>
+</div>
+<div class="card">
 <p>Divide and Conquer Approach:<br><br>
 In this approach, the array is divided into two halves. 
 Then using recursive approach maximum and minimum numbers in each halves are found. <br><br>
 Later, return the maximum of two maxima of each half and the minimum of two minima of each half.<br>
 </p>
+</div>
+<div class="card">
 <p>
-<img src="aoaQ1301.jpg" width="400px" height="200px"/>
+<img src="aoaQ1301.jpg" width="100%" height="200px"/>
 </p>
-<p><b>Algorithm for  maximum and minimum using divide-and-conquer.</b><br>
-<ol type="number">MaxMin(i, j, max, min)
-<li>// a[1:n] is a global array. Parameters i and j are integers,   // 1≤i≤j≤n. </li>
-<li>The effect is to set max and min to the largest and  // smallest values in a[i:j].</li>
-<li>{</li>
-<li>     if (i=j) then max := min := a[i]; //Small(P)</li>
-     <li>else if (i=j-1) then // Another case of Small(P)</li>
-         <li> {</li>
-             <li>   if (a[i] < a[j]) then max := a[j]; min := a[i];</li>
-                <li>else max := a[i]; min := a[j];</li>
-          <li>}</li>
-     <li>else</li>
-     <li>{</li>
-         <li>  // if P is not small, divide P into sub-problems.</li>
-          <li> // Find where to split the set.</li>
-          <li> mid := ( i + j )/2;</li>
-           <li>// Solve the sub-problems.</li>
-          <li> MaxMin( i, mid, max, min );</li>
-           <li>MaxMin( mid+1, j, max1, min1 );</li>
-           <li>// Combine the solutions.</li>
-           <li>if (max < max1) then max := max1;</li>
-           <li>if (min > min1) then min := min1;</li>
-<li>}</li>
-<li>}</li>
-<ol>
-</p>
-<p>
-<b>Complexity:</b>
-<ul><li>If T(n) represents this number, then the resulting recurrence relation is</li><br>
-<li>T(n) =  0,n=1<br>
-T(n) =  1,n=2<br>
-T(n) = T(n/2) + T(n/2) + 2, n>2</li><br>
-<li>When n is a power of two, n = 2k, for some positive integer k, then<br>
-  T(n) = 2T(n/2) + 2<br>
-           = 2(2T(n/4) + 2) + 2<br>
-           = 4T(n/4) + 4 + 2<br>
-           .<br>
-           .<br>
-           .<br>
-           = 2k-1 T(2) + ∑(1≤i≤k-1) 2k<br>
-           = 2k-1 + 2k – 2<br>
-           = 3n/2 – 2 </li>
-		   = O(n)<br></li><br>
-<li>Note that 3n/2 – 2 is the best, average, worst case number of comparison when n is a power of two.</li>
-</ul>
-</p>
+</div>
+<div class="card">
+<p><b>Algorithm for  maximum and minimum using divide-and-conquer.</b></p>
+<div class="card_algo">
+<pre>	
+1. MaxMin(i, j, max, min)
+2.{
+3.   if (i=j) then max := min := a[i]; 
+4.   else if (i=j-1) then 
+5.	 {
+6.		if (a[i] < a[j]) 
+7.		  then max = a[j]; 
+8.			   min = a[i];
+9.		else 
+10.			max = a[i]; 
+11.			min = a[j];
+12.  }
+13.  else
+14.     {
+15.	   mid := ( i + j )/2;  
+16.       MaxMin( i, mid, max, min );
+17.       MaxMin( mid+1, j, max1, min1 );        
+18.       if (max < max1) then max := max1;
+19.       if (min > min1) then min := min1;
+20.	 }
+21. }
+</pre>
+</div>
+</div>
+<div class="card">
+    <p>
+        <b>Complexity:</b>
+        <ul>
+            <li>If T(n) represents this number, then the resulting recurrence relation is</li><br>
+            <li>T(n) =  0,n=1<br>
+                T(n) =  1,n=2<br>
+                T(n) = T(n/2) + T(n/2) + 2, n>2</li><br>
+            <li>When n is a power of two, n = 2k, for some positive integer k, then<br>
+                T(n) = 2T(n/2) + 2<br>
+                = 2(2T(n/4) + 2) + 2<br>
+                = 4T(n/4) + 4 + 2<br>
+                .<br>
+                .<br>
+                .<br>
+                = 2k-1 T(2) + ∑(1≤i≤k-1) 2k<br>
+                = 2k-1 + 2k – 2<br>
+                = 3n/2 – 2
+                = O(n)<br></li><br>
+            <li>Note that 3n/2 – 2 is the best, average, worst case number of comparison when n is a power of two.</li>
+        </ul>
+    </p>
+</div>
 </body>
 </html>

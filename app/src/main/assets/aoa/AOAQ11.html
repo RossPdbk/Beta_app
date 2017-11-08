@@ -1,27 +1,51 @@
 <!doctype html> 
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-<p><h3>Q11. Explain Graph coloring algorithm with backtracking.</h3></p>
-<hr>
-<p>
-<ul>
-<li>Backtracking is an algorithmic paradigm that tries different solutions until finds a solution that “works”. </li><br>
-<li>Problems which are typically solved using backtracking technique have following property in common. </li><br>
-<li>These problems can only be solved by trying every possible configuration and each configuration is tried only once.</li><br>
-<li>This algorithm is also called as <b>m Coloring Problem</b></li><br>
-<li>Here we are given an undirected graph and 'm' colors.</li><br>
-<li>We have to determine whether the graph can be colored using at the most 'm' colors such that no two adjacent nodes
-have same colors.</li><br>
-</ul>
-</p>
-<p>
-<img src="aoaQ1101.jpg" width="300px"></img><br><br>
-<b>Backtracking Algorithm</b><br>
-<ul>
-<li>The idea is to assign colors one by one to different vertices, starting from the vertex 0. </li><br>
-<li>Before assigning a color, we check for safety by considering already assigned colors to the adjacent vertices. </li><br>
-<li>If we find a color assignment which is safe, we mark the color assignment as part of solution.</li><br>
-<li>If we do not a find color due to clashes then we backtrack and return false.</li>
-</p>
+<div class="header">
+    <p><h3>Q11. Explain Graph coloring algorithm with backtracking.</h3></p>
+</div>
+<div class="card">
+    <p>
+        <ul>
+            <li>Backtracking is an algorithmic paradigm that tries different solutions until finds a solution that “works”. </li><br>
+            <li>Problems which are typically solved using backtracking technique have following property in common. </li><br>
+            <li>These problems can only be solved by trying every possible configuration and each configuration is tried only once.</li><br>
+            <li>This algorithm is also called as <b>m Coloring Problem</b></li><br>
+            <li>Here we are given an undirected graph and 'm' colors.</li><br>
+            <li>We have to determine whether the graph can be colored using at the most 'm' colors such that no two adjacent nodes
+            have same colors.</li><br>
+        </ul>
+    </p>
+</div>
+<div class="card">
+    <p>
+        <img src="aoaQ1101.jpg" width="100%" /><br><br>
+        <b>Backtracking Algorithm</b><br>
+        <ul>
+            <li>The idea is to assign colors one by one to different vertices, starting from the vertex 0. </li><br>
+            <li>Before assigning a color, we check for safety by considering already assigned colors to the adjacent vertices. </li><br>
+            <li>If we find a color assignment which is safe, we mark the color assignment as part of solution.</li><br>
+            <li>If we do not a find color due to clashes then we backtrack and return false.</li>
+        </ul>
+    </p>
+</div>
+<div class="card">
+<b>Algorithm:</b>
+<div class="card_algo">
+<pre>
+1. If all colors are assigned,
+2.	then print vertex assigned colors
+3. Else
+4. 	Trying all possible colors, assign a color to the vertex
+5. 	If color assignment is possible, 
+6.	  Then recursivelty assign colors to next vertices
+7. 	If color assignment is not possible, 
+8.	  Then de-assign color, return False
+</pre>
+</div>
+</div>
 </body>
 </html>

@@ -24,3 +24,9 @@ body{
 .card ul{
     padding:1px 10px 1px 18px;
 }
+.card ol{
+    padding:1px 10px 1px 18px;
+}
+.card_algo{
+   	overflow:auto;
+}

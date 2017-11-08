@@ -1,30 +1,47 @@
 <!doctype html> 
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-<p><h3>Q12. Explain N-Queen problem using backtracking with algorithm.</h3></p>
-<hr>
-<ul>
-<li>The n-queens problem consists in placing n non-attacking queens on an n-by-n chess board. </li><br>
-<li>A queen can attack another queen vertically, horizontally, or diagonally. </li><br>
-<li>E.g. placing a queen on a central square of the board blocks the row and column where it is placed, as well as the two diagonals (rising and falling) at whose intersection the queen was placed.</li><br>
-<li>The algorithm to solve this problem uses backtracking, but we will unroll the recursion.</li><br> 
-<li>The basic idea is to place queens column by column, starting at the left. New queens must not be attacked by the ones to the left that have already been placed on the board. 
-We place another queen in the next column if a consistent position is found. </li><br>
-<li>All rows in the current column are checked. We have found a solution if we placed a queen in the rightmost column.</li><br>
-</ul>
-<p>
-<img src="aoaQ1201.jpg"  /></li><br>
-<b>Algo­rithm:</b>
-<ol type="number">
-<li>Place the queens col­umn wise, start from the left most column.</li><br>
-<li>If all queens are placed return true and print the solu­tion matrix.</li><br>
-<li>Else
-Try all the rows in the cur­rent column.</li><br>
-<li>Check if queen can be placed here safely if yes mark the cur­rent cell in solu­tion matrix as 1 and try to solve the rest of the prob­lem recursively.</li><br>
-<li>If plac­ing the queen in above step leads to the solu­tion return true.</li><br>
-<li>If plac­ing the queen in above step does not lead to the solu­tion , BACKTRACK, mark the cur­rent cell in solu­tion matrix as 0 and return false.</li><br>
-<li>If all the rows are tried and noth­ing worked, return false and print NO SOLUTION.</li><br>
-</ol>
-</p>
+<div class="header">
+    <p><h3>Q12. Explain N-Queen problem using backtracking with algorithm.</h3></p>
+</div>
+<div class="card">
+    <p>
+        <ul>
+            <li>The n-queens problem consists in placing n non-attacking queens on an n-by-n chess board. </li><br>
+            <li>A queen can attack another queen vertically, horizontally, or diagonally. </li><br>
+            <li>E.g. placing a queen on a central square of the board blocks the row and column where it is placed,
+                as well as the two diagonals (rising and falling) at whose intersection the queen was placed.</li><br>
+            <li>The algorithm to solve this problem uses backtracking, but we will unroll the recursion.</li><br>
+            <li>The basic idea is to place queens column by column, starting at the left.
+                New queens must not be attacked by the ones to the left that have already been placed on the board.
+                We place another queen in the next column if a consistent position is found. </li><br>
+            <li>All rows in the current column are checked. We have found a solution if we placed a queen in the rightmost column.</li>
+        </ul>
+    </p>
+</div>
+<div class="card">
+    <p>
+    <img src="aoaQ1201.jpg"  /><br>
+    </p>
+</div>
+<div class="card">
+    <p>
+        <b>Algo­rithm:</b>
+    </p>
+        <ol type="number">
+            <li>Place the queens col­umn wise, start from the left most column.</li><br>
+            <li>If all queens are placed return true and print the solu­tion matrix.</li><br>
+            <li>Else, Try all the rows in the cur­rent column.</li><br>
+            <li>Check if queen can be placed here safely if yes mark the cur­rent cell in solu­tion matrix as 1 and try to solve
+                the rest of the prob­lem recursively.</li><br>
+            <li>If plac­ing the queen in above step leads to the solu­tion return true.</li><br>
+            <li>If plac­ing the queen in above step does not lead to the solu­tion , BACKTRACK, mark the cur­rent cell in
+                solu­tion matrix as 0 and return false.</li><br>
+            <li>If all the rows are tried and noth­ing worked, return false and print NO SOLUTION.</li>
+        </ol>
+</div>
 </body>
 </html>
