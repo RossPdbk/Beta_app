@@ -18,13 +18,13 @@ public class coaHome extends AppCompatActivity implements View.OnClickListener {
         coaTheory = (Button) findViewById(R.id.coaTheory);
         coaPractical = (Button) findViewById(R.id.coaPractical);
 
-        coaMfaQ1 = (Button) findViewById(R.id.coaMfaQ1);
-        coaMfaQ2 = (Button) findViewById(R.id.coaMfaQ2);
-        coaMfaQ3 = (Button) findViewById(R.id.coaMfaQ3);
-        coaMfaQ4 = (Button) findViewById(R.id.coaMfaQ4);
-        coaMfaQ5 = (Button) findViewById(R.id.coaMfaQ5);
-        coaMfaQ6 = (Button) findViewById(R.id.coaMfaQ6);
-        coaMfaQ7 = (Button) findViewById(R.id.coaMfaQ7);
+        coaMfaQ1 = (Button) findViewById(R.id.coaTheoryQ1);
+        coaMfaQ2 = (Button) findViewById(R.id.coaTheoryQ2);
+        coaMfaQ3 = (Button) findViewById(R.id.coaTheoryQ3);
+        coaMfaQ4 = (Button) findViewById(R.id.coaTheoryQ4);
+        coaMfaQ5 = (Button) findViewById(R.id.coaTheoryQ5);
+        coaMfaQ6 = (Button) findViewById(R.id.coaTheoryQ6);
+        coaMfaQ7 = (Button) findViewById(R.id.coaTheoryQ7);
 
         coaTheory.setOnClickListener(this);
         coaPractical.setOnClickListener(this);
@@ -51,43 +51,43 @@ public class coaHome extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent1);
                 break;
 
-            case R.id.coaMfaQ1:
+            case R.id.coaTheoryQ1:
                 Intent intent2 = new Intent(this, webviewAnswer.class);
                 intent2.putExtra("Qid",id);
                 startActivity(intent2);
                 break;
 
-            case R.id.coaMfaQ2:
+            case R.id.coaTheoryQ2:
                 Intent intent3 = new Intent(this, webviewAnswer.class);
                 intent3.putExtra("Qid",id);
                 startActivity(intent3);
                 break;
 
-            case R.id.coaMfaQ3:
+            case R.id.coaTheoryQ3:
                 Intent intent4 = new Intent(this, webviewAnswer.class);
                 intent4.putExtra("Qid",id);
                 startActivity(intent4);
                 break;
 
-            case R.id.coaMfaQ4:
+            case R.id.coaTheoryQ4:
                 Intent intent5 = new Intent(this, webviewAnswer.class);
                 intent5.putExtra("Qid",id);
                 startActivity(intent5);
                 break;
 
-            case R.id.coaMfaQ5:
+            case R.id.coaTheoryQ5:
                 Intent intent6 = new Intent(this, webviewAnswer.class);
                 intent6.putExtra("Qid",id);
                 startActivity(intent6);
                 break;
 
-            case R.id.coaMfaQ6:
+            case R.id.coaTheoryQ6:
                 Intent intent7 = new Intent(this, webviewAnswer.class);
                 intent7.putExtra("Qid",id);
                 startActivity(intent7);
                 break;
 
-            case R.id.coaMfaQ7:
+            case R.id.coaTheoryQ7:
                 Intent intent8 = new Intent(this, webviewAnswer.class);
                 intent8.putExtra("Qid",id);
                 startActivity(intent8);
