@@ -4,36 +4,43 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<p><h3>Q7. Explain Naive string matching algorithm.</h3></p>
-<hr>
-<p>
-<ul><li>The naive algorithm finds all valid shifts using a loop that checks the condition 
-P[1 . . m] = T[s + 1 . . s + m] for each of the n - m + 1 possible values of s.</li><br>
-<li>
-<ol><b>NAIVE-STRING-MATCHER(T, P)</b><br><br>
-<li>n  length[T]</li>
-<li>m  length[P]</li>
-<li>for s  0 to n - m</li>
-<li>do if P[1 . . m] = T[s + 1 . . s + m]</li>
-<li>then print "Pattern occurs with shift" s</li><br>
-</ol>
-<img src="aoaQ1601.jpg" width="150px" /><br>
-<li>The operation of the naive string matcher for the pattern P = aab and the text T = acaabc. 
-We can imagine the pattern P as a "template" that we slide next to the text. Parts (a)-(d) show the four successive 
-alignments tried by the naive string matcher.<br> In each part, vertical lines connect corresponding regions found 
-to match (shown shaded), and a jagged line connects 
-the first mismatched character found, if any.<br> One occurrence of the pattern is found, at shift s = 2, shown in part (c).</li><br>
-<li>The naive string-matching procedure can be interpreted graphically as sliding a "template" containing the pattern over 
-the text, noting for which shifts all of the characters on the template equal the corresponding characters in the text.</li><br>
-<li>The for loop beginning on line 3 considers each possible shift explicitly. </li><br>
-<li>The test on line 4 determines whether the current shift is valid or not; this test involves an implicit loop to check 
-corresponding character positions until all positions match successfully or a mismatch is found. </li><br>
-<li>Line 5 prints out each valid shift s.</li><br>
-<li>As we shall see, NAIVE-STRING-MATCHER is not an optimal procedure for this problem. </li><br>
-<li>Indeed, we shall show an algorithm with a worst-case running time of O(n + m). </li><br>
-<li>The naive string-matcher is inefficient because information gained about the text for one value of s is totally ignored in considering other values of s. </li><br>
-<li>Such information can be very valuable, however. For example, if P = aaab and we find that s = 0 is valid, then none of the shifts 1, 2, or 3 are valid, since T[4] = b. </li><br>
-</ul>
-</p>
+<div class="header">
+    <p><h3>Q16. Explain Naive string matching algorithm.</h3></p>
+</div>
+<div class="card">
+        <ul>
+            <li>The naive algorithm finds all valid shifts using a loop that checks the condition P[1 . . m] = T[s + 1 . . s + m] for each of the n - m + 1 possible values of s.</li>
+        </ul>
+</div>
+<div class="card">
+<div class="card_algo">
+    <b>NAIVE-STRING-MATCHER(T, P)</b>
+<pre>
+1. n  length[T]
+2. m  length[P]
+3. for s  0 to n - m
+4. do if P[1 . . m] = T[s + 1 . . s + m]
+5. then print "Pattern occurs with shift" s<br>
+</pre>
+</div>
+</div>
+<div class="card">
+    <img src="aoaQ1601.jpg" width="150px" />
+</div>
+<div class="card">
+    <p>
+    <ul>
+        <li>The operation of the naive string matcher for the pattern P = aab and the text T = acaabc. We can imagine the pattern P as a "template" that we slide next to the text. Parts (a)-(d) show the four successive alignments tried by the naive string matcher.<br> In each part, vertical lines connect corresponding regions found to match (shown shaded), and a jagged line connects the first mismatched character found, if any.<br> One occurrence of the pattern is found, at shift s = 2, shown in part (c).</li><br>
+        <li>The naive string-matching procedure can be interpreted graphically as sliding a "template" containing the pattern over the text, noting for which shifts all of the characters on the template equal the corresponding characters in the text.</li><br>
+        <li>The for loop beginning on line 3 considers each possible shift explicitly. </li><br>
+        <li>The test on line 4 determines whether the current shift is valid or not; this test involves an implicit loop to check corresponding character positions until all positions match successfully or a mismatch is found. </li><br>
+        <li>Line 5 prints out each valid shift s.</li><br>
+        <li>As we shall see, NAIVE-STRING-MATCHER is not an optimal procedure for this problem. </li><br>
+        <li>Indeed, we shall show an algorithm with a worst-case running time of O(n + m). </li><br>
+        <li>The naive string-matcher is inefficient because information gained about the text for one value of s is totally ignored in considering other values of s. </li><br>
+        <li>Such information can be very valuable, however. For example, if P = aaab and we find that s = 0 is valid, then none of the shifts 1, 2, or 3 are valid, since T[4] = b. </li><br>
+    </ul>
+    </p>
+</div>
 </body>
 </html>
