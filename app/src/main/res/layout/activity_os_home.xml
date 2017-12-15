@@ -87,7 +87,7 @@
                     android:textAllCaps="false"
                     android:gravity="left"
                     android:id="@id/osMfaQ1"
-                    android:text=" What is deadlock? Explain necessary and sufficient condition for deadlock to occur.Explain deadlock avoidance, prevention and detection.">
+                    android:text="Q1. What is deadlock? Explain necessary and sufficient condition for deadlock to occur.Explain deadlock avoidance, prevention and detection.">
                 </Button>
 
                 <Button
