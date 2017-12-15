@@ -20,6 +20,7 @@ body{
 	margin:6px 0 6px 0;
 	background:white;
 	text-align:justify;
+	overflow:auto;
 }
 .card ul{
     padding:1px 10px 1px 18px;

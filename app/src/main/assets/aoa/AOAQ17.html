@@ -1,55 +1,68 @@
 <!doctype html> 
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
-<p><h3>Q17. Explain Rabin-Karp string matching algotithm.</h3></p>
-<hr>
-<p>
-<ul>
-<li>Rabin-Karp string searching algorithm calculates a numerical (hash) value for the pattern p,
-and for each m-character substring of text t.</li><br>
-<li>Then it compares the numerical values instead of comparing the actual symbols. </li><br>
-<li>If any match is found, it compares the pattern with the substring by naive approach. </li><br>
-<li>Otherwise it shifts to next substring of t to compare with p.</li><br>
-<li>We can compute the numerical (hash) values using Horner’s rule.</li><br>
-<li>Lets assume, <br>h0 = k<br>h1 = d(k − p [1].d<sup>m−1</sup>)+ (p [m + 1])</li><br>
-<li>Suppose, we have given a text t = [3, 1, 4, 1, 5, 2] and m = 5, q = 13;<br>
-t<sub>0</sub> = 31415<br>
-So t<sub>1</sub> = 10( 31415 - 10<sup>5−1</sup>.t[1] ) + t[5+1]<br>
-= 10( 31415 − 10<sup>4</sup>.3 ) + 2<br>
-= 10( 1415 ) + 2 = 14152</li><br>
-
-<li>Here p and substring t<sub>i</sub> may be too large to work with conveniently. The simple solution is,
-we can compute p and the t<sub>i</sub> modulo a suitable modulus q.</li><br>
-
-<li>So for each i,
-h<sub>i+1</sub> = (d ( h<sub>i</sub> − t[i + 1] .d<sup>m−1</sup> ) + t[ m + i + 1] ) mod q<br>
-The modulus q is typically chosen as a prime such that d.q fits within one computer word.</li><br>
-<b>Algorithm</b>
-<ol type="number">
-<li>Compute h<sub>p</sub> (for pattern p)</li>
-<li>Compute h<sub>t</sub> (for the first substring of t with m length)</li>
-<li>For i = 1 to n − m</li>
-<li>If h<sub>p</sub> = h<sub>t</sub></li>
-<li>Match t[i . . . .i + m] with p, if matched return 1</li>
-<li>Else</li>
-<li>h<sub>t</sub> = (d( h<sub>t</sub> − t[i + 1] .d<sup>m−1</sup>)+ t[m + i + 1]) mod q</li>
-<li>End</li></ol></li><br>
-
-<li>Suppose, t= 2359023141526739921 and p = 31415,</li><br>
-<li>Now, h<sub>p</sub> = 7 (31415 = 7 (mod 13)) substring beginning at position 7 = valid match</li><br>
+<div class="header">
+    <p><h3>Q17. Explain Rabin-Karp string matching algotithm.</h3></p>
+</div>
+<div class="card">
+    <p>
+    <ul>
+        <li>Rabin-Karp string searching algorithm calculates a numerical (hash) value for the pattern p, and for each m-character substring of text t.</li><br>
+        <li>Then it compares the numerical values instead of comparing the actual symbols. </li><br>
+        <li>If any match is found, it compares the pattern with the substring by naive approach. </li><br>
+        <li>Otherwise it shifts to next substring of t to compare with p.</li><br>
+        <li>We can compute the numerical (hash) values using Horner’s rule.</li><br>
+    </ul>
+</div>
+<div class="card">
+    <ul>
+    <li>Lets assume, <br>h0 = k<br>h1 = d(k − p [1].d<sup>m−1</sup>)+ (p [m + 1])</li><br>
+    <li>Suppose, we have given a text t = [3, 1, 4, 1, 5, 2] and m = 5, q = 13;<br>
+    t<sub>0</sub> = 31415<br>
+    So t<sub>1</sub> = 10( 31415 - 10<sup>5−1</sup>.t[1] ) + t[5+1]<br>
+    = 10( 31415 − 10<sup>4</sup>.3 ) + 2<br>
+    = 10( 1415 ) + 2 = 14152</li><br>
+    <li>Here p and substring t<sub>i</sub> may be too large to work with conveniently. The simple solution is, we can compute p and the t<sub>i</sub> modulo a suitable modulus q.</li><br>
+    <li>So for each i, h<sub>i+1</sub> = (d ( h<sub>i</sub> − t[i + 1] .d<sup>m−1</sup> ) + t[ m + i + 1] ) mod q</li><br>
+    <li>The modulus q is typically chosen as a prime such that d.q fits within one computer word.</li>
+    </ul>
+</div>
+<div class="card">
+    <b>Algorithm</b>
+    <div class="card_algo">
+<pre>
+1. Compute h<sub>p</sub> (for pattern p)
+2. Compute h<sub>t</sub> (for the first substring of t with m length)
+3. For i = 1 to n − m
+4. If h<sub>p</sub> = h<sub>t</sub>
+5. Match t[i . . . .i + m] with p, if matched return 1
+6. Else
+7. h<sub>t</sub> = (d( h<sub>t</sub> − t[i + 1] .d<sup>m−1</sup>)+ t[m + i + 1]) mod q
+8. End
+</pre>
+</div>
+</div>
+<div class="card">
+    <ul>
+    <li>Suppose, t= 2359023141526739921 and p = 31415,</li><br>
+    <li>Now, h<sub>p</sub> = 7 (31415 = 7 (mod 13)) substring beginning at position 7 = valid match</li><br>
+    <img src="aoaQ1701.JPG" width="400px" height="500" /><br>
+    </ul>
+</div>
+<div class="card">
+    <ul>
+    <li>A text string. A window of length 5 is shown shaded. The numerical value of the shaded number is computed modulo 13, yielding the value 7.</li><br>
+    <li>The same text string with values computed modulo 13 for each possible position of a length-5 window.</li><br>
+    <li>Assuming the pattern P = 31415, we look for windows whose value modulo 13 is 7, since 31415  7 (mod 13). Two such windows are found, shown shaded in the figure.</li><br>
+    <li>The first, beginning at text position 7, is indeed an occurrence of the pattern, while the second, beginning at text position 13, is a spurious hit.</li><br>
+    <li>Computing the value for a window in constant time, given the value for the previous window.<br>
+        The first window has value 31415.</li><br>
+    <li>Dropping the high-order digit 3, shifting left (multiplying by 10), and then adding in the low-order digit 2 gives us the new value 14152.</li><br>
+    <li>All computations are performed modulo 13, however, so the value for the first window is 7, and the value computed for the new window is 8.</li>
 </ul>
-</p>
-<img src="aoaQ1701.JPG" width="400px" /><br>
-<p>(a) A text string. A window of length 5 is shown shaded. 
-The numerical value of the shaded number is computed modulo 13, yielding the value 7. <br><br>
-(b) The same text string with values computed modulo 13 for each possible position of a length-5 window. 
-Assuming the pattern P = 31415, we look for windows whose value modulo 13 is 7, since 31415  7 (mod 13). 
-Two such windows are found, shown shaded in the figure. 
-The first, beginning at text position 7, is indeed an occurrence of the pattern, while the second, beginning at text position 13, is a spurious hit. <br><br>
-(c) Computing the value for a window in constant time, given the value for the previous window. 
-The first window has value 31415. 
-Dropping the high-order digit 3, shifting left (multiplying by 10), and then adding in the low-order digit 2 gives us the new value 14152. 
-All computations are performed modulo 13, however, so the value for the first window is 7, and the value computed for the new window is 8.
-</p>
+</div>
 </body>
 </html>
