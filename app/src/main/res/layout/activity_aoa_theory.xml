@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D5DED6"
     tools:context="com.mumbaiengineers.beta_app.aoaTheory"
     android:orientation="vertical">
 
@@ -14,7 +15,7 @@
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:layout_marginBottom="0dp">
+        android:layout_marginBottom="5dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,7 +29,6 @@
     </android.support.v7.widget.Toolbar>
 
     <ScrollView
-        android:background="#D5DED6"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
