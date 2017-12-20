@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
     <body>
+
+	<div class="header">
 	  <p><h3>Q6.Explain Aliasing and Antialiasing techniques?</h3>
+
+	</div>
+
+	<div class="card">
 	  <p><h4> Ans:</h4><br>
 	 <b><u> Aliasing:</u></b>
 	     <ul type="circle">
@@ -14,6 +24,9 @@
 <li>For example, a 256 × 256 image might be down-sampled to 128 × 128, 64 × 64, 32 × 32, 16 × 16, and so on.</li>
 <li>Then it is up to the renderer to select the correct mipmap to reduce aliasing artifacts at the scale of the rendered texture.</li></ul>
 	           <img src="q6_1st.png"><br>
+		</div>
+
+	    <div class="card">
 	 <b><u>Antialiasing:</u></b>
 <ul type="circle">
 <li>Antialiasing is a term for techniques that are designed to mitigate the effects of aliasing.
@@ -22,6 +35,9 @@
 <li>Here, for example, is a geometric line, shown on the left, along with two approximations of thatline made by coloring pixels. The lines are greatly magnified so that you can see the individualpixels.</li>
 <li>The line on the right is drawn using antialiasing, while the one in the middle is not:</li>
 	</ul><img src="q6.2nd.png"><br>
+			</div>
+
+	     <div class="card">
 	
 	 <b><u>Methods of Anti-aliasing:</u></b>
 
@@ -29,7 +45,6 @@ Basically, there are only three main methods of anti-aliasing:
 <ol type="1">
 <li>Super-sampling</li>
 <li>Multisampling</li>
-<li>Post-Processing</li>
 <li>Post-Processing</li>
 </ol>
 
@@ -41,7 +56,10 @@ Basically, there are only three main methods of anti-aliasing:
 <li>Sample the scene at n times the display resolution. For example, suppose the display resolution is 512 × 512. Sampling at three times the width and three times the height of the display resolution would yield 1536 × 1536 samples.</li>
 <li>The color of each pixel in the rendered image will be an average of several samples. For example, if sampling were performed at three times the width and three times the height of the display resolution, then a pixel's color would be an average of nine samples. A filter provides the weights used to compute the average.</li>
 	</ul>
+
+		 </div>
 	</body>
+
 
 
 
