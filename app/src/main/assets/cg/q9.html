@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html>
+
+   <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
     <body>
-	  <p><h3>Q9.Define window and viewport and derive window to viewport transformation?</h3>
-	  <p><h4> Ans:</h4><br>
+
+	   <div class="header">
+	  <p><h3>Q9.Define window and viewport and derive window to viewport transformation?</h3></div>
+
+	   <div class="card">
+	   <p><h4> Ans:</h4><br>
 	  <b><u>Window</u></b>
 	    <ul type="circle">
 		<li>A world-coordinate area selected for display is called a window.</li>
@@ -11,13 +19,17 @@
         <li>A window defines a rectangular area in world coordinates. You define a window with a GWINDOW statement. You can define the window to be larger than, the same size as, or smaller than the actual range of data values, depending on whether you want to show all of the data or only part of the data.</li>
 		
 		</ul>
+	   </div>
+
+	   <div class="card">
 	  <b><u>ViewPort</u></b>
 	  <ul type="circle">
 	  <li>An area on a display device to which a window is mapped is called a viewport.</li>
 <li>A viewport is a polygon viewing region in computer graphics. The viewport is an area expressed in rendering-device-specific coordinates, e.g. pixels for screen coordinates, in which the objects of interest are going to be rendered.</li>
 <li>A viewport defines in normalized coordinates a rectangular area on the display device where the image of the data appears. You define a viewport with the GPORT command. You can have your graph take up the entire display device or show it in only a portion, say the upper-right part.</li>
-		
-		
+	   </div>
+
+	   <div class="card">
 		</ul>
 	  <b><u>Window to Viewport transformation</u></b>
 	  <ul type="circle">
@@ -26,7 +38,9 @@
 <li>In particular, objects inside the world or clipping window are mapped to the viewport. The viewport is displayed in the interface window on the screen.</li>
 <li>In other words, the clipping window is used to select the part of the scene that is to be displayed. The viewport then positions the scene on the output device.</li>
 		
-		</ul>
+		</ul></div>
+
+	   <div class="card">
 	  <b><u>Step 1</u></b>
 	  <ul type="circle">
 	  
@@ -44,7 +58,9 @@
 	  
 	  <li> Now perform another translation to move the viewport to its correct position on the screen.
 	   </li></ul><br>
-	   
+	   </div>
+
+	   <div class="card">
 	   <ul>
 	      <b><u>Scaling Factor</u></b>
 		  <img src="q9 scaling.png">
@@ -66,8 +82,8 @@
          Ty = Ywmax.Yvmin-Ywmin.Yvmax/Ywmaz-Ywmin	
 	</li>
 	</ul>
-	
-	
+
+		   </div>
 	
 	</body>
 

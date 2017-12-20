@@ -17,13 +17,13 @@ public class cgHome extends AppCompatActivity implements View.OnClickListener {
         cgTheory = (Button) findViewById(R.id.cgTheory);
         cgPractical = (Button) findViewById(R.id.cgPractical);
 
-        cgMfaQ1 = (Button) findViewById(R.id.cgMfaQ1);
-        cgMfaQ2 = (Button) findViewById(R.id.cgMfaQ2);
-        cgMfaQ3 = (Button) findViewById(R.id.cgMfaQ3);
-        cgMfaQ4 = (Button) findViewById(R.id.cgMfaQ4);
-        cgMfaQ5 = (Button) findViewById(R.id.cgMfaQ5);
-        cgMfaQ6 = (Button) findViewById(R.id.cgMfaQ6);
-        cgMfaQ7 = (Button) findViewById(R.id.cgMfaQ7);
+        cgMfaQ1 = (Button) findViewById(R.id.cgTheoryQ1);
+        cgMfaQ2 = (Button) findViewById(R.id.cgTheoryQ5);
+        cgMfaQ3 = (Button) findViewById(R.id.cgTheoryQ10);
+        cgMfaQ4 = (Button) findViewById(R.id.cgTheoryQ9);
+        cgMfaQ5 = (Button) findViewById(R.id.cgTheoryQ8);
+        cgMfaQ6 = (Button) findViewById(R.id.cgTheoryQ16);
+        cgMfaQ7 = (Button) findViewById(R.id.cgTheoryQ11);
 
         cgTheory.setOnClickListener(this);
         cgPractical.setOnClickListener(this);
