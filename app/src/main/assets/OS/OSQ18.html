@@ -1,11 +1,16 @@
 <html>
-
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 	<body>
-	
-		<b>Q. Explain various I/O buffering methods.</b><hr>
-		
-		
-		1. Single buffer <br>
+
+	<div class="header">
+		<h4>Q18. Explain various I/O buffering methods.</h4>
+	</div>
+
+	<div class="card">
+		<br>
+		<b>1. Single buffer </b><br>
 		<ul>
 		<li>It is simple type Of approach supported by operating system. If devices are block-oriented then the input is first transferred in system buffer from where process moves this block in user space and immediately issues the request for another block.
 		<li>This is done to improve speed up so that next block will be available immediately as access made to the data usually in sequential manner.
@@ -13,21 +18,21 @@
 		</ul>
 		<img src="IO_buffering_1.jpg" width=95%> <br>
 		
-		2. Double Buffer 
+		<b>2. Double Buffer </b>
 		<ul>
 		<li> Instead of single buffer, in this scheme two system buffers are supported by operating system. User process now make transfer to and from one buffer and at the same time OS can empty or fill other buffer. It is improved technique over single buffer but complexity also increases. 
 		<li> In case of stream-oriented input, for line-at-a-time I/O, the user process need not to be suspended for input or output, unless the process runs ahead of the double buffers. For a byte-at-a-time operations,the double buffer offers no particular benefit over single buffer of twice length. 
 		</ul>
 		<img src="IO_buffering_2.jpg" width=95%> <br>
 		
-		3. Circular buffer
+		<b>3. Circular buffer</b>
 		<ul>
 		<li>If process carries out fast burst of I/O then double buffers are not enough. More than two buffers are needed. We can achieve performance of process with more than two buffers.
 		<li> Collection of more than two buffers is called circular buffer. 
 		</ul>
 		<img src="IO_buffering_3.jpg" width=95%>
-		<hr>
-	
+
+	</div>
 	</body>
 	
 </html>

@@ -1,9 +1,19 @@
 <html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 	<body>
-		<h3>Q. Explain various techniques for structuring page tables.</h3>
-		<hr>
-		<p>Following are various techniques for structuring page tables</p><br><br>
-		
+	<div class="header">
+		<h4>Q16. Explain various techniques for structuring page tables.</h4>
+	</div>
+
+
+
+
+	<div class="card">
+
+		<p>Following are various techniques for structuring page tables</p>
 		<b>1. Hierarchical/Multi-level paging </b><br><br>
 		
 		<ul>	
@@ -26,10 +36,12 @@
 			p2 --> displacement within the page of the outer page table<br> 
 			d --> page offset.</li><br> 
 			<li>This method is not considered appropriate for 64-bit architectures.</li><br> 
-			<li> The disadvantage of this is that increases that number of memory accesses. </li><br> 
+			<li> The disadvantage of this is that increases that number of memory accesses. </li>
 			
-		</ul>	
-			
+		</ul>
+	</div>
+
+	<div class="card">
 		<b>2. Inverted page table structure </b><br><br>
 		<img src="Structure_paging_4.jpg" width=100%><br><br>
 		
@@ -40,10 +52,12 @@
 			<li>An inverted page table has one entry for each real page(or frame) of memory.</li><br> 
 			<li>Each of the entry contains the virtual address of the page stored in the real memory location with information about the process that owns the page.</li><br> 
 			<li>Thus, there is only one page table in the system and for each page of physical memory it has only one entry.</li><br> 
-			<li>Although this scheme decreases the amount of memory needed to store each page table, the time taken to search in case of a page reference increases. </li><br> 
+			<li>Although this scheme decreases the amount of memory needed to store each page table, the time taken to search in case of a page reference increases. </li>
 
 		</ul>
- 
+ 	</div>
+
+	<div class="card">
 		<b>3. Hashed Page tables </b><br><br>
 		<img src="Structure_paging_3.jpg" width=100%><br>
 		
@@ -54,9 +68,8 @@
 			<li>Working: The virtual page number in the virtual address is hashed into the table.</li><br> 
 			<li> Now, this virtual page number is compared with field 1 of the first element of the linked list. </li><br> 
 			<li>If there is a match, the next page frame (field 2) is used to form the desired physical address. </li><br> 
-			<li>If the matching failed, then the next entries in the linked list are searched to find the matching pair.</li><br> 
-	
+			<li>If the matching failed, then the next entries in the linked list are searched to find the matching pair.</li>
 		</ul>
-		
+	</div>
 	</body>
 </html>

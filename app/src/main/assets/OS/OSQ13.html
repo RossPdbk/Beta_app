@@ -1,34 +1,46 @@
 <html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
 <body>
-<h3>Q. Explain process state transition in UNIX OS.</h3>
-<hr><br>
-<img src="Process_state_transition.jpg" width=100%> <br>
+    <div class="header">
+        <h4>Q13. Explain process state transition in UNIX OS.</h4>
+    </div>
 
-<p>The lifetime of a process can be divided into a set of states. The following list describe the complete set of process states. </p>
+    <div class="card">
+        <br>
+        <img src="Process_state_transition.jpg" width=100%> <br>
 
-<ol>
-    <li>The process is executing in user mode. </li><br>
+        <p>The lifetime of a process can be divided into a set of states. The following list describe the complete set of process states. </p>
 
-    <li>The process is executing is kernel mode. </li><br>
+        <ol>
+            <li>The process is executing in user mode. </li><br>
 
-    <li>The process is not executing but is ready to run as soon as the kernel schedules it. </li><br>
+            <li>The process is executing is kernel mode. </li><br>
 
-    <li>The process is sleeping and resides in main memory. </li><br>
+            <li>The process is not executing but is ready to run as soon as the kernel schedules it. </li><br>
 
-    <li>The process is ready to run, but the swapper must swap the process into main memory before the kernel can schedule it to execute. </li><br>
+            <li>The process is sleeping and resides in main memory. </li><br>
 
-    <li>The process is sleeping and the swapper has swapped the process to secondary storage to make room for other processes in main memory. </li><br>
+            <li>The process is ready to run, but the swapper must swap the process into main memory before the kernel can schedule it to execute. </li><br>
 
-    <li>The process is returning from the kernel to user mode,
-        but the kernel preempts it and does a context switch to schedule another process.
-        The distinction between this state and state 3 will be brought out shortly. </li><br>
+            <li>The process is sleeping and the swapper has swapped the process to secondary storage to make room for other processes in main memory. </li><br>
 
-    <li>The process is newly created and is in a transition state the process exists,
-        but it is not ready to run nor is it sleeping. This state is the start state for all processes except process 0. </li><br>
+            <li>The process is returning from the kernel to user mode,
+                but the kernel preempts it and does a context switch to schedule another process.
+                The distinction between this state and state 3 will be brought out shortly. </li><br>
 
-    <li>The process executed the exit system call and is in the zombie state.
-        The process no longer exists, but it leaves a record containing an exit code and some timing statistics for its parent process to collect.
-        The zombie state is the final state of a process.</li><br>
+            <li>The process is newly created and is in a transition state the process exists,
+                but it is not ready to run nor is it sleeping. This state is the start state for all processes except process 0. </li><br>
+
+            <li>The process executed the exit system call and is in the zombie state.
+                The process no longer exists, but it leaves a record containing an exit code and some timing statistics for its parent process to collect.
+                The zombie state is the final state of a process.</li>
+        </ol>
+    </div>
+
 
 
 </body>

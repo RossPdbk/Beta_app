@@ -80,88 +80,125 @@
                 android:layout_height="match_parent">
 
                 <Button
+                    android:id="@id/osMfaQ1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
                     android:textAllCaps="false"
-                    android:gravity="left"
-                    android:id="@id/osMfaQ1"
-                    android:text="Q1. What is deadlock? Explain necessary and sufficient condition for deadlock to occur.Explain deadlock avoidance, prevention and detection.">
-                </Button>
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
-                    android:gravity="left"
-                    android:id="@id/osMfaQ2"
-                    android:text="OS"
-                    android:layout_below="@id/osMfaQ1"
+                    android:background="@drawable/background"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:text="Q1. Explain Critical section problem."
                     >
+
                 </Button>
 
                 <Button
+                    android:id="@id/osMfaQ2"
+                    android:layout_below="@id/osMfaQ1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
                     android:textAllCaps="false"
-                    android:gravity="left"
-                    android:id="@id/osMfaQ3"
-                    android:layout_below="@id/osMfaQ2"
-                    android:text="OS">
-                </Button>
+                    android:background="@drawable/background"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:text="Q2. What are various services provided by OS?" ></Button>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
-                    android:gravity="left"
+                android:id="@id/osMfaQ3"
+                android:layout_below="@id/osMfaQ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textAlignment="textStart"
+                android:text="Q3.  What are different page replacement policies?"
+               >  </Button>
+
+                <Button
                     android:id="@id/osMfaQ4"
                     android:layout_below="@id/osMfaQ3"
-                    android:text="OS">
-                </Button>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:background="@drawable/background"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:text="Q4.  Explain Banker's algorithm in details."
+                    >
+                    </Button>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
-                    android:gravity="left"
                     android:id="@id/osMfaQ5"
                     android:layout_below="@id/osMfaQ4"
-                    android:text="OS">
-                </Button>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:background="@drawable/background"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:text="Q5.Explain Dining Philosopher problem and it's Solution."
+                    >
+            </Button>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
-                    android:gravity="left"
                     android:id="@id/osMfaQ6"
                     android:layout_below="@id/osMfaQ5"
-                    android:text="OS">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:background="@drawable/background"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:text="Q6. What is deadlock? Explain necessary and sufficient condition for deadlock to occur. Explain deadlock avoidance, prevention and detection.">
                 </Button>
 
                 <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
-                    android:gravity="left"
                     android:id="@id/osMfaQ7"
                     android:layout_below="@id/osMfaQ6"
-                    android:text="OS">
-                </Button>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:background="@drawable/background"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:padding="10dp"
+                    android:textColor="#000000"
+                    android:textAlignment="textStart"
+                    android:text="Explain Internal and External Fragmentation"></Button>
+
             </RelativeLayout>
         </ScrollView>
     </RelativeLayout>

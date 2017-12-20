@@ -1,11 +1,15 @@
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 	<body>
-	
-		<h3>Q. Explain Dining Philosopher problem and it's solution.</h3>
-		<hr>
-		
+	<div class="header">
+		<h4>Q10. Explain Dining Philosopher problem and it's solution.</h4>
+	</div>
+
+	<div class="card">
 		<p>The dining philosophers problem is another classic synchronization problem which is used to evaluate situations
-		where there is a need of allocating multiple resources to multiple processes.</p><br>
+		where there is a need of allocating multiple resources to multiple processes.</p>
 
 		<p><b>Problem Statement :</b><br>
 		Consider there are five philosophers sitting around a circular dining table.
@@ -15,9 +19,12 @@
  
 		<b>Dining Philosophers Problem </b><br>
 		<p>At any instant, a philosopher is either eating or thinking. When a philosopher wants to eat, he uses two chopsticks - one from their left and one from their right. When a philosopher wants to think, he keeps down both chopsticks at their original place. </p>
+	</div>
+
+	<div class="card">
 
 		<p><b>Solution : </b><br>
-		<p>From the problem statement, it is clear that a philosopher can think for an indefinite amount of time. But when a philosopher starts eating, he has to stop at some point of time. The philosopher is in an endless cycle of thinking and eating. An array of five semaphores, stick[5], for each of the five chopsticks.
+		<p>From the problem statement, it is clear that a philosopher can think for an indefinite amount of time. But when a philosopher starts eating, he has to stop at some point of time. The philosopher is in an endless cycle of thinking and eating. An array of five semaphores, stick[5], for each of the five chopsticks.<br>
 
 		<br>The code for each philosopher looks like : 
 		<blockquote>
@@ -39,6 +46,7 @@
 		<li>A philosopher must be allowed to pick up the chopsticks only if both the left and right chopsticks are available. </li>
 		<li>Allow only four philosophers to sit at the table. That way, if all the four philosophers pick up four chopsticks, there will be one chopstick left on the table. So, one philosopher can 
 			start eating and eventually, two chopsticks will be available. In this way, deadlocks can be avoided. </li>
-		
+		</ul>
+	</div>
 	</body>
 </html>
