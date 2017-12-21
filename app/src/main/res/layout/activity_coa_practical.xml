@@ -10,63 +10,47 @@
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#455A64"
-        android:elevation="4dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="7dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:layout_marginBottom="5dp">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="COA Practical"
+            android:text="COA - Practical"
             android:gravity="center"
-            android:textSize="25sp"
-            android:textColor="@android:color/black"/>
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
     </android.support.v7.widget.Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-
-        <Button
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaPracticalP1"
+            android:layout_height="wrap_content">
 
-            android:text="P1">
-        </Button>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaPracticalP2"
-            android:layout_below="@id/coaPracticalP1"
-            android:text="P2">
-        </Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaPracticalP1"
+                android:text="First program"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaPracticalP3"
-            android:layout_below="@id/coaPracticalP2"
-            android:text="P3">
-        </Button>
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaPracticalP4"
-            android:layout_below="@id/coaPracticalP3"
-            android:text="P4">
-        </Button>
-
-    </RelativeLayout>
+        </RelativeLayout>
     </ScrollView>
+
 </LinearLayout>

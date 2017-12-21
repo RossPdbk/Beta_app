@@ -10,330 +10,331 @@
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:elevation="4dp"
-        android:background="#455A64"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="7dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:layout_marginBottom="0dp">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="COA Theory"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="25dp"
-            android:textSize="18sp"
+            android:text="COA - Theory"
+            android:gravity="center"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@android:color/white"/>
+            android:textColor="@color/white"/>
 
     </android.support.v7.widget.Toolbar>
-
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="7dp">
 
-        <Button
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaTheoryQ1"
-            android:gravity="left"
-            android:textSize="16sp"
-            android:textAllCaps="false"
-            android:text="Q1.Differentiate between Computer Architecture and Computer Organization.">
-        </Button
->
 
-        <Button
-            android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaTheoryQ2"
-            android:layout_below="@id/coaTheoryQ1"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q2.Write short note on PCI Bus.">
-        </Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ1"
+                android:text="Q1.Differentiate between Computer Architecture and Computer Organization."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
 
-        <Button
-            android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaTheoryQ3"
-            android:layout_below="@id/coaTheoryQ2"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q3.Differentiate between RISC and CISC.">
-        </Button>
+            </TextView>
 
-        <Button
-            android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaTheoryQ4"
-            android:layout_below="@id/coaTheoryQ3"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q4.Show IEEE 754 standards for Binary Floating Point Representation for 32 bit single format and 64 bit double format.">
-        </Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ2"
+                android:layout_below="@id/coaTheoryQ1"
+                android:text="Q2.Write short note on PCI Bus."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
 
-        <Button
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaTheoryQ5"
-            android:layout_below="@id/coaTheoryQ4"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q5.Express (127.125)10 in the IEEE single precision standard of floating point representation">
-        </Button>
-        <Button
-            android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaTheoryQ6"
-            android:layout_below="@id/coaTheoryQ5"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q6.Explian Booth's algorithm. Draw flow chart.">
-        </Button>
-        <Button
-            android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/coaTheoryQ7"
-            android:layout_below="@id/coaTheoryQ6"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q7.Draw the flow chart for Booth's Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5.">
-        </Button>
+            </TextView>
 
-        <Button
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ3"
+                android:layout_below="@id/coaTheoryQ2"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q3.Differentiate between RISC and CISC.">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ4"
+                android:layout_below="@id/coaTheoryQ3"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q4.Show IEEE 754 standards for Binary Floating Point Representation for 32 bit single format and 64 bit double format.">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ5"
+                android:layout_below="@id/coaTheoryQ4"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q5.Express (127.125)10 in the IEEE single precision standard of floating point representation">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ6"
+                android:layout_below="@id/coaTheoryQ5"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q6.Explian Booth's algorithm. Draw flow chart.">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ7"
+                android:layout_below="@id/coaTheoryQ6"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q7.Draw the flow chart for Booths Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ8"
             android:layout_below="@id/coaTheoryQ7"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q8.Draw the flow chart for Restoring division algorithm.show the division of 1100/0011.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q8.Draw the flow chart for Restoring division algorithm.show the division of 1100/0011.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ9"
             android:layout_below="@id/coaTheoryQ8"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q9.Explain Addressing modes.">
-        </Button>
+        </TextView>
 
-        <Button
-            android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ10"
-            android:layout_below="@id/coaTheoryQ9"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q10.Explain Hardwired Control unit.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q10.Explain Hardwired Control unit."
+            android:layout_below="@id/coaTheoryQ9"
+            >
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ11"
             android:layout_below="@id/coaTheoryQ10"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q11.Explain in details Cache Coherency.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q11.Explain in details Cache Coherency.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ12"
             android:layout_below="@id/coaTheoryQ11"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q12.Write short note on Inetrleaved Memory.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:background="@android:color/white"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q12.Write short note on Inetrleaved Memory.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ13"
             android:layout_below="@id/coaTheoryQ12"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q13.Write short note on Associative Memory.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q13.Write short note on Associative Memory.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ14"
             android:layout_below="@id/coaTheoryQ13"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q14.Explain Virtual Memory.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q14.Explain Virtual Memory.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ15"
             android:layout_below="@id/coaTheoryQ14"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q15.Explain paging.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q15.Explain paging in details.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ16"
             android:layout_below="@id/coaTheoryQ15"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q16 Explain Segmentation.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q16 Explain Segmentation.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ17"
             android:layout_below="@id/coaTheoryQ16"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q17.Explain DMA based data transfer technique for I/O devices.also Explain Need of DMA.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q17.Explain DMA based data transfer technique for I/O devices.also Explain Need of DMA.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ18"
             android:layout_below="@id/coaTheoryQ17"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q18.Explian flynn's classification.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.Explian flynn's classification.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ19"
             android:layout_below="@id/coaTheoryQ18"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q19. Explain six stage Instruction pipeline with suitable diagram.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q19. Explain six stage Instruction pipeline with suitable diagram.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ20"
             android:layout_below="@id/coaTheoryQ19"
-            android:gravity="left"
-            android:textAllCaps="false"
-            android:text="Q20.Explain different pipelining Hazards.">
-        </Button>
-
-        <Button
+            android:background="@drawable/background"
             android:textSize="16sp"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q20.Explain different pipelining Hazards.">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ21"
             android:layout_below="@id/coaTheoryQ20"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q21.Write short note on Scanner">
-        </Button>
+        </TextView>
 
 
 
     </RelativeLayout>
-    </ScrollView>
+</ScrollView>
 
-</LinearLayout>
+    </LinearLayout>

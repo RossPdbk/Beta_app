@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class coaHome extends AppCompatActivity implements View.OnClickListener {
-    Button coaTheory, coaPractical, coaMfaQ1, coaMfaQ2, coaMfaQ3, coaMfaQ4, coaMfaQ5, coaMfaQ6, coaMfaQ7;
+    Button coaTheory, coaPractical;
+    TextView coaMfaQ1, coaMfaQ2, coaMfaQ3, coaMfaQ4, coaMfaQ5, coaMfaQ6, coaMfaQ7;
 
 
     @Override
@@ -18,13 +20,13 @@ public class coaHome extends AppCompatActivity implements View.OnClickListener {
         coaTheory = (Button) findViewById(R.id.coaTheory);
         coaPractical = (Button) findViewById(R.id.coaPractical);
 
-        coaMfaQ1 = (Button) findViewById(R.id.coaTheoryQ3);
-        coaMfaQ2 = (Button) findViewById(R.id.coaTheoryQ7);
-        coaMfaQ3 = (Button) findViewById(R.id.coaTheoryQ5);
-        coaMfaQ4 = (Button) findViewById(R.id.coaTheoryQ18);
-        coaMfaQ5 = (Button) findViewById(R.id.coaTheoryQ20);
-        coaMfaQ6 = (Button) findViewById(R.id.coaTheoryQ15);
-        coaMfaQ7 = (Button) findViewById(R.id.coaTheoryQ16);
+        coaMfaQ1 = (TextView) findViewById(R.id.coaTheoryQ3);
+        coaMfaQ2 = (TextView) findViewById(R.id.coaTheoryQ7);
+        coaMfaQ3 = (TextView) findViewById(R.id.coaTheoryQ5);
+        coaMfaQ4 = (TextView) findViewById(R.id.coaTheoryQ18);
+        coaMfaQ5 = (TextView) findViewById(R.id.coaTheoryQ20);
+        coaMfaQ6 = (TextView) findViewById(R.id.coaTheoryQ15);
+        coaMfaQ7 = (TextView) findViewById(R.id.coaTheoryQ16);
 
         coaTheory.setOnClickListener(this);
         coaPractical.setOnClickListener(this);

@@ -19,36 +19,44 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Computer Organization and Architecture"
+            android:text="Computer Organization &amp; Architecture"
             android:gravity="center"
-            android:textSize="19sp"
-            android:textColor="@android:color/black"/>
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
     </android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="60">
+        android:layout_weight="70">
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="4dp"
             android:layout_weight="12.5"
-            android:id="@id/coaTheory"
-            android:text="Theory"
-            android:textAllCaps="false">
+            android:background="@drawable/background"
+            android:id="@id/coaTheory">
 
         </Button>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="4dp"
             android:layout_weight="12.5"
             android:id="@id/coaPractical"
-            android:text="Practical">
+            android:background="@drawable/background">
         </Button>
 
     </LinearLayout>
@@ -57,7 +65,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="40"
+        android:elevation="1dp"
+        android:background="@drawable/mfaback"
+        android:layout_margin="5dp"
         android:orientation="vertical">
+
 
         <TextView
             android:id="@id/mfaTextCoa"
@@ -65,13 +77,13 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:layout_margin="5dp"
-            android:background="#455A64"
+            android:background="@color/colorPrimary"
             android:text="Most frequently asked questions"
             android:elevation="4dp"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -83,89 +95,106 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                <TextView
                     android:id="@id/coaTheoryQ3"
-                    android:text="Differentiate between RISC and CISC."
-                    android:textAllCaps="false"
-                    android:gravity="left"
-                    >
-                </Button>
-
-                <Button
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:textColor="@color/black"
+                    android:text="Q1. Differentiate between RISC and CISC.">
+                </TextView>
+
+                <TextView
                     android:id="@id/coaTheoryQ7"
-                    android:text="Draw the flow chart for Booth's Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5."
                     android:layout_below="@id/coaTheoryQ3"
-                    android:textAllCaps="false"
-                    android:gravity="left">
-                </Button>
-
-                <Button
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Q2. Draw the flow chart for Booth's Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5.">
+                </TextView>
+
+
+                <TextView
                     android:id="@id/coaTheoryQ5"
                     android:layout_below="@id/coaTheoryQ7"
-                    android:text="Express (127.125)10 in the IEEE single precision standard of floating point representation"
-                    android:textAllCaps="false"
-                    android:gravity="left">
-                </Button>
-
-                <Button
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Q3. Express (127.125)10 in the IEEE single precision standard of floating point representation">
+                </TextView>
+
+
+                <TextView
                     android:id="@id/coaTheoryQ18"
                     android:layout_below="@id/coaTheoryQ5"
-                    android:text="Explian flynn's classification."
-                    android:textAllCaps="false"
-                    android:gravity="left">
-                </Button>
-
-                <Button
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Q4. Explian flynn's classification.">
+                </TextView>
+
+                <TextView
                     android:id="@id/coaTheoryQ20"
                     android:layout_below="@id/coaTheoryQ18"
-                    android:text="Explain different pipelining Hazards."
-                    android:textAllCaps="false"
-                    android:gravity="left">
-                </Button>
-
-                <Button
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Q5. Explain different pipelining Hazards.">
+                </TextView>
+
+                <TextView
                     android:id="@id/coaTheoryQ15"
                     android:layout_below="@id/coaTheoryQ20"
-                    android:text="Explain paging."
-                    android:textAllCaps="false"
-                    android:gravity="left">
-                </Button>
-
-                <Button
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Q6. Explain paging in details.">
+                </TextView>
+
+
+                <TextView
                     android:id="@id/coaTheoryQ16"
                     android:layout_below="@id/coaTheoryQ15"
-                    android:text="Explain Segmentation."
-                    android:textAllCaps="false"
-                    android:gravity="left">
-                </Button>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="Q7. Explain Segmentation in details.">
+                </TextView>
+
 
 
 

@@ -4,36 +4,36 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 public class coaTheory extends AppCompatActivity implements View.OnClickListener {
-    Button coaTheoryQ1,coaTheoryQ2,coaTheoryQ3,coaTheoryQ4,coaTheoryQ5,coaTheoryQ6,coaTheoryQ7,coaTheoryQ8,coaTheoryQ9,coaTheoryQ10,coaTheoryQ11,coaTheoryQ12,coaTheoryQ13,coaTheoryQ14,coaTheoryQ15,coaTheoryQ16,coaTheoryQ17,coaTheoryQ18,coaTheoryQ19,coaTheoryQ20,coaTheoryQ21;
+    TextView coaTheoryQ1,coaTheoryQ2,coaTheoryQ3,coaTheoryQ4,coaTheoryQ5,coaTheoryQ6,coaTheoryQ7,coaTheoryQ8,coaTheoryQ9,coaTheoryQ10,coaTheoryQ11,coaTheoryQ12,coaTheoryQ13,coaTheoryQ14,coaTheoryQ15,coaTheoryQ16,coaTheoryQ17,coaTheoryQ18,coaTheoryQ19,coaTheoryQ20,coaTheoryQ21;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coa_theory);
-        coaTheoryQ1 = (Button) findViewById(R.id.coaTheoryQ1);
-        coaTheoryQ2 = (Button) findViewById(R.id.coaTheoryQ2);
-        coaTheoryQ3 = (Button) findViewById(R.id.coaTheoryQ3);
-        coaTheoryQ4 = (Button) findViewById(R.id.coaTheoryQ4);
-        coaTheoryQ5 = (Button) findViewById(R.id.coaTheoryQ5);
-        coaTheoryQ6 = (Button) findViewById(R.id.coaTheoryQ6);
-        coaTheoryQ7 = (Button) findViewById(R.id.coaTheoryQ7);
-        coaTheoryQ8 = (Button) findViewById(R.id.coaTheoryQ8);
-        coaTheoryQ9 = (Button) findViewById(R.id.coaTheoryQ9);
-        coaTheoryQ10 = (Button) findViewById(R.id.coaTheoryQ10);
-        coaTheoryQ11= (Button) findViewById(R.id.coaTheoryQ11);
-        coaTheoryQ12 = (Button) findViewById(R.id.coaTheoryQ12);
-        coaTheoryQ13= (Button) findViewById(R.id.coaTheoryQ13);
-        coaTheoryQ14= (Button) findViewById(R.id.coaTheoryQ14);
-        coaTheoryQ15= (Button) findViewById(R.id.coaTheoryQ15);
-        coaTheoryQ16= (Button) findViewById(R.id.coaTheoryQ16);
-        coaTheoryQ17= (Button) findViewById(R.id.coaTheoryQ17);
-        coaTheoryQ18= (Button) findViewById(R.id.coaTheoryQ18);
-        coaTheoryQ19= (Button) findViewById(R.id.coaTheoryQ19);
-        coaTheoryQ20= (Button) findViewById(R.id.coaTheoryQ20);
-        coaTheoryQ21= (Button) findViewById(R.id.coaTheoryQ21);
+        coaTheoryQ1 = (TextView) findViewById(R.id.coaTheoryQ1);
+        coaTheoryQ2 = (TextView) findViewById(R.id.coaTheoryQ2);
+        coaTheoryQ3 = (TextView) findViewById(R.id.coaTheoryQ3);
+        coaTheoryQ4 = (TextView) findViewById(R.id.coaTheoryQ4);
+        coaTheoryQ5 = (TextView) findViewById(R.id.coaTheoryQ5);
+        coaTheoryQ6 = (TextView) findViewById(R.id.coaTheoryQ6);
+        coaTheoryQ7 = (TextView) findViewById(R.id.coaTheoryQ7);
+        coaTheoryQ8 = (TextView) findViewById(R.id.coaTheoryQ8);
+        coaTheoryQ9 = (TextView) findViewById(R.id.coaTheoryQ9);
+        coaTheoryQ10 = (TextView) findViewById(R.id.coaTheoryQ10);
+        coaTheoryQ11= (TextView) findViewById(R.id.coaTheoryQ11);
+        coaTheoryQ12 = (TextView) findViewById(R.id.coaTheoryQ12);
+        coaTheoryQ13= (TextView) findViewById(R.id.coaTheoryQ13);
+        coaTheoryQ14= (TextView) findViewById(R.id.coaTheoryQ14);
+        coaTheoryQ15= (TextView) findViewById(R.id.coaTheoryQ15);
+        coaTheoryQ16= (TextView) findViewById(R.id.coaTheoryQ16);
+        coaTheoryQ17= (TextView) findViewById(R.id.coaTheoryQ17);
+        coaTheoryQ18= (TextView) findViewById(R.id.coaTheoryQ18);
+        coaTheoryQ19= (TextView) findViewById(R.id.coaTheoryQ19);
+        coaTheoryQ20= (TextView) findViewById(R.id.coaTheoryQ20);
+        coaTheoryQ21= (TextView) findViewById(R.id.coaTheoryQ21);
 
         coaTheoryQ1.setOnClickListener(this);
         coaTheoryQ2.setOnClickListener(this);
