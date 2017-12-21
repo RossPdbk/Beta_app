@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class AoaHome extends AppCompatActivity implements View.OnClickListener {
 
-    Button aoaTheory, aoaPractical, aoaMfaQ1, aoaMfaQ2, aoaMfaQ3, aoaMfaQ4, aoaMfaQ5, aoaMfaQ6, aoaMfaQ7;
+    Button aoaTheory, aoaPractical;
+    TextView aoaMfaQ1, aoaMfaQ2, aoaMfaQ3, aoaMfaQ4, aoaMfaQ5, aoaMfaQ6, aoaMfaQ7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +21,13 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
         aoaTheory = (Button) findViewById(R.id.aoaTheory);
         aoaPractical = (Button) findViewById(R.id.aoaPractical);
 
-        aoaMfaQ1 = (Button) findViewById(R.id.aoaTheoryQ1);
-        aoaMfaQ2 = (Button) findViewById(R.id.aoaTheoryQ4);
-        aoaMfaQ3 = (Button) findViewById(R.id.aoaTheoryQ5);
-        aoaMfaQ4 = (Button) findViewById(R.id.aoaTheoryQ12);
-        aoaMfaQ5 = (Button) findViewById(R.id.aoaTheoryQ6);
-        aoaMfaQ6 = (Button) findViewById(R.id.aoaTheoryQ2);
-        aoaMfaQ7 = (Button) findViewById(R.id.aoaTheoryQ10);
+        aoaMfaQ1 = (TextView) findViewById(R.id.aoaTheoryQ1);
+        aoaMfaQ2 = (TextView) findViewById(R.id.aoaTheoryQ4);
+        aoaMfaQ3 = (TextView) findViewById(R.id.aoaTheoryQ5);
+        aoaMfaQ4 = (TextView) findViewById(R.id.aoaTheoryQ12);
+        aoaMfaQ5 = (TextView) findViewById(R.id.aoaTheoryQ6);
+        aoaMfaQ6 = (TextView) findViewById(R.id.aoaTheoryQ2);
+        aoaMfaQ7 = (TextView) findViewById(R.id.aoaTheoryQ10);
 
         aoaTheory.setOnClickListener(this);
         aoaPractical.setOnClickListener(this);
