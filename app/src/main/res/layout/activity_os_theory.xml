@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryLight"
+    android:background="#CFD8DC"
     android:orientation="vertical"
     tools:context="com.mumbaiengineers.beta_app.osTheory">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorPrimary"
+        android:background="#455A64"
         android:layout_marginBottom="7dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -23,7 +23,7 @@
             android:gravity="center"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:textColor="@android:color/white"/>
 
     </android.support.v7.widget.Toolbar>
 
@@ -39,7 +39,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:id="@id/osTheoryQ1"
             android:text="1. What is Operating system? Explain different function of OS?"
             android:textAllCaps="false"
@@ -49,7 +48,7 @@
             android:textAlignment="textStart"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:textColor="@color/black">
+            android:textColor="#000000">
 
         </TextView>
 
@@ -66,7 +65,7 @@
             android:textSize="16sp"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:textColor="@color/black">
+            android:textColor="#000000">
 
         </TextView>
 
@@ -80,7 +79,7 @@
             android:layout_margin="5dp"
             android:padding="10dp"
             android:textAlignment="textStart"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:text="3. What are different page replacement policies?">
         </TextView>
 
@@ -89,11 +88,12 @@
             android:layout_height="wrap_content"
             android:id="@id/osTheoryQ4"
             android:layout_below="@id/osTheoryQ3"
+
             android:background="@drawable/background"
             android:textSize="16sp"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="4. Compare the Monolithic and Microkernels.">
         </TextView>
@@ -103,11 +103,12 @@
             android:layout_height="wrap_content"
             android:id="@id/osTheoryQ5"
             android:layout_below="@id/osTheoryQ4"
+
             android:background="@drawable/background"
             android:textSize="16sp"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="5. Explain Critical section problem.">
         </TextView>
@@ -116,15 +117,15 @@
             android:layout_height="wrap_content"
             android:id="@id/osTheoryQ6"
             android:layout_below="@id/osTheoryQ5"
+
             android:background="@drawable/background"
             android:textSize="16sp"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="6. Explain Banker's algorithm in details">
         </TextView>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -134,7 +135,7 @@
             android:textSize="16sp"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="7. What is deadlock? Explain necessary and sufficient condition for deadlock to occur. Explain deadlock avoidance, prevention and detection.">
         </TextView>
@@ -148,7 +149,7 @@
             android:textSize="16sp"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="8. Write short note on Demand Paging.">
         </TextView>
@@ -162,7 +163,7 @@
             android:textSize="16sp"
             android:layout_margin="5dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="9. Explain Internal and External Fragmentation">
         </TextView>
@@ -177,7 +178,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="10. Explain Dining Philosopher problem and it's solution."
             android:layout_below="@+id/osTheoryQ9"
@@ -195,7 +196,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="11. Write difference between Pre-emptive and Non-preemptive scheduling.">
         </TextView>
@@ -211,7 +212,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="12. Explain role of Process Control Block">
         </TextView>
@@ -227,7 +228,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="13. Explain process state transition in UNIX OS">
         </TextView>
@@ -243,7 +244,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="14. Compare Process and Thread.">
         </TextView>
@@ -259,7 +260,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="15. Explain solution for readers/writers problem using semaphores.">
         </TextView>
@@ -275,7 +276,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="16. Explain various techniques for structuring page tables.">
         </TextView>
@@ -291,7 +292,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="17. What are different File   access   methods? ">
         </TextView>
@@ -307,7 +308,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="18. Explain various I/O buffering methods.">
         </TextView>
@@ -323,7 +324,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="19. Explain booting process of Linux.">
         </TextView>
@@ -339,7 +340,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textAlignment="textStart"
             android:text="Q20">
         </TextView>
