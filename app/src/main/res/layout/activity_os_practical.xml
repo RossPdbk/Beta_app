@@ -5,27 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ECEFF1"
+    android:background="@color/colorPrimaryLight"
     tools:context="com.mumbaiengineers.beta_app.osPractical">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="50dp"
         android:background="#455A64"
-        android:elevation="4dp"
+        android:layout_marginBottom="7dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        android:layout_marginBottom="5dp">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="COA Practical"
+            android:text="Operating System - Practical"
             android:gravity="center"
-            android:textSize="25sp"
-            android:textColor="@android:color/black"/>
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 
     </android.support.v7.widget.Toolbar>
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -35,37 +36,6 @@
         android:layout_height="wrap_content">
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/osPracticalP1"
-
-            android:text="P1">
-        </Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/osPracticalP2"
-            android:layout_below="@id/osPracticalP1"
-            android:text="P2">
-        </Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/osPracticalP3"
-            android:layout_below="@id/osPracticalP2"
-            android:text="P3">
-        </Button>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/osPracticalP4"
-            android:layout_below="@id/osPracticalP3"
-            android:text="P4">
-        </Button>
 
     </RelativeLayout>
     </ScrollView>
