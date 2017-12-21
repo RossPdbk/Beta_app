@@ -10,39 +10,53 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
         android:elevation="4dp"
+        android:background="#907657"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_marginBottom="0dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="COA Theory"
-            android:gravity="center"
-            android:textSize="25sp"
-            android:textColor="@android:color/black"/>
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
     </android.support.v7.widget.Toolbar>
 
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#bbb4ae">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="7dp">
 
         <Button
+
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ1"
             android:gravity="left"
+            android:textSize="16sp"
             android:textAllCaps="false"
             android:text="Q1.Differentiate between Computer Architecture and Computer Organization.">
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ2"
@@ -53,6 +67,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ3"
@@ -63,6 +81,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ4"
@@ -73,6 +95,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ5"
@@ -82,6 +108,10 @@
             android:text="Q5.Express (127.125)10 in the IEEE single precision standard of floating point representation">
         </Button>
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ6"
@@ -91,6 +121,10 @@
             android:text="Q6.Explian Booth's algorithm. Draw flow chart.">
         </Button>
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ7"
@@ -101,6 +135,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ8"
@@ -111,26 +149,38 @@
         </Button>
 
         <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@id/coaTheoryQ9"
-        android:layout_below="@id/coaTheoryQ8"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ9"
+            android:layout_below="@id/coaTheoryQ8"
             android:gravity="left"
             android:textAllCaps="false"
-        android:text="Q9.Explain Addressing modes.">
+            android:text="Q9.Explain Addressing modes.">
         </Button>
 
         <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@id/coaTheoryQ10"
-        android:layout_below="@id/coaTheoryQ9"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/coaTheoryQ10"
+            android:layout_below="@id/coaTheoryQ9"
             android:gravity="left"
             android:textAllCaps="false"
-        android:text="Q10.Explain Hardwired Control unit.">
+            android:text="Q10.Explain Hardwired Control unit.">
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ11"
@@ -141,6 +191,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ12"
@@ -151,6 +205,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ13"
@@ -161,6 +219,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ14"
@@ -171,6 +233,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ15"
@@ -181,6 +247,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ16"
@@ -191,6 +261,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ17"
@@ -201,6 +275,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ18"
@@ -211,6 +289,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ19"
@@ -221,6 +303,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ20"
@@ -231,6 +317,10 @@
         </Button>
 
         <Button
+            android:textSize="16sp"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/coaTheoryQ21"

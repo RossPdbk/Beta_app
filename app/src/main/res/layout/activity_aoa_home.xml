@@ -37,12 +37,12 @@
             android:id="@id/aoaTheory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/aoatheory"
+            android:background="@drawable/theory"
             android:layout_margin="10dp"
             android:layout_weight="12.5"
             android:text="Theory"
             android:textSize="20sp"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:gravity="bottom"
             android:textAlignment="center">
 
