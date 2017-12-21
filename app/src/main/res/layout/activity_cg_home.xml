@@ -95,7 +95,7 @@
                     android:layout_height="match_parent"
                     android:padding="10dp"
                     android:layout_margin="5dp"
-                    android:id="@id/cgMfaQ1"
+                    android:id="@id/cgTheoryQ1"
                     android:text="Q1.Explain diffrence between Random Scan and Raster Scan"
                     android:textAllCaps="false"
                     android:gravity="left"
@@ -110,9 +110,9 @@
                     android:layout_margin="5dp"
                     android:textAllCaps="false"
                     android:gravity="left"
-                    android:id="@id/cgMfaQ2"
+                    android:id="@id/cgTheoryQ5"
                     android:text="Q2.Explain Mid-point circle algorithm.Using same,plot the circle whose radius is 10 units"
-                    android:layout_below="@id/cgMfaQ1"
+                    android:layout_below="@id/cgTheoryQ1"
                     >
                 </Button>
 
@@ -124,8 +124,8 @@
                     android:layout_margin="5dp"
                     android:textAllCaps="false"
                     android:gravity="left"
-                    android:id="@id/cgMfaQ3"
-                    android:layout_below="@id/cgMfaQ2"
+                    android:id="@id/cgTheoryQ10"
+                    android:layout_below="@id/cgTheoryQ5"
                     android:text="Q3.Derive matrix for 2D rotation about an arbitary axis.">
                 </Button>
 
@@ -137,8 +137,8 @@
                     android:layout_margin="5dp"
                     android:textAllCaps="false"
                     android:gravity="left"
-                    android:id="@id/cgMfaQ4"
-                    android:layout_below="@id/cgMfaQ3"
+                    android:id="@id/cgTheoryQ9"
+                    android:layout_below="@id/cgTheoryQ10"
                     android:text="Q4.Define window and viewport and derive window to viewport transformation.">
                 </Button>
 
@@ -150,8 +150,8 @@
                     android:layout_margin="5dp"
                     android:textAllCaps="false"
                     android:gravity="left"
-                    android:id="@id/cgMfaQ5"
-                    android:layout_below="@id/cgMfaQ4"
+                    android:id="@id/cgTheoryQ8"
+                    android:layout_below="@id/cgTheoryQ9"
                     android:text="Q5.Explain Parallel and Perspective projecton and derive matrix for them.">
                 </Button>
 
@@ -163,8 +163,8 @@
                     android:layout_margin="5dp"
                     android:textAllCaps="false"
                     android:gravity="left"
-                    android:id="@id/cgMfaQ6"
-                    android:layout_below="@id/cgMfaQ5"
+                    android:id="@id/cgTheoryQ16"
+                    android:layout_below="@id/cgTheoryQ8"
                     android:text="Q6.prove that two succesive rotations are addivtive.">
                 </Button>
 
@@ -176,8 +176,8 @@
                     android:layout_margin="5dp"
                     android:textAllCaps="false"
                     android:gravity="left"
-                    android:id="@id/cgMfaQ7"
-                    android:layout_below="@id/cgMfaQ6"
+                    android:id="@id/cgTheoryQ11"
+                    android:layout_below="@id/cgTheoryQ16"
                     android:text="Q7.Define halftoning and dithering techniques.">
                 </Button>
 

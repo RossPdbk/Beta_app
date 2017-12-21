@@ -50,43 +50,43 @@ public class cgHome extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent1);
                 break;
 
-            case R.id.cgMfaQ1:
+            case R.id.cgTheoryQ1:
                 Intent intent2 = new Intent(this, webviewAnswer.class);
                 intent2.putExtra("Qid",id);
                 startActivity(intent2);
                 break;
 
-            case R.id.cgMfaQ2:
+            case R.id.cgTheoryQ5:
                 Intent intent3 = new Intent(this, webviewAnswer.class);
                 intent3.putExtra("Qid",id);
                 startActivity(intent3);
                 break;
 
-            case R.id.cgMfaQ3:
+            case R.id.cgTheoryQ10:
                 Intent intent4 = new Intent(this, webviewAnswer.class);
                 intent4.putExtra("Qid",id);
                 startActivity(intent4);
                 break;
 
-            case R.id.cgMfaQ4:
+            case R.id.cgTheoryQ9:
                 Intent intent5 = new Intent(this, webviewAnswer.class);
                 intent5.putExtra("Qid",id);
                 startActivity(intent5);
                 break;
 
-            case R.id.cgMfaQ5:
+            case R.id.cgTheoryQ8:
                 Intent intent6 = new Intent(this, webviewAnswer.class);
                 intent6.putExtra("Qid",id);
                 startActivity(intent6);
                 break;
 
-            case R.id.cgMfaQ6:
+            case R.id.cgTheoryQ16:
                 Intent intent7 = new Intent(this, webviewAnswer.class);
                 intent7.putExtra("Qid",id);
                 startActivity(intent7);
                 break;
 
-            case R.id.cgMfaQ7:
+            case R.id.cgTheoryQ11:
                 Intent intent8 = new Intent(this, webviewAnswer.class);
                 intent8.putExtra("Qid",id);
                 startActivity(intent8);
