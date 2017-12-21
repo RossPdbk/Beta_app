@@ -85,8 +85,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ1"
-                    android:text="OS"
+                    android:id="@id/coaTheoryQ1"
+                    android:text="Q1"
                     android:textAllCaps="false"
                     android:gravity="left"
                     >
@@ -97,9 +97,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ2"
-                    android:text="OS"
-                    android:layout_below="@id/coaMfaQ1"
+                    android:id="@id/coaTheoryQ2"
+                    android:text="Q2"
+                    android:layout_below="@id/coaTheoryQ1"
                     android:textAllCaps="false"
                     android:gravity="left">
                 </Button>
@@ -109,20 +109,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ3"
-                    android:layout_below="@id/coaMfaQ2"
-                    android:text="OS"
-                    android:textAllCaps="false"
-                    android:gravity="left">
-                </Button>
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ4"
-                    android:layout_below="@id/coaMfaQ3"
+                    android:id="@id/coaTheoryQ3"
+                    android:layout_below="@id/coaTheoryQ2"
                     android:text="OS"
                     android:textAllCaps="false"
                     android:gravity="left">
@@ -133,8 +121,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ5"
-                    android:layout_below="@id/coaMfaQ4"
+                    android:id="@id/coaTheoryQ4"
+                    android:layout_below="@id/coaTheoryQ3"
                     android:text="OS"
                     android:textAllCaps="false"
                     android:gravity="left">
@@ -145,8 +133,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ6"
-                    android:layout_below="@id/coaMfaQ5"
+                    android:id="@id/coaTheoryQ5"
+                    android:layout_below="@id/coaTheoryQ4"
                     android:text="OS"
                     android:textAllCaps="false"
                     android:gravity="left">
@@ -157,8 +145,20 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ7"
-                    android:layout_below="@id/coaMfaQ6"
+                    android:id="@id/coaTheoryQ6"
+                    android:layout_below="@id/coaTheoryQ5"
+                    android:text="OS"
+                    android:textAllCaps="false"
+                    android:gravity="left">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@id/coaTheoryQ7"
+                    android:layout_below="@id/coaTheoryQ6"
                     android:text="OS"
                     android:textAllCaps="false"
                     android:gravity="left">

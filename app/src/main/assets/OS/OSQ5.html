@@ -1,16 +1,23 @@
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 	<body>
-	
-		<h3>Q. Explain Critical section problem.</h3><hr>
-		
-		<p>A Critical Section is a code segment that accesses shared variables and has to be executed as an atomic action.\
+
+	<div class="header">
+		<h4>Q5. Explain Critical section problem.</h4>
+	</div>
+
+	<div class="card">
+		<p>A Critical Section is a code segment that accesses shared variables and has to be executed as an atomic action.
 		It means that in a group of cooperating processes, at a given point of time, only one process must be executing its critical section.
 		If any other process also wants to execute its critical section, it must wait until the first one finishes. 
 		</p>
 		
 		<img src="Critical_section.jpg" width=100%><br>
 		
- 
+ 	</div>
+	<div class="card">
 		<p><b>Solution to Critical Section Problem A solution to the critical section problem must satisfy the following three conditions : </b></p><br>
 		<ol>
 		
@@ -27,9 +34,9 @@
 		After a process makes a request for getting into its critical section, there is a limit for 
 		how many other processes can get into their critical section, before this process's 
 		request is granted. So after the limit is reached, system must grant the process 
-		permission to get into its critical section. </li><br>
+		permission to get into its critical section. </li>
 
 		</ol>
- 
+ 	</div>
 	</body>
 </html>

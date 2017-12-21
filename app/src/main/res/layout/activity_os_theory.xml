@@ -4,200 +4,373 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ECEFF1"
     android:orientation="vertical"
     tools:context="com.mumbaiengineers.beta_app.osTheory">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
+        android:layout_height="50dp"
+        android:background="#607D8B"
+        android:layout_marginBottom="7dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OS Theory"
-        android:gravity="center"
-        android:textSize="25sp"
-        android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Operating System - Theory"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
     </android.support.v7.widget.Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ1"
             android:text="1. What is Operating system? Explain different function of OS?"
+<<<<<<< HEAD
             android:textAllCaps="false"
             android:gravity="left"
+=======
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+>>>>>>> 63bd3bf1a203e2f37c69e6f0f324bdcd89e2cb4e
 
             >
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
             android:id="@id/osTheoryQ2"
             android:layout_below="@id/osTheoryQ1"
+<<<<<<< HEAD
             android:textAllCaps="false"
             android:gravity="left"
             android:text="2. What are various services provided by OS?">
         </Button>
+=======
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+>>>>>>> 63bd3bf1a203e2f37c69e6f0f324bdcd89e2cb4e
 
-        <Button
+            android:text="2. What are various services provided by OS?">
+        </TextView>
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ3"
             android:layout_below="@id/osTheoryQ2"
-            android:textAllCaps="false"
-            android:gravity="left"
-            android:text="Q3">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:text="3. What are different page replacement policies?">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ4"
             android:layout_below="@id/osTheoryQ3"
-            android:textAllCaps="false"
-            android:gravity="left"
-            android:text="Q4">
-        </Button>
+            
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="4. Compare the Monolithic and Microkernels.">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ5"
             android:layout_below="@id/osTheoryQ4"
-            android:text="Q5">
-        </Button>
-        <Button
+            
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="5. Explain Critical section problem.">
+        </TextView>
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ6"
             android:layout_below="@id/osTheoryQ5"
-            android:text="Q6">
-        </Button>
-        <Button
+            
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="6. Explain Banker's algorithm in details">
+        </TextView>
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ7"
             android:layout_below="@id/osTheoryQ6"
-            android:text="Q7">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="7. What is deadlock? Explain necessary and sufficient condition for deadlock to occur. Explain deadlock avoidance, prevention and detection.">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ8"
             android:layout_below="@id/osTheoryQ7"
-            android:text="Q8">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="8. Write short note on Demand Paging.">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ9"
             android:layout_below="@id/osTheoryQ8"
-            android:text="Q9">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="9. Explain Internal and External Fragmentation">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ10"
-            android:layout_below="@id/osTheoryQ9"
-            android:text="Q10">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="10. Explain Dining Philosopher problem and it's solution."
+            android:layout_below="@+id/osTheoryQ9"
+            >
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ11"
             android:layout_below="@id/osTheoryQ10"
-            android:text="Q11">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="11. Write difference between Pre-emptive and Non-preemptive scheduling.">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ12"
             android:layout_below="@id/osTheoryQ11"
-            android:text="Q12">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="12. Explain role of Process Control Block">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ13"
             android:layout_below="@id/osTheoryQ12"
-            android:text="Q13">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="13. Explain process state transition in UNIX OS">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ14"
             android:layout_below="@id/osTheoryQ13"
-            android:text="Q14">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="14. Compare Process and Thread.">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ15"
             android:layout_below="@id/osTheoryQ14"
-            android:text="Q15">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="15. Explain solution for readers/writers problem using semaphores.">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ16"
             android:layout_below="@id/osTheoryQ15"
-            android:text="Q16">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="16. Explain various techniques for structuring page tables.">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ17"
             android:layout_below="@id/osTheoryQ16"
-            android:text="Q17">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="17. What are different File   access   methods? ">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ18"
             android:layout_below="@id/osTheoryQ17"
-            android:text="Q18">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="18. Explain various I/O buffering methods.">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@id/osTheoryQ19"
             android:layout_below="@id/osTheoryQ18"
-            android:text="Q19">
-        </Button>
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
+            android:text="19. Explain booting process of Linux.">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/osTheoryQ20"
             android:layout_below="@id/osTheoryQ19"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textAlignment="textStart"
             android:text="Q20">
-        </Button>
+        </TextView>
 
     </RelativeLayout>
     </ScrollView>

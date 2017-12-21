@@ -1,83 +1,90 @@
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
 	<body>
-	
-		<b>Q. Explain booting process of Linux.</b><hr>
-		
+
+	<div class="header">
+		<h4>Q19. Explain booting process of Linux.</h4>
+	</div>
+
+
+	<div class="card">
+		<br>
 		The   following   are   the   6   high   level   stages   of   a   typical   Linux   boot   process.  <br><br>
 		<img src="Linux_boot_process.jpg" width=95%> <br>
 
-   1.   BIOS <br>
-   <ul>
-   <li>BIOS   stands   for   Basic   Input/Output   System Performs   some   system   integrity   checks, Searches, loads,   and   executes   the   boot   loader   program.
-   <li>It   looks   for   boot   loader   in   floppy,   cd-rom,   or hard   drive. 
-   <li>You   can   press   a   key   (typically   F12   of   F2,   but   it   depends   on   your   system)   during the   BIOS   startup   to   change   the   boot   sequence.
-   <li>Once   the   boot   loader   program   is   detected and   loaded   into   the   memory,   BIOS   gives   the   control   to   it.
-   <li>So,   in   simple   terms   BIOS   loads   and executes   the   MBR  boot   loader.
-   </ul>
+		<b>1.   BIOS </b><br>
+   			<ul>
+   			<li>BIOS   stands   for   Basic   Input/Output   System Performs   some   system   integrity   checks, Searches, loads,   and   executes   the   boot   loader   program.
+   			<li>It   looks   for   boot   loader   in   floppy,   cd-rom,   or hard   drive.
+   			<li>You   can   press   a   key   (typically   F12   of   F2,   but   it   depends   on   your   system)   during the   BIOS   startup   to   change   the   boot   sequence.
+ 			<li>Once   the   boot   loader   program   is   detected and   loaded   into   the   memory,   BIOS   gives   the   control   to   it.
+ 			<li>So,   in   simple   terms   BIOS   loads   and executes   the   MBR  boot   loader.
+  			 </ul>
 
-   2.   MBR <br>
-	<ul>
-   <li>MBR   stands   for   Master   Boot   Record.
-   <li>It   is   located   in   the   1st   sector   of   the   bootable   disk, Typically   /dev/hda,   or   /dev/sda   MBR   is   less   than   512   bytes   in   size.   
-   <li>This   has   three components   : 
-    <ul>
-		<li>1)   primary   boot   loader   info   in   1st   446   bytes 
-		<li>2)   partition   table   info   in   next   64   bytes  
-		<li>3)   mbr   validation   check   in   last   2   bytes.
-		<li>It   contains   information   about   GRUB   (or   LILO   in   old systems).
-	</ul>
-	<li>So,   in   simple   terms   MBR   loads   and   executes   the   GRUB   boot   loader. 
-	 </ul>
+		<b>2.   MBR </b><br>
+			<ul>
+   			<li>MBR   stands   for   Master   Boot   Record.
+   			<li>It   is   located   in   the   1st   sector   of   the   bootable   disk, Typically   /dev/hda,   or   /dev/sda   MBR   is   less   than   512   bytes   in   size.
+   			<li>This   has   three components   :
+    			<ul>
+				<li>1)   primary   boot   loader   info   in   1st   446   bytes
+				<li>2)   partition   table   info   in   next   64   bytes
+				<li>3)   mbr   validation   check   in   last   2   bytes.
+				<li>It   contains   information   about   GRUB   (or   LILO   in   old systems).
+				</ul>
+			<li>So,   in   simple   terms   MBR   loads   and   executes   the   GRUB   boot   loader.
+	 		</ul>
 
-   3.   GRUB   <br>
-   <ul>
-   <li>GRUB   stands   for   Grand   Unified   Bootloader.
-   <li>If   you   have   multiple   kernel   images   installed   on your   system,   you   can   choose   which   one   to   be   executed.
-   <li>GRUB   displays   a   splash   screen, waits   for   few   seconds,   if   you   don't   enter   anything,   it   loads   the   default   kernel   image   as specified   in   the   grub   configuration   file.
-   <li>GRUB   has   the   knowledge   of   the   filesystem   (the   older Linux   loader   LILO   didn't   understand   filesystem).
-   <li>Grub   configuration   file   is /boot/grub/grub.conf   (/etc/grub.conf   is   a  link   to   this). 
-   <li>So,   in   simple   terms GRUB   just   loads   and   executes   Kernel   and   initrd   images. 
- </ul>
- 
-   4.   Kernel <br>
-   <ul>
-   <li>Mounts   the   root   file   system   as   specified   in   the   "root="   in   grub.conf
-   <li>Kernel   executes   the /sbin/init   program
-   <li>Since   init   was   the   1st   program   to   be   executed   by   Linux   Kernel,   it   has   the process   id   (PID)   of   1. 
-   <li>Do   a   'ps   -ef   |   grep   init'   and   check   the   pid.initrd   stands   for   Initial   RAM Disk.
-   <li>initrd   is   used   by   kernel   as   temporary   root   file   system   until   kernel   is   booted   and   the   real root   file   system   is   mounted. 
-   <li>It   also   contains   necessary   drivers   compiled   inside,  which   helps   it to   access   the   hard   drive   partitions,   and   other   hardware. 
-  </ul>
+		<b>3.   GRUB  </b> <br>
+			<ul>
+			<li>GRUB   stands   for   Grand   Unified   Bootloader.
+  			<li>If   you   have   multiple   kernel   images   installed   on your   system,   you   can   choose   which   one   to   be   executed.
+  			<li>GRUB   displays   a   splash   screen, waits   for   few   seconds,   if   you   don't   enter   anything,   it   loads   the   default   kernel   image   as specified   in   the   grub   configuration   file.
+  			<li>GRUB   has   the   knowledge   of   the   filesystem   (the   older Linux   loader   LILO   didn't   understand   filesystem).
+   			<li>Grub   configuration   file   is /boot/grub/grub.conf   (/etc/grub.conf   is   a  link   to   this).
+   			<li>So,   in   simple   terms GRUB   just   loads   and   executes   Kernel   and   initrd   images.
+			</ul>
+
+		<b>4.   Kernel </b><br>
+   			<ul>
+   			<li>Mounts   the   root   file   system   as   specified   in   the   "root="   in   grub.conf
+   			<li>Kernel   executes   the /sbin/init   program
+   			<li>Since   init   was   the   1st   program   to   be   executed   by   Linux   Kernel,   it   has   the process   id   (PID)   of   1.
+   			<li>Do   a   'ps   -ef   |   grep   init'   and   check   the   pid.initrd   stands   for   Initial   RAM Disk.
+   			<li>initrd   is   used   by   kernel   as   temporary   root   file   system   until   kernel   is   booted   and   the   real root   file   system   is   mounted.
+   			<li>It   also   contains   necessary   drivers   compiled   inside,  which   helps   it to   access   the   hard   drive   partitions,   and   other   hardware.
+  			</ul>
   
-	5.   Init  <br>
-   <ul>
-	<li>Looks   at   the   /etc/inittab   file   to   decide   the   Linux   run   level.
-	<li>Init   identifies   the   default   initlevel   from   /etc/inittab   and   uses   that   to load   all   appropriate   program.
-	<li>Execute   ‘grep   initdefault   /etc/inittab'   on   your   system   to   identify the   default   run   levelIf   you   want   to   get   into   trouble,   you   can   set   the   default   run   level   to   0   or   6. 
-	<li>Since   you   know   what   0   and   6   means,   probably   you   might   not   do   that.
-	<li>Typically   you   would   set the   default   run   level   to   either   3   or   5. 
-	</ul>
+		<b>5.   Init </b> <br>
+   			<ul>
+			<li>Looks   at   the   /etc/inittab   file   to   decide   the   Linux   run   level.
+			<li>Init   identifies   the   default   initlevel   from   /etc/inittab   and   uses   that   to load   all   appropriate   program.
+			<li>Execute   ‘grep   initdefault   /etc/inittab'   on   your   system   to   identify the   default   run   levelIf   you   want   to   get   into   trouble,   you   can   set   the   default   run   level   to   0   or   6.
+			<li>Since   you   know   what   0   and   6   means,   probably   you   might   not   do   that.
+			<li>Typically   you   would   set the   default   run   level   to   either   3   or   5.
+			</ul>
  
-	6.   Runlevel   programs <br>
-   <ul>
-	<li>When   the   Linux   system   is   booting   up,   you   might   see   various   services   getting   started.  
-	<li>For example,   it   might   say   "starting   sendmail   ...  OK". 
-	<li>Those   are   the   runlevel   programs,   executed from   the   run   level   directory   as   defined   by   your   run  level.
-	<li>Depending   on   your   default   init   level setting,   the   system   will   execute   the   programs   from   one   of   the   following   directories :
-	   <ul>
-	<li>Run   level 0   -   /etc/rc.d/rc0.d/
-		<li>Run  level   1   -   /etc/rc.d/rc1.d/
-		<li>Run   level   2   -   /etc/rc.d/rc2.d/
-		<li>Run   level   3   - /etc/rc.d/rc3.d/
-		<li>Run   level   4   -   /etc/rc.d/rc4.d/
-		<li>Run   level   5   -   /etc/rc.d/rc5.d/
-		<li>Run   level   6   - /etc/rc.d/rc6.d/
-	 </ul>
-	 </ul>
-	 
-	 <hr>
+		<b>6.   Runlevel   programs </b><br>
+   			<ul>
+			<li>When   the   Linux   system   is   booting   up,   you   might   see   various   services   getting   started.
+			<li>For example,   it   might   say   "starting   sendmail   ...  OK".
+			<li>Those   are   the   runlevel   programs,   executed from   the   run   level   directory   as   defined   by   your   run  level.
+			<li>Depending   on   your   default   init   level setting,   the   system   will   execute   the   programs   from   one   of   the   following   directories :
+				<ul>
+					<li>Run   level 0   -   /etc/rc.d/rc0.d/
+					<li>Run  level   1   -   /etc/rc.d/rc1.d/
+					<li>Run   level   2   -   /etc/rc.d/rc2.d/
+					<li>Run   level   3   - /etc/rc.d/rc3.d/
+					<li>Run   level   4   -   /etc/rc.d/rc4.d/
+					<li>Run   level   5   -   /etc/rc.d/rc5.d/
+					<li>Run   level   6   - /etc/rc.d/rc6.d/
+	 			</ul>
+	 		</ul>
 
+	</div>
 		
 	</body>
 	

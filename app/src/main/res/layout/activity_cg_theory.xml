@@ -39,8 +39,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ1"
-
-            android:text="Q1">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q1. Explain diffrence between Random Scan and Raster Scan ">
         </Button>
 
         <Button
@@ -48,7 +49,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ2"
             android:layout_below="@id/cgTheoryQ1"
-            android:text="Q2">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q2. Explain what is computer graphics and its applications">
         </Button>
 
         <Button
@@ -56,7 +59,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ3"
             android:layout_below="@id/cgTheoryQ2"
-            android:text="Q3">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q3. Write  a note on openGL">
         </Button>
 
         <Button
@@ -64,7 +69,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ4"
             android:layout_below="@id/cgTheoryQ3"
-            android:text="Q4">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q4. Explain DDA line drawing algorithm and write its advantages and disadvantages">
         </Button>
 
         <Button
@@ -72,21 +79,27 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ5"
             android:layout_below="@id/cgTheoryQ4"
-            android:text="Q5">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q5. Explain mid-point circle algorithm .Using same ,plot the circle whose radius is 10 units">
         </Button>
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ6"
             android:layout_below="@id/cgTheoryQ5"
-            android:text="Q6">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q6. Explain Aliasing and Antialiasing techniques">
         </Button>
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ7"
             android:layout_below="@id/cgTheoryQ6"
-            android:text="Q7">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q7. Explain Bresenham line drawing algorithm">
         </Button>
 
         <Button
@@ -94,7 +107,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ8"
             android:layout_below="@id/cgTheoryQ7"
-            android:text="Q8">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q8. Derive matrix for 2D rotation about an arbitary axis">
         </Button>
 
         <Button
@@ -102,7 +117,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ9"
             android:layout_below="@id/cgTheoryQ8"
-            android:text="Q9">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q9. Define window and viewport and derive window to viewport transformation">
         </Button>
 
         <Button
@@ -110,7 +127,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ10"
             android:layout_below="@id/cgTheoryQ9"
-            android:text="Q10">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q10. Explain any polygon clipping algorithm">
         </Button>
 
         <Button
@@ -118,7 +137,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ11"
             android:layout_below="@id/cgTheoryQ10"
-            android:text="Q11">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q11. Explain Parallel and Perspective Projection and derive matrix for them">
         </Button>
 
         <Button
@@ -126,7 +147,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ12"
             android:layout_below="@id/cgTheoryQ11"
-            android:text="Q12">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q12. Describe the 3D representation methods">
         </Button>
 
         <Button
@@ -134,7 +157,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ13"
             android:layout_below="@id/cgTheoryQ12"
-            android:text="Q13">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q13. Explain Back surface detection">
         </Button>
 
         <Button
@@ -142,7 +167,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ14"
             android:layout_below="@id/cgTheoryQ13"
-            android:text="Q14">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q14. Define halftoning and dithering techniques">
         </Button>
 
         <Button
@@ -150,7 +177,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ15"
             android:layout_below="@id/cgTheoryQ14"
-            android:text="Q15">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q15. Explain Gourand and Phong shading along their advantages and disadvantages">
         </Button>
 
         <Button
@@ -158,7 +187,9 @@
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ16"
             android:layout_below="@id/cgTheoryQ15"
-            android:text="Q16">
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Q16. Prove that two succesive rotations are additive">
         </Button>
 
         <Button

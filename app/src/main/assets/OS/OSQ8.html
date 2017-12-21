@@ -1,56 +1,61 @@
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
 	<body>
-	<h3>Q. Write short note on Demand Paging.</h3><hr>
-	<ul>
+	<div class="header">
+		<p><h4>Q8. Write short note on Demand Paging.</h4></p>
+	</div>
+
+	<div class="card">
+		<ul>
 	
-	<li>
-	A demand paging is paging system with swapping where pages are brought in main memory from secondary storage on demand.
-	When it is needed to execute a process, memory manager swap it into memory.
-	</li><br>
+		<li>
+			A demand paging is paging system with swapping where pages are brought in main memory from secondary storage on demand.
+			When it is needed to execute a process, memory manager swap it into memory.
+		</li><br>
 	
-	<li>
-	Instead of swapping entire process on memory, demand paging allows to swap in only those pages which are required for execution at that time. If a page is not currently mapped 
-	to a frame, The access fails and generate a page fault. this is special type of interrupt. 
-	</li><br>
+		<li>
+			Instead of swapping entire process on memory, demand paging allows to swap in only those pages which are required for execution at that time. If a page is not currently mapped
+			to a frame, The access fails and generate a page fault. this is special type of interrupt.
+		</li><br>
 	
-	<li>
-	The operating system handler for this interrupt initiates a disk operation to read a desirted page, and maaps it to a free fraame. while thgis is being 
-	done, Process is blocked.
-	</li><br>
+		<li>
+			The operating system handler for this interrupt initiates a disk operation to read a desirted page, and maaps it to a free fraame. while thgis is being
+			done, Process is blocked.
+		</li><br>
 	
-	<li>
+		<li>
+			When the page becomes available, The process is unblocked and placed in ready queue. when it is scheduled, It will resume it's
+			execution with the instruction that caused the page fault. but this time it will work. This manner of getting pages as they are needed
+			is called demand paging.</li><br>
+
+		<li>
+			when the process is to be swapped in, The pager program checks which process will be used before the process swapped out again.
+		</li><br>
 	
+		<li>
+			Instead of swapping in whole process, The pager bring only those necessary pages into memory. this avoids swapping
+			in those pages into memory which are not required.
+		</li><br>
+
+		<li>
+			it saves swap time and the amount of physical memory needeed.
+		</li><br>
 	
-	When the page becomes available, The process is unblocked and placed in ready queue. when it is scheduled, It will resume it's 
-	execution with the instruction that caused the page fault. but this time it will work. This manner of getting pages as they are needed
-	is called demand paging.</li><br>
+		<li>
+			In demand paging, valid and invalid bits are used to differentiate between those pages that are in memory and those pages
+			that are on the disk.
+		</li><br>
 	
-	<li>
-	when the process is to be swapped in, The pager program checks which process will be used before the process swapped out again.
-	</li><br>
+		<li>
+			Demand paging keep more processes in memory than the sum of their memory needs ensuring CPU utilization as high as possible.
+		</li>
 	
-	<li>
-	Instead of swapping in whole process, The pager bring only those necessary pages into memory. this avoids swapping 
-	in those pages into memory which are not required.
-	</li><br>
-	
-	<li>
-	it saves swap time and the amount of physical memory needeed.
-	</li><br>
-	
-	<li>
-	In demand paging, valid and invalid bits are used to differentiate between those pages that are in memory and those pages 
-	that are on the disk.
-	</li><br>
-	
-	<li>
-	Demand paging keep more processes in memory than the sum of their memory needs ensuring CPU utilization as high as possible.
-	</li><br>
-	
-	</ul>
-	<hr>
-	
+		</ul>
+
+	</div>
+
 	</body>
-	
 </html>

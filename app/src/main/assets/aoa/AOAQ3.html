@@ -1,20 +1,26 @@
 <!doctype html> 
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
+<div class="header">
 <p><h3>Q3. Explain Knapsack problem </h3></p>
-<hr>
-<p>Ans:<br>
+</div>
+<div class="card">
 <p>
 	<ul>
 		<li>We are given 'n' number of objects and a knapsack ( bag ). Each object has differect weight and cost.</li> <br>
 		<li>The knapsack or bag has the capacity of 'm'. That is the bag can hold total weight of 'm'.</li><br>
 		<li>Our job is to fill the bag with those objects. But while doing so we should make sure that the total cost 
 			of all the objects must be as high as possible. </li><br>
-		<li>The objective is to maximise the total profit earned</li><br>
+		<li>The objective is to maximise the total profit earned</li>
 	</ul>
 </p>
-<p>
-	<strong>Example</strong><br>
+</div>
+<div class="card">
+	<p>
+	<b>Example</b><br>
 	Let us consider that the capacity of the knapsack W = 60 and the list of provided items are shown in the following table −<br>
 	<table border = "1" cellpadding="0px" cellspacing="0px" >
          <tr>
@@ -48,8 +54,10 @@
          </tr>	 
     </table>
 </p>
+</div>
+<div class="card">
 <p>	
-	<strong>Step 1 :</strong> First we will add a column which will have the ratio of profit/weight<br>
+	<b>Step 1 :</b> First we will add a column which will have the ratio of profit/weight<br>
 	<table border = "1" cellpadding="0px" cellspacing="0px" >
          <tr>
             <td width="60px"><center>Item</center></td>
@@ -88,7 +96,7 @@
     </table>
 </p>	
 <p>
-	<Strong>Step 2 :</Strong> Sort the table in decreasing order of Ratio. 
+	<b>Step 2 :</b> Sort the table in decreasing order of Ratio.
 	<table border = "1" cellpadding="0px" cellspacing="0px" >
          <tr>
             <td width="60px"><center>Item</center></td>
@@ -126,7 +134,7 @@
     </table>
 </p>
 <p>
-	<strong>Step 3 :</strong> Now start adding the items in the bag strating with item having highest ratio.<br><br>
+	<b>Step 3 :</b> Now start adding the items in the bag strating with item having highest ratio.<br><br>
 	Weight avaible=60 and Profit=0<br><br>
 	Add item B , Weight avaible = 60 - 10 = 50 Profit=100<br><br>
 	Add item A , Weight avaible = 50 - 40 = 10 Profit=100 + 280 = 380<br><br>
@@ -136,6 +144,7 @@
 	The total weight of the selected items is<br> 10 + 40 + 20 * (10/20) = 60<br><br>
 	And the total profit is <br>100 + 280 + 120 * (10/20) = 380 + 60 = 440<br><br>
 	This is the optimal solution. We cannot gain more profit selecting any different combination of items.<br>
-<p>
+</p>
+</div>
 </body>
 </html>

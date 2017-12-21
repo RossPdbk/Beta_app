@@ -42,11 +42,11 @@ public class osHome extends AppCompatActivity implements View.OnClickListener {
         int id = v.getId();
         switch (id) {
             case R.id.osTheory:
-                Intent intent = new Intent(this, coaTheory.class);
+                Intent intent = new Intent(this, osTheory.class);
                 startActivity(intent);
                 break;
             case R.id.osPractical:
-                Intent intent1 = new Intent(this, coaPractical.class);
+                Intent intent1 = new Intent(this, osPractical.class);
                 startActivity(intent1);
                 break;
 

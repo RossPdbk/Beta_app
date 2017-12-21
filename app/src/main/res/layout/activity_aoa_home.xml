@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.mumbaiengineers.beta_app.AoaHome"
-    android:orientation="vertical">
+    android:background="#D5DED6">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:layout_marginBottom="0dp"
+        android:background="#36653C"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -18,10 +20,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Analysis of Algorithms"
             android:gravity="center"
-            android:textSize="25sp"
-            android:textColor="@android:color/black"/>
+            android:text="Analysis of Algorithms"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </android.support.v7.widget.Toolbar>
 
@@ -34,9 +37,14 @@
             android:id="@id/aoaTheory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/aoatheory"
             android:layout_margin="10dp"
             android:layout_weight="12.5"
-            android:text="Theory">
+            android:text="Theory"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="bottom"
+            android:textAlignment="center">
 
         </Button>
 
@@ -44,9 +52,14 @@
             android:id="@id/aoaPractical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@drawable/aoapractical"
             android:layout_margin="10dp"
             android:layout_weight="12.5"
-            android:text="Practical">
+            android:text="Practical"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="bottom"
+            android:textAlignment="center">
 
         </Button>
 
@@ -58,17 +71,19 @@
         android:layout_weight="40"
         android:orientation="vertical">
 
-
         <TextView
             android:id="@id/mfaTextAoa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:background="#36653C"
             android:text="Most frequently asked questions"
+            android:elevation="4dp"
             android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -77,95 +92,110 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:padding="8dp">
 
                 <Button
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
                     android:id="@id/aoaTheoryQ1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
+                    android:layout_height="match_parent"
                     android:gravity="left"
-                    android:text="Q1. Explain Big-Oh, Omega and Theta notation with the help of diagram.">
+                    android:text="Q1. Explain Big-Oh, Omega and Theta notation with the help of diagram."
+                    android:textAllCaps="false">
 
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ2"
+                    android:id="@id/aoaTheoryQ4"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_below="@id/aoaTheoryQ1"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
                     android:gravity="left"
-                    android:text="Q2. Explain 0/1 Knapsack problem">
+                    android:text="Q2. Explain 0/1 Knapsack problem"
+                    android:textAllCaps="false">
 
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ3"
+                    android:id="@id/aoaTheoryQ5"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ2"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/aoaTheoryQ4"
                     android:gravity="left"
-                    android:text="Q3. Explain flow shop scheduling with example.">
+                    android:text="Q3. Explain flow shop scheduling with example."
+                    android:textAllCaps="false">
 
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ4"
+                    android:id="@id/aoaTheoryQ12"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ3"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/aoaTheoryQ5"
                     android:gravity="left"
-                    android:text="Q4. Explain N-Queen problem using backtracking with algorithm.">
+                    android:text="Q4. Explain N-Queen problem using backtracking with algorithm."
+                    android:textAllCaps="false">
 
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ5"
+                    android:id="@id/aoaTheoryQ6"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ4"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/aoaTheoryQ12"
                     android:gravity="left"
-                    android:text="Q5. Explain Prim's Algorithm with example.">
+                    android:text="Q5. Explain Prim's Algorithm with example."
+                    android:textAllCaps="false">
 
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ6"
+                    android:id="@id/aoaTheoryQ2"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ5"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/aoaTheoryQ6"
                     android:gravity="left"
-                    android:text="Q6. Explain three cases of master method.">
+                    android:text="Q6. Explain three cases of master method."
+                    android:textAllCaps="false">
 
                 </Button>
 
                 <Button
-                    android:id="@id/aoaMfaQ7"
+                    android:id="@id/aoaTheoryQ10"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/aoaMfaQ6"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textAllCaps="false"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/aoaTheoryQ2"
                     android:gravity="left"
-                    android:text="Q7. Write a note on all pair shortest path algorithm.">
+                    android:text="Q7. Write a note on all pair shortest path algorithm."
+                    android:textAllCaps="false">
 
                 </Button>
 

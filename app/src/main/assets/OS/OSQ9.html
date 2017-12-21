@@ -1,34 +1,43 @@
 <html>
-	<body>
-	<h3>Q. Explain Internal and External Fragmentation </h3>
-	<hr>
-	
-	<ul>
-	<li> <b>Internal Fragmentation</b><br><br>
-	
-	Internal fragmentation occurs when the memory is divided into fixed sized blocks.
-	Whenever a process request for the memory, the fixed sized block is allocated to the process.
-	In case the memory assigned to the process is somewhat larger than the memory requested,
-	then the difference between assigned and requested memory is the Internal fragmentation. <br><br>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-	This leftover space inside the fixed sized block can not be allocated to any process
-	as it would not be sufficient to satisfy the request of memory by the process. 
-	Let us understand Internal fragmentation with the help of an example. 
-	The memory space is partitioned into the fixed-sized blocks of 18,464 bytes. 
-	Let us say a process request for 18,460 bytes and partitioned fixed-sized block of 18,464 bytes is allocated to the process. 
-	The result is 4 bytes of 18,464 bytes remained empty which is the internal fragmentation. </li><br><br>
+<body>
+	<div class="header">
+		<h4>Q9. Explain Internal and External Fragmentation </h4>
+	</div>
+
+	<div class="card">
+		<ul>
+		<li> <b>Internal Fragmentation</b><br><br>
 	
-	<br>
-	<li> <b>External Fragmentation</b><br><br>
-	External fragmentation occurs when there is a sufficient amount of space in the memory to satisfy the memory request of a process.
-	But the process’s memory request can not be satisfied as the memory available is in a non-contiguous manner.
-	Either you apply first-fit or best-fit memory allocation strategy it will cause external fragmentation.
-	When a process is loaded and removed from the memory the free space creates the hole in the memory space,
-	and there are many such holes in the memory space, this is called External fragmentation. <br><br>
-	Although the first fit and best fit can affect the amount of external fragmentation, it can not be totally eliminated. 
-	</li><br><br>
-	
-	<br><li><b>Key difference between Paging and Segmentation</b><br><br>
+			Internal fragmentation occurs when the memory is divided into fixed sized blocks.
+			Whenever a process request for the memory, the fixed sized block is allocated to the process.
+			In case the memory assigned to the process is somewhat larger than the memory requested,
+			then the difference between assigned and requested memory is the Internal fragmentation. <br><br>
+
+			This leftover space inside the fixed sized block can not be allocated to any process
+			as it would not be sufficient to satisfy the request of memory by the process.
+			Let us understand Internal fragmentation with the help of an example.
+			The memory space is partitioned into the fixed-sized blocks of 18,464 bytes.
+			Let us say a process request for 18,460 bytes and partitioned fixed-sized block of 18,464 bytes is allocated to the process.
+			The result is 4 bytes of 18,464 bytes remained empty which is the internal fragmentation. </li><br><br>
+
+
+		<li> <b>External Fragmentation</b><br><br>
+			External fragmentation occurs when there is a sufficient amount of space in the memory to satisfy the memory request of a process.
+			But the process’s memory request can not be satisfied as the memory available is in a non-contiguous manner.
+			Either you apply first-fit or best-fit memory allocation strategy it will cause external fragmentation.
+			When a process is loaded and removed from the memory the free space creates the hole in the memory space,
+			and there are many such holes in the memory space, this is called External fragmentation. <br><br>
+			Although the first fit and best fit can affect the amount of external fragmentation, it can not be totally eliminated.
+		</li>
+		</ul>
+	</div>
+
+	<div class="card">
+		<br><b>Key difference between Paging and Segmentation</b><br>
 	
 		<ol>
 
@@ -40,14 +49,14 @@
 
 			<li>The size of the page is decided or specified by the hardware. On the other hands, the size of the segment is specified by the user.</li><br>
 
-			<li>In paging, the page table maps the logical address to the physical address, and it contains base address of each page stored in the frames of physical memory space. However, in segmentation, the segment table maps the logical address to the physical address, and it contains segment number and offset (segment limit).</li><br>
+			<li>In paging, the page table maps the logical address to the physical address, and it contains base address of each page stored in the frames of physical memory space. However, in segmentation, the segment table maps the logical address to the physical address, and it contains segment number and offset (segment limit).</li>
+
 
 
 		</ol>
-		
-	<ul>
 
-	
+
+	</div>
 	
 	</body>
 </html>
