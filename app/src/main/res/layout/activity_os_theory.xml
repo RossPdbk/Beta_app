@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/osTheoryQ1"
-            android:text="What is Operating system? Explain different function of OS?"
+            android:text="1. What is Operating system? Explain different function of OS?"
             android:textAllCaps="false"
             android:gravity="left"
 
@@ -50,7 +50,7 @@
             android:layout_below="@id/osTheoryQ1"
             android:textAllCaps="false"
             android:gravity="left"
-            android:text="What are various services provided by OS?">
+            android:text="2. What are various services provided by OS?">
         </Button>
 
         <Button
