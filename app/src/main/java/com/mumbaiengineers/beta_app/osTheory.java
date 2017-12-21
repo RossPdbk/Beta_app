@@ -4,10 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class osTheory extends AppCompatActivity implements View.OnClickListener {
-    Button osTheoryQ1,osTheoryQ2,osTheoryQ3,osTheoryQ4,osTheoryQ5,osTheoryQ6,osTheoryQ7,osTheoryQ8,osTheoryQ9,osTheoryQ10,osTheoryQ11,osTheoryQ12,
+    TextView osTheoryQ1,osTheoryQ2,osTheoryQ3,osTheoryQ4,osTheoryQ5,osTheoryQ6,osTheoryQ7,osTheoryQ8,osTheoryQ9,osTheoryQ10,osTheoryQ11,osTheoryQ12,
             osTheoryQ13,osTheoryQ14,osTheoryQ15,osTheoryQ16,osTheoryQ17,osTheoryQ18,osTheoryQ19;
 
     @Override
@@ -15,25 +18,25 @@ public class osTheory extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_os_theory);
 
-        osTheoryQ1 = (Button) findViewById(R.id.osTheoryQ1);
-        osTheoryQ2 = (Button) findViewById(R.id.osTheoryQ2);
-        osTheoryQ3 = (Button) findViewById(R.id.osTheoryQ3);
-        osTheoryQ4 = (Button) findViewById(R.id.osTheoryQ4);
-        osTheoryQ5 = (Button) findViewById(R.id.osTheoryQ5);
-        osTheoryQ6 = (Button) findViewById(R.id.osTheoryQ6);
-        osTheoryQ7 = (Button) findViewById(R.id.osTheoryQ7);
-        osTheoryQ8 = (Button) findViewById(R.id.osTheoryQ8);
-        osTheoryQ9 = (Button) findViewById(R.id.osTheoryQ9);
-        osTheoryQ10 = (Button) findViewById(R.id.osTheoryQ10);
-        osTheoryQ11 = (Button) findViewById(R.id.osTheoryQ11);
-        osTheoryQ12 = (Button) findViewById(R.id.osTheoryQ12);
-        osTheoryQ13 = (Button) findViewById(R.id.osTheoryQ13);
-        osTheoryQ14 = (Button) findViewById(R.id.osTheoryQ14);
-        osTheoryQ15 = (Button) findViewById(R.id.osTheoryQ15);
-        osTheoryQ16 = (Button) findViewById(R.id.osTheoryQ16);
-        osTheoryQ17 = (Button) findViewById(R.id.osTheoryQ17);
-        osTheoryQ18 = (Button) findViewById(R.id.osTheoryQ18);
-        osTheoryQ19 = (Button) findViewById(R.id.osTheoryQ19);
+        osTheoryQ1 = (TextView) findViewById(R.id.osTheoryQ1);
+        osTheoryQ2 = (TextView) findViewById(R.id.osTheoryQ2);
+        osTheoryQ3 = (TextView) findViewById(R.id.osTheoryQ3);
+        osTheoryQ4 = (TextView) findViewById(R.id.osTheoryQ4);
+        osTheoryQ5 = (TextView) findViewById(R.id.osTheoryQ5);
+        osTheoryQ6 = (TextView) findViewById(R.id.osTheoryQ6);
+        osTheoryQ7 = (TextView) findViewById(R.id.osTheoryQ7);
+        osTheoryQ8 = (TextView) findViewById(R.id.osTheoryQ8);
+        osTheoryQ9 = (TextView) findViewById(R.id.osTheoryQ9);
+        osTheoryQ10 = (TextView) findViewById(R.id.osTheoryQ10);
+        osTheoryQ11 = (TextView) findViewById(R.id.osTheoryQ11);
+        osTheoryQ12 = (TextView) findViewById(R.id.osTheoryQ12);
+        osTheoryQ13 = (TextView) findViewById(R.id.osTheoryQ13);
+        osTheoryQ14 = (TextView) findViewById(R.id.osTheoryQ14);
+        osTheoryQ15 = (TextView) findViewById(R.id.osTheoryQ15);
+        osTheoryQ16 = (TextView) findViewById(R.id.osTheoryQ16);
+        osTheoryQ17 = (TextView) findViewById(R.id.osTheoryQ17);
+        osTheoryQ18 = (TextView) findViewById(R.id.osTheoryQ18);
+        osTheoryQ19 = (TextView) findViewById(R.id.osTheoryQ19);
 
 
         osTheoryQ1.setOnClickListener(this);
