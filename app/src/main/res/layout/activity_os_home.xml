@@ -92,8 +92,7 @@
                     android:padding="10dp"
                     android:textColor="#000000"
                     android:textAlignment="textStart"
-                    android:text="Q1. Explain Critical section problem."
-                    >
+                    android:text="Q1. Explain Critical section problem.">
 
                 </Button>
 
@@ -111,7 +110,9 @@
                     android:padding="10dp"
                     android:textColor="#000000"
                     android:textAlignment="textStart"
-                    android:text="Q2. What are various services provided by OS?" ></Button>
+                    android:text="Q2. What are various services provided by OS?" >
+
+                </Button>
 
                 <Button
                 android:id="@id/osMfaQ3"
@@ -127,8 +128,8 @@
                 android:padding="10dp"
                 android:textColor="#000000"
                 android:textAlignment="textStart"
-                android:text="Q3.  What are different page replacement policies?"
-               >  </Button>
+                android:text="Q3.  What are different page replacement policies?">
+                </Button>
 
                 <Button
                     android:id="@id/osMfaQ4"
@@ -144,9 +145,9 @@
                     android:padding="10dp"
                     android:textColor="#000000"
                     android:textAlignment="textStart"
-                    android:text="Q4.  Explain Banker's algorithm in details."
-                    >
-                    </Button>
+                    android:text="Q4.  Explain Banker's algorithm in details.">
+
+                </Button>
 
                 <Button
                     android:id="@id/osMfaQ5"
@@ -162,9 +163,9 @@
                     android:padding="10dp"
                     android:textColor="#000000"
                     android:textAlignment="textStart"
-                    android:text="Q5.Explain Dining Philosopher problem and it's Solution."
-                    >
-            </Button>
+                    android:text="Q5.Explain Dining Philosopher problem and it's Solution.">
+
+                </Button>
 
                 <Button
                     android:id="@id/osMfaQ6"

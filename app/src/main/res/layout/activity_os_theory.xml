@@ -94,7 +94,6 @@
             android:layout_height="wrap_content"
             android:id="@id/osTheoryQ4"
             android:layout_below="@id/osTheoryQ3"
-            
             android:background="@drawable/background"
             android:textSize="16sp"
             android:layout_marginLeft="7dp"
