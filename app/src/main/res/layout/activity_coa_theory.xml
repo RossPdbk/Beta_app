@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ECEFF1"
     tools:context="com.mumbaiengineers.beta_app.coaTheory"
     android:orientation="vertical">
 
@@ -11,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:elevation="4dp"
-        android:background="#907657"
+        android:background="#455A64"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:layout_marginBottom="0dp">
@@ -31,8 +32,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#bbb4ae">
+        android:layout_height="match_parent">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +50,8 @@
             android:textSize="16sp"
             android:textAllCaps="false"
             android:text="Q1.Differentiate between Computer Architecture and Computer Organization.">
-        </Button>
+        </Button
+>
 
         <Button
             android:textSize="16sp"

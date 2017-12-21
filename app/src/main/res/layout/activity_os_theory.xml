@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ECEFF1"
+    android:background="#CFD8DC"
     android:orientation="vertical"
     tools:context="com.mumbaiengineers.beta_app.osTheory">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#607D8B"
+        android:background="#455A64"
         android:layout_marginBottom="7dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">

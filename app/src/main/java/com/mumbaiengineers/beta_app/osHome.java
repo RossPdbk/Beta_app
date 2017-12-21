@@ -5,9 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.TextView;
 
 public class osHome extends AppCompatActivity implements View.OnClickListener {
-    Button osTheory, osPractical, osMfaQ1, osMfaQ2, osMfaQ3, osMfaQ4, osMfaQ5, osMfaQ6, osMfaQ7;
+    Button osTheory, osPractical;
+    TextView osMfaQ1, osMfaQ2, osMfaQ3, osMfaQ4, osMfaQ5, osMfaQ6, osMfaQ7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +20,13 @@ public class osHome extends AppCompatActivity implements View.OnClickListener {
         osTheory = (Button) findViewById(R.id.osTheory);
         osPractical = (Button) findViewById(R.id.osPractical);
 
-        osMfaQ1 = (Button) findViewById(R.id.osMfaQ1);
-        osMfaQ2 = (Button) findViewById(R.id.osMfaQ2);
-        osMfaQ3 = (Button) findViewById(R.id.osMfaQ3);
-        osMfaQ4 = (Button) findViewById(R.id.osMfaQ4);
-        osMfaQ5 = (Button) findViewById(R.id.osMfaQ5);
-        osMfaQ6 = (Button) findViewById(R.id.osMfaQ6);
-        osMfaQ7 = (Button) findViewById(R.id.osMfaQ7);
+        osMfaQ1 = (TextView) findViewById(R.id.osMfaQ1);
+        osMfaQ2 = (TextView) findViewById(R.id.osMfaQ2);
+        osMfaQ3 = (TextView) findViewById(R.id.osMfaQ3);
+        osMfaQ4 = (TextView) findViewById(R.id.osMfaQ4);
+        osMfaQ5 = (TextView) findViewById(R.id.osMfaQ5);
+        osMfaQ6 = (TextView) findViewById(R.id.osMfaQ6);
+        osMfaQ7 = (TextView) findViewById(R.id.osMfaQ7);
 
         osTheory.setOnClickListener(this);
         osPractical.setOnClickListener(this);

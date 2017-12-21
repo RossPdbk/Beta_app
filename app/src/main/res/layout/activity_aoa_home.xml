@@ -6,13 +6,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.mumbaiengineers.beta_app.AoaHome"
-    android:background="#D5DED6">
+    android:background="#ECEFF1">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginBottom="0dp"
-        android:background="#36653C"
+        android:background="#455A64"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -77,13 +77,14 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:layout_margin="5dp"
-            android:background="#36653C"
+            android:background="#455A64"
             android:text="Most frequently asked questions"
             android:elevation="4dp"
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            />
 
         <ScrollView
             android:layout_width="match_parent"
