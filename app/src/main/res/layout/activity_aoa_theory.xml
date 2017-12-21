@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="#455A64"
+        android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         android:layout_marginBottom="5dp">
@@ -86,206 +87,181 @@
                 android:text="Q4. Explain 0/1 Knapsack problem">
             </TextView>
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ5"
                 android:layout_below="@id/aoaTheoryQ4"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:textColor="#000000"
-                android:text="Q5. Explain flow shop scheduling with example."
-                android:gravity="left" />
+                android:text="Q5. Explain flow shop scheduling with example." />
 
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ6"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ5"
                 android:textColor="#000000"
-                android:text="Q6. Explain Prim's Algorithm with example."
-                android:gravity="left"/>
+                android:text="Q6. Explain Prim's Algorithm with example." />
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ7"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ6"
                 android:textColor="#000000"
-                android:text="Q7. Explain Krushkal's Algorithm with example."
-                android:gravity="left">
-            </Button>
+                android:text="Q7. Explain Krushkal's Algorithm with example.">
+            </TextView>
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ8"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ7"
                 android:textColor="#000000"
-                android:text="Q8. Optimal storage on tapes."
-                android:gravity="left"/>
+                android:text="Q8. Optimal storage on tapes." />
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ9"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ8"
                 android:textColor="#000000"
-                android:text="Q9. Multistage Graphs"
-                android:gravity="left"/>
+                android:text="Q9. Multistage Graphs" />
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ10"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ9"
                 android:text="Q10. Write a note on all pair shortest path algorithm."
-                android:textColor="#000000"
-                android:gravity="left">
-            </Button>
+                android:textColor="#000000">
+            </TextView>
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ11"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ10"
                 android:text="Q11. Explain Graph coloring algorithm with backtracking."
-                android:textColor="#000000"
-                android:gravity="left"/>
+                android:textColor="#000000" />
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ12"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ11"
-                android:gravity="left"
                 android:text="Q12. Explain N-Queen problem using backtracking with algorithm."
                 android:textColor="#000000"/>
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ13"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ12"
                 android:text="Q13. Write an algorithm to find minimum and maximum value using divide and conquer and also derive its complexity."
-                android:gravity="left"
                 android:textColor="#000000">
-            </Button>
+            </TextView>
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ14"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ13"
                 android:text="Q14.  Write an algorithm of sum of subsets."
-                android:gravity="left"
                 android:textColor="#000000"/>
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ15"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ14"
-                android:gravity="left"
                 android:text="Q15. Find the Huffman code for the following message. COLLEGE OF ENGINEERING"
                 android:textColor="#000000"/>
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ16"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ15"
                 android:text="Q16. Explain Naive string matching algorithm."
-                android:gravity="left"
                 android:textColor="#000000">
-            </Button>
+            </TextView>
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ17"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ16"
                 android:text="Q17. Explain Rabin-Karp string matching algotithm."
-                android:gravity="left"
                 android:textColor="#000000"/>
 
-            <Button
-                android:background="@android:color/white"
+            <TextView
+                android:background="@drawable/background"
                 android:padding="10dp"
                 android:layout_margin="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@id/aoaTheoryQ18"
-                android:textAllCaps="false"
                 android:textSize="16sp"
                 android:layout_below="@id/aoaTheoryQ17"
                 android:text="Q18.Explain 15 puzzle problem."
-                android:gravity="left"
                 android:textColor="#000000"/>
+
         </RelativeLayout>
+
     </ScrollView>
+
 </LinearLayout>
