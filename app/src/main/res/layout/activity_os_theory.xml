@@ -29,8 +29,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -41,10 +41,8 @@
             android:layout_height="wrap_content"
             android:id="@id/osTheoryQ1"
             android:text="1. What is Operating system? Explain different function of OS?"
-<<<<<<< HEAD
             android:textAllCaps="false"
             android:gravity="left"
-=======
             android:background="@drawable/background"
             android:textSize="16sp"
             android:textAlignment="textStart"
@@ -52,10 +50,8 @@
             android:layout_marginLeft="7dp"
             android:layout_marginRight="7dp"
             android:padding="10dp"
-            android:textColor="#000000"
->>>>>>> 63bd3bf1a203e2f37c69e6f0f324bdcd89e2cb4e
+            android:textColor="#000000">
 
-            >
         </TextView>
 
         <TextView
@@ -64,22 +60,17 @@
             android:textAlignment="textStart"
             android:id="@id/osTheoryQ2"
             android:layout_below="@id/osTheoryQ1"
-<<<<<<< HEAD
             android:textAllCaps="false"
             android:gravity="left"
-            android:text="2. What are various services provided by OS?">
-        </Button>
-=======
+            android:text="2. What are various services provided by OS?"
             android:background="@drawable/background"
             android:textSize="16sp"
             android:layout_marginLeft="7dp"
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:padding="10dp"
-            android:textColor="#000000"
->>>>>>> 63bd3bf1a203e2f37c69e6f0f324bdcd89e2cb4e
+            android:textColor="#000000">
 
-            android:text="2. What are various services provided by OS?">
         </TextView>
 
         <TextView
