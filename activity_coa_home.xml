@@ -85,8 +85,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ1"
-                    android:text="Show IEEE 754 standards for Binary Floating Point Representation for 32 bit single format and 64 bit double format."
+                    android:id="@id/coaTheoryQ3"
+                    android:text="Differentiate between RISC and CISC."
                     android:textAllCaps="false"
                     android:gravity="left"
                     >
@@ -97,9 +97,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ2"
-                    android:text="Draw the flow chart for Booth's Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5. "
-                    android:layout_below="@id/coaMfaQ1"
+                    android:id="@id/coaTheoryQ7"
+                    android:text="Draw the flow chart for Booth's Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5."
+                    android:layout_below="@id/coaTheoryQ3"
                     android:textAllCaps="false"
                     android:gravity="left">
                 </Button>
@@ -109,9 +109,9 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ3"
-                    android:layout_below="@id/coaMfaQ2"
-                    android:text="Differentiate between RISC and CISC."
+                    android:id="@id/coaTheoryQ5"
+                    android:layout_below="@id/coaTheoryQ7"
+                    android:text="Express (127.125)10 in the IEEE single precision standard of floating point representation"
                     android:textAllCaps="false"
                     android:gravity="left">
                 </Button>
@@ -121,8 +121,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ4"
-                    android:layout_below="@id/coaMfaQ3"
+                    android:id="@id/coaTheoryQ18"
+                    android:layout_below="@id/coaTheoryQ5"
                     android:text="Explian flynn's classification."
                     android:textAllCaps="false"
                     android:gravity="left">
@@ -133,8 +133,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ5"
-                    android:layout_below="@id/coaMfaQ4"
+                    android:id="@id/coaTheoryQ20"
+                    android:layout_below="@id/coaTheoryQ18"
                     android:text="Explain different pipelining Hazards."
                     android:textAllCaps="false"
                     android:gravity="left">
@@ -145,8 +145,8 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ6"
-                    android:layout_below="@id/coaMfaQ5"
+                    android:id="@id/coaTheoryQ15"
+                    android:layout_below="@id/coaTheoryQ20"
                     android:text="Explain paging."
                     android:textAllCaps="false"
                     android:gravity="left">
@@ -157,16 +157,21 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:id="@id/coaMfaQ7"
-                    android:layout_below="@id/coaMfaQ6"
-                    android:text="Explain segmentation."
+                    android:id="@id/coaTheoryQ16"
+                    android:layout_below="@id/coaTheoryQ15"
+                    android:text="Explain Segmentation."
                     android:textAllCaps="false"
                     android:gravity="left">
                 </Button>
 
+
+
             </RelativeLayout>
 
+
+
         </ScrollView>
+
 
     </RelativeLayout>
 

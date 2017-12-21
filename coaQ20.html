@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>COA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h4>Explain different pipelining Hazards.</h4>
+
+	<div class="card">
+	<p>
+	<ol>
+	<li>There are situations, called hazards, that prevent the next instruction in the instruction stream from being executing during its designated clock cycle.</li>
+	<li>Hazards reduce the performance from the ideal speedup gained by pipelining.</li>
+	<li>There are three classes of hazards: </li>
+	<ul>
+	<li><b>Structural Hazards</b> </li>
+	<li><b>Data Hazards</b> </li>
+	<li><b>Control Hazards</b></li>
+	</ul>
+	<li><b>Structural Hazards :</b> They arise from resource conflicts when the hardware cannot support all possible combinations of instructions in simultaneous overlapped execution.<br>
+							The most common case is when memory is accessed at the same time by two instructions. One instruction may need to access the memory as part of the 
+							Execute or Write back phase while other instruction is being fetched. In this case if both the instructions and data reside in the same memory. 
+							Both the instructions can't proceed together and one of them needs to be stalled till the other is done with the memory access part. 
+							Thus in general sufficient hardware resources are needed for avoiding structural hazards.</li>
+	<li><b>Data Hazards: </b>They arise when an instruction depends on the result of a previous instruction i.e when operands of first instruction is needed in second intruction.<br>
+			Whenever there are two instructions one of which depends on the data obtained from the other.<br>
+			A=A+A+5;<br>
+			B=A+1;<br>
+			For the above sequence, the second instruction needs the value of 'A' computed in the first instruction.<br>
+			Thus the second instruction is said to depend on the first.</li>
+	<li><b>Control Hazards :</b>They arise from the pipelining of branches and other instructions that change the PC.<br>
+	However the problem arises when one of the instructions is a branching instruction to some other memory location.
+	Thus all the instruction fetched in the pipeline from consecutive memory locations are invalid now and need to removed.<br>
+	</li>
+	</ol>
+ 	</p>
+	</div>
+</body>
+</html>

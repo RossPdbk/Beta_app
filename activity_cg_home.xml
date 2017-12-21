@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mumbaiengineers.beta_app.cgHome"
+    android:background="#F5F5DC">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2E8B57"
+        android:elevation="4dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer Graphics"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.30" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="60">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="12.5"
+            android:id="@id/cgTheory"
+            android:background="@drawable/cgtheory"
+            android:text="Theory">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="12.5"
+            android:background="@drawable/cgpractical"
+            android:id="@id/cgPractical"
+            android:text="Practical">
+        </Button>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_margin="5dp"
+            android:background="#2E8B57"
+            android:text="Most frequently asked questions"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:id="@id/mfaTextCg"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mfaTextCg"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:id="@id/cgTheoryQ1"
+                    android:text="Q1.Explain diffrence between Random Scan and Raster Scan"
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    >
+                </Button>
+
+                <Button
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:id="@id/cgTheoryQ5"
+                    android:text="Q2.Explain Mid-point circle algorithm.Using same,plot the circle whose radius is 10 units"
+                    android:layout_below="@id/cgTheoryQ1"
+                    >
+                </Button>
+
+                <Button
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:id="@id/cgTheoryQ10"
+                    android:layout_below="@id/cgTheoryQ5"
+                    android:text="Q3.Derive matrix for 2D rotation about an arbitary axis.">
+                </Button>
+
+                <Button
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:id="@id/cgTheoryQ9"
+                    android:layout_below="@id/cgTheoryQ10"
+                    android:text="Q4.Define window and viewport and derive window to viewport transformation.">
+                </Button>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:id="@id/cgTheoryQ8"
+                    android:layout_below="@id/cgTheoryQ9"
+                    android:text="Q5.Explain Parallel and Perspective projecton and derive matrix for them.">
+                </Button>
+
+                <Button
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:id="@id/cgTheoryQ16"
+                    android:layout_below="@id/cgTheoryQ8"
+                    android:text="Q6.prove that two succesive rotations are addivtive.">
+                </Button>
+
+                <Button
+                    android:background="@android:color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:gravity="left"
+                    android:id="@id/cgTheoryQ11"
+                    android:layout_below="@id/cgTheoryQ16"
+                    android:text="Q7.Define halftoning and dithering techniques.">
+                </Button>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

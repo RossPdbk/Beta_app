@@ -1,0 +1,54 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    padding: 5px;
+    text-align: center;
+}
+td{
+    padding: 5px;
+text-align: left;}
+i{
+	font-size:10px;
+}
+img{
+    width:100%;
+}
+
+h4{
+
+    font-size:25sp;
+}
+.card{
+	box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	padding:1px 12px 1px 12px;
+	margin:6px 0 6px 0;
+	background:white;
+	text-align:justify;
+}
+.card ul{
+    padding:1px 10px 1px 15px;
+}
+.card ol{
+    padding:1px 10px 1px 15px;
+}
+.card_algo{
+   	overflow:auto;
+}
+body{
+    text-align:justify;
+    background:#bbb4ae;
+    font-size:15sp;
+    font-family:Roboto;
+    line-height:150%;
+}
+.header{
+	box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	padding:1px 12px 1px 12px;
+	margin:6px 0 6px 0;
+	background:grey;
+	text-align:justify;
+}
