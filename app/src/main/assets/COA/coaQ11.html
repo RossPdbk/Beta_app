@@ -4,20 +4,29 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h4> Explain in details Cache Coherency.</h4>
+<div class="header">
+	<p><h3> Explain in details Cache Coherency.</h3></p>
+</div>
+<div class="card">
 	<p>
 	<ol>
 	<li>A cache is a place to store something temporarily in a computing environment.It improves the performance of a system but it creates a problem know as cache coherence.
 	<li>Before the cache is copied into main memory ,if the two copies one in cache and other in main memory are different.</li>
 	<li>This inconsistency in value of cache and main memory is called cache coherence problem. </li>
 	<li>There are three distinct levels of cache coherence: </li>
-		<ul>
+		<ul type="square">
 		<li>Every write operation appears to occur instantaneously.</li>
 		<li>All processes see exactly the same sequence of changes of values for each separate operand.</li>
 		<li>Different processes may see an operand assume different sequences of values.</li>
 		</ul>
 	<li>Cache coherence approaches have generally been divided into software and hardware approaches. The classification of cache coherency protocols is shown </li>
-	<img src="cache.JPG"/><br>
+	</ol>
+	</p>
+</div>
+<div class="card">
+	<img src="cache.JPG"/>
+</div>
+<div class="card">
 	<ul>
 	<li><b>Software Approaches:</b><br>Software cache coherence schemes attempt to avoid the need for additional hardware circuitry and logic by relying on the
 	compiler and operating system to deal with the problem. Software approaches are attractive because the overhead of detecting potential problems is 
@@ -26,9 +35,8 @@
 	Because the problem is only dealt with when it actually arises, there is more effective use of caches, leading to improved performance over a software approach</b><br> </li>
 		<ul><li><b>Snoopy Protocols</b><br> </li>
 		<li><b>Directory Protocols</b><br></li></ul>
-		</ul>
-	</ol>
+	</ul>
 
-</p>
+</div>
 </body>
 </html>

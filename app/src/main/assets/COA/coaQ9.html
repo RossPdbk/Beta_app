@@ -4,26 +4,29 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h4>Explain Addressing modes.</h4>
+<div class="header">
+	<p><h3>Explain Addressing modes.</h3></p>
+</div>
+<div class="card">
 	<p>
 	<ul>
 	<li><b>Immediate mode:</b> In immediate addressing the operand is specified in the instruction itself. 
-		<br>Example:  MOV AL, 20H (move the data 20H into AL register)
+		<br>Example: MOV AL, 20H (move the data 20H into AL register)
 	 </li>
 	<li><b>Direct Mode:</b> The address of a memory location is given explicitly in the instruction.
-		<br>Example:ADD AL,[0404]   (add the contents of offset address 0404 to AL)</li>
+		<br>Example: ADD AL,[0404]   (add the contents of offset address 0404 to AL)</li>
 	<li><b>Register mode:</b> In register addressing the operand is placed in one of 8 bit or 16 bit general purpose registers.
 		The data is in the register that is specified by the instruction.
 		<br>Example: MOV AL,BL (move the contents of BL register to AL register)		</li>
 	<li><b>Register Indirect mode:</b>The effective address of operand is stored in register and the instruction conatins address of register conatining address of data .
-	<br>	MOV AX,[BX](move the contents of memory location s addressed by the register BX to the register AX)
+	<br>Example: MOV AX,[BX](move the contents of memory location s addressed by the register BX to the register AX)
 	</li>
 	<li><b>Base addressing:</b> The operand’s offset is sum of displacement and the contents of the base register BX or BP.
-	<br> Example:MOV AL,[BX+05]
+	<br> Example: MOV AL,[BX+05]
 	</li>
 	
 <li><b>Indexed addressing mode: </b>The operand’s offset is the sum of the content of an index register SI or DI and displacement.
-	<br> Example:MOV AX, [SI +05]
+	<br> Example: MOV AX, [SI +05]
 	</li>
 	
 	<li><b> Based Indexed Addressing: </b> The operand’s offset is sum of the content of a base register BX or BP and an index register SI or DI.
@@ -32,10 +35,11 @@
 
 	</li>
 	<li><b> Based Indexed plus displacement addressing mode: </b> In this mode of addressing the operand’s offset is given by offset=[BX or BP]+[SI or DI]+displacement.
-	<br> Example:MOV AX, [BX+SI+05]
+	<br> Example: MOV AX, [BX+SI+05]
 
 	</li>
 	</ul>
 	</p>
+</div>
 </body>
 </html>

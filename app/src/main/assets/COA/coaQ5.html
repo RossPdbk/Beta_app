@@ -5,50 +5,74 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<h4>Express (127.125)10 in the IEEE single precision standard of floating point representation</h4>
+<div class="header">
+	<p><h3>Express (127.125)10 in the IEEE single precision standard of floating point representation</h3></p>
+</div>
+<div class="card">
 	<p>
 	<h4>Single precision </h4>
-	<b>Convert decimal to binary : </b>
-		first convert 127 in to binary format.<br>
-		127=1111111<br>
-		then convert .125 in to binary. for that,<br>
-		0.125*2 =0.250 -->0  ^<br>
-		0.250*2 =0.500 -->0  |<br>
-		0.500*2 =1.000 -->1  |<br>
-		0.125 = 100 <br>
-		Binary format of 127.125=1111111.100<br>
-		<b>Normalize the binary fractional number :</b><br>
-		1.111111100 X 2^6<br>
-		(mantissa= 111111100)
-		<b>Calculate Exponent :</b><br>
-		E=127+6=133<br>
-		<b>Convert Exponent into binary :</b><br>
-		(133)<small>10</small> = (10000101)<small>2</small><br>
-		Exponent=10000101<br>
-		<b>Representation:</b><br>
+	<b>1.Convert decimal to binary : </b>
+<pre>
+first convert 127 in to binary format.
+	127=1111111<br>
+then convert .125 in to binary. for that,
+	0.125*2 =0.250 -->0  ^
+	0.250*2 =0.500 -->0  |
+	0.500*2 =1.000 -->1  |
+	0.125 = 100
+Binary format of 127.125=1111111.100
+</pre>
+<b>2.Normalize the binary fractional number :</b>
+<pre>
+1.111111100 X 2^6
+(mantissa= 111111100)
+</pre>
+<b>3.Calculate Exponent :</b>
+<pre>
+E=127+6=133
+</pre>
+<b>4.Convert Exponent into binary :</b>
+<pre>
+(133)<small>10</small> = (10000101)<small>2</small>
+Exponent=10000101
+</pre>
+<b>5.Representation:</b><br>
 		<img src="f_eg1.JPG"/><br>
 		
-		Binary result (32 bits): 01000010111111110000000000000000
+		<b>Binary result (32 bits):<br> 01000010111111110000000000000000</b></br>
+	</p>
+</div>
+<div class="card">
+	<p>
 		<h4>Double precision</h4>
-		first convert 127 in to binary format.<br>
-		127=1111111<br>
-		then convert .125 in to binary. for that,<br>
-		0.125*2 =0.250 -->0  ^<br>
-		0.250*2 =0.500 -->0  |<br>
-		0.500*2 =1.000 -->1  |<br>
-		0.125 = 100 <br>
-		Binary format of 127.125=1111111.100<br>
-		<b>Normalize the binary fractional number :</b><br>
-		1.111111100 * 2^6<br>
-		<b>Calculate Exponent :</b><br>
-		E=1023+6=1029<br>
-		<b>Convert Exponent into binary :</b><br>
-		(1029)<small>10</small> = (10000000101)<small>2</small><br>
-		Exponent=10000000101<br>
-		<b>Representation:</b><br>
+		<b>1.Convert decimal to binary : </b>
+<pre>
+first convert 127 in to binary format.
+	127=1111111
+then convert .125 in to binary. for that,
+	0.125*2 =0.250 -->0  ^
+	0.250*2 =0.500 -->0  |
+	0.500*2 =1.000 -->1  |
+	0.125 = 100
+Binary format of 127.125=1111111.100
+</pre>
+<b>2.Normalize the binary fractional number :</b>
+<pre>
+1.111111100 * 2^6
+</pre>
+<b>3.Calculate Exponent :</b>
+<pre>
+E=1023+6=1029
+</pre>
+<b>4.Convert Exponent into binary :</b>
+<pre>
+(1029)<small>10</small> = (10000000101)<small>2</small>
+Exponent=10000000101
+</pre>
+<b>5.Representation:</b><br>
 		<img src="f_eg2.JPG"/><br>
-		
-		Binary result (32 bits):0100000001011111111000000000000000000000000000000000000000000000
-		</p>
+	<b>Binary result (32 bits):<br>0100000001011111111000000...00<small>(64th)</small></b>
+
+</div>
 </body>
 </html>
