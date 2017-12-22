@@ -101,6 +101,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rectangle"
                     android:textSize="16sp"
+                    android:elevation="1dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
                     android:layout_marginBottom="7dp"
@@ -116,7 +117,7 @@
                     android:background="@drawable/rectangle"
                     android:textSize="16sp"
                     android:textColor="@color/black"
-                    
+                    android:elevation="1dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
                     android:layout_marginBottom="7dp"
@@ -132,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rectangle"
                 android:textSize="16sp"
-
+                android:elevation="1dp"
                 android:layout_marginLeft="7dp"
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="7dp"
@@ -148,7 +149,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rectangle"
                     android:textSize="16sp"
-
+                    android:elevation="1dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
                     android:layout_marginBottom="7dp"
@@ -164,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rectangle"
                     android:textSize="16sp"
-
+                    android:elevation="1dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
                     android:layout_marginBottom="7dp"
@@ -180,7 +181,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rectangle"
                     android:textSize="16sp"
-
+                    android:elevation="1dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
                     android:layout_marginBottom="7dp"
@@ -196,7 +197,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/rectangle"
                     android:textSize="16sp"
-
+                    android:elevation="1dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
                     android:layout_marginBottom="7dp"
