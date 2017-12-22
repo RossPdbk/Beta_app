@@ -6,10 +6,11 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class  MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnAoa, btnCoa, btnOs, btnCg;
+    RelativeLayout btnAoa, btnCoa, btnOs, btnCg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +20,10 @@ public class  MainActivity extends AppCompatActivity implements View.OnClickList
         setSupportActionBar(myToolbar);
 
 
-        btnAoa = (Button) findViewById(R.id.btn_aoa);
-        btnCoa = (Button) findViewById(R.id.btn_coa);
-        btnCg = (Button) findViewById(R.id.btn_cg);
-        btnOs = (Button) findViewById(R.id.btn_os);
+        btnAoa = (RelativeLayout) findViewById(R.id.btn_aoa);
+        btnCoa = (RelativeLayout) findViewById(R.id.btn_coa);
+        btnCg = (RelativeLayout) findViewById(R.id.btn_cg);
+        btnOs = (RelativeLayout) findViewById(R.id.btn_os);
 
         btnAoa.setOnClickListener(this);
         btnCoa.setOnClickListener(this);
