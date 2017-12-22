@@ -64,10 +64,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="40"
-        android:elevation="1dp"
-        android:background="@drawable/mfaback"
         android:layout_margin="5dp"
+        android:layout_weight="40"
+        android:background="@drawable/mfaback"
+        android:elevation="1dp"
         android:orientation="vertical">
 
 
@@ -75,136 +75,129 @@
             android:id="@id/mfaTextOs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
             android:layout_margin="7dp"
             android:background="@color/colorPrimary"
-            android:text="Most frequently asked questions"
             android:elevation="4dp"
+            android:padding="8dp"
+            android:text="Most frequently asked questions"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/mfaTextOs"
-            >
+            android:layout_below="@id/mfaTextOs">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@id/osMfaQ1"
+                    android:id="@id/osTheoryQ5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rectangle"
-                    android:textSize="16sp"
-                    android:elevation="1dp"
+                    android:layout_marginBottom="7dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
-                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="1dp"
+                    android:text="Q1. Explain Critical section problem."
                     android:textColor="@color/black"
-                    android:text="Q1. Explain Critical section problem.">
+                    android:textSize="16sp"></TextView>
+
+                <TextView
+                    android:id="@id/osTheoryQ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/osTheoryQ5"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="1dp"
+                    android:text="Q2. What are various services provided by OS?"
+                    android:textColor="@color/black"
+
+                    android:textSize="16sp">
+
                 </TextView>
 
                 <TextView
-                    android:id="@id/osMfaQ2"
-                    android:layout_below="@id/osMfaQ1"
+                    android:id="@id/osTheoryQ3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rectangle"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"
-                    android:elevation="1dp"
+                    android:layout_below="@id/osTheoryQ2"
+                    android:layout_marginBottom="7dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
-                    android:layout_marginBottom="7dp"
-                    
-                    android:text="Q2. What are various services provided by OS?" >
+                    android:background="@drawable/rectangle"
+                    android:elevation="1dp"
+                    android:text="Q3.  What are different page replacement policies?"
 
-                </TextView>
-
-                <TextView
-                android:id="@id/osMfaQ3"
-                android:layout_below="@id/osMfaQ2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/rectangle"
-                android:textSize="16sp"
-                android:elevation="1dp"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="7dp"
-
-                android:textColor="@color/black"
-                android:text="Q3.  What are different page replacement policies?"> 
-                </TextView>
+                    android:textColor="@color/black"
+                    android:textSize="16sp"></TextView>
 
                 <TextView
-                    android:id="@id/osMfaQ4"
-                    android:layout_below="@id/osMfaQ3"
+                    android:id="@id/osTheoryQ6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rectangle"
-                    android:textSize="16sp"
-                    android:elevation="1dp"
+                    android:layout_below="@id/osTheoryQ3"
+                    android:layout_marginBottom="7dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
-                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="1dp"
+                    android:text="Q4.  Explain Banker's algorithm in details."
 
                     android:textColor="@color/black"
-                    android:text="Q4.  Explain Banker's algorithm in details.">
-                </TextView>
+                    android:textSize="16sp"></TextView>
 
                 <TextView
-                    android:id="@id/osMfaQ5"
-                    android:layout_below="@id/osMfaQ4"
+                    android:id="@id/osTheoryQ10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rectangle"
-                    android:textSize="16sp"
-                    android:elevation="1dp"
+                    android:layout_below="@id/osTheoryQ6"
+                    android:layout_marginBottom="7dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
-                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="1dp"
+                    android:text="Q5.Explain Dining Philosopher problem and it's Solution."
 
                     android:textColor="@color/black"
-                    android:text="Q5.Explain Dining Philosopher problem and it's Solution.">
-                </TextView>
+                    android:textSize="16sp"></TextView>
 
                 <TextView
-                    android:id="@id/osMfaQ6"
-                    android:layout_below="@id/osMfaQ5"
+                    android:id="@id/osTheoryQ7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rectangle"
-                    android:textSize="16sp"
-                    android:elevation="1dp"
+                    android:layout_below="@id/osTheoryQ10"
+                    android:layout_marginBottom="7dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
-                    android:layout_marginBottom="7dp"
+                    android:background="@drawable/rectangle"
+                    android:elevation="1dp"
+                    android:text="Q6. What is deadlock? Explain necessary and sufficient condition for deadlock to occur. Explain deadlock avoidance, prevention and detection."
 
                     android:textColor="@color/black"
-                    android:text="Q6. What is deadlock? Explain necessary and sufficient condition for deadlock to occur. Explain deadlock avoidance, prevention and detection.">
-                </TextView>
+                    android:textSize="16sp"></TextView>
 
                 <TextView
-                    android:id="@id/osMfaQ7"
-                    android:layout_below="@id/osMfaQ6"
+                    android:id="@id/osTheoryQ9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rectangle"
-                    android:textSize="16sp"
-                    android:elevation="1dp"
+                    android:layout_below="@id/osTheoryQ7"
+                    android:layout_marginBottom="7dp"
                     android:layout_marginLeft="7dp"
                     android:layout_marginRight="7dp"
-                    android:layout_marginBottom="7dp"
-                    
+                    android:background="@drawable/rectangle"
+                    android:elevation="1dp"
+                    android:text="Q7. Explain Internal and External Fragmentation"
+
                     android:textColor="@color/black"
-                    android:text="Q7. Explain Internal and External Fragmentation">
-                    
+                    android:textSize="16sp">
+
                 </TextView>
 
             </RelativeLayout>

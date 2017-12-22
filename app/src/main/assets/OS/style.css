@@ -1,26 +1,28 @@
-body{
-    background: #ECEFF1;
-    font-size:18sp;
-    font-family:Verdana;
-     line-height:150%;
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
-.header{
-    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    padding: 10px 12px 3px 10px;
-   	margin:5px 2px 5px 2px;
-    background:#607D8B;
-    border-radius: 2px;
-    text-align:justify;
-    color:white;
+th{
+    padding: 5px;
+    text-align: center;
 }
+td{
+    padding: 5px;
+text-align: left;}
+i{
+	font-size:14px;
+}
+img{
+    width:100%;
+}
+
+
 .card{
 	box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-	padding:15px 12px 1px 12px;
+	padding:1px 12px 1px 12px;
 	margin:6px 0 6px 0;
-	background:#ffffff;
-	border-radius: 2px;
+	background:white;
 	text-align:justify;
 	overflow:auto;
 }
@@ -33,7 +35,19 @@ body{
 .card_algo{
    	overflow:auto;
 }
-
-h4{
-    margin: 5px;
+body{
+     background:#D5DED6;
+    font-size:18sp;
+    font-family:Verdana;
+     line-height:150%;
+}
+.header{
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding:1px 12px 1px 12px;
+   	margin:5px 0 5px 0;
+    background:#455A64  ;
+    text-align:justify;
+    color:white;
+    border-radius: 2px;
 }

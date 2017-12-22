@@ -20,13 +20,13 @@ public class osHome extends AppCompatActivity implements View.OnClickListener {
         osTheory = (Button) findViewById(R.id.osTheory);
         osPractical = (Button) findViewById(R.id.osPractical);
 
-        osMfaQ1 = (TextView) findViewById(R.id.osMfaQ1);
-        osMfaQ2 = (TextView) findViewById(R.id.osMfaQ2);
-        osMfaQ3 = (TextView) findViewById(R.id.osMfaQ3);
-        osMfaQ4 = (TextView) findViewById(R.id.osMfaQ4);
-        osMfaQ5 = (TextView) findViewById(R.id.osMfaQ5);
-        osMfaQ6 = (TextView) findViewById(R.id.osMfaQ6);
-        osMfaQ7 = (TextView) findViewById(R.id.osMfaQ7);
+        osMfaQ1 = (TextView) findViewById(R.id.osTheoryQ5);
+        osMfaQ2 = (TextView) findViewById(R.id.osTheoryQ2);
+        osMfaQ3 = (TextView) findViewById(R.id.osTheoryQ3);
+        osMfaQ4 = (TextView) findViewById(R.id.osTheoryQ10);
+        osMfaQ5 = (TextView) findViewById(R.id.osTheoryQ6);
+        osMfaQ6 = (TextView) findViewById(R.id.osTheoryQ7);
+        osMfaQ7 = (TextView) findViewById(R.id.osTheoryQ9);
 
         osTheory.setOnClickListener(this);
         osPractical.setOnClickListener(this);
@@ -53,43 +53,43 @@ public class osHome extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent1);
                 break;
 
-            case R.id.osMfaQ1:
+            case R.id.osTheoryQ5:
                 Intent intent2 = new Intent(this, webviewAnswer.class);
                 intent2.putExtra("Qid",id);
                 startActivity(intent2);
                 break;
 
-            case R.id.osMfaQ2:
+            case R.id.osTheoryQ2:
                 Intent intent3 = new Intent(this, webviewAnswer.class);
                 intent3.putExtra("Qid",id);
                 startActivity(intent3);
                 break;
 
-            case R.id.osMfaQ3:
+            case R.id.osTheoryQ3:
                 Intent intent4 = new Intent(this, webviewAnswer.class);
                 intent4.putExtra("Qid",id);
                 startActivity(intent4);
                 break;
 
-            case R.id.osMfaQ4:
+            case R.id.osTheoryQ6:
                 Intent intent5 = new Intent(this, webviewAnswer.class);
                 intent5.putExtra("Qid",id);
                 startActivity(intent5);
                 break;
 
-            case R.id.osMfaQ5:
+            case R.id.osTheoryQ10:
                 Intent intent6 = new Intent(this, webviewAnswer.class);
                 intent6.putExtra("Qid",id);
                 startActivity(intent6);
                 break;
 
-            case R.id.osMfaQ6:
+            case R.id.osTheoryQ7:
                 Intent intent7 = new Intent(this, webviewAnswer.class);
                 intent7.putExtra("Qid",id);
                 startActivity(intent7);
                 break;
 
-            case R.id.osMfaQ7:
+            case R.id.osTheoryQ9:
                 Intent intent8 = new Intent(this, webviewAnswer.class);
                 intent8.putExtra("Qid",id);
                 startActivity(intent8);

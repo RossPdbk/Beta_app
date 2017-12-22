@@ -11,10 +11,13 @@
 
 
 	<div class="card">
-		<br>
+		<p>
 		The   following   are   the   6   high   level   stages   of   a   typical   Linux   boot   process.  <br><br>
-		<img src="Linux_boot_process.jpg" width=95%> <br>
+		<img src="Linux_boot_process.jpg" width=95%> </p>
+	</div>
 
+	<div class="card">
+	<p>	
 		<b>1.   BIOS </b><br>
    			<ul>
    			<li>BIOS   stands   for   Basic   Input/Output   System Performs   some   system   integrity   checks, Searches, loads,   and   executes   the   boot   loader   program.
@@ -23,7 +26,10 @@
  			<li>Once   the   boot   loader   program   is   detected and   loaded   into   the   memory,   BIOS   gives   the   control   to   it.
  			<li>So,   in   simple   terms   BIOS   loads   and executes   the   MBR  boot   loader.
   			 </ul>
+  			</p>
+  	</div>
 
+  	<div class="card">	<p>	 
 		<b>2.   MBR </b><br>
 			<ul>
    			<li>MBR   stands   for   Master   Boot   Record.
@@ -37,7 +43,9 @@
 				</ul>
 			<li>So,   in   simple   terms   MBR   loads   and   executes   the   GRUB   boot   loader.
 	 		</ul>
+	 </p></div>
 
+	<div class="card"><p>
 		<b>3.   GRUB  </b> <br>
 			<ul>
 			<li>GRUB   stands   for   Grand   Unified   Bootloader.
@@ -47,7 +55,9 @@
    			<li>Grub   configuration   file   is /boot/grub/grub.conf   (/etc/grub.conf   is   a  link   to   this).
    			<li>So,   in   simple   terms GRUB   just   loads   and   executes   Kernel   and   initrd   images.
 			</ul>
+	</p></div>
 
+	<div class="card"><p>
 		<b>4.   Kernel </b><br>
    			<ul>
    			<li>Mounts   the   root   file   system   as   specified   in   the   "root="   in   grub.conf
@@ -57,7 +67,9 @@
    			<li>initrd   is   used   by   kernel   as   temporary   root   file   system   until   kernel   is   booted   and   the   real root   file   system   is   mounted.
    			<li>It   also   contains   necessary   drivers   compiled   inside,  which   helps   it to   access   the   hard   drive   partitions,   and   other   hardware.
   			</ul>
+  	</p></div>
   
+  	<div class="card"><p>
 		<b>5.   Init </b> <br>
    			<ul>
 			<li>Looks   at   the   /etc/inittab   file   to   decide   the   Linux   run   level.
@@ -66,7 +78,9 @@
 			<li>Since   you   know   what   0   and   6   means,   probably   you   might   not   do   that.
 			<li>Typically   you   would   set the   default   run   level   to   either   3   or   5.
 			</ul>
+	</p></div>
  
+ 	<div class="card"><p>
 		<b>6.   Runlevel   programs </b><br>
    			<ul>
 			<li>When   the   Linux   system   is   booting   up,   you   might   see   various   services   getting   started.
@@ -84,7 +98,7 @@
 	 			</ul>
 	 		</ul>
 
-	</div>
+	</p></div>
 		
 	</body>
 	
