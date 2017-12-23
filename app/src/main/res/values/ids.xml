@@ -145,5 +145,7 @@
     <item name="osTheoryQ19" type="id">osTheoryQ19</item>
     <item name="osTheoryQ20" type="id">osTheoryQ20</item>
     <item name="coaTheoryQ21" type="id">coaTheoryQ21</item>
+    <item name="aoaicon" type="id">aoaicon</item>
+    <item name="osicon" type="id">osicon</item>
 
 </resources>
