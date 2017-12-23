@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
     <body>
-	  <p><h3>Q13.Explain Gourand and Phong shading along their advantages and disadvantages?</h3>
-	  <p><h4> Ans:</h4><br>
+	   <div class="header">
+	  <p><h3>Q15.Explain Gourand and Phong shading along their advantages and disadvantages?</h3>
+	   </div>
+	   <div class="card">
+	  <p>
 	  <b><u>Gouraud Shading:</u></b>
 <ol type="1">
 <li>Gouraud surface shading was developed in the 1970s by Henri Gouraud.</li>
@@ -15,11 +21,13 @@
 <li>Apply an illumination model at each polygon vertex to obtain the light intensity at that position.</li>
 <li>Linearly interpolate the vertex intensities over the projected area of the polygon</li>
 <li>Illumination values are linearly interpolated across each scan-line as shown in figure</li>
-<li> <img src="q131st.png"></li>
+<li> <img src="q131st.png" width="100%"/></li>
 	  <ul type="circle">
 	  <li>The intensities at point 4 can be interpolated from intensities 1 and 2.</li>
 <li>Similarly, the intensities at point 5 can be interpolated from intensities 2 and 3.</li>
-<li>Therefore the intensities of interaction points 4 and 5 are calculated from scan line.</li> 
+<li>Therefore the intensities of interaction points 4 and 5 are calculated from scan line.</li>
+	   </div>
+	   <div class="card">
 
 <u>Advantages:</u>
 <ol type="1">
@@ -30,7 +38,9 @@
 <ol type="1">
 <li>Gouraud shading has a problem with specular reflections.</li>
 <li> Gouraud shading can introduce anomalies known as Mach bands.</li></ol>
+	   </div>
 
+	   <div class="card">
 <b><u>Phong Shading:</u></b>
 <ol type="1">
 <li>A more accurate interpolation based approach for rendering a polygon was developed by Phong Bui Tuong.</li>
@@ -47,8 +57,9 @@
 
 <li>Apply an illumination model at positions along scan lines to calculate pixel intensities using the interpolated normal vectors as shown in figure</li></ol>
 	
-<li><img src="q132nd.png"></li>
-	
+<li><img src="q132nd.png" width="100%"/></li>
+	   </div>
+	   <div class="card">
 	<u>Advantages:</u>
 <ol type="1">
 <li>It displays more realistic highlights on a surface.</li>
@@ -60,9 +71,9 @@
 <u>Disadvantages:</u>
 <ol type="1">
 <li>It requires more calculations and greatly increases the cost of shading steeply.</li></ol>
-	
-	
-	
+
+
+	   </div>
 	
 	</body>
 

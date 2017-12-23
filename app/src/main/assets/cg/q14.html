@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
     <body>
-	  <p><h3>Q14.Explain any polygon clipping algorithm?</h3>
-	  <p><h4> Ans:</h4><br>
+	  <div class="header">
+	  <p><h3>Q10.Explain any polygon clipping algorithm?</h3>
+	  </div>
+	  <div class="card">
+	  <p>
 	  Collection of connected lines is considered as polygon.<br>
 A polygon clipper takes as input the vertices of polygon and return one (or more) polygon.<br>
 A closed polygon when clipped then we gets one or more open polygon or lines. Polygon clipping is shown in figure<br>
-<img src="q141st.png"> <br>
 
+	   <img src="q141st.png" width="100%"/> <br></div>
+      <div class="card">
 <b><u>Sutherland - Hodgeman Polygon Clipping:</u></b><br>
 
 Each edge of the polygon must be tested against each edge of the clip rectangle.<br>
 New edges must be added, and existing edges must be discarded, retained, or divided.<br>
 Multiple polygons may result from clipping a single polygon. We need an organized way to deal with all these cases.<br>
-<img src="q142nd.png"><br>
+<img src="q142nd.png" width="100%"/><br></div>
 
+	  <div class="card">
 <b><u>Steps of Sutherland-Hodgeman's polygon clipping algorithm:</u></b>
 <ol type="1">
  <li>Polygons can be clipped against each edge of the window one at a time.</li>
  <li>Vertices which are kept after clipping against one window edge are saved for clipping against the remaining edges.</li>
 <li> Note that the number of vertices usually changes and will often increases.</li>
-<img src="q143rd.png">
+<img src="q143rd.png" width="100%"/>
 <li>After clipping all side boundaries as shown in Figure</li>
-<img src="q144th.png"></ol><br>
-
+<img src="q144th.png" width="100%"/></ol><br>
+	  </div>
+      <div class="card">
 <b><u>Four Cases of polygon clipping against one Edge:</u></b><br>
 
 The clip boundary determines a visible and invisible region. The edges from vertex can be one of four types:<br>
@@ -32,7 +41,10 @@ The clip boundary determines a visible and invisible region. The edges from vert
 <b>Case 2:</b> If both, first and second vertexes of a polygon are lying inside the window, and then we have to store the second vertex only in output vertex list.<br>
 <b>Case 3:</b> If the first vertex is inside the window and second vertex is outside the window then we have to store only intersection point of that edge of polygon with window in output vertex list.<br>
 <b>Case 4:</b> If both the vertex first and second vertex of a polygon is lying outside the window then no vertex is stored in output vertex list.<br>
-<img src="q145th.png">
+	  </div>
+	  <div class="card">
+		  <img src="q145th.png" width="100%"/>
+	  </div>
 
 	  
 	
