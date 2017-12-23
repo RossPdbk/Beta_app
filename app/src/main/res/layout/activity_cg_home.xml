@@ -52,8 +52,12 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="12.5"
+<<<<<<< HEAD
             android:background="@drawable/background"
+=======
+>>>>>>> 2b8b34c763c9aaa6f71f4289e2211f87cd57f627
             android:id="@id/cgPractical"
+            android:background="@drawable/background"
             android:text="Practical">
         </Button>
 
