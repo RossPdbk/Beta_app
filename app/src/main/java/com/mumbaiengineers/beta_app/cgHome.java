@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class cgHome extends AppCompatActivity implements View.OnClickListener {
-    Button cgTheory, cgPractical, cgMfaQ1, cgMfaQ2, cgMfaQ3, cgMfaQ4, cgMfaQ5, cgMfaQ6, cgMfaQ7;
+    Button cgTheory, cgPractical;
+     TextView cgMfaQ1, cgMfaQ2, cgMfaQ3, cgMfaQ4, cgMfaQ5, cgMfaQ6, cgMfaQ7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +19,13 @@ public class cgHome extends AppCompatActivity implements View.OnClickListener {
         cgTheory = (Button) findViewById(R.id.cgTheory);
         cgPractical = (Button) findViewById(R.id.cgPractical);
 
-        cgMfaQ1 = (Button) findViewById(R.id.cgTheoryQ1);
-        cgMfaQ2 = (Button) findViewById(R.id.cgTheoryQ5);
-        cgMfaQ3 = (Button) findViewById(R.id.cgTheoryQ10);
-        cgMfaQ4 = (Button) findViewById(R.id.cgTheoryQ9);
-        cgMfaQ5 = (Button) findViewById(R.id.cgTheoryQ8);
-        cgMfaQ6 = (Button) findViewById(R.id.cgTheoryQ16);
-        cgMfaQ7 = (Button) findViewById(R.id.cgTheoryQ11);
+        cgMfaQ1 = (TextView) findViewById(R.id.cgTheoryQ1);
+        cgMfaQ2 = (TextView) findViewById(R.id.cgTheoryQ5);
+        cgMfaQ3 = (TextView) findViewById(R.id.cgTheoryQ8);
+        cgMfaQ4 = (TextView) findViewById(R.id.cgTheoryQ9);
+        cgMfaQ5 = (TextView) findViewById(R.id.cgTheoryQ11);
+        cgMfaQ6 = (TextView) findViewById(R.id.cgTheoryQ16);
+        cgMfaQ7 = (TextView) findViewById(R.id.cgTheoryQ14);
 
         cgTheory.setOnClickListener(this);
         cgPractical.setOnClickListener(this);
@@ -62,7 +64,7 @@ public class cgHome extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent3);
                 break;
 
-            case R.id.cgTheoryQ10:
+            case R.id.cgTheoryQ8:
                 Intent intent4 = new Intent(this, webviewAnswer.class);
                 intent4.putExtra("Qid",id);
                 startActivity(intent4);
@@ -74,7 +76,7 @@ public class cgHome extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent5);
                 break;
 
-            case R.id.cgTheoryQ8:
+            case R.id.cgTheoryQ11:
                 Intent intent6 = new Intent(this, webviewAnswer.class);
                 intent6.putExtra("Qid",id);
                 startActivity(intent6);
@@ -86,7 +88,7 @@ public class cgHome extends AppCompatActivity implements View.OnClickListener {
                 startActivity(intent7);
                 break;
 
-            case R.id.cgTheoryQ11:
+            case R.id.cgTheoryQ14:
                 Intent intent8 = new Intent(this, webviewAnswer.class);
                 intent8.putExtra("Qid",id);
                 startActivity(intent8);
