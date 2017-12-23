@@ -16,5 +16,14 @@
         android:bottomLeftRadius="4dp"
         ></corners>
 
+    <padding
+        android:left="3dp"
+        android:right="3dp"
+        android:bottom="3dp"
+        android:top="3dp">
+
+    </padding>
+
+
 
 </shape>
