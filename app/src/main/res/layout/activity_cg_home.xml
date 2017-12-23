@@ -110,8 +110,8 @@
                     android:elevation="2dp"
                     android:textColor="#000000"
                     android:id="@id/cgTheoryQ5"
-                    android:text="Q2.Explain Mid-point circle algorithm.Using same,plot the circle whose radius is 10 units"
                     android:layout_below="@id/cgTheoryQ1"
+                    android:text="Q2.Explain Mid-point circle algorithm.Using same,plot the circle whose radius is 10 units"
                     >
                 </TextView>
 
