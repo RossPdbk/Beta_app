@@ -4,11 +4,11 @@
 
     <stroke
         android:width="0.05dp"
-        android:color="#000000">
+        android:color="@color/black">
     </stroke>
 
     <solid
-        android:color="#ffffff">
+        android:color="@color/white">
     </solid>
 
     <padding

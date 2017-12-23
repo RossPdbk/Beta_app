@@ -43,7 +43,7 @@
             android:layout_margin="10dp"
             android:layout_weight="12.5"
             android:id="@id/cgTheory"
-            android:background="@drawable/cgtheory"
+            android:background="@drawable/background"
             android:text="Theory">
 
         </Button>
@@ -53,8 +53,8 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp"
             android:layout_weight="12.5"
-            android:background="@drawable/cgpractical"
             android:id="@id/cgPractical"
+            android:background="@drawable/background"
             android:text="Practical">
         </Button>
 
