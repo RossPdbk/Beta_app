@@ -82,18 +82,17 @@
                     app:srcCompat="@drawable/icon_os" />
 
 
-
                 <ImageView
                     android:id="@id/btn_cg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_gravity="center"
                     android:layout_weight="12.5"
                     android:background="@drawable/bottomright"
-                    android:layout_gravity="center"
                     app:srcCompat="@drawable/icon_cg" />
 
 
-              </LinearLayout>
+            </LinearLayout>
 
 
          </LinearLayout>
