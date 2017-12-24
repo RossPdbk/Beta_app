@@ -35,9 +35,13 @@
             android:id="@id/aoaTheory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_weight="12.5"
             android:text="Theory"
+            android:elevation="4dp"
             android:background="@drawable/background"
             android:textSize="20sp">
         </Button>
@@ -46,7 +50,11 @@
             android:id="@id/aoaPractical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="4dp"
             android:layout_weight="12.5"
             android:text="Practical"
             android:background="@drawable/background"
@@ -68,13 +76,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:layout_margin="5dp"
+            android:layout_margin="7dp"
             android:background="@color/colorPrimary"
             android:text="Most frequently asked questions"
             android:elevation="4dp"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -83,17 +91,19 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:id="@id/aoaTheoryQ1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
                     android:textSize="16sp"
                     android:text="Q1. Explain Big-Oh, Omega and Theta notation with the help of diagram."
-                    android:textColor="#000000"
-                    android:elevation="2dp"
+                    android:textColor="@color/black"
+                    android:elevation="1dp"
                     android:background="@drawable/rectangle">
 
                 </TextView>
@@ -101,84 +111,96 @@
                 <TextView
                     android:id="@id/aoaTheoryQ4"
                     android:background="@drawable/rectangle"
-                    android:layout_margin="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
                     android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/aoaTheoryQ1"
                     android:text="Q2. Explain 0/1 Knapsack problem"
-                    android:elevation="2dp"
-                    android:textColor="#000000">
+                    android:elevation="1dp"
+                    android:textColor="@color/black">
 
                 </TextView>
 
                 <TextView
                     android:id="@id/aoaTheoryQ5"
                     android:background="@drawable/rectangle"
-                    android:layout_margin="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
                     android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/aoaTheoryQ4"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:text="Q3. Explain flow shop scheduling with example."
-                    android:elevation="2dp">
+                    android:elevation="1dp">
 
                 </TextView>
 
                 <TextView
                     android:id="@id/aoaTheoryQ12"
                     android:background="@drawable/rectangle"
-                    android:textColor="#000000"
-                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
                     android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/aoaTheoryQ5"
                     android:text="Q4. Explain N-Queen problem using backtracking with algorithm."
-                    android:elevation="2dp">
+                    android:elevation="1dp">
 
                 </TextView>
 
                 <TextView
                     android:id="@id/aoaTheoryQ6"
                     android:background="@drawable/rectangle"
-                    android:textColor="#000000"
-                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
                     android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/aoaTheoryQ12"
                     android:text="Q5. Explain Prim's Algorithm with example."
-                    android:elevation="2dp">
+                    android:elevation="1dp">
 
                 </TextView>
 
                 <TextView
                     android:id="@id/aoaTheoryQ2"
                     android:background="@drawable/rectangle"
-                    android:textColor="#000000"
-                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
                     android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/aoaTheoryQ6"
                     android:text="Q6. Explain three cases of master method."
-                    android:elevation="2dp">
+                    android:elevation="1dp">
 
                 </TextView>
 
                 <TextView
                     android:id="@id/aoaTheoryQ10"
                     android:background="@drawable/rectangle"
-                    android:textColor="#000000"
-                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
                     android:textSize="16sp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@id/aoaTheoryQ2"
                     android:text="Q7. Write a note on all pair shortest path algorithm."
-                    android:elevation="2dp">
+                    android:elevation="1dp">
 
                 </TextView>
 

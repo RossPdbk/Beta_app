@@ -147,5 +147,8 @@
     <item name="coaTheoryQ21" type="id">coaTheoryQ21</item>
     <item name="aoaicon" type="id">aoaicon</item>
     <item name="osicon" type="id">osicon</item>
+    <item name="aoaPracticalP5" type="id">aoaPracticalP5</item>
+    <item name="aoaPracticalP6" type="id">aoaPracticalP6</item>
+    <item name="aoaPracticalP7" type="id">aoaPracticalP7</item>
 
 </resources>

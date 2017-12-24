@@ -289,10 +289,19 @@ WebView webviewAnswer;
                 webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac02.html");
                 break;
             case R.id.aoaPracticalP3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac03.html");
                 break;
             case R.id.aoaPracticalP4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac04.html");
+                break;
+            case R.id.aoaPracticalP5 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac05.html");
+                break;
+            case R.id.aoaPracticalP6 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac06.html");
+                break;
+            case R.id.aoaPracticalP7 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac07.html");
                 break;
             //AOA Prac ends here
 

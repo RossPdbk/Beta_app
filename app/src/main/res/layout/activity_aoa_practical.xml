@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ECEFF1"
+    android:background="@color/colorPrimaryLight"
     tools:context="com.mumbaiengineers.beta_app.aoaPractical">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginBottom="5dp"
-        android:background="#455A64"
+        android:background="@color/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -23,7 +23,7 @@
             android:gravity="center"
             android:text="AOA Practical"
             android:textColor="@android:color/white"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
     </android.support.v7.widget.Toolbar>
@@ -38,61 +38,105 @@
         android:layout_height="wrap_content">
 
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/aoaPracticalP1"
             android:text="1. 0/1 Knapsack Algorithm"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:textAllCaps="false"
-            android:textSize="16sp"
-            android:gravity="left">
-        </Button>
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/aoaPracticalP2"
             android:layout_below="@id/aoaPracticalP1"
             android:text="2. 8-Queen Problem"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:textAllCaps="false"
-            android:textSize="16sp"
-            android:gravity="left">
-        </Button>
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/aoaPracticalP3"
             android:layout_below="@id/aoaPracticalP2"
-            android:text="P3"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:textAllCaps="false"
-            android:textSize="16sp"
-            android:gravity="left">
-        </Button>
+            android:text="3. Travelling Salesman"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/aoaPracticalP4"
             android:layout_below="@id/aoaPracticalP3"
-            android:text="P4"
-            android:background="@android:color/white"
-            android:padding="10dp"
-            android:layout_margin="5dp"
-            android:textAllCaps="false"
-            android:textSize="16sp"
-            android:gravity="left">
-        </Button>
+            android:text="4. Selection Sort"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP5"
+            android:layout_below="@id/aoaPracticalP4"
+            android:text="5. Binary Sort"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP6"
+            android:layout_below="@id/aoaPracticalP5"
+            android:text="6. Insertion Sort"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP7"
+            android:layout_below="@id/aoaPracticalP6"
+            android:text="7. Merge Sort"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
 
     </RelativeLayout>
+
     </ScrollView>
 </LinearLayout>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<body >
+Selection Sort
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+void main()
+{
+	int i,a[100],n;
+	clrscr();
+	printf("Enter the number of elements :");
+	scanf("%d",&n);
+	printf("\nEnter the elements :");
+	for(i=0;i&lt;n;i++)
+	{
+		printf("\nElement %d :",i+1);
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i&lt;n;i++)
+	{
+		for(int j=i+1;j&lt;n;j++)
+		{
+			if(a[j]&lt;a[i])
+			{
+				int temp=a[j];
+				a[j]=a[i];
+				a[i]=temp;
+			}
+		}
+	}
+	printf("Sorted elements :");
+	for(i=0;i&lt;n;i++)
+		printf(" %d",a[i]);
+	getch();
+}
+
+Output:
+Enter the number of elements :5
+Enter the elements :
+Element 1 :2
+Element 2 :6
+Element 3 :3
+Element 4 :9
+Element 5 :1
+Sorted elements :1 2 3 6 9
+</pre>
+</body>
+</html>
