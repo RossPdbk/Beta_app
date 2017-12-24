@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
     <body>
-	  <p><h3>Q6.Explain Cohen-Suderland polygon clipping algorith?</h3>
-	  <p><h4> Ans:</h4><br>
+	   <div class="header">
+	  <p><h3>Explain polygon filling algorithm (ScanLine fill,Boundry fill,Flood fill)</h3>
+	   </div>
+
+	   <div class="card">
+	  <p>
+		  Polygon is an ordered list of vertices . For filling polygons with particular colors,
+		  you need to determine the pixels falling on the border of the polygon and those which fall inside the polygon.<br>
+
+		  <b>ScanLine Fill Algorithm</b>
+		  This algorithm works by intersecting scanline with polygon edges and fills the polygon between pairs of intersections.
+          Following are steps for scanline fill algorithm-<br>Scanline filling is basically filling up of polygons using horizontal lines or scanlines. The purpose of the SLPF algorithm is to fill (color) the interior pixels of a polygon given only the vertices of the figure. To understand Scanline, think of the image being drawn by a single pen starting from bottom left, continuing to the right, plotting only points where there is a point present in the image, and when the line is complete, start from the next line and continue.
+		  This algorithm works by intersecting scanline with polygon edges and fills the polygon between pairs of intersections.
+		<ol type="1">
+		   <li>Find out the Ymin and Ymax from the given polygon.</li>
+		   <img src="q17.jpg" width="100%"/>
+		   <li>ScanLine intersects with each edge of the polygon from Ymin to Ymax. Name each intersection point of the polygon.
+			   As per the figure shown above, they are named as p0, p1, p2, p3.</li>
 	  
+	       <li>Sort the intersection point in the increasing order of X coordinate i.e. (p0, p1), (p1, p2), and (p2, p3).</li>
+		   <li>Fill all those pair of coordinates that are inside polygons and ignore the alternate pairs.</li>
 	
-	
-	
-	
+	         </ol>
+		   <b>special cases</b>
+		   <ol type="1">
+			   <li>If both lines intersecting at the vertex are on the same side of the scanline, consider it as two points.</li>
+			   <li>If lines intersecting at the vertex are at opposite sides of the scanline, consider it as only one point.</li>
+		   </ol>
+		       </div>
+
+	           <div class="card">
+				   <b>Boundary Fill Algorithm</b>
+				   The boundary fill algorithm works as its name. This algorithm picks a point inside an object and starts to fill until it hits the boundary of the object.
+				   The color of the boundary and the color that we fill should be different for this algorithm to work. <br>
+				   It can be implemented by 4 connected pixels and 8 connected pixels.
+			   </div>
+	           <div class="card">
+				   <ul type="circle">
+					   <li>4 connected pixel</li>
+				   </ul>
+				   <p>In this technique 4-connected pixels are used as shown in the figure. We are putting the pixels above, below, to the right,
+				   and to the left side of the current pixels and this process will continue until we find a boundary with different color.</p>
+				   <img src="q17i1.png" width="100%"/>
+			   </div>
+               <div class="card">
+                   <b>Algorithm</b>
+                   <ol type="1">
+                       <li>Initialize the value of seed point (seedx, seedy), fcolor and dcol.</li>
+                       <li>Define the boundary values of the polygon.</li>
+                       <li>Check if the current seed point is of default color, then repeat the steps 4 and 5 till the boundary pixels reached.<br>
+                           If getpixel(x, y) = dcol then repeat step 4 and 5</li>
+                       <li>Change the default color with the fill color at the seed point.<br>
+                           setPixel(seedx, seedy, fcol)</li>
+                       <li> Recursively follow the procedure with four neighborhood points.<br>
+                           FloodFill (seedx – 1, seedy, fcol, dcol)<br>
+                           FloodFill (seedx + 1, seedy, fcol, dcol)<br>
+                           FloodFill (seedx, seedy - 1, fcol, dcol)<br>
+                           FloodFill (seedx – 1, seedy + 1, fcol, dcol)</li>
+                       <li>Exit</li>>
+                   </ol>
+                  <p> There is a problem with this technique. 
+                   Consider the case as shown below where we tried to fill the entire region. 
+                   Here, the image is filled only partially. In such cases, 4-connected pixels technique cannot be used.</p>
+                    <img src="q17i2.PNG" width="100%">
+
+               </div>
+               <div class="card">
+                   <ul type="circle">
+                       <li>8 connected pixel</li>
+                   </ul>
+                  <p> In this technique 8-connected pixels are used as shown in the figure. We are putting pixels above, below,
+                   right and left side of the current pixels as we were doing in 4-connected technique.<br>
+
+                   In addition to this, we are also putting pixels in diagonals so that entire area of the current pixel is covered.
+                   This process will continue until we find a boundary with different color.</p>
+                   <b>Algorithm</b>
+               </div>
 	
 	
 	</body>

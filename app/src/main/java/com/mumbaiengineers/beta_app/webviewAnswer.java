@@ -275,6 +275,9 @@ WebView webviewAnswer;
             case R.id.cgTheoryQ16 :
                 webviewAnswer.loadUrl("file:///android_asset/cg/q15.html");
                 break;
+            case R.id.cgTheoryQ17 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q17.html");
+                break;
             //CG cases ends here
 
 
