@@ -303,6 +303,18 @@ WebView webviewAnswer;
             case R.id.aoaPracticalP7 :
                 webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac07.html");
                 break;
+            case R.id.aoaPracticalP8 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac08.html");
+                break;
+            case R.id.aoaPracticalP9 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac09.html");
+                break;
+            case R.id.aoaPracticalP10 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac10.html");
+                break;
+            case R.id.aoaPracticalP11 :
+                webviewAnswer.loadUrl("file:///android_asset/aoa/aoaPrac11.html");
+                break;
             //AOA Prac ends here
 
             //COA Prac starts here

@@ -150,5 +150,9 @@
     <item name="aoaPracticalP5" type="id">aoaPracticalP5</item>
     <item name="aoaPracticalP6" type="id">aoaPracticalP6</item>
     <item name="aoaPracticalP7" type="id">aoaPracticalP7</item>
+    <item name="aoaPracticalP8" type="id">aoaPracticalP8</item>
+    <item name="aoaPracticalP9" type="id">aoaPracticalP9</item>
+    <item name="aoaPracticalP10" type="id">aoaPracticalP10</item>
+    <item name="aoaPracticalP11" type="id">aoaPracticalP11</item>
 
 </resources>

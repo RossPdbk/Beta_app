@@ -136,6 +136,62 @@
             android:textSize="16sp">
         </TextView>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP8"
+            android:layout_below="@id/aoaPracticalP7"
+            android:text="8. Quick Sort"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP9"
+            android:layout_below="@id/aoaPracticalP8"
+            android:text="9. Fractional Knapsack"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP10"
+            android:layout_below="@id/aoaPracticalP9"
+            android:text="10. All Pair Shortest Path"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP11"
+            android:layout_below="@id/aoaPracticalP10"
+            android:text="11. Graph Colouring"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
     </RelativeLayout>
 
     </ScrollView>

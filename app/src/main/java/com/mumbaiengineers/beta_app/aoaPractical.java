@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class aoaPractical extends AppCompatActivity implements View.OnClickListener {
 
     TextView aoaPracticalP1, aoaPracticalP2, aoaPracticalP3, aoaPracticalP4, aoaPracticalP5, aoaPracticalP6, aoaPracticalP7;
+    TextView aoaPracticalP8, aoaPracticalP9, aoaPracticalP10, aoaPracticalP11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,10 @@ public class aoaPractical extends AppCompatActivity implements View.OnClickListe
         aoaPracticalP5 = (TextView) findViewById(R.id.aoaPracticalP5);
         aoaPracticalP6 = (TextView) findViewById(R.id.aoaPracticalP6);
         aoaPracticalP7 = (TextView) findViewById(R.id.aoaPracticalP7);
+        aoaPracticalP8 = (TextView) findViewById(R.id.aoaPracticalP8);
+        aoaPracticalP9 = (TextView) findViewById(R.id.aoaPracticalP9);
+        aoaPracticalP10 = (TextView) findViewById(R.id.aoaPracticalP10);
+        aoaPracticalP11 = (TextView) findViewById(R.id.aoaPracticalP11);
 
         aoaPracticalP1.setOnClickListener(this);
         aoaPracticalP2.setOnClickListener(this);
@@ -31,6 +36,10 @@ public class aoaPractical extends AppCompatActivity implements View.OnClickListe
         aoaPracticalP5.setOnClickListener(this);
         aoaPracticalP6.setOnClickListener(this);
         aoaPracticalP7.setOnClickListener(this);
+        aoaPracticalP8.setOnClickListener(this);
+        aoaPracticalP9.setOnClickListener(this);
+        aoaPracticalP10.setOnClickListener(this);
+        aoaPracticalP11.setOnClickListener(this);
     }
 
     @Override
