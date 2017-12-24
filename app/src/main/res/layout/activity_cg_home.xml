@@ -18,15 +18,14 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Computer Graphics"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-             />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer Graphics"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 </android.support.v7.widget.Toolbar>
 
 
@@ -39,7 +38,10 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_weight="12.5"
             android:id="@id/cgTheory"
             android:background="@drawable/background"
@@ -50,7 +52,10 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_weight="12.5"
             android:background="@drawable/background"
             android:id="@id/cgPractical"
@@ -76,8 +81,9 @@
             android:background="@color/colorPrimary"
             android:text="Most frequently asked questions"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:elevation="4dp"
             android:id="@id/mfaTextCg"/>
 
         <ScrollView
@@ -94,11 +100,14 @@
                     android:background="@drawable/rectangle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:textColor="#000000"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
                     android:id="@id/cgTheoryQ1"
                     android:text="Q1.Explain diffrence between Random Scan and Raster Scan"
-                    android:elevation="2dp"
+                    android:elevation="1dp"
                     >
                 </TextView>
 
@@ -106,9 +115,12 @@
                     android:background="@drawable/rectangle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:elevation="2dp"
-                    android:textColor="#000000"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:elevation="1dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
                     android:id="@id/cgTheoryQ5"
                     android:layout_below="@id/cgTheoryQ1"
                     android:text="Q2.Explain Mid-point circle algorithm.Using same,plot the circle whose radius is 10 units"
@@ -119,9 +131,12 @@
                     android:background="@drawable/rectangle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                   android:elevation="2dp"
-                    android:layout_margin="5dp"
-                    android:textColor="#000000"
+                   android:elevation="1dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:textColor="@color/black"
                     android:id="@id/cgTheoryQ8"
                     android:layout_below="@id/cgTheoryQ5"
                     android:text="Q3.Derive matrix for 2D rotation about an arbitary axis.">
@@ -131,9 +146,12 @@
                     android:background="@drawable/rectangle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                   android:elevation="2dp"
-                    android:textColor="#000000"
-                    android:layout_margin="5dp"
+                   android:elevation="1dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
                     android:id="@id/cgTheoryQ9"
                     android:layout_below="@id/cgTheoryQ8"
                     android:text="Q4.Define window and viewport and derive window to viewport transformation.">
@@ -143,9 +161,12 @@
                     android:layout_width="match_parent"
                     android:background="@drawable/rectangle"
                     android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                   android:elevation="2dp"
-                    android:textColor="#000000"
+                    android:layout_marginLeft="7dp"
+                    android:textSize="16sp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                   android:elevation="1dp"
+                    android:textColor="@color/black"
                     android:id="@id/cgTheoryQ11"
                     android:layout_below="@id/cgTheoryQ9"
                     android:text="Q5.Explain Parallel and Perspective projecton and derive matrix for them.">
@@ -155,9 +176,12 @@
                     android:background="@drawable/rectangle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                   android:elevation="2dp"
-                    android:textColor="#000000"
-                    android:layout_margin="5dp"
+                   android:elevation="1dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
                     android:id="@id/cgTheoryQ16"
                     android:layout_below="@id/cgTheoryQ11"
                     android:text="Q6.prove that two succesive rotations are addivtive.">
@@ -167,9 +191,12 @@
                     android:background="@drawable/rectangle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                   android:elevation="2dp"
-                    android:layout_margin="5dp"
-                    android:textColor="#000000"
+                   android:elevation="1dp"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:textColor="@color/black"
                     android:id="@id/cgTheoryQ14"
                     android:layout_below="@id/cgTheoryQ16"
                     android:text="Q7.Define halftoning and dithering techniques.">

@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class cgHome extends AppCompatActivity implements View.OnClickListener {
-    Button cgTheory, cgPractical, cgMfaQ1, cgMfaQ2, cgMfaQ3, cgMfaQ4, cgMfaQ5, cgMfaQ6, cgMfaQ7;
+    Button cgTheory, cgPractical;
+     TextView cgMfaQ1, cgMfaQ2, cgMfaQ3, cgMfaQ4, cgMfaQ5, cgMfaQ6, cgMfaQ7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +19,13 @@ public class cgHome extends AppCompatActivity implements View.OnClickListener {
         cgTheory = (Button) findViewById(R.id.cgTheory);
         cgPractical = (Button) findViewById(R.id.cgPractical);
 
-        cgMfaQ1 = (Button) findViewById(R.id.cgTheoryQ1);
-        cgMfaQ2 = (Button) findViewById(R.id.cgTheoryQ5);
-        cgMfaQ3 = (Button) findViewById(R.id.cgTheoryQ8);
-        cgMfaQ4 = (Button) findViewById(R.id.cgTheoryQ9);
-        cgMfaQ5 = (Button) findViewById(R.id.cgTheoryQ11);
-        cgMfaQ6 = (Button) findViewById(R.id.cgTheoryQ16);
-        cgMfaQ7 = (Button) findViewById(R.id.cgTheoryQ14);
+        cgMfaQ1 = (TextView) findViewById(R.id.cgTheoryQ1);
+        cgMfaQ2 = (TextView) findViewById(R.id.cgTheoryQ5);
+        cgMfaQ3 = (TextView) findViewById(R.id.cgTheoryQ8);
+        cgMfaQ4 = (TextView) findViewById(R.id.cgTheoryQ9);
+        cgMfaQ5 = (TextView) findViewById(R.id.cgTheoryQ11);
+        cgMfaQ6 = (TextView) findViewById(R.id.cgTheoryQ16);
+        cgMfaQ7 = (TextView) findViewById(R.id.cgTheoryQ14);
 
         cgTheory.setOnClickListener(this);
         cgPractical.setOnClickListener(this);

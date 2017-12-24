@@ -25,7 +25,12 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+<<<<<<< HEAD
             android:layout_weight="50">
+=======
+            android:layout_weight="50"
+            >
+>>>>>>> 0caab703783d0ff37c813ffa2265735bfca14689
 
         </RelativeLayout>
 
@@ -43,15 +48,8 @@
             android:layout_height="match_parent"
             android:layout_weight="25">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="12.5"
-                android:background="@drawable/topleft"
-                android:id="@id/btn_aoa"
-                android:text="AOA">
-
                 <ImageView
+<<<<<<< HEAD
                     android:id="@id/aoaicon"
                     android:layout_width="120dp"
                     android:layout_height="90dp"
@@ -59,35 +57,24 @@
                     app:srcCompat="@drawable/icon_aoa" />
 
                 <TextView
+=======
+                    android:id="@id/btn_aoa"
+>>>>>>> 0caab703783d0ff37c813ffa2265735bfca14689
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Analysis of Algorithm"
-                    android:textSize="12sp"
-                    android:textColor="@color/colorPrimary"
-                    android:layout_below="@id/aoaicon"
-                    android:gravity="center"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="12.5"
+                    android:background="@drawable/topleft"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/icon_aoa" />
 
-            </RelativeLayout>
-
-                <RelativeLayout
+                <ImageView
                     android:id="@id/btn_coa"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="12.5"
                     android:background="@drawable/topright"
-                    android:text="COA">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginBottom="10dp"
-                        android:gravity="center"
-                        android:text="Computer organization &amp; Architecture"
-                        android:textColor="@color/colorPrimary"
-                        android:textSize="12sp" />
-
-                </RelativeLayout>
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/icon_coa" />
 
             </LinearLayout>
 
@@ -96,52 +83,25 @@
             android:layout_height="match_parent"
             android:layout_weight="25">
 
-            <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-                android:layout_weight="12.5"
-                android:id="@id/btn_os"
-                android:background="@drawable/bottomleft"
-                android:text="OS">
+                <ImageView
+                    android:id="@id/btn_os"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="12.5"
+                    android:background="@drawable/bottomleft"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/icon_os" />
+
+
 
                 <ImageView
-                    android:id="@id/osicon"
-                    android:layout_width="110dp"
-                    android:layout_height="70dp"
-                    app:srcCompat="@drawable/osicon"
-                    android:layout_centerVertical="true"
-                    android:layout_centerHorizontal="true" />
-
-                <TextView
+                    android:id="@id/btn_cg"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Operating System"
-                    android:textSize="12sp"
-                    android:textColor="@color/colorPrimary"
-                    android:layout_below="@id/osicon"
-                    android:gravity="center"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="12.5"
-                android:id="@id/btn_cg"
-                android:background="@drawable/bottomright"
-                android:text="CG">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Computer Graphics"
-                    android:textSize="12sp"
-                    android:textColor="@color/colorPrimary"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="10dp"
-                    android:gravity="center"/>
-
-            </RelativeLayout>
+                    android:layout_height="match_parent"
+                    android:layout_weight="12.5"
+                    android:background="@drawable/bottomright"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/icon_cg" />
 
 
         </LinearLayout>
