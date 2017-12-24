@@ -5,24 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ECEFF1"
+    android:background="@color/colorPrimaryLight"
     tools:context="com.mumbaiengineers.beta_app.cgTheory">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#455A64"
-        android:elevation="4dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="7dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CG Theory"
+            android:text="Computer Graphics Theory"
             android:gravity="center"
-            android:textSize="25sp"
-            android:textColor="@android:color/black"/>
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
 
     </android.support.v7.widget.Toolbar>
 
@@ -36,194 +37,282 @@
         android:layout_height="wrap_content">
 
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ1"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q1. Explain diffrence between Random Scan and Raster Scan ">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ2"
             android:layout_below="@id/cgTheoryQ1"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q2. Explain what is computer graphics and its applications">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ3"
             android:layout_below="@id/cgTheoryQ2"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q3. Write  a note on openGL">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ4"
             android:layout_below="@id/cgTheoryQ3"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q4. Explain DDA line drawing algorithm and write its advantages and disadvantages">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ5"
             android:layout_below="@id/cgTheoryQ4"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q5. Explain mid-point circle algorithm .Using same ,plot the circle whose radius is 10 units">
-        </Button>
-        <Button
+        </TextView>
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ6"
             android:layout_below="@id/cgTheoryQ5"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q6. Explain Aliasing and Antialiasing techniques">
-        </Button>
-        <Button
+        </TextView>
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ7"
             android:layout_below="@id/cgTheoryQ6"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q7. Explain Bresenham line drawing algorithm">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ8"
             android:layout_below="@id/cgTheoryQ7"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q8. Derive matrix for 2D rotation about an arbitary axis">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ9"
             android:layout_below="@id/cgTheoryQ8"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q9. Define window and viewport and derive window to viewport transformation">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ10"
             android:layout_below="@id/cgTheoryQ9"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q10. Explain any polygon clipping algorithm">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ11"
             android:layout_below="@id/cgTheoryQ10"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q11. Explain Parallel and Perspective Projection and derive matrix for them">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ12"
             android:layout_below="@id/cgTheoryQ11"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q12. Describe the 3D representation methods">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ13"
             android:layout_below="@id/cgTheoryQ12"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q13. Explain Back surface detection">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ14"
             android:layout_below="@id/cgTheoryQ13"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q14. Define halftoning and dithering techniques">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ15"
             android:layout_below="@id/cgTheoryQ14"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q15. Explain Gourand and Phong shading along their advantages and disadvantages">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ16"
             android:layout_below="@id/cgTheoryQ15"
-            android:gravity="left"
-            android:textAllCaps="false"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q16. Prove that two succesive rotations are additive">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ17"
             android:layout_below="@id/cgTheoryQ16"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q17">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ18"
             android:layout_below="@id/cgTheoryQ17"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q18">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ19"
             android:layout_below="@id/cgTheoryQ18"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q19">
-        </Button>
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgTheoryQ20"
             android:layout_below="@id/cgTheoryQ19"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
             android:text="Q20">
-        </Button>
+        </TextView>
 
     </RelativeLayout>
    </ScrollView>
