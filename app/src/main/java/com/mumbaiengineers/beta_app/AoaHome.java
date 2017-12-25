@@ -6,11 +6,12 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AoaHome extends AppCompatActivity implements View.OnClickListener {
 
-    Button aoaTheory, aoaPractical;
+    ImageView aoaTheory, aoaPractical;
     TextView aoaMfaQ1, aoaMfaQ2, aoaMfaQ3, aoaMfaQ4, aoaMfaQ5, aoaMfaQ6, aoaMfaQ7;
 
     @Override
@@ -18,8 +19,8 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aoa_home);
 
-        aoaTheory = (Button) findViewById(R.id.aoaTheory);
-        aoaPractical = (Button) findViewById(R.id.aoaPractical);
+        aoaTheory = (ImageView) findViewById(R.id.aoaTheory);
+        aoaPractical = (ImageView) findViewById(R.id.aoaPractical);
 
         aoaMfaQ1 = (TextView) findViewById(R.id.aoaTheoryQ1);
         aoaMfaQ2 = (TextView) findViewById(R.id.aoaTheoryQ4);

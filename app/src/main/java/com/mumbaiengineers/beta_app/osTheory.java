@@ -11,7 +11,7 @@ import org.w3c.dom.Text;
 
 public class osTheory extends AppCompatActivity implements View.OnClickListener {
     TextView osTheoryQ1,osTheoryQ2,osTheoryQ3,osTheoryQ4,osTheoryQ5,osTheoryQ6,osTheoryQ7,osTheoryQ8,osTheoryQ9,osTheoryQ10,osTheoryQ11,osTheoryQ12,
-            osTheoryQ13,osTheoryQ14,osTheoryQ15,osTheoryQ16,osTheoryQ17,osTheoryQ18,osTheoryQ19;
+            osTheoryQ13,osTheoryQ14,osTheoryQ15,osTheoryQ16,osTheoryQ17,osTheoryQ18,osTheoryQ19,osTheoryQ20,osTheoryQ21,osTheoryQ22,osTheoryQ23,osTheoryQ24;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,12 @@ public class osTheory extends AppCompatActivity implements View.OnClickListener 
         osTheoryQ17 = (TextView) findViewById(R.id.osTheoryQ17);
         osTheoryQ18 = (TextView) findViewById(R.id.osTheoryQ18);
         osTheoryQ19 = (TextView) findViewById(R.id.osTheoryQ19);
+        osTheoryQ20 = (TextView) findViewById(R.id.osTheoryQ20);
+        osTheoryQ21 = (TextView) findViewById(R.id.osTheoryQ21);
+        osTheoryQ22 = (TextView) findViewById(R.id.osTheoryQ22);
+        osTheoryQ23 = (TextView) findViewById(R.id.osTheoryQ23);
+        osTheoryQ24 = (TextView) findViewById(R.id.osTheoryQ24);
+
 
 
         osTheoryQ1.setOnClickListener(this);
@@ -58,6 +64,12 @@ public class osTheory extends AppCompatActivity implements View.OnClickListener 
         osTheoryQ17.setOnClickListener(this);
         osTheoryQ18.setOnClickListener(this);
         osTheoryQ19.setOnClickListener(this);
+        osTheoryQ20.setOnClickListener(this);
+        osTheoryQ21.setOnClickListener(this);
+        osTheoryQ22.setOnClickListener(this);
+        osTheoryQ23.setOnClickListener(this);
+        osTheoryQ24.setOnClickListener(this);
+
 
     }
 

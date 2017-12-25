@@ -32,32 +32,32 @@
         android:layout_height="match_parent"
         android:layout_weight="70">
 
-        <Button
+        <ImageView
+            android:id="@id/osTheory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
-            android:layout_marginBottom="5dp"
-            android:elevation="4dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="12.5"
-            android:background="@drawable/background"
-            android:id="@id/osTheory">
+            android:background="@drawable/mfaback"
+            android:elevation="4dp"
+            android:src="@drawable/icon_theory"
+            />
 
-        </Button>
 
-        <Button
+        <ImageView
+            android:id="@id/osPractical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
-            android:elevation="4dp"
+            android:layout_marginTop="10dp"
             android:layout_weight="12.5"
-            android:id="@id/osPractical"
-            android:background="@drawable/background">
-        </Button>
+            android:background="@drawable/mfaback"
+            android:elevation="4dp"/>
 
     </LinearLayout>
 

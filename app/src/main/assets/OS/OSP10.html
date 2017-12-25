@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h4>AIM : Implementation of Best fit algorithm in memory management.</h4>
+	</div>
+<div class="card">
+<pre> 
+public class BestFit 
+{
+	static void bestFit(int partitionSize[], int m, int processSize[], int n)
+	{
+		int allocation[] = new int[n];
+
+		for (int i = 0; i < allocation.length; i++)
+			allocation[i] = -1;
+      
+		for (int i=0; i&lt;n; i++)
+		{
+			int bestIndex = -1;
+			for (int j=0; j&lt;m; j++)
+			{
+				if (partitionSize[j] >= processSize[i])
+				{
+					if (bestIndex == -1)
+						bestIndex = j;
+					else if (partitionSize[bestIndex] > partitionSize[j])
+						bestIndex = j;
+				}
+			}
+
+			if (bestIndex != -1)
+			{
+				allocation[i] = bestIndex;
+				partitionSize[bestIndex] -= processSize[i];
+			}
+		}
+      
+		System.out.println("\nProcess No.\tProcess Size\tBlock no.");
+		for (int i = 0; i < n; i++)
+		{
+			System.out.print("   " + (i+1) + "\t\t\t" + processSize[i] + "\t\t\t\t");
+			if (allocation[i] != -1)
+				System.out.print(allocation[i] + 1);
+			else
+				System.out.print("Not Allocated");
+			System.out.println();
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+		int partitionSize[] = {100, 500, 200, 300, 600};
+		int processSize[] = {212, 417, 112, 426};
+		int m = partitionSize.length;
+		int n = processSize.length;
+          
+		bestFit(partitionSize, m, processSize, n);
+	}
+}
+</pre>
+</div>
+
+	<div class="card">
+		<br>
+			<b>Output : </b>
+			<pre>
+Process No.	Process Size	Block no.
+ 1			212				4
+ 2			417				2
+ 3			112				3
+ 4			426				5
+</pre>
+</body>
+</html>

@@ -55,3 +55,7 @@ body{
 h4{
 	text-align: left;
 }
+
+pre{
+    font-family: Verdana;
+}

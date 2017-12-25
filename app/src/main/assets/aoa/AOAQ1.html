@@ -8,40 +8,39 @@
 	<p><h3>Q1. Explain Big-Oh, Omega and Theta notation with the help of diagram.</h3></p>
 </div>
 <div class="card">
-<p>
 	<h4>Big-Oh Notation (O) :</h4>
-	<img src="aoaQ101.jpg" /><br><br>
-	‘O’ (Big Oh) is the most commonly used notation. 
+	<img src="aoaQ101.jpg" />
+	<p>‘O’ (Big Oh) is the most commonly used notation.
 	A function f(n) can be represented is the order of g(n) that is O(g(n)), if there exists a value of positive 
-	integer n as n<sub>0</sub> and a positive constant c such that −
+	integer n as n<sub>0</sub> and a positive constant c such that <br>
 	f(n)<=c.g(n) for n>n<sub>0</sub> in all case.
 	<br>Hence, function g(n) is an upper bound for function f(n) , as g(n) grows faster than f(n).<br><br>
-	<b>Example :</b><br><br>
-	Let us consider a given function, f(n)=10n<sup>2</sup>+2n+1
-	Considering g(n)=n<sup>2</sup> ,
+	<b>Example :</b><br>
+	Let us consider a given function, f(n)=10n<sup>2</sup>+2n+1<br>
+	Considering g(n)=n<sup>2</sup> ,<br>
 	f(n)⩽10.g(n) for all the values of n>2<br>
 	Hence, the complexity of f(n) can be represented as O(g(n)), i.e. O(n<sup>2</sup>).</p>
 </div>	
 <div class="card">
-	<p><h4>Omega Notation (Ω):</h4>
-	<img src="aoaQ102.jpg" /><br><br>
-	We say that f(n)=Ω(g(n)) when there exists constant c that f(n)⩾c.g(n) for all sufficiently large value of n. Here n is a positive integer.<br>
+	<h4>Omega Notation (Ω):</h4>
+	<img src="aoaQ102.jpg" /><br>
+	<p>We say that f(n)=Ω(g(n)) when there exists constant c that f(n)⩾c.g(n) for all sufficiently large value of n. Here n is a positive integer.<br>
 	It means function g is a lower bound for function f; after a certain value of n, f will never go below g.<br><br>
-	<b>Example :</b><br><br>
-	Let us consider a given function, f(n)=10.n<sup>2</sup>+2.n+1.
-	Considering g(n)=n<sup>2</sup> ,
+	<b>Example :</b><br>
+	Let us consider a given function, f(n)=10.n<sup>2</sup>+2.n+1.<br>
+	Considering g(n)=n<sup>2</sup> ,<br>
 	f(n)⩾10.g(n) for all the values of n>0.<br>
 	Hence, the complexity of f(n) can be represented as Ω(g(n)), i.e. Ω(n<sup>2</sup>).</p>
 </div>
 <div class="card">
-	<p><h4>Theta Notation (Ɵ):</h4>
-	<img src="aoaQ103.jpg" /><br><br>
-	We say that f(n)=θ(g(n)) when there exist constants c<sub>1</sub> and c<sub>2</sub> that c<sub>1</sub>.g(n)⩽f(n)⩽c<sub>2</sub>.g(n) 
+	<h4>Theta Notation (Ɵ):</h4>
+	<img src="aoaQ103.jpg" />
+	<p>We say that f(n)=θ(g(n)) when there exist constants c<sub>1</sub> and c<sub>2</sub> that c<sub>1</sub>.g(n)⩽f(n)⩽c<sub>2</sub>.g(n)
 	for all sufficiently large value of n. Here n is a positive integer.<br>
 	This means function g is a tight bound for function f.<br><br>
-	<b>Example :</b><br><br>
+	<b>Example :</b><br>
 	Let us consider a given function, f(n)=10.n<sup>2</sup>+2.n+1
-	Considering g(n)=n<sup>2</sup>, 
+	Considering g(n)=n<sup>2</sup>, <br>
 	10.g(n)⩽f(n)⩽11.g(n) for all the large values of n.<br>
 	Hence, the complexity of f(n) can be represented as θ(g(n)), i.e. θ(n<sup>2</sup>)</p>
 </div>
