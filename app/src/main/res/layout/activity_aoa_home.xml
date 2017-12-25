@@ -31,7 +31,7 @@
         android:layout_height="match_parent"
         android:layout_weight="70">
 
-        <Button
+        <ImageView
             android:id="@id/aoaTheory"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -40,11 +40,9 @@
             android:layout_marginRight="5dp"
             android:layout_marginBottom="5dp"
             android:layout_weight="12.5"
-            android:text="Theory"
             android:elevation="4dp"
-            android:background="@drawable/background"
-            android:textSize="20sp">
-        </Button>
+            android:src="@drawable/icon_theory">
+        </ImageView>
 
         <Button
             android:id="@id/aoaPractical"
