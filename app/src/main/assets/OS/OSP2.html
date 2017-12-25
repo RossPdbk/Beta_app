@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h4>AIM : Implementation of FCFS process scheduling</h4>
+	</div>
+
+<div class="card">
+
+<pre>
+#include&lt;stdio.h&gt;
+void main()
+{
+	int n,a[10],b[10],t[10],w[10],g[10],i,m;
+	float att=0,awt=0;
+	for(int i=0; i&lt;10; i++)
+	{
+	    a[i]=0; b[i]=0; w[i]=0; g[i]=0;
+	}
+
+	printf("enter the number of process \n");
+	scanf("%d",&amp;n);
+
+	printf("enter the burst times\n");
+	for(int j=0; j&lt;n; i++)
+	{
+	scanf("%d",&amp;b[i]);
+	}
+
+	printf("\nenter the arrival times \n");
+	for(int j=0; j&lt;n; i++)
+	{
+		scanf("%d",&amp;a[i]);
+	}
+
+	g[0]=0;
+
+	for(int i=0; i&lt;10; i++)
+	{
+		g[i+1]=g[i]+b[i];
+	}
+
+	for(int i=0; i&lt;n; i++)
+	{     
+		w[i]=g[i]-a[i];
+		t[i]=g[i+1]-a[i];
+		awt=awt+w[i];
+		att=att+t[i]; 
+	}
+
+	awt =awt/n;
+	att=att/n;
+	printf("\n\tprocess\t\twaiting time\t turn around time\n");
+
+	for(int i=0; i&lt;n; i++)
+	{
+		printf("\tp%d\t\t%d\t\t%d\n",i,w[i],t[i]);
+	}
+
+	printf("the average waiting time is %f\n",awt);
+	printf("the average turn around time is %f\n",att);
+}
+</pre>
+</div>
+
+	<div class="card">
+		<br>
+			<b>Output : </b><br>
+<pre>
+enter the number of process 4
+enter the burst times
+10 5 6 9
+enter the arrival times 
+0 1 2 3
+	process	waiting time	turn around time
+	p0		0		10
+	p1		9		14
+	p2		13		19
+	p3		18		27
+the average waiting time is 10.000000
+the average turn around time is 17.500000
+</pre>
+
+</body>
+</html>

@@ -220,6 +220,21 @@ WebView webviewAnswer;
             case R.id.osTheoryQ19:
                 webviewAnswer.loadUrl("file:///android_asset/OS/OSQ19.html");
                 break;
+            case R.id.osTheoryQ20:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ20.html");
+                break;
+            case R.id.osTheoryQ21:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ21.html");
+                break;
+            case R.id.osTheoryQ22:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ22.html");
+                break;
+            case R.id.osTheoryQ23:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ23.html");
+                break;
+            case R.id.osTheoryQ24:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ24.html");
+                break;
             //OS cases ends here
 
 
@@ -337,17 +352,36 @@ WebView webviewAnswer;
 
             //OS Prac starts here
             case R.id.osPracticalP1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP1.html");
                 break;
             case R.id.osPracticalP2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP2.html");
                 break;
             case R.id.osPracticalP3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP3.html");
                 break;
             case R.id.osPracticalP4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP4.html");
                 break;
+            case R.id.osPracticalP5 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP5.html");
+                break;
+            case R.id.osPracticalP6 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP6.html");
+                break;
+            case R.id.osPracticalP7 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP7.html");
+                break;
+            case R.id.osPracticalP8 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP8.html");
+                break;
+            case R.id.osPracticalP9 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP9.html");
+                break;
+            case R.id.osPracticalP10 :
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSP10.html");
+                break;
+
             //OS Prac ends here
 
             //CG Prac starts here

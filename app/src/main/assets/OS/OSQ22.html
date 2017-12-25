@@ -1,0 +1,64 @@
+<html>
+
+	<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<div class="header">
+		<h4>
+			Q22. Explain in detail : File management in Linux.
+		</h4>
+		</div>
+
+		<div class="card">
+		<p>
+			<ul>
+				<li>Linux includes versatile and a powerful file handling facility, designed to support a wide variety of file management system and file structures.</li><br>
+
+				<li>Linux kernel handles all various types of files by hiding complex implementation behind a layer of software called as "Virtual File System" (VFS).</li><br>
+
+				<li>The VFS defines a common file model that capable of representing file system features and behaviour.</li><br>
+
+				<li>Here, VFS assumes that the files are objects in computer memory. The hardware specification or target file system has no effect on it.</li><br>
+
+				<li>VFS defines four object types. They are as follows : 
+					<ol>
+						<li>An inode object --> Repesents an individual file.</li>
+						<li>A dentry object --> Represents an individual directory entry.</li>
+						<li>A superblock object --> Represents an entire file system.</li>
+						<li>A file object --> Represents an open file.</li>
+					</ol>
+				</li><br>
+
+				<li>Every object of above file has pointer associated with it which points to function table.</li><br>
+
+				<li>Function table contains address of functions that actually implements the process.</li><br>
+
+				<li>There is set of operations prescribe for each of four object types.</li><br>
+
+				<li>The VFS software is able to perform an operation on file system objects by calling appropriate function from object function table without having to know what kind of object user is dealing with.</li>
+			</ul>
+		</p>
+		<img src="system_calls.png" width="100%">
+		<br>
+		</div>
+
+		<div class="card">
+		<p><b>Examples of file management commands in linux.</b><br>
+			<ol>
+				<li>cd --> Change current directory</li>
+				<li>dir --> List directory contents</li>
+				<li>ls --> List files present in that directory</li>
+				<li>pwd --> Print working directory with full path</li>
+				<li>cmp --> Compare two files</li>
+				<li>echo --> Display lines in text file</li>
+				<li>mkdir --> Create a new folder</li>
+				<li>rmdir --> Remove an existing directory</li>
+			</ol>
+		</p>
+
+
+	</body>
+
+</html>

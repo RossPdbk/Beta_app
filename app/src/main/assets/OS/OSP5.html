@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h4>AIM : Implementation of SSTF disk scheduling algorithm.</h4>
+	</div>
+
+<div class="card">
+
+<pre>
+import java.util.Scanner;
+class SSTF{
+	public static void main(String args[]){
+		Scanner sc=new Scanner(System.in);
+		int nd,tft=0,hs,hp=0,np,pp,nhp;
+
+		System.out.println("Enter no. of disks:");
+		nd=sc.nextInt();
+		int ft[]=new int[nd+1];
+
+		System.out.println("Enter starting position of Head:");
+		hs=sc.nextInt();
+
+		System.out.println("Enter disk tracks:");
+		for(int i=0;i&lt;nd;i++)
+		{
+			ft[i]=sc.nextInt();
+		}	
+		
+		ft[nd]=hs;	
+
+		for(int i=0;i&lt;nd;i++)
+		{
+			for(int j=0;j&lt;nd;j++)
+			{
+				if(ft[j]&gt;ft[j+1])
+				{
+					int temp=ft[j];
+					ft[j]=ft[j+1];
+					 ft[j+1]=temp;
+				}
+			}
+		}	
+
+		for(int i=0;i&lt;=nd;i++)
+		{
+			if(ft[i]==hs)
+			{
+				hp=i;
+				break;
+			}
+		}
+
+		np=hp+1;
+		pp=hp-1;
+
+		System.out.print("Head move Sequence: [ ");
+		for(int i=nd;i&gt;0;i--)
+		{
+			System.out.print(ft[hp]+" -> ");
+			if(np==nd+1)
+			{
+				tft+=ft[hp]-ft[pp];
+				hp=pp;
+				pp--;
+			}
+			else if(pp==-1)
+			{
+				tft+=ft[np]-ft[hp];
+				hp=np;
+				np++;
+			}
+			else if((ft[hp]-ft[pp])&lt;(ft[np]-ft[hp]))
+			{
+				tft+=ft[hp]-ft[pp];
+				pp--;
+			}
+			else if(np&lt;=nd)
+			{
+				tft+=ft[np]-ft[hp];
+				hp=np;
+				np++;
+			}
+		}	
+		System.out.print(ft[nd]+" ]");
+		System.out.println("\nTotal sleek time = "+tft);
+	}
+}
+</pre>
+</div>
+
+	<div class="card">
+		<br>
+			<b>Output : </b><br>
+<pre>
+Enter no. of disks:
+8
+Enter starting position of Head:
+53
+Enter disk tracks:
+98 183 37 122 14 124 65 67
+Head move Sequence: [ 53 -> 65 -> 67 -> 37 -> 14-> 98 -> 122 -> 124 -> 183 ]
+Total sleek time = 236
+</pre>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+
+	<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<div class="header">
+		<h4>
+			Q21. Protection Mechanism
+		</h4>
+		</div>
+
+		<div class="card">
+		<p>
+			<ul>
+				<li>Memory protection in a paged environment is accomplished by protection bits associated with each frame.</li><br>
+
+				<li>Suppose we have read-only file. Every reference to the memory goes through page table to find correct frame.</li><br>
+
+				<li>At the same time, Physical address is being computed. The protection bit can be checked to verify that no-write are being made.</li><br>
+
+				<li>For this finer level protection, we can create a hardware to provide read-only, read-write or execute only protection by providing seperate protection bits.</li><br>
+
+				<li>This bit is valid/invalid bit. When bit is set to 'Valid', Page is legal and address space is sent and if bit is set to 'Invalid' then page is not allowed.</li><br>
+
+				<li>E.g. The system with 14 bit address space (0-16383), But we have a program that has address only from 0 to 10468. so address in page 0, 1, 2, 3, 4, 5 are mapped normally as they have valid bit but page 6 & 7 are not allowed as they are attached with invalid bit.</li>
+
+			</ul>
+		</p>
+		</div>
+
+	</body>
+
+</html>

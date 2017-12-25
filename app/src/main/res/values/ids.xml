@@ -154,5 +154,15 @@
     <item name="aoaPracticalP9" type="id">aoaPracticalP9</item>
     <item name="aoaPracticalP10" type="id">aoaPracticalP10</item>
     <item name="aoaPracticalP11" type="id">aoaPracticalP11</item>
+    <item name="osTheoryQ21" type="id">osTheory21</item>
+    <item name="osTheoryQ22" type="id">osTheory22</item>
+    <item name="osTheoryQ23" type="id">osTheory23</item>
+    <item name="osTheoryQ24" type="id">osTheory24</item>
+    <item name="osPracticalP9" type="id">osPracticalP9</item>
+    <item name="osPracticalP10" type="id">osPracticalP10</item>
+    <item name="osPracticalP8" type="id">osPracticalP8</item>
+    <item name="osPracticalP7" type="id">osPracticalP7</item>
+    <item name="osPracticalP6" type="id">osPracticalP6</item>
+    <item name="osPracticalP5" type="id">osPracticalP5</item>
 
 </resources>

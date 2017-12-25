@@ -40,7 +40,133 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@id/osPracticalP1"
-                android:text="Write a program to do something that is related to Operating System"
+                android:text="1. Banker's algorithm."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/osPracticalP2"
+                android:layout_below="@id/osPracticalP1"
+                android:text="2. FCFS process scheduling."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/osPracticalP3"
+                android:layout_below="@id/osPracticalP2"
+                android:text="3. SJF process scheduling."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/osPracticalP4"
+                android:layout_below="@id/osPracticalP3"
+                android:text="4. FCFS disk scheduling algorithm."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/osPracticalP5"
+                android:layout_below="@id/osPracticalP4"
+                android:text="5. SSTF disk scheduling algorithm."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/osPracticalP6"
+                android:layout_below="@id/osPracticalP5"
+                android:text="6. FIFO page replacement policy."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/osPracticalP7"
+                android:layout_below="@id/osPracticalP6"
+                android:text="7. LRU page replacement policy."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/osPracticalP8"
+                android:layout_below="@id/osPracticalP7"
+                android:text="8. Dining philosophers problem."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/osPracticalP9"
+                android:layout_below="@id/osPracticalP8"
+                android:text="9. Worst fit algorithm in memory management."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/osPracticalP10"
+                android:layout_below="@id/osPracticalP9"
+                android:text="10. Best fit algorithm in memory management."
                 android:background="@drawable/background"
                 android:textSize="16sp"
                 android:layout_marginLeft="7dp"
