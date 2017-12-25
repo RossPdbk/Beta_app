@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
    <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="m_style.css">
 </head>
 
     <body>
 	   <div class="header">
-	  <p><h3>Q16.Prove that two succesive rotations are additive?</h3>
+	  <h3>Q16.Prove that two succesive rotations are additive?</h3>
 	   </div>
 	   <div class="card">
 	  <p>
@@ -16,43 +16,46 @@
 	   </div>
 
 	  <div class="card">
-	 <b> Translations</b>
+	<u> <b> Translations</b> </u><br>
 
 Two successive translations of an object can be carried out by first concatenating the translations matrices, then applying the <br>
-composite matrix to the coordinate points. Specifying the two successive translation distances as (Tx1, Ty1) and (Tx2, Ty2), <br>
+composite matrix to the coordinate points. Specifying the two successive translation distances as (Tx<sub>1</sub>, Ty<sub>1</sub>) and (Tx<sub>2</sub>, Ty<sub>2</sub>), <br>
 we calculate the composite matrix as<br>
-	
-	<table cellpadding="10">
-	<tr><td>1, 0 ,0</td>
-        <td>1, 0 ,0</td>	
-		<td>1, 0 ,0</td>
-    </tr>	
-	<tr><td>0, 1 ,0 </td>
-	<td>0 ,1 ,0 </td>
-	<td>0 ,1 ,0 </td></tr>
-	
-	<tr><td>Tx1, Ty2 ,1</td>
-	<td>Tx2, Ty2 ,1</td>
-	<td>Tx1+Tx2, Ty1+Ty2 ,1</td></tr><table><br>
+
+		  <table class="matrix" style="display:inline-block;">
+			  = <tr><td>	1 </td> <td>0</td>  <td>0</td> </tr>
+			  <tr><td>0</td> <td>1</td> <td>0</td></tr>
+			  <tr><td>Tx<sub>1</sub></td> <td> Ty<sub>2</sub></td> <td>1</td></tr></table>
+		  &nbsp;&nbsp;
+		  <table class="matrix" style="display: inline-block;"><tr>
+			  <td>1</td> <td> 0</td>  <td>0</td></tr>
+			  <tr><td>0</td> <td>1</td>  <td>0</td></tr>
+			  <tr><td> 0</td>   <td>   0 </td>    <td>  1</td></tr></table>
+		  &nbsp;&nbsp;
+		  <table class="matrix" style="display: inline-block;">
+			  <tr><td> 1</td> <td> 0</td> <td> 0</td></tr>
+			  <tr><td>0</td> <td> 1</td> <td> 0</td></tr>
+
+			  <tr><td>Xm</td> <td>Ym</td> <td>1</td></tr></table>
 	Which demonstrates that two successive translations are additive.<br>
 	  </div>
 
 	  <div class="card">
-	<b>Scalings</b>
+	<u><b>Scalings</b></u><br>
 
 Concatenating transformation matrices for two successive scaling operations produces the following composite scaling matrix:<br>
 
-S(Sx1, Sy1) . S(Sx2, Sy2) = S(Sx1.Sx2, Sy1.Sy2)<br>
+S(Sx<sub>1</sub>, Sy<sub>1</sub>) . S(Sx<sub>2</sub>, Sy<sub>2</sub>) = S(Sx<sub>1</sub>.Sx<sub>2</sub>, Sy<sub>1</sub>.Sy<sub>2</sub>)<br>
 
 The resulting matrix in this case indicates that successive scaling operations are multiplicative. That is, <br>
 if we were to triple the size of an object twice in succession, the final size would be nine times that of the original.<br>
 	  </div>
 
 <div class="card">
-<b>Rotations<b>
+<u><b>Rotations</b></u>
 
 The composite matrix for two successive rotations is calculated as<br>
-R(&#920 1). R(&#920 2) = R(&#920 1 + &#920 2)<br>
+R(&#9201). R(&#9202) = R(&#9201 + &#9202)<br>
 As is the case with translations, successive rotations are additive.
 
 

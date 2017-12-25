@@ -5,10 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class cgHome extends AppCompatActivity implements View.OnClickListener {
-    Button cgTheory, cgPractical;
+    ImageView cgTheory, cgPractical;
      TextView cgMfaQ1, cgMfaQ2, cgMfaQ3, cgMfaQ4, cgMfaQ5, cgMfaQ6, cgMfaQ7;
 
     @Override
@@ -16,8 +17,8 @@ public class cgHome extends AppCompatActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cg_home);
 
-        cgTheory = (Button) findViewById(R.id.cgTheory);
-        cgPractical = (Button) findViewById(R.id.cgPractical);
+        cgTheory = (ImageView) findViewById(R.id.cgTheory);
+        cgPractical = (ImageView) findViewById(R.id.cgPractical);
 
         cgMfaQ1 = (TextView) findViewById(R.id.cgTheoryQ1);
         cgMfaQ2 = (TextView) findViewById(R.id.cgTheoryQ5);

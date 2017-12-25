@@ -1,24 +1,27 @@
 package com.mumbaiengineers.beta_app;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TextView;
 
 public class osHome extends AppCompatActivity implements View.OnClickListener {
-    Button osTheory, osPractical;
+    ImageView osTheory, osPractical;
     TextView osMfaQ1, osMfaQ2, osMfaQ3, osMfaQ4, osMfaQ5, osMfaQ6, osMfaQ7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_os_home);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        osTheory = (Button) findViewById(R.id.osTheory);
-        osPractical = (Button) findViewById(R.id.osPractical);
+        osTheory = (ImageView) findViewById(R.id.osTheory);
+        osPractical = (ImageView) findViewById(R.id.osPractical);
 
         osMfaQ1 = (TextView) findViewById(R.id.osTheoryQ5);
         osMfaQ2 = (TextView) findViewById(R.id.osTheoryQ2);

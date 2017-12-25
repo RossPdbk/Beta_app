@@ -1,14 +1,16 @@
 package com.mumbaiengineers.beta_app;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class coaHome extends AppCompatActivity implements View.OnClickListener {
-    Button coaTheory, coaPractical;
+    ImageView coaTheory, coaPractical;
     TextView coaMfaQ1, coaMfaQ2, coaMfaQ3, coaMfaQ4, coaMfaQ5, coaMfaQ6, coaMfaQ7;
 
 
@@ -16,9 +18,10 @@ public class coaHome extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coa_home);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        coaTheory = (Button) findViewById(R.id.coaTheory);
-        coaPractical = (Button) findViewById(R.id.coaPractical);
+        coaTheory = (ImageView) findViewById(R.id.coaTheory);
+        coaPractical = (ImageView) findViewById(R.id.coaPractical);
 
         coaMfaQ1 = (TextView) findViewById(R.id.coaTheoryQ3);
         coaMfaQ2 = (TextView) findViewById(R.id.coaTheoryQ7);

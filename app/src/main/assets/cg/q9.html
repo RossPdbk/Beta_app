@@ -2,12 +2,12 @@
 <html>
 
    <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="m_style.css">
 </head>
     <body>
 
 	   <div class="header">
-	  <p><h3>Q9.Define window and viewport and derive window to viewport transformation?</h3></div>
+	  <h3>Q9.Define window and viewport and derive window to viewport transformation?</h3></div>
 
 	   <div class="card">
 	   <p>
@@ -27,7 +27,7 @@
 	  <li>An area on a display device to which a window is mapped is called a viewport.</li>
 <li>A viewport is a polygon viewing region in computer graphics. The viewport is an area expressed in rendering-device-specific coordinates, e.g. pixels for screen coordinates, in which the objects of interest are going to be rendered.</li>
 <li>A viewport defines in normalized coordinates a rectangular area on the display device where the image of the data appears. You define a viewport with the GPORT command. You can have your graph take up the entire display device or show it in only a portion, say the upper-right part.</li>
-	   </div>
+	   </ul></div>
 
 	   <div class="card">
 		</ul>
@@ -57,38 +57,32 @@
 	  <ul type="circle">
 	  
 	  <li> Now perform another translation to move the viewport to its correct position on the screen.
-	   </li></ul><br>
+	   </li></ul>
 	   </div>
 
 	   <div class="card">
-	   <ul>
-	      <b><u>Scaling Factor</u></b>
-		  <img src="q9 scaling.png" width="100%"/>
+		   <img src="q9 scaling.png" width="100%"/>
+
+	     <u> <b>Scaling Factor</b> </u>
+		   <ul>
 	   <li> Sx=width of viewport/width of window</li>
-	   <li>Sy=height of viewport/height of window</li></ul><br>
-	   <b><u> Scaling matrix</u></b>
+	   <li>Sy=height of viewport/height of window</li></ul>
+	   <u><b> Scaling matrix</b></u>
 	   <ul>
-	   <li><table cellpadding="5"><tr>  <td>Sx</td>  <td>0</td>  <td> 0</td> </tr> 
+	   <li><table class="matrix"><tr>  <td>Sx</td>  <td>0</td>  <td> 0</td> </tr>
 	         <tr><td>0</td>  <td> Sy</td>  <td>0</td></tr>
-	        <tr><td> 0</td> <td>  0</td>   <td>1</td></tr></table></li>
-			 <li>  Sx = Xvmax-Xvmin/Xwmax-Xwmin<br>
-			       Sy = Yvmax-Yvmin/Ywmax-Ywmin
+	        <tr><td> 0</td> <td>  0</td>   <td>1</td></tr></table> </li>
+			 <li>  Sx = x <sub> vmax </sub>-x <sub>vmin</sub> / x <sub>wmax</sub>-x <sub>wmin </sub></li>
+			   <li>    Sy = y<sub>vmax</sub>-y<sub>vmin</sub>/y<sub>wmax</sub>-y<sub>wmin</sub></li>
 			 
-			 </li></ul>
-		<ul>	 
-	<b><u> Translation Factor</u></b>
-	<img src="q9 translation.png" width="100%"/>
-	<li> Tx = Xwmax.Xvmin-Xwmin.Xvmax/Xwmax-Xwmin<br>
-         Ty = Ywmax.Yvmin-Ywmin.Yvmax/Ywmaz-Ywmin	
-	</li>
+			 </ul>
+		   <img src="q9 translation.png" width="100%"/>
+	   <u>  <b> Translation Factor </b>  </u>
+		   <ul>
+	<li> Tx = x<sub>wmax</sub>.x<sub>vmin</sub>-x<sub>wmin</sub>.x<sub>vmax</sub> / x<sub>wmax</sub>-x<sub>wmin</sub></li>
+      <li>   Ty = y<sub>wmax</sub>.y<sub>vmin</sub>-y<sub>wmin</sub>.y<sub>vmax</sub> / y<sub>wmaz</sub>-y<sub>wmin</sub></li>
 	</ul>
 
 		   </div>
-	
 	</body>
-
-
-
-
-
 </html>
