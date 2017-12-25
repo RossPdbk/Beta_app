@@ -57,7 +57,8 @@
             android:layout_marginTop="10dp"
             android:layout_weight="12.5"
             android:background="@drawable/mfaback"
-            android:elevation="4dp"/>
+            android:elevation="4dp"
+            android:src="@drawable/icon_practical"/>
 
     </LinearLayout>
 
