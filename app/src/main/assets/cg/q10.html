@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="m_style.css">
 </head>
     <body>
 	<div class="header">
-	  <p><h3>Q8.Derive matrix for 2D rotation about an arbitary axis?</h3></div>
+	  <h3>Q8.Derive matrix for 2D rotation about an arbitary axis?</h3></div>
 
      <div class="card">
 	  <p>
+		  <img src="q10.png" width="100%"/>
 	  <ol type="1">
-	  <img src="q10.png" width="100%"/>
+
 	  <li>2D rotation section aims at enabling the transformation matrix for rotating any object by some angle Ө.
 
 <li>Rotation of a geometric model about an arbitrary axis, other than any of the coordinate axes, involves several rotational and translation transformations.</li>
@@ -23,20 +24,21 @@
 
 <li>If we erroneously use the equation (2.9) directly, to rotate the object about a fixed axis, and skip the translation of this point to the origin, we will in fact end up rotating the object about the z-axis, and not about the fixed axis.<li>
 
-<li>Thus, the rotation of an object about an arbitrary axis, involves three steps:</li>
-<ol type="1">
+<li>Thus, the rotation of an object about an arbitrary axis, involves three steps:</li></ol>
+ <ol type="1">
  <li>Translate the fixed axis so that it coincides with the z-axis</li>
 
  <li>Rotate the object about the axis</li>
 
  <li>Translate the fixed axis back to the original position</li></ol>
- </ol><br></div>
+
+	 </div>
  
 	 <div class="card">
 	<b><u>Derivation of matrix of 2D object about an arbitrary axis</u></b>
 	<ol type="1">
 	<li> Assume that we have to rotate a point P1 with respect to (Xm,Ym) then we have to perform three steps.First we have to translate the (Xm,Ym) to origin.<br>
-	T1 = <table><tr><td>1 </td> <td>0</td> <td>0</td></tr>
+	T1 = <table class="matrix"><tr><td>1 </td> <td>0</td> <td>0</td></tr>
 	      <tr><td> 0 </td> <td>1</td>  <td>0</td></tr>
 	       <tr><td>-Xm</td> <td> -Ym</td> <td>1</td></tr></table>
 	   
@@ -46,27 +48,39 @@
 	Let's assume as anticlockwise rotation by angle &#920.So our rotation matrix will be<br>
 	
 	
-    R = <table><tr><td>cos&#920</td> <td> sin&#920</td>  <td>0</td></tr>
+    R = <table class="matrix"> <tr><td>cos&#920</td> <td> sin&#920</td>  <td>0</td></tr>
             <tr><td>-sin&#920</td> <td>cos&#920</td>  <td>0</td></tr>	
 		    <tr><td> 0</td>   <td>   0 </td>    <td>  1</td></tr></table></li>
 
 
-			 <li> Now the third step is to translate back to original position.So the translation matrix (T2) will become<br>
-			      T2 =<table><tr><td> 1</td> </td> 0</td> <td> 0</td></tr>
+			 <li> Now the third step is to translate back to original position.So the translation matrix (T2) will become
+			      T2 = <table class="matrix"><tr><td> 1</td> <td> 0</td> <td> 0</td></tr>
                        <tr><td>0</td> <td> 1</td> <td> 0</td></tr>
 					   
-			           <tr><td>Xm</td> <td>Ym</td> <td>1</td></tr></table>
-now let us form a combined matrix<br>	
+			           <tr><td>Xm</td> <td>Ym</td> <td>1</td></tr> </table> </li>
+    <li>now let us form a combined matrix <br>
     = Translation * Rotation * Translation	<br>
 
-    = T1 * R * T2<br>
-<table>
-    = <tr><td>	1 0 0</td>                       <td> cos&#920  sin&#920  0</td>            <td>    1 0 0</td></tr>
-       <tr><td> 0 1 0</td>                       <td> -sin&#920 cos&#920  0</td>	           <td>  0 1 0</td></tr>
-	  <tr><td>-Xm -Ym 1</td>                      <td>   0      0       1</td>               <td> Xm Ym 1</td></tr></table><br><br>
-	  
-	  
-	  <table>
+    = T1 * R * T2
+ <table class="matrix" style="display:inline-block;">
+    = <tr><td>	1 </td> <td>0</td>  <td>0</td> </tr>
+	 <tr><td>0</td> <td>1</td> <td>0</td></tr>
+	 <tr><td>-Xm</td> <td> -Ym</td> <td>1</td></tr></table>
+		&nbsp;&nbsp;
+		<table class="matrix" style="display: inline-block;"><tr>
+			<td>cos&#920</td> <td> sin&#920</td>  <td>0</td></tr>
+			<tr><td>-sin&#920</td> <td>cos&#920</td>  <td>0</td></tr>
+			<tr><td> 0</td>   <td>   0 </td>    <td>  1</td></tr></table>
+		&nbsp;&nbsp;
+		<table class="matrix" style="display: inline-block;">
+			<tr><td> 1</td> <td> 0</td> <td> 0</td></tr>
+			<tr><td>0</td> <td> 1</td> <td> 0</td></tr>
+
+			<tr><td>Xm</td> <td>Ym</td> <td>1</td></tr></table></li>
+
+
+
+	<li>	<table class="matrix" >
 	  <tr> <td>cos&#920</td>
             <td>sin&#920</td>
             <td>0</td>			</tr>
@@ -79,18 +93,10 @@ now let us form a combined matrix<br>
 				<td>1</td>
 			</tr>
 			
-	  
-	  </table><br>
+
+	  </table></li>>
+		</ol>
 	  This transformation matrix is the overall transformation matrix for rotation about an arbitrary point(Xm,Ym)
-
-
-
-
-	 </div>
+</div>
 	</body>
-
-
-
-
-
 </html>

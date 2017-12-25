@@ -7,11 +7,10 @@
     <body>
 
 	   <div class="header">
-	  <p><h3>Q11.Explain Parallel and Perspective Projection and derive matrix for them?</h3>
+	  <h3>Q11.Explain Parallel and Perspective Projection and derive matrix for them?</h3>
 	   </div>
 
 	   <div class="card">
-	  <p>
 	  <ol type="1">
 	  <li>Projection operations convert the viewing-coordinate description (3D) to coordinate positions on the projection plane (2D).</li>
       <li>   There are 2 basic projection methods:</li></ol>
@@ -22,10 +21,10 @@
        <li> We connect the projected vertices by line segments which correspond to connections on the original object.</li>
        <li> A parallel projection preserves relative proportions of objects.</li>
        <li> Accurate views of the various sides of an object are obtained with a parallel projection. But not a realistic representation.</li>
-	   </div>
+	   </ul></div>
 
 	   <div class="card">
-	  </ul>
+
 	  <b><u>Perspective Projection</u></b>
 	  <ul type="circle">
 	   <li>   In perspective projection, the lines of projection are not parallel.</li>
@@ -41,36 +40,33 @@
 	   <div class="card">
 	  <b><u>Matrix For Perspective Projection</u></b>
 	  
-	  Let us consider the center of projection is at Pc(Xc,Yc,Zc)Pc(Xc,Yc,Zc) and the point on object is P1(X1,Y1,Z1)P1(X1,Y1,Z1), then the parametric equation for the line containing these points can be given as<br>
+	  <p>Let us consider the center of projection is at P<sub>c</sub> (x<sub>c</sub>,y<sub>c</sub>,z<sub>c</sub>) and the point on object is P <sub> 1</sub>(x<sub>1</sub>,y<sub>1</sub>,z<sub>1</sub>), then the parametric equation for the line containing these points can be given as<br>
 
-X2=Xc+(X1−Xc)U<br>
-X2=Xc+(X1−Xc)U<br>
-Y2=Yc+(Y1−Yc)U<br>
-Y2=Yc+(Y1−Yc)U<br>
-Z2=Zc+(Z1−Zc)U<br>
-Z2=Zc+(Z1−Zc)U<br>
+x<sub>2</sub>=x<sub>c</sub>+(x<sub>1</sub>−x<sub>c</sub>)U<br>
+y<sub>2</sub>=y<sub>c</sub>+(y<sub>1</sub>−y<sub>c</sub>)U<br>
+z<sub>2</sub>=z<sub>c</sub>+(z<sub>1</sub>−z<sub>c</sub>)U<br>
 
-For projected point Z2 is 0, therefore the third equation can be written as<br>
+For projected point z<sub>2</sub> is 0, therefore the third equation can be written as<br>
 
-0=Zc+(Z1−Zc)U0=Zc+(Z1−Zc)U<br>
-U=−Zc/Z1−ZcU=−Zc/Z1−Zc<br>
+0=z<sub>c</sub>+(z<sub>1</sub>−z<sub>c</sub>)U<sub>0</sub>=z<sub>c</sub>+(z<sub>1</sub>−z<sub>c</sub>)U<br>
+U=−z<sub>c</sub>/z<sub>1</sub>−z<sub>c</sub>U=−z<sub>c</sub>/z<sub>1</sub>−z<sub>c</sub><br>
 Substituting the value of U in first two equations we get,<br>
 
-X2=(Xc–Zc)∗(X1−Xc)/(Z1−Zc)X2=(Xc–Zc)∗(X1−Xc)/(Z1−Zc)<br>
+x<sub>2</sub>=(x<sub>c</sub>–z<sub>c</sub>)*(x<sub>1</sub>−x<sub>c</sub>)/(z<sub>1</sub>−z<sub>c</sub>)<br>
 
-=XCZ1–XCZC–X1ZC+XCZC/Z1−ZC=XCZ1–XCZC–X1ZC+XCZC/Z1−ZC<br>
-=XCZ1–X1ZC/Z1−ZC=XCZ1–X1ZC/Z1−ZC
-Y2=(Yc–Zc)∗(Y1−Yc)/(Z1−Zc)Y2=(Yc–Zc)∗(Y1−Yc)/(Z1−Zc)<br>
+=x<sub>c</sub>z<sub>1</sub>–x<sub>c</sub>z<sub>c</sub>–x<sub>1</sub><sub>c</sub>+x<sub>c</sub>z<sub>c</sub>/z<sub>1</sub>−z<sub>c</sub><br>
+=x<sub>c</sub>z<sub>1</sub>–x<sub>1</sub>z<sub>c</sub>/z<sub>1</sub>−z<sub>c</sub><br>
+y<sub>2</sub>=(y<sub>c</sub>–z<sub>c</sub>)*(y<sub>1</sub>−y<sub>c</sub>)/(z<sub>1</sub>−z<sub>c</sub>)<br>
 
-=YCZ1–YCZC–Y1ZC+YCZC/Z1−ZC=YCZ1–YCZC–Y1ZC+YCZC/Z1−ZC<br>
-=YCZ1–Y1ZC/Z1−ZC<br>
-Here, we have taken the center of projection as Pc(Xc,Yc,Zc)Pc(Xc,Yc,Zc). If we take the center of projection on the negative Z – axis such that<br>
+=y<sub>c</sub>z<sub>1</sub>–y<sub>c</sub>z<sub>c</sub>–y<sub>1</sub>z<sub>c</sub>+y<sub>c</sub>z<sub>c</sub>/z<sub>1</sub>−z<sub>c</sub><br>
+=y<sub>c</sub>z<sub>1</sub>–y<sub>1</sub>z<sub>c</sub>/z<sub>1</sub>−z<sub>c</sub><br>
+Here, we have taken the center of projection as P<sub>c</sub>(x<sub>c</sub>,y<sub>c</sub>,z<sub>c</sub>). If we take the center of projection on the negative Z – axis such that<br>
 
-X = 0<br>
+x = 0<br>
 
-Y = 0<br>
+y = 0<br>
 
-Z=−Zc<br>
+z=−z<sub>c</sub><br>
 
 	   </div>
 	</body>
