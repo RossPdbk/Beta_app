@@ -18,16 +18,16 @@ body{
 	box-shadow: 2px 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 	padding:1px 12px 1px 12px;
-	margin:6px 0 6px 0;
+	margin:0 0 6px 0;
 	background:white;
 	text-align:justify;
 	overflow:auto;
 }
 .card ul{
-    padding:1px 10px 1px 18px;
+    padding:1px 4px 1px 15px;
 }
 .card ol{
-    padding:1px 10px 1px 18px;
+    padding:1px 4px 1px 15px;
 }
 .card_algo{
    	overflow:auto;
