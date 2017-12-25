@@ -41,10 +41,11 @@
             android:layout_marginBottom="5dp"
             android:layout_weight="12.5"
             android:elevation="4dp"
+            android:background="@drawable/mfaback"
             android:src="@drawable/icon_theory">
         </ImageView>
 
-        <Button
+        <ImageView
             android:id="@id/aoaPractical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -54,10 +55,9 @@
             android:layout_marginBottom="5dp"
             android:elevation="4dp"
             android:layout_weight="12.5"
-            android:text="Practical"
-            android:background="@drawable/background"
+            android:background="@drawable/mfaback"
             android:textSize="20sp">
-        </Button>
+        </ImageView>
     </LinearLayout>
 
     <RelativeLayout
