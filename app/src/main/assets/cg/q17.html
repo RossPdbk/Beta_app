@@ -13,7 +13,7 @@
 		  Polygon is an ordered list of vertices . For filling polygons with particular colors,
 		  you need to determine the pixels falling on the border of the polygon and those which fall inside the polygon.<br>
 
-		  <u><b>ScanLine Fill Algorithm</b></u>
+		  <u><b>ScanLine Fill Algorithm</b></u><br>
 		  This algorithm works by intersecting scanline with polygon edges and fills the polygon between pairs of intersections.
           Following are steps for scanline fill algorithm-<br>Scanline filling is basically filling up of polygons using horizontal lines or scanlines. The purpose of the SLPF algorithm is to fill (color) the interior pixels of a polygon given only the vertices of the figure. To understand Scanline, think of the image being drawn by a single pen starting from bottom left, continuing to the right, plotting only points where there is a point present in the image, and when the line is complete, start from the next line and continue.
 		  This algorithm works by intersecting scanline with polygon edges and fills the polygon between pairs of intersections.
@@ -35,7 +35,7 @@
 		       </div>
 
 	           <div class="card">
-				  <u> <b> Boundary Fill Algorithm </b></u>
+				  <u> <b> Boundary Fill Algorithm </b></u><br>
 				   The boundary fill algorithm works as its name. This algorithm picks a point inside an object and starts to fill until it hits the boundary of the object.
 				   The color of the boundary and the color that we fill should be different for this algorithm to work. <br>
 				   It can be implemented by 4 connected pixels and 8 connected pixels.
@@ -44,7 +44,7 @@
 				   <ul type="circle">
 					   <li>4 connected pixel</li>
 				   </ul>
-				   <p>In this technique 4-connected pixels are used as shown in the figure. We are putting the pixels above, below, to the right,
+				   In this technique 4-connected pixels are used as shown in the figure. We are putting the pixels above, below, to the right,
 				   and to the left side of the current pixels and this process will continue until we find a boundary with different color.</p>
 				   <img src="q17i1.png" width="100%"/>
 			   </div>
@@ -74,7 +74,7 @@
                    <ul type="circle">
                        <li>8 connected pixel</li>
                    </ul>
-                  <p> In this technique 8-connected pixels are used as shown in the figure. We are putting pixels above, below,
+                  In this technique 8-connected pixels are used as shown in the figure. We are putting pixels above, below,
                    right and left side of the current pixels as we were doing in 4-connected technique.<br>
 
                    In addition to this, we are also putting pixels in diagonals so that entire area of the current pixel is covered.
@@ -113,12 +113,5 @@
 	           <div class="card">
 				   <img src="q17i4.PNG" width="100%"/>
 			   </div>
-	
-	
 	</body>
-
-
-
-
-
 </html>
