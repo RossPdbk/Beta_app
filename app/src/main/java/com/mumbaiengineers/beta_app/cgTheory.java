@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class cgTheory extends AppCompatActivity implements View.OnClickListener {
 
-    TextView cgTheoryQ1,cgTheoryQ2,cgTheoryQ3,cgTheoryQ4,cgTheoryQ5,cgTheoryQ6,cgTheoryQ7,cgTheoryQ8,cgTheoryQ9,cgTheoryQ10,cgTheoryQ11,cgTheoryQ12,cgTheoryQ13,cgTheoryQ14,cgTheoryQ15,cgTheoryQ16,cgTheoryQ17;
+    TextView cgTheoryQ1,cgTheoryQ2,cgTheoryQ3,cgTheoryQ4,cgTheoryQ5,cgTheoryQ6,cgTheoryQ7,cgTheoryQ8,cgTheoryQ9,cgTheoryQ10,cgTheoryQ11,cgTheoryQ12,cgTheoryQ13,cgTheoryQ14,cgTheoryQ15,cgTheoryQ16,cgTheoryQ17, cgTheoryQ18;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,8 @@ public class cgTheory extends AppCompatActivity implements View.OnClickListener 
         cgTheoryQ15 = (TextView) findViewById(R.id.cgTheoryQ15);
         cgTheoryQ16 = (TextView) findViewById(R.id.cgTheoryQ16);
         cgTheoryQ17 = (TextView) findViewById(R.id.cgTheoryQ17);
+        cgTheoryQ18 = (TextView) findViewById(R.id.cgTheoryQ18);
+
 
 
         cgTheoryQ1.setOnClickListener(this);
@@ -52,6 +54,7 @@ public class cgTheory extends AppCompatActivity implements View.OnClickListener 
         cgTheoryQ15.setOnClickListener(this);
         cgTheoryQ16.setOnClickListener(this);
         cgTheoryQ17.setOnClickListener(this);
+        cgTheoryQ18.setOnClickListener(this);
     }
 
     @Override

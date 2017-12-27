@@ -283,37 +283,8 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q18">
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
         </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/cgTheoryQ19"
-            android:layout_below="@id/cgTheoryQ18"
-            android:background="@drawable/background"
-            android:textSize="16sp"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
-            android:layout_marginBottom="7dp"
-            android:textColor="@color/black"
-            android:text="Q19">
-        </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@id/cgTheoryQ20"
-            android:layout_below="@id/cgTheoryQ19"
-            android:background="@drawable/background"
-            android:textSize="16sp"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
-            android:layout_marginBottom="7dp"
-            android:textColor="@color/black"
-            android:text="Q20">
-        </TextView>
-
     </RelativeLayout>
    </ScrollView>
 
