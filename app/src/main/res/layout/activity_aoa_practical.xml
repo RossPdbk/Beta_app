@@ -99,7 +99,7 @@
             android:layout_height="match_parent"
             android:id="@id/aoaPracticalP5"
             android:layout_below="@id/aoaPracticalP4"
-            android:text="5. Binary Sort"
+            android:text="5. Binary Search"
             android:background="@drawable/background"
             android:textColor="@color/black"
             android:layout_marginLeft="7dp"
@@ -226,6 +226,76 @@
             android:id="@id/aoaPracticalP14"
             android:layout_below="@id/aoaPracticalP13"
             android:text="14. Rabin Karp String Matching"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP15"
+            android:layout_below="@id/aoaPracticalP14"
+            android:text="15. Single Source Shortest Path "
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP16"
+            android:layout_below="@id/aoaPracticalP15"
+            android:text="16. Minimum Cost spanning tree Prim's algorithm"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP17"
+            android:layout_below="@id/aoaPracticalP16"
+            android:text="17. Minimum spanning tree Krushkal's Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP18"
+            android:layout_below="@id/aoaPracticalP17"
+            android:text="18. Naive pattern matching algorithm"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP19"
+            android:layout_below="@id/aoaPracticalP18"
+            android:text="19. String matching with Finite Automata"
             android:background="@drawable/background"
             android:textColor="@color/black"
             android:layout_marginLeft="7dp"

@@ -1,7 +1,14 @@
 <!doctype html>
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body >
-0/1Knapsack Algorithm
+<div class="header">
+	<p>
+		<h3>0/1Knapsack Algorithm</h3>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
 #include&lt;conio.h&gt;
@@ -13,7 +20,7 @@ void knapsack(float x[],float w[],float p[],int n,int m,int in[])
 	weight=0.0;
 	profit=0.0;
 	for(i=0;i&lt;n&amp;&amp;weight&lt;m;i++)
-    {
+	{
 		if(weight+w[in[i]]&lt;m)
 		{
 			x[in[i]]=1;
@@ -73,13 +80,12 @@ void main()
 	printf(")");
 	getch();
 }
-
-<b>OUTPUT:</b>
-
-C:\Users\Shubham\Desktop>gcc -o knapsack knapsack.c
-
-C:\Users\Shubham\Desktop>knapsack
-
+</pre>
+</div>
+<div class="card">
+	<p>
+		<b>OUTPUT:</b>
+	<pre>
 Enter no. of objects:4
 
 Enter weight & profit of each object.
@@ -103,5 +109,6 @@ Enter capacity of knapsack:6
 
 Fraction of objects for maximum profit :(0.33,1.00,1.00,0.00)
 </pre>
+</div>
 </body>
 </html>
