@@ -164,5 +164,8 @@
     <item name="osPracticalP7" type="id">osPracticalP7</item>
     <item name="osPracticalP6" type="id">osPracticalP6</item>
     <item name="osPracticalP5" type="id">osPracticalP5</item>
+    <item name="aoaPracticalP12" type="id">aoaPracticalP12</item>
+    <item name="aoaPracticalP13" type="id">aoaPracticalP13</item>
+    <item name="aoaPracticalP14" type="id">aoaPracticalP14</item>
 
 </resources>

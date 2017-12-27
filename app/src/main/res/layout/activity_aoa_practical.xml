@@ -192,7 +192,50 @@
             android:textSize="16sp">
         </TextView>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP12"
+            android:layout_below="@id/aoaPracticalP11"
+            android:text="12. Longest Common Subsequence"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP13"
+            android:layout_below="@id/aoaPracticalP12"
+            android:text="13. Job Sequencing with Deadline"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/aoaPracticalP14"
+            android:layout_below="@id/aoaPracticalP13"
+            android:text="14. Rabin Karp String Matching"
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
     </RelativeLayout>
 
     </ScrollView>
+
 </LinearLayout>
