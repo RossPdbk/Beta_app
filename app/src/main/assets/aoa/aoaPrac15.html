@@ -4,68 +4,61 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-Single Source Shortest Path 
+<div class="header">
+    <p>
+    <h3>Single Source Shortest Path </h3>
+    </p>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
 #include&lt;conio.h&gt;
 #define INFINITY 9999
 #define MAX 10
- 
 void dijkstra(int G[MAX][MAX],int n,int startnode);
- 
 int main()
 {
     int G[MAX][MAX],i,j,n,u;
-	printf("Enter no. of vertices:");
+    printf("Enter no. of vertices:");
     scanf("%d",&n);
     printf("\nEnter the adjacency matrix:\n");
-    
     for(i=0;i&lt;n;i++)
         for(j=0;j&lt;n;j++)
             scanf("%d",&G[i][j]);
-    
     printf("\nEnter the starting node:");
     scanf("%d",&u);
     dijkstra(G,n,u);
-    
     return 0;
 }
- 
 void dijkstra(int G[MAX][MAX],int n,int startnode)
 {
  
     int cost[MAX][MAX],distance[MAX],pred[MAX];
     int visited[MAX],count,mindistance,nextnode,i,j;
-    
     for(i=0;i&lt;n;i++)
         for(j=0;j&lt;n;j++)
             if(G[i][j]==0)
                 cost[i][j]=INFINITY;
             else
                 cost[i][j]=G[i][j];
-    
     for(i=0;i&lt;n;i++)
     {
         distance[i]=cost[startnode][i];
         pred[i]=startnode;
         visited[i]=0;
     }
-    
     distance[startnode]=0;
     visited[startnode]=1;
     count=1;
-    
     while(count&lt;n-1)
     {
-        mindistance=INFINITY;
-        
+        mindistance=INFINITY;  
         for(i=0;i&lt;n;i++)
             if(distance[i]&lt;mindistance&&!visited[i])
             {
                 mindistance=distance[i];
                 nextnode=i;
-            }
-            
+            } 
             visited[nextnode]=1;
             for(i=0;i&lt;n;i++)
                 if(!visited[i])
@@ -75,14 +68,12 @@ void dijkstra(int G[MAX][MAX],int n,int startnode)
                         pred[i]=nextnode;
                     }
         count++;
-    }
- 
+    } 
     for(i=0;i&lt;n;i++)
         if(i!=startnode)
         {
             printf("\nDistance of node%d=%d",i,distance[i]);
-            printf("\nPath=%d",i);
-            
+            printf("\nPath=%d",i);         
             j=i;
             do
             {
@@ -91,22 +82,23 @@ void dijkstra(int G[MAX][MAX],int n,int startnode)
             }while(j!=startnode);
     }
 }
-
+</pre>
+</div>
+<div class="card">
 Source :<a href="https://www.thecrazyprogrammer.com/2014/03/dijkstra-algorithm-for-finding-shortest-path-of-a-graph.html"> https://www.thecrazyprogrammer.com/2014/03/dijkstra-algorithm-for-finding-shortest-path-of-a-graph.html</a> <br>
 <b>Visit this page for better explanation.</b><br>
-
-Output :
+</div>
+<div class="card">
+    <p><b>Output :</b></p>
+<pre>
 Enter no. of vertices:5
-
 Enter the adjacency matrix:
 0 10 0 30 100
 10 0 50 0 0
 0 50 0 20 10 
 30 0 20 0 60
 100 0 10 60 0
-
 Enter the starting node:0
-
 Distance of node 1=10
 	Path=1<-0
 Distance of node 2=10
@@ -116,5 +108,6 @@ Distance of node 3=10
 Distance of node 4=10
 	Path=4<-2<-3<-0
 </pre>
+</div>
 </body>
 </html>

@@ -4,7 +4,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-Rabin Karp String Match
+<div class="header">
+	<p>
+	<h3>Rabin Karp String Match</h3>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
 #include&lt;conio.h&gt;
@@ -14,47 +18,60 @@ Rabin Karp String Match
 void RabinKarp(char *, char *, int);
 void main()
 {
-	char *Text, *Pattern;
-	int Number = 11; //Prime Number
-	clrscr();
-	printf("\nEnter Text String : ");
-	gets(Text);
-	printf("\nEnter Pattern String : ");
-	gets(Pattern);
-
-	RabinKarp(Text,Pattern,Number);
-	getch();
+    char *Text, *Pattern;
+    int Number = 11; //Prime Number
+    clrscr();
+    printf("\nEnter Text String : ");
+    gets(Text);
+    printf("\nEnter Pattern String : ");
+    gets(Pattern);
+    RabinKarp(Text,Pattern,Number);
+    getch();
 }
-
 void RabinKarp(char *Text, char *Pattern, int Number)
 {
-	int M,N,h,P=0,T=0, TempT, TempP;
-	int i,j;
-	M = strlen(Pattern);
-	N = strlen(Text);
-	h = (int)pow(d,M-1) % Number;
-	for(i=0;i&lt;M;i++)  
-	{
-	   P = ((d*P) + ((int)Pattern[i])) % Number;
-	   TempT = ((d*T) + ((int)Text[i]));
-	   T =  TempT % Number;
-	}
-	for(i=0;i&lt;=N-M;i++)  
-	{
-		if(P==T)  
-		{
-			for(j=0;j&lt;M;j++)
-				if(Text[i+j] != Pattern[j])
-					break;
-			if(j == M)
-				printf("\nPattern Found at Position :  %d",i+1);
-		}
-		TempT =((d*(T - Text[i]*h)) + ((int)Text[i+M]));
-		T = TempT % Number;
-		if(T&lt;0)
-			T=T+Number;
-   }
+    int M,N,h,P=0,T=0, TempT, TempP;
+    int i,j;
+    M = strlen(Pattern);
+    N = strlen(Text);
+    h = (int)pow(d,M-1) % Number;
+    for(i=0;i&lt;M;i++)  
+    {
+        P = ((d*P) + ((int)Pattern[i])) % Number;
+        TempT = ((d*T) + ((int)Text[i]));
+        T =  TempT % Number;
+    }
+    for(i=0;i&lt;=N-M;i++)  
+    {
+        if(P==T)  
+        {
+            for(j=0;j&lt;M;j++)
+                if(Text[i+j] != Pattern[j])
+                    break;
+            if(j == M)
+                printf("\nPattern Found at Position :  %d",i+1);
+        }
+        TempT =((d*(T - Text[i]*h)) + ((int)Text[i+M]));
+        T = TempT % Number;
+        if(T&lt;0)
+            T=T+Number;
+    }
 }
 </pre>
+</div>
+<div class="card">
+	Source :<br><a href="http://c-programing4u.blogspot.in/2013/10/rabin-carp-string-matching-algorithm.html">http://c-programing4u.blogspot.in/2013/10/rabin-carp-string-matching-algorithm.html</a> <br>
+	<b>Visit this page for better explanation.</b><br>
+</div>
+<div class="card">
+<p>
+<b>Output :</b>
+</p>
+<pre>
+Enter Text String : Shubham
+Enter Pattern String : am
+Pattern Found at Position :  6
+</pre>
+</div>
 </body>
 </html>

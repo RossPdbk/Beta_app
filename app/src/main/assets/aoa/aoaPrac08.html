@@ -4,7 +4,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-Quick Sort
+<div class="header">
+	<p>
+	<h3>Quick Sort</h3>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
 #include&lt;conio.h&gt;
@@ -12,56 +16,60 @@ int partition(int [],int,int);
 void quicksort(int [],int,int);
 void main()
 {
-	int a[20],i,n;
-	printf("Length :");
-	scanf("%d",&n);
-	for(i=0;i&lt;n;i++)
-	{
-		printf("elemenr %d :",i+1);
-		scanf("%d",&a[i]);
-	}
-	quicksort(a,0,n-1);
-	printf("After sorting :");
-	for(i=0;i&lt;n;i++)
-		printf("%d ",a[i]);
-	getch();
+    int a[20],i,n;
+    printf("Length :");
+    scanf("%d",&n);
+    for(i=0;i&lt;n;i++)
+    {
+        printf("elemenr %d :",i+1);
+        scanf("%d",&a[i]);
+    }
+    quicksort(a,0,n-1);
+    printf("After sorting :");
+    for(i=0;i&lt;n;i++)
+        printf("%d ",a[i]);
+    getch();
 }
 void quicksort(int a[],int start,int end )
 {
-	if(start&lt;end)
-	{
-		int j;
-		j=partition(a,start,end);
-		quicksort(a,start,j-1);
-		quicksort(a,j+1,end);
-	}
+    if(start&lt;end)
+    {
+        int j;
+        j=partition(a,start,end);
+        quicksort(a,start,j-1);
+        quicksort(a,j+1,end);
+    }
 }
 int partition(int a[],int start,int end)
 {
-	int j,pivot,i,temp;
-	i=start;
-	j=end;
-	pivot=start;
-	while(i&lt;j)
-	{
-		while(a[i]&lt;=a[pivot] && i&lt;end)
-			i++;
-		while(a[j]&gt;a[pivot])
-			j--;
-		if(i&lt;j)
-		{
-		temp=a[j];
-		a[j]=a[i];
-		a[i]=temp;
-		}
-	}
-	temp=a[pivot];
-	a[pivot]=a[j];
-	a[j]=temp;
-	return j;
+    int j,pivot,i,temp;
+    i=start;
+    j=end;
+    pivot=start;
+    while(i&lt;j)
+    {
+        while(a[i]&lt;=a[pivot] && i&lt;end)
+            i++;
+        while(a[j]&gt;a[pivot])
+            j--;
+        if(i&lt;j)
+        {
+            temp=a[j];
+            a[j]=a[i];
+            a[i]=temp;
+        }
+    }
+    temp=a[pivot];
+    a[pivot]=a[j];
+    a[j]=temp;
+    return j;
 }
-
-Output:
+</pre>
+</div>
+<div class="card">
+	<p>
+	<b>Output:</b>
+	<pre>
 Length :5
 elemenr 1 :5
 elemenr 2 :6
@@ -70,5 +78,6 @@ elemenr 4 :1
 elemenr 5 :9
 After sorting : 1 5 6 7 9
 </pre>
+</div>
 </body>
 </html>

@@ -4,93 +4,73 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-Graph Colouring
+<div class="header">
+    <p>
+        <h3>Graph Colouring</h3>
+    </p>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
-int m,n,x[10],graph[10][20];
-void mcolor(int k)
+int G[50][50],x[50];  
+void next_color(int k)
 {
-	int i;
-	while(1)
-	{
-		callnextvalue(k);
-		if(x[k]==0)
-			break;
-		if(k==n)
-		{
-			for(i=1;i&lt;=n;i++)
-				printf("%d \t",x[i]);
-				printf("\n");
-		}
-		else
-			mcolor(k+1);
-	}
-}
-int callnextvalue(int k)
-{
-	int j;
-	while(1)
-	{
-		x[k]=(x[k]+1)%(m+1);
-		if(x[k]==0)
-			return 0;
-		for(j=1;j&lt;=n;j++)
-			if(graph[k][j]&&x[k]==x[j])
-				break;
-
-		if(j==n+1)
-			return 0;
-	}
+    int i,j;
+    x[k]=1;  
+    for(i=0;i&lt;k;i++)
+    { 
+        if(G[i][k]!=0 && x[k]==x[i])  
+        x[k]=x[i]+1;  
+    }
 }
 void main()
 {
-	int i,e,a,b;
-	printf("enter the number of verties:");
-	scanf("%d",&n);
-	printf("\n enter the number of edges:");
-	scanf("%d",&e);
-	for(i=1;i&lt;=e;i++)
-	{
-		printf("enter the edge:  ");
-		scanf("%d%d",&a,&b);
-		graph[a][b]=1;
-		graph[b][a]=1;
-	}
-for(i=1;i&lt;=n;i++)
-x[i]=0;
-
-printf("enter the no of colours:");
-scanf("%d",&m);
-printf("following are the no of ways by which you can colour the nodes:\n");
-mcolor(1);
+    int n,e,i,j,k,l;
+    printf("Enter no. of vertices : ");
+    scanf("%d",&n);  
+    printf("Enter no. of edges : ");
+    scanf("%d",&e);  
+    for(i=0;i&lt;n;i++)
+        for(j=0;j&lt;n;j++)
+            G[i][j]=0;    
+    printf("Enter indexes where value is 1-->\n");
+    for(i=0;i&lt;e;i++)
+    {
+        scanf("%d %d",&k,&l);
+        G[k][l]=1;
+        G[l][k]=1;
+    }
+    for(i=0;i&lt;n;i++)
+    next_color(i);  
+    printf("Colors of vertices -->\n");
+    for(i=0;i&lt;n;i++)  
+        printf("Vertex[%d] : %d\n",i+1,x[i]);
 }
-
-enter the number of verties:5
-
- enter the number of edges:7
-enter the edge:  1 2
-enter the edge:  2 3
-enter the edge:  3 4
-enter the edge:  4 5
-enter the edge:  5 1
-enter the edge:  1 3
-enter the edge:  5 2
-enter the no of colours:3
-following are the no of ways by which you can colour the nodes:
-1       2       3       1       3
-1       2       3       2       3
-1       3       2       1       2
-1       3       2       3       2
-2       1       3       1       3
-2       1       3       2       3
-2       3       1       2       1
-2       3       1       3       1
-3       1       2       1       2
-3       1       2       3       2
-3       2       1       2       1
-3       2       1       3       1
-
-Process returned 0 (0x0)   execution time : 80.536 s
 </pre>
+</div>
+<div class="card">
+    Source :<br><a href="http://travelsciencetech.blogspot.in/2012/10/graph-coloring-problem-with.html">http://travelsciencetech.blogspot.in/2012/10/graph-coloring-problem-with.html</a> <br>
+    <b>Visit this page for better explanation.</b><br>
+</div>
+<div class="card">
+    <p>
+    <b>Output:</b>
+    <pre>
+Enter no. of vertices : 4
+Colored vertices of Graph G
+Enter no. of edges : 5
+Enter indexes where value is 1-->
+0 1
+1 2
+1 3
+2 3
+3 0
+Colors of vertices -->
+Vertex[1] : 1
+Vertex[2] : 2
+Vertex[3] : 1
+Vertex[4] : 3
+</pre>
+</div>
 </body>
 </html>

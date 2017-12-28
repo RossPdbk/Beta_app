@@ -4,52 +4,58 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body >
-Binary Search
+<div class="header">
+	<p><h3>Binary Search</h3>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
 #include&lt;conio.h&gt;
 void main()
 {
-	clrscr();
-	int n, i, arr[50], search, first, last, middle;
-	printf("Enter total number of elements :");
-	scanf("%d",&n);
-	printf("Enter %d number :", n);
-	for (i=0; i&lt;n; i++)
-	{
-		scanf("%d",&arr[i]);
-	}
-	printf("Enter a number to find :");
-	scanf("%d", &search);
-	first = 0;
-	last = n-1;
-	middle = (first+last)/2;
-	while (first &lt;= last)
-	{
-		if(arr[middle] &lt; search)
-		{
-			first = middle + 1;
-
-		}
-		else if(arr[middle] == search)
-		{
-			printf("%d found at location %d\n", search, middle+1);
-			break;
-		}
-		else
-		{
-			 last = middle - 1;
-		}
-		middle = (first + last)/2;
-	}
-	if(first &gt; last)
-	{
-		printf("Not found! %d is not present in the list.",search);
-	}
-	getch();
+    int n, i, arr[50], search, first, last, middle;
+    clrscr();
+    printf("Enter total number of elements :");
+    scanf("%d",&n);
+    printf("Enter %d number :", n);
+    for (i=0; i&lt;n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("Enter a number to find :");
+    scanf("%d", &search);
+    first = 0;
+    last = n-1;
+    middle = (first+last)/2;
+    while (first &lt;= last)
+    {
+        if(arr[middle] &lt; search)
+        {
+            first = middle + 1;
+        }
+        else if(arr[middle] == search)
+        {
+            printf("%d found at location %d\n", search, middle+1);
+            break;
+        }
+        else
+        {
+            last = middle - 1;
+        }
+        middle = (first + last)/2;
+    }
+    if(first &gt; last)
+    {
+    printf("Not found! %d is not present in the list.",search);
+    }
+    getch();
 }
-
-Output:
+</pre>
+</div>
+<div class="card">
+    <p>
+	<b>Output:</b>
+	<pre>
 Enter the total number of elements :5
 Enter 5 elements:2
 5
@@ -59,5 +65,6 @@ Enter 5 elements:2
 Enter the number to find:3
 3 found at location 4
 </pre>
+</div>
 </body>
 </html>

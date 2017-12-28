@@ -4,7 +4,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-Minimum Cost Spanning Tree Prim's algorithm
+<div class="header">
+    <p>
+    <h3>Minimum Cost Spanning Tree Prim's algorithm</h3>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
 #include&lt;stdlib.h&gt;
@@ -42,8 +46,6 @@ int prims()
     int cost[MAX][MAX];
     int u,v,min_distance,distance[MAX],from[MAX];
     int visited[MAX],no_of_edges,i,min_cost,j;
-    
-    //create cost[][] matrix,spanning[][]
     for(i=0;i&lt;n;i++)
         for(j=0;j&lt;n;j++)
         {
@@ -53,24 +55,18 @@ int prims()
                 cost[i][j]=G[i][j];
                 spanning[i][j]=0;
         }
-        
-    //initialise visited[],distance[] and from[]
     distance[0]=0;
     visited[0]=1;
-    
     for(i=1;i&lt;n;i++)
     {
         distance[i]=cost[0][i];
         from[i]=0;
         visited[i]=0;
     }
-    
-    min_cost=0;        //cost of spanning tree
-    no_of_edges=n-1;        //no. of edges to be added
-    
+    min_cost=0;
+    no_of_edges=n-1;
     while(no_of_edges&gt;0)
     {
-        //find the vertex at minimum distance from the tree
         min_distance=infinity;
         for(i=1;i&lt;n;i++)
             if(visited[i]==0&&distance[i]&lt;min_distance)
@@ -78,33 +74,31 @@ int prims()
                 v=i;
                 min_distance=distance[i];
             }
-            
         u=from[v];
-        
-        //insert the edge in spanning tree
         spanning[u][v]=distance[v];
         spanning[v][u]=distance[v];
         no_of_edges--;
         visited[v]=1;
-        
-        //updated the distance[] array
         for(i=1;i&lt;n;i++)
             if(visited[i]==0&&cost[i][v]&lt;distance[i])
             {
                 distance[i]=cost[i][v];
                 from[i]=v;
             }
-        
         min_cost=min_cost+cost[u][v];
     }
-    
     return(min_cost);
 }
-
+</pre>
+</div>
+<div class="card">
 Source :<a href="https://www.thecrazyprogrammer.com/2014/06/prims-algorithm-and-program-for-minimum-cost-spanning-tree.html">https://www.thecrazyprogrammer.com/2014/06/prims-algorithm-and-program-for-minimum-cost-spanning-tree.html</a> <br>
 <b>Visit this page for better explanation.</b><br>
-
-Output :
+</div>
+<div class="card">
+    <p>
+        <b>Output :</b>
+<pre>
 Enter no. of vertices:6
 
 Enter the adjacency matrix:
@@ -116,7 +110,6 @@ Enter the adjacency matrix:
 0 0 4 2 6 0
 
 spanning tree matrix:
-
 0 3 1 0 0 0
 3 0 0 0 3 0
 1 0 0 0 0 4
@@ -126,5 +119,6 @@ spanning tree matrix:
 
 Total cost of spanning tree=13
 </pre>
+</div>
 </body>
 </html>

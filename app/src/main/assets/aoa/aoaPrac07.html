@@ -4,7 +4,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-Merge Sort
+<div class="header">
+    <p>
+    <h3>Merge Sort</h3>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
 void mergesort(int a[],int i,int j);
@@ -60,11 +64,15 @@ void merge(int a[],int i1,int j1,int i2,int j2)
     for(i=i1,j=0;i&lt;=j2;i++,j++)
         a[i]=temp[j];
 }
-
-Output:
+</pre>
+</div>
+<div class="card">
+    <b>Output:</b>
+    <pre>
 Enter the no of elements:5
 Enter array elements:8 9 3 4 7
 Sorted array is:3 4 7 8 9 
 </pre>
+</div>
 </body>
 </html>

@@ -4,45 +4,52 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-Insertion Sort
+<div class="header">
+	<p>
+	<h3>Insertion Sort</h3>
+</div>
+<div class="card">
 <pre>
 #include &lt;stdio.h&gt;
 void insertiosort(int array[],int n)
 {
-	int c,d,t;
-	for(c = 1 ; c &lt;= n - 1; c++)
-	{
-		d = c;
-		while ( d &gt; 0 && array[d] &lt; array[d-1])
-		{
-			t = array[d];
-			array[d]   = array[d-1];
-			array[d-1] = t;
-			d--;
-		}
-	}
+    int c,d,t;
+    for(c = 1 ; c &lt;= n - 1; c++)
+    {
+        d = c;
+        while ( d &gt; 0 && array[d] &lt; array[d-1])
+        {
+            t = array[d];
+            array[d]   = array[d-1];
+            array[d-1] = t;
+            d--;
+        }
+    }
 }
-
 void main()
 {
-	int n, array[1000], c, d, t;
-	printf("Enter number of elements\n");
-	scanf("%d", &n);
-	printf("Enter %d integers\n", n);
-	for (c = 0; c &lt; n; c++)
-	{
-		scanf("%d", &array[c]);
-	}	
-	insertiosort(array,n);
-	printf("Sorted list :\n");
-	for (c = 0; c &lt;= n - 1; c++)
-	{
-		printf("%d\n", array[c]);
-	} 
-	getch();
+    int n, array[1000], c, d, t;
+    printf("Enter number of elements\n");
+    scanf("%d", &n);
+    printf("Enter %d integers\n", n);
+    for (c = 0; c &lt; n; c++)
+    {
+        scanf("%d", &array[c]);
+    }
+    insertiosort(array,n);
+    printf("Sorted list :\n");
+    for (c = 0; c &lt;= n - 1; c++)
+    {
+        printf("%d\n", array[c]);
+    } 
+    getch();
 }
-
-Output:
+</pre>
+</div>
+<div class="card">
+	<p>
+	<b>Output:</b>
+	<pre>
 Enter number of elements5
 Enter 5 integers2
 8
@@ -51,5 +58,7 @@ Enter 5 integers2
 3
 Sorted list :2 3 4 7 8
 </pre>
+</p>
+</div>
 </body>
 </html>

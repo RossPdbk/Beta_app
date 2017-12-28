@@ -4,7 +4,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body >
-8-Queen Problem
+<div class="header">
+    <p>
+    <h3>8-Queen Problem</h3>
+</div>
+<div class="card">
 <pre>
 #define N 8
 #include&lt;stdio.h&gt;
@@ -16,6 +20,7 @@ void printSolution(int board[N][N])
     {
         for (j = 0; j &lt; N; j++)
             printf(" %d ", board[i][j]);
+
         printf("\n");
     }
 }
@@ -23,7 +28,6 @@ void printSolution(int board[N][N])
 int isSafe(int board[N][N], int row, int col)
 {
     int i, j;
-	
     for (i = 0; i &lt; col; i++)
         if (board[row][i])
             return 0;
@@ -82,9 +86,13 @@ int main()
     solveNQ();
     return 0;
 }
-
-<b>OUTPUT:</b>
-
+</pre>
+</div>
+<div class="card">
+    <p>
+        <b>Output:</b>
+    </p>
+<pre>
 C:\Users\Shubham\Desktop>gcc -o queen queen.c
 
 C:\Users\Shubham\Desktop>queen
@@ -97,5 +105,6 @@ C:\Users\Shubham\Desktop>queen
  0  0  0  0  0  1  0  0
  0  0  1  0  0  0  0  0
 </pre>
+</div>
 </body>
 </html>

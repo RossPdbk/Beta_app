@@ -4,18 +4,20 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-String matching with Finite Automata
+<div class="header">
+    <p>
+    <h3>String matching with Finite Automata</h3>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
 #include&lt;string.h&gt;
 #define NO_OF_CHARS 256
- 
 int getNextState(char *pat, int M, int state, int x)
 {
     if (state &lt; M && x == pat[state])
         return state+1;
     int ns, i;
-
     for (ns = state; ns &gt; 0; ns--)
     {
         if (pat[ns-1] == x)
@@ -27,10 +29,8 @@ int getNextState(char *pat, int M, int state, int x)
                 return ns;
         }
     }
- 
     return 0;
 }
- 
 void computeTF(char *pat, int M, int TF[][NO_OF_CHARS])
 {
     int state, x;
@@ -42,11 +42,8 @@ void search(char *pat, char *txt)
 {
     int M = strlen(pat);
     int N = strlen(txt);
- 
     int TF[M+1][NO_OF_CHARS];
- 
     computeTF(pat, M, TF);
- 
     int i, state=0;
     for (i = 0; i &lt; N; i++)
     {
@@ -55,7 +52,6 @@ void search(char *pat, char *txt)
             printf ("\n Pattern found at index %d",i-M+1);
     }
 }
- 
 int main()
 {
     char *txt = "AABAACAADAABAAABAA";
@@ -63,14 +59,20 @@ int main()
     search(pat, txt);
     return 0;
 }
+</pre>
+</div>
+<div class="card">
 Source :<a href="https://www.geeksforgeeks.org/searching-for-patterns-set-5-finite-automata/">https://www.geeksforgeeks.org/searching-for-patterns-set-5-finite-automata/</a> <br>
 <b>Visit this page for better explanation.</b><br>
-
-Output:
+</div>
+<div class="card">
+    <p>
+        <b>Output:</b>
+<pre>
   Pattern found at index 0
   Pattern found at index 9
   Pattern found at index 13
-
 </pre>
+</div>
 </body>
 </html>

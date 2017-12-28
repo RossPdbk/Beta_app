@@ -4,8 +4,11 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body >
-Travelling Salesman Problem
-<pre >
+<div class="header">
+    <p><h3>Travelling Salesman Problem</h3>
+</div>
+<div class="card">
+<pre>
 #include&lt;stdio.h&gt; 
 int a[10][10],visited[10],n,cost=0; 
 void get() 
@@ -76,9 +79,11 @@ void main()
     put(); 
 
 }
-
-<b>OUTPUT:</b>
-
+</pre>
+</div>
+<div class="card">
+<b>Output:</b>
+<pre>
 guest-msHG1T@system-03:~/Desktop$ gcc tsp.c 
 
 guest-msHG1T@system-03:~/Desktop$ ./a.out 
@@ -121,5 +126,6 @@ The cost list is:
 The Path is: 
 1 -->4 -->3 -->2 -->1 
 </pre>
+</div>
 </body>
 </html>

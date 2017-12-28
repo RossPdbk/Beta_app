@@ -4,41 +4,48 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body >
-Selection Sort
+<div class="header">
+	<p><h3>Selection Sort</h3>
+</div>
+<div class="card">
 <pre>
 #include&lt;stdio.h&gt;
 #include&lt;conio.h&gt;
 void main()
 {
-	int i,a[100],n;
-	clrscr();
-	printf("Enter the number of elements :");
-	scanf("%d",&n);
-	printf("\nEnter the elements :");
-	for(i=0;i&lt;n;i++)
-	{
-		printf("\nElement %d :",i+1);
-		scanf("%d",&a[i]);
-	}
-	for(i=0;i&lt;n;i++)
-	{
-		for(int j=i+1;j&lt;n;j++)
-		{
-			if(a[j]&lt;a[i])
-			{
-				int temp=a[j];
-				a[j]=a[i];
-				a[i]=temp;
-			}
-		}
-	}
-	printf("Sorted elements :");
-	for(i=0;i&lt;n;i++)
-		printf(" %d",a[i]);
-	getch();
+    int i,a[100],n;
+    clrscr();
+    printf("Enter the number of elements :");
+    scanf("%d",&n);
+    printf("\nEnter the elements :");
+    for(i=0;i&lt;n;i++)
+    {
+        printf("\nElement %d :",i+1);
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i&lt;n;i++)
+    {
+        for(int j=i+1;j&lt;n;j++)
+        {
+            if(a[j]&lt;a[i])
+            {
+                int temp=a[j];
+                a[j]=a[i];
+                a[i]=temp;
+            }
+        }
+    }
+    printf("Sorted elements :");
+    for(i=0;i&lt;n;i++)
+        printf(" %d",a[i]);
+    getch();
 }
-
-Output:
+</pre>
+</div>
+<div class="card">
+    <p>
+	<b>Output:</b>
+	<pre>
 Enter the number of elements :5
 Enter the elements :
 Element 1 :2
@@ -48,5 +55,6 @@ Element 4 :9
 Element 5 :1
 Sorted elements :1 2 3 6 9
 </pre>
+</div>
 </body>
 </html>
