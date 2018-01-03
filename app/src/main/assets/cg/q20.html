@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h3>Q20.Explain Bezier curve and specify the properties of Bezier curve</h3></div>
+<div class="card">
+    <ul type="circle">
+        <li>Bezier curve is another approach to construct a curve.</li>
+        <li>A Bezier curve is determinate by a defining a polygon.</li>
+        <li>Bezier curve has a number of properties which makes them highly useful and convenient for curve and surface design.</li>
+        <li>Bezier curves are used in the time domain, particularly in animation and user interface design.</li>
+        <li>Generalizations of Bezier curves to higher dimensionsare called Bezier surfaces, of which the Bezier triangle is a special case.</li>
+        <li>The cubic Bezier curve require four sample points, these points completely specify the curve.</li>
+        <li>The figure shows sample Bezier curve.</li>
+    </ul>
+      <img src="q20i1.png" width="100%"/>
+
+</div>
+<div class="card">
+    <ol type="1">
+       <li>The curve begins at first sample point and ends at fourth sample point.</li>
+        <li>If we need another Bezier curve then we need another four sample points.</li>
+        <li>But if we need two Bezier curves connected to each other, then with six sample points we can achieve it.</li>
+        <li>For this, the third and fourth point of first curve should be made same as first and second point of second curve.</li>
+        <li>The equations for Bezier curve are as follows:</li>
+        
+    </ol>
+       <img src="q20i2.PNG" width="100%"/>
+    </div>
+    <div class="card">
+        <p>We can also construct a Bezier curve by taking mid points. </p>
+        <img src="q20i3.PNG" width="100%"/>
+          <ul type="circle">
+              <li>The basis functions are real.</li>
+              <li>The Bezier curve always passes through the first and last control points i.e. curve has same end points as the guiding polygon.</li>
+              <li>he degree of the polynomial defining the curve segment is one less than the number of defining polygon point. Therefore, for 4 control points, the degree of the polynomial is 3.</li>
+              <li>The curve generally follows the shape of the defining polygon.</li>
+              <li>The direction of the tangent vector at the endpoints is the same as that of the vector determined by first and last segments.</li>
+              <li>The curve lies entirely within the convex hull formed by 4 control points.</li>
+              <li>The convex hull property for a Bezier curve ensures that the polynomial smoothly follows the control points.</li>
+              <li>The curve exhibits the variation diminishing property. This means that the curve does not oscillate about any straight line more than the defining polygon.</li>
+              <li>The curve is invariant under an affine transformation.</li>
+          </ul>
+    </div>
+</body>
+</html>
