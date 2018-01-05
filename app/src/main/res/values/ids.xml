@@ -181,5 +181,10 @@
     <item name="coaTheoryQ29" type="id">coaTheoryQ29</item>
     <item name="coaTheoryQ28" type="id">coaTheoryQ28</item>
     <item name="coaTheoryQ30" type="id">coaTheoryQ30</item>
+    <item name="shareid" type="id">shareid</item>
+    <item name="feedbackid" type="id">feedbackid</item>
+    <item name="rateid" type="id">rateid</item>
+    <item name="aboutid" type="id">aboutid</item>
+    <item name="reportid" type="id">reportid</item>
 
 </resources>

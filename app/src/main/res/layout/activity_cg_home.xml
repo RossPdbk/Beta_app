@@ -8,13 +8,13 @@
     android:background="@color/colorPrimaryLight"
     tools:context="com.mumbaiengineers.beta_app.cgHome">
 
-
-<android.support.v7.widget.Toolbar
+    <android.support.v7.widget.Toolbar
+        android:id="@id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Computer Graphics"
         android:gravity="center"
-        android:textSize="18sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/white"/>
 </android.support.v7.widget.Toolbar>
