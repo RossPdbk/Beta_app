@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="header">
+    <h3>Q24.write short note on Koch Curve</h3></div>
+<div class="card">
+<b>Definition:</b><br>
+    A Koch curve is a fractal curve that can be constructed by taking a straight line segment and replacing it with a pattern of multiple line segments.
+    Then the line segments in that pattern are replaced by the same pattern.<br>
+    <b>Construction:</b><br>
+    The Koch curve can be constructed by starting with an equilateral triangle, then recursively altering each line segment as follows:
+
+    <ul type="circle">        
+        <li>Divide the line segment into three segments of equal length.</li>
+        <li>Draw an equilateral triangle that has the middle segment as its base and points outward.</li>
+    </ul>
+    <img src="q24i1.PNG" width="100%">
+    <ul type="circle">
+        <li>Remove the line segment that is the base of the triangle.</li>
+    </ul>
+    <img src="q24i2.PNG" width="100%">
+    <ul type="circle">
+        <li>After one iteration of this process, the resulting shape is the outline of a hexagram.</li>
+    </ul>
+    <img src="q24i3.PNG" width="100%">
+    <ol type="1">
+        <li>The Koch snowflake is the limit approached as the above steps are followed over and over again.</li>
+        <li>The Koch curve originally described by Koch is constructed with only one of the three sides of the original triangle.</li>
+        <li>In other words, three Koch curves make a Koch snowflake.</li>
+    </ol>
+</div>
+</body>
+</html>

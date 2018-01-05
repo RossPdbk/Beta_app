@@ -285,6 +285,162 @@
             android:textColor="@color/black"
             android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
         </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ19"
+            android:layout_below="@id/cgTheoryQ18"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q19.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ20"
+            android:layout_below="@id/cgTheoryQ19"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ21"
+            android:layout_below="@id/cgTheoryQ20"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ22"
+            android:layout_below="@id/cgTheoryQ21"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ23"
+            android:layout_below="@id/cgTheoryQ22"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ24"
+            android:layout_below="@id/cgTheoryQ23"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ25"
+            android:layout_below="@id/cgTheoryQ24"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ26"
+            android:layout_below="@id/cgTheoryQ25"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ27"
+            android:layout_below="@id/cgTheoryQ26"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ28"
+            android:layout_below="@id/cgTheoryQ27"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ29"
+            android:layout_below="@id/cgTheoryQ28"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgTheoryQ30"
+            android:layout_below="@id/cgTheoryQ29"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q18.compare Flood Fill Algorithm and Boundary Fill Algorithm">
+        </TextView>
     </RelativeLayout>
    </ScrollView>
 

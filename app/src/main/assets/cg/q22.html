@@ -21,6 +21,34 @@
         <li>In this technique, we will count the edge crossing along the line from any point (x,y) to infinity.</li>
         <li>If the number of interactions is odd, then the point (x,y) is an interior point; and if the number of interactions is even, then the point (x,y) is an exterior point.</li>
         <li>The following example depicts this concept</li>
-        <li> </li>
     </ul>
+    <img src="q22i1.jpg" width="100%"/>
+    <ol type="1">
+        <li> construct a line segment from the point in question to point outside the polygon.</li>
+        <li>Now, we draw a line segment from point 1 to a outside point and see that the line intersects the polygon at 4 places. </li>
+        <li>That’s even, hence the point is outside the polygon.</li>
+        <li>Same goes with point 2.</li>
+        <li>Now, Point 3 makes an odd intersection of 1, hence it is inside the polygon.</li>
+        <li>If the intersection point is vertex of polygon then, if the other end points of the two segments which meets at this vertex lie on same side of constructed line then point is taken as having even number of intersections.</li>
+        <li>If they lie on the opposite side of constructed line then point is counted to have a single intersection.</li>
+    </ol>
 </div>
+<div class="card">
+    <b>Nonzero winding number Method</b>
+    <ul type="circle">
+        <li>This method is also used with the simple polygons to test the given point is interior or not.</li>
+        <li>It can be simply understood with the help of a pin and a rubber band. Fix up the pin on one of the edge of the polygon and tie-up the rubber band in it and then stretch the rubber band along the edges of the polygon.</li>
+        <li>When all the edges of the polygon are covered by the rubber band, check out the pin which has been fixed up at the point to be test. If we find at least one wind at the point consider it within the polygon, else we can say that the point is not inside the polygon.</li>
+        <li>Alternative way to understand this method is as follows</li>
+    </ul>
+    <img src="q22i2.PNG" width="100%"/>
+    <ol type="1">
+        <li>Draw a scan line from the point to be test towards the left most of X direction.</li>
+        <li>Give the value 1 to all the edges which are going to upward direction and all other -1 as direction values.</li>
+        <li>Check the edge direction values from which the scan line is passing and sum up them.</li>
+        <li>If the total sum of this direction value is non-zero, then this point to be tested is an <b>interior point</b>, otherwise it is an <b>exterior point</b>.</li>
+        <li>In the above figure, we sum up the direction values from which the scan line is passing then the total is 1 – 1 + 1 = 1; which is non-zero. So the point is said to be an interior point.</li>
+    </ol>
+</div>
+</body>
+</html>

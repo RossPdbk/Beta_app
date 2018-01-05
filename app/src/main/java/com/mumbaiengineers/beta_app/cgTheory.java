@@ -9,7 +9,8 @@ import android.widget.TextView;
 
 public class cgTheory extends AppCompatActivity implements View.OnClickListener {
 
-    TextView cgTheoryQ1,cgTheoryQ2,cgTheoryQ3,cgTheoryQ4,cgTheoryQ5,cgTheoryQ6,cgTheoryQ7,cgTheoryQ8,cgTheoryQ9,cgTheoryQ10,cgTheoryQ11,cgTheoryQ12,cgTheoryQ13,cgTheoryQ14,cgTheoryQ15,cgTheoryQ16,cgTheoryQ17, cgTheoryQ18;
+    TextView cgTheoryQ1,cgTheoryQ2,cgTheoryQ3,cgTheoryQ4,cgTheoryQ5,cgTheoryQ6,cgTheoryQ7,cgTheoryQ8,cgTheoryQ9,cgTheoryQ10,cgTheoryQ11,cgTheoryQ12,cgTheoryQ13,cgTheoryQ14,cgTheoryQ15,cgTheoryQ16,cgTheoryQ17, cgTheoryQ18,cgTheoryQ19,cgTheoryQ20,cgTheoryQ21,cgTheoryQ22,cgTheoryQ23,
+            cgTheoryQ24,cgTheoryQ25,cgTheoryQ26,cgTheoryQ27,cgTheoryQ28,cgTheoryQ29,cgTheoryQ30;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,25 @@ public class cgTheory extends AppCompatActivity implements View.OnClickListener 
         cgTheoryQ16 = (TextView) findViewById(R.id.cgTheoryQ16);
         cgTheoryQ17 = (TextView) findViewById(R.id.cgTheoryQ17);
         cgTheoryQ18 = (TextView) findViewById(R.id.cgTheoryQ18);
+        cgTheoryQ19 = (TextView) findViewById(R.id.cgTheoryQ19);
+        cgTheoryQ20 = (TextView) findViewById(R.id.cgTheoryQ20);
+        cgTheoryQ21 = (TextView) findViewById(R.id.cgTheoryQ21);
+        cgTheoryQ22 = (TextView) findViewById(R.id.cgTheoryQ22);
+        cgTheoryQ23 = (TextView) findViewById(R.id.cgTheoryQ23);
+        cgTheoryQ24 = (TextView) findViewById(R.id.cgTheoryQ24);
+        cgTheoryQ25 = (TextView) findViewById(R.id.cgTheoryQ25);
+        cgTheoryQ26 = (TextView) findViewById(R.id.cgTheoryQ26);
+        cgTheoryQ27 = (TextView) findViewById(R.id.cgTheoryQ27);
+        cgTheoryQ28 = (TextView) findViewById(R.id.cgTheoryQ28);
+        cgTheoryQ29 = (TextView) findViewById(R.id.cgTheoryQ29);
+        cgTheoryQ30 = (TextView) findViewById(R.id.cgTheoryQ30);
+
+
+
+
+
+
+
 
 
 
@@ -55,6 +75,18 @@ public class cgTheory extends AppCompatActivity implements View.OnClickListener 
         cgTheoryQ16.setOnClickListener(this);
         cgTheoryQ17.setOnClickListener(this);
         cgTheoryQ18.setOnClickListener(this);
+        cgTheoryQ19.setOnClickListener(this);
+        cgTheoryQ20.setOnClickListener(this);
+        cgTheoryQ21.setOnClickListener(this);
+        cgTheoryQ22.setOnClickListener(this);
+        cgTheoryQ23.setOnClickListener(this);
+        cgTheoryQ24.setOnClickListener(this);
+        cgTheoryQ25.setOnClickListener(this);
+        cgTheoryQ26.setOnClickListener(this);
+        cgTheoryQ27.setOnClickListener(this);
+        cgTheoryQ28.setOnClickListener(this);
+        cgTheoryQ29.setOnClickListener(this);
+        cgTheoryQ30.setOnClickListener(this);
     }
 
     @Override
