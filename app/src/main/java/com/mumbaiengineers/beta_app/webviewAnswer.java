@@ -13,6 +13,9 @@ WebView webviewAnswer;
         setContentView(R.layout.activity_webview_answer);
         webviewAnswer = (WebView) findViewById(R.id.webviewAnswer);
 
+        webviewAnswer.getSettings().setDisplayZoomControls(false);
+        webviewAnswer.getSettings().setBuiltInZoomControls(true);
+
         Intent mintent = getIntent();
         int value = mintent.getIntExtra("Qid",0);
         switch(value) {
@@ -156,6 +159,33 @@ WebView webviewAnswer;
                 webviewAnswer.loadUrl("file:///android_asset/COA/coaQ21.html");
                 break;
 
+            case R.id.coaTheoryQ22 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ22.html");
+                break;
+            case R.id.coaTheoryQ23 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ23.html");
+                break;
+            case R.id.coaTheoryQ24 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ24.html");
+                break;
+            case R.id.coaTheoryQ25 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ25.html");
+                break;
+            case R.id.coaTheoryQ26 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ26.html");
+                break;
+            case R.id.coaTheoryQ27 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ27.html");
+                break;
+            case R.id.coaTheoryQ28 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ28.html");
+                break;
+            case R.id.coaTheoryQ29 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ29.html");
+                break;
+            case R.id.coaTheoryQ30 :
+                webviewAnswer.loadUrl("file:///android_asset/COA/coaQ30.html");
+                break;
 
             //CoA cases ends here
 

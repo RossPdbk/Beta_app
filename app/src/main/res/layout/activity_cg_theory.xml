@@ -9,11 +9,12 @@
     tools:context="com.mumbaiengineers.beta_app.cgTheory">
 
     <android.support.v7.widget.Toolbar
+        android:id="@id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:layout_marginBottom="7dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <TextView

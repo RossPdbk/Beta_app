@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <title>COA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+    <p><h3>Using Booth's algorithm show the multiplication of -10*4. Register size=5 bits.</h3></p>
+</div>
+
+<div class="card">
+    <p>
+        <b>Numerical :</b>	<br>
+        (10)<small>10</small>= (01010)<small>2</small><br>
+        M=(-10)<small>10</small>= (10110)<small>2</small>(2's complement)<br>
+        (4)<small>10</small>= (00100)<small>2</small><br>
+        Q=00100<br>
+        initially Q<small>-1</small>=0<br>
+        (Note : register size=5 hence perform 5 cycles)
+    </p>
+    <table>
+        <tr><th>cycles</th>
+            <th>AC</th>
+            <th>Q<br>Q<small>3</small>,Q<small>2</small>,Q<small>1</small>,Q<small>0</small></th>
+            <th>Q<small>-1</small></th>
+            <th>Operation</th>
+        </tr>
+        <tr><td>-</td>
+            <td>00000</td>
+            <td>0010<b>0</b></td>
+            <td><b>0</b></td>
+            <td>(Q<small>0</small> and Q<small>-1</small>)=(0,0) so Right shift</td>
+        </tr>
+        <tr><td>1</td>
+            <td>00000</td>
+            <td>0001<b>0</b></td>
+            <td><b>0</b></td>
+            <td>(Q<small>0</small> and Q<small>-1</small>)=(0,0) so Right shift</td>
+        </tr>
+        <tr><td>2</td>
+            <td>00000</td>
+            <td>0000<b>1</b></td>
+            <td><b>0</b></td>
+            <td>(Q<small>0</small> and Q<small>-1</small>)=(1,0) hence perform Ac=AC-M and then right shift</td>
+        </tr>
+        <tr><td>3</td>
+            <td>01010<br>00101</td>
+            <td>00001<br>0000<b>0</b></td>
+            <td>0<br><b>1</b></td>
+            <td>(Q<small>0</small> and Q<small>-1</small>)=(0,1) hence perform Ac=AC+M and then right shift</td>
+        </tr>
+        <tr><td>4</td>
+            <td>11011<br>11101</td>
+            <td>00000<br>1000<b>0</b></td>
+            <td>1<br><b>0</b></td>
+            <td>(Q<small>0</small> and Q<small>-1</small>)=(0,0) so Right shift</td>
+        </tr>
+        <tr><td>5</td>
+            <td>11110</td>
+            <td>11000</td>
+            <td><b>0</b></td>
+            <td>-</td>
+        </tr>
+
+    </table>
+    <b>Result : 1111011000</b> (which is 2' complement of 40)
+
+
+    </p>
+</div>
+</body>
+</html>

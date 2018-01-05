@@ -9,11 +9,12 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
+        android:id="@id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/colorPrimary"
         android:layout_marginBottom="7dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <TextView
@@ -49,13 +50,27 @@
                 android:textColor="@color/black">
 
             </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ22"
+                android:layout_below="@id/coaTheoryQ1"
+                android:text="Q2.Describe basic structure of CPU."
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black">
+
+            </TextView>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@id/coaTheoryQ2"
-                android:layout_below="@id/coaTheoryQ1"
-                android:text="Q2.Write short note on PCI Bus."
+                android:layout_below="@id/coaTheoryQ22"
+                android:text="Q3.Write short note on PCI Bus."
                 android:background="@drawable/background"
                 android:textSize="16sp"
                 android:layout_marginLeft="7dp"
@@ -76,7 +91,7 @@
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="7dp"
                 android:textColor="@color/black"
-                android:text="Q3.Differentiate between RISC and CISC.">
+                android:text="Q4.Differentiate between RISC and CISC.">
             </TextView>
 
             <TextView
@@ -90,7 +105,7 @@
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="7dp"
                 android:textColor="@color/black"
-                android:text="Q4.Show IEEE 754 standards for Binary Floating Point Representation for 32 bit single format and 64 bit double format.">
+                android:text="Q5.Show IEEE 754 standards for Binary Floating Point Representation for 32 bit single format and 64 bit double format.">
             </TextView>
 
             <TextView
@@ -104,7 +119,7 @@
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="7dp"
                 android:textColor="@color/black"
-                android:text="Q5.Express (127.125)10 in the IEEE single precision standard of floating point representation">
+                android:text="Q6.Express (127.125)10 in the IEEE single precision standard of floating point representation">
             </TextView>
 
             <TextView
@@ -118,7 +133,7 @@
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="7dp"
                 android:textColor="@color/black"
-                android:text="Q6.Explian Booth's algorithm. Draw flow chart.">
+                android:text="Q7.Explain Booth's algorithm. Draw flow chart.">
             </TextView>
 
             <TextView
@@ -132,21 +147,34 @@
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="7dp"
                 android:textColor="@color/black"
-                android:text="Q7.Draw the flow chart for Booths Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5.">
+                android:text="Q8.Draw the flow chart for Booths Algorithm for 2's complement multiplication.Using Booth's algorithm show the multiplication of -2 *-5.">
         </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ23"
+                android:layout_below="@id/coaTheoryQ7"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q9.Using Booth's algorithm show the multiplication of -10*4. Register size=5 bits.">
+            </TextView>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ8"
-            android:layout_below="@id/coaTheoryQ7"
+            android:layout_below="@id/coaTheoryQ23"
             android:background="@drawable/background"
             android:textSize="16sp"
             android:layout_marginLeft="7dp"
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q8.Draw the flow chart for Restoring division algorithm.show the division of 1100/0011.">
+            android:text="Q10.Draw the flow chart for Restoring division algorithm.show the division of 1100/0011.">
         </TextView>
 
         <TextView
@@ -160,8 +188,21 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q9.Explain Addressing modes.">
+            android:text="Q11.Explain Addressing modes.">
         </TextView>
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/coaTheoryQ24"
+            android:layout_below="@id/coaTheoryQ9"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q12.Write a short note on Instruction Cycle.">
+            </TextView>
 
         <TextView
             android:layout_width="match_parent"
@@ -173,23 +214,61 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q10.Explain Hardwired Control unit."
-            android:layout_below="@id/coaTheoryQ9"
-            >
+            android:text="Q13.Explain Hardwired Control unit."
+            android:layout_below="@id/coaTheoryQ24">
         </TextView>
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@id/coaTheoryQ11"
-            android:layout_below="@id/coaTheoryQ10"
+            android:id="@id/coaTheoryQ25"
             android:background="@drawable/background"
             android:textSize="16sp"
             android:layout_marginLeft="7dp"
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q11.Explain in details Cache Coherency.">
+            android:text="Q14.Explain Micro-programmed Control unit."
+            android:layout_below="@id/coaTheoryQ10">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ26"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q15.Explain Nano-programming."
+                android:layout_below="@id/coaTheoryQ25">
+            </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ27"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q16.Differentiate between Hardwired and Micro-programmed control."
+                android:layout_below="@id/coaTheoryQ26">
+            </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/coaTheoryQ11"
+            android:layout_below="@id/coaTheoryQ27"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Q17.Explain in details Cache Coherency.">
         </TextView>
 
         <TextView
@@ -203,7 +282,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q12.Write short note on Inetrleaved Memory.">
+            android:text="Q18.Write short note on Inetrleaved Memory.">
         </TextView>
 
         <TextView
@@ -217,7 +296,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q13.Write short note on Associative Memory.">
+            android:text="Q19.Write short note on Associative Memory.">
         </TextView>
 
         <TextView
@@ -231,7 +310,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q14.Explain Virtual Memory.">
+            android:text="Q20.Explain Virtual Memory.">
         </TextView>
 
         <TextView
@@ -245,7 +324,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q15.Explain paging in details.">
+            android:text="Q21.Explain paging in details.">
         </TextView>
 
         <TextView
@@ -259,7 +338,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q16 Explain Segmentation.">
+            android:text="Q22 Explain Segmentation.">
         </TextView>
 
         <TextView
@@ -273,21 +352,46 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q17.Explain DMA based data transfer technique for I/O devices.also Explain Need of DMA.">
+            android:text="Q23.Explain DMA based data transfer technique for I/O devices.also Explain Need of DMA.">
         </TextView>
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ29"
+                android:layout_below="@id/coaTheoryQ17"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q24.Explain Programmed input/output.">
+            </TextView>
         <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ28"
+                android:layout_below="@id/coaTheoryQ29"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q25.Explain Interrupt Driven input/output.">
+        </TextView>
+         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ18"
-            android:layout_below="@id/coaTheoryQ17"
+            android:layout_below="@id/coaTheoryQ28"
             android:background="@drawable/background"
             android:textSize="16sp"
             android:layout_marginLeft="7dp"
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q18.Explian flynn's classification.">
+            android:text="Q26.Explian flynn's classification.">
         </TextView>
 
         <TextView
@@ -301,7 +405,7 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q19. Explain six stage Instruction pipeline with suitable diagram.">
+            android:text="Q27. Explain six stage Instruction pipeline with suitable diagram.">
         </TextView>
 
         <TextView
@@ -315,21 +419,34 @@
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q20.Explain different pipelining Hazards.">
+            android:text="Q28.Explain different pipelining Hazards.">
         </TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@id/coaTheoryQ30"
+                android:layout_below="@id/coaTheoryQ20"
+                android:background="@drawable/background"
+                android:textSize="16sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black"
+                android:text="Q29.Explain Amdahl's law.">
+            </TextView>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@id/coaTheoryQ21"
-            android:layout_below="@id/coaTheoryQ20"
+            android:layout_below="@id/coaTheoryQ30"
             android:background="@drawable/background"
             android:textSize="16sp"
             android:layout_marginLeft="7dp"
             android:layout_marginRight="7dp"
             android:layout_marginBottom="7dp"
             android:textColor="@color/black"
-            android:text="Q21.Write short note on Scanner">
+            android:text="Q30.Write short note on Scanner">
         </TextView>
 
 

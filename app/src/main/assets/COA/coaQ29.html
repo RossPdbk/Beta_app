@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>COA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+    <p><h3>Explain Programmed input/output.</h3></p>
+</div>
+<div class="card">
+    <p>
+    <ul>
+        <li>Programmed Input/Output, is a method of transferring data from a device to another device,
+            utilizing the computer processor and not the memory or DMA.
+        </li>
+        <li>The processor executes a program that gives it direct control of the I/O operation,
+            including sensing device status, sending a read or write command, and transferring the data.</li>
+        <li>In programmed I/O, CPU has to repeatedly check whether a device is free or not. </li>
+        <li>When the processor issues a command to the I/O module, it must wait until the I/O operation is complete.</li>
+        <li>If the processor is faster than the I/O module, this is wasteful of processor time.</li>
+    </ul>
+
+    </p>
+</div>
+<div class="card">
+    <p>
+        <b>Basic Operations of Programmed </b>
+    <ol>
+        <li>CPU requests I/O operation.</li>
+        <li>I/O module performs operation.</li>
+        <li>I/O module sets status bits.</li>
+        <li>CPU checks status bits periodically.</li>
+        <li>I/O module does not inform CPU directly.</li>
+        <li>I/O module does not interrupt CPU.</li>
+        <li>CPU may wait or come back later.</li>
+    </ol>
+    </p>
+</div>
+<div class="card">
+    <img src="programmed.PNG"/>
+</div>
+<div class="card">
+    <p>
+    <ul>
+        <li><b>Advantage</b><br>- simple to implement <br>-very little hardware support
+        </li>
+        <li><b>Disadvantage</b><br>- busy waiting
+            <br>- ties up CPU for long period with no useful work
+        </li>
+    </ul>
+    </p>
+</div>
+
+</body>
+</html>

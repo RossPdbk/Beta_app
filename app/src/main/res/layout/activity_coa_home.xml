@@ -9,18 +9,19 @@
     tools:context="com.mumbaiengineers.beta_app.coaHome">
 
     <android.support.v7.widget.Toolbar
+        android:id="@id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Computer Organization &amp; Architecture"
-            android:gravity="center"
+            android:gravity="left"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/white"/>

@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>COA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+    <p><h3>Explain Interrupt Driven input/output.</h3></p>
+</div>
+<div class="card">
+    <p>
+    <ul>
+        <li>Interrupt driven I/O is an alternative scheme dealing with I/O.
+        </li>
+        <li>The problem with programmed I/O is that the processor has to wait a
+            long time for the I/O module of concern to be ready for either reception or transmission of data.</li>
+        <li>In programmed I/O, CPU has to repeatedly check whether a device is free or not. </li>
+        <li>The solution to this problem is to provide an interrupt mechanism.
+        <br>In this approach the CPU switches to some other program without waiting for the i/o device to complete or become free.
+         <br>When the device becomes free, it informs back to CPU through an Interrupt.
+        </li>
+    </ul>
+
+    </p>
+</div>
+<div class="card">
+        <p>
+        <b>Basic Operations of Interrupt</b>
+        <ol>
+            <li>CPU issues read command. </li>
+            <li>I/O module gets data from peripheral whilst CPU does other work.</li>
+            <li>I/O module interrupts CPU.</li>
+            <li>CPU requests data. </li>
+            <li>I/O module transfers data. </li>
+        </ol>
+        </p>
+</div>
+<div class="card">
+             <img src="interrupt.PNG"/>
+            <center><b>Interrupt Processing</b></center>
+</div>
+<div class="card">
+    <p>
+    <ul>
+    <li><b>Advantage</b><br>- fast <br>-efficient
+    </li>
+    <li><b>Disadvantage</b><br>- can be tricky to write if using a low level language.
+        <br>- can be tough to get various pieces to work well together.
+    </li>
+    </ul>
+    </p>
+</div>
+
+</body>
+</html>
