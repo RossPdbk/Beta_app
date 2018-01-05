@@ -172,5 +172,14 @@
     <item name="aoaPracticalP17" type="id">aoaPracticalP17</item>
     <item name="aoaPracticalP16" type="id">aoaPracticalP16</item>
     <item name="aoaPracticalP15" type="id">aoaPracticalP15</item>
+    <item name="coaTheoryQ22" type="id">coaTheoryQ22</item>
+    <item name="coaTheoryQ23" type="id">coaTheoryQ23</item>
+    <item name="coaTheoryQ24" type="id">coaTheoryQ24</item>
+    <item name="coaTheoryQ25" type="id">coaTheoryQ25</item>
+    <item name="coaTheoryQ27" type="id">coaTheoryQ27</item>
+    <item name="coaTheoryQ26" type="id">coaTheoryQ26</item>
+    <item name="coaTheoryQ29" type="id">coaTheoryQ29</item>
+    <item name="coaTheoryQ28" type="id">coaTheoryQ28</item>
+    <item name="coaTheoryQ30" type="id">coaTheoryQ30</item>
 
 </resources>
