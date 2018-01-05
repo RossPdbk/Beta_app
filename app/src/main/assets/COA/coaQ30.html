@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>COA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+    <p><h3>Explain Amdahl's law.</h3></p>
+</div>
+<div class="card">
+    <p>
+    <ul>
+        <li>Amdahl's law is a formula which gives the theoretical speedup by running part of it in parallel.
+        </li>
+    <li><b>Speedup:</b></li>
+       <ul> <li>The speed of a program is the time it takes the program to excecute. </li>
+       <li> This could be measured in any increment of time. </li>
+       <li> Speedup is defined as the time it takes a program to execute in serial (with one processor) divided by the time it takes to execute in parallel (with many processors).</li>
+       </ul>
+        <li>A program (or algorithm) which can be parallelized can be split up into two parts:</li>
+    <ol>
+        <li>A part which cannot be parallelized</li>
+        <li>A part which can be parallelized</li>
+    </ol>
+        <li>
+            Amdahl’s law states that in parallelization, if P is the proportion of a system or program that can be made parallel,
+            and 1-P is the proportion that remains serial, then the maximum speedup is 1/((1-P)+(P/S)). </li>
+    <li>Amdahl's law can be formulated the following way:<br>S<small>latency</small>(s): 1/((1-P)+(P/S))
+
+    </li>
+    <li>where<br>
+
+        S latency is the theoretical speedup of the execution of the whole task;<br>
+
+        s is the speedup of the part of the task that benefits from improved system resources;<br>
+
+        p is the proportion of execution time that the part benefiting from improved resources originally occupied.</li>
+    <li>If N tends to infinity then the maximum speedup tends to 1/(1-P). </li>
+    </ul>
+</div>
+</body>
+</html>

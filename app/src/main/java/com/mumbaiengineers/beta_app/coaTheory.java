@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class coaTheory extends AppCompatActivity implements View.OnClickListener {
-    TextView coaTheoryQ1,coaTheoryQ2,coaTheoryQ3,coaTheoryQ4,coaTheoryQ5,coaTheoryQ6,coaTheoryQ7,coaTheoryQ8,coaTheoryQ9,coaTheoryQ10,coaTheoryQ11,coaTheoryQ12,coaTheoryQ13,coaTheoryQ14,coaTheoryQ15,coaTheoryQ16,coaTheoryQ17,coaTheoryQ18,coaTheoryQ19,coaTheoryQ20,coaTheoryQ21;
+    TextView coaTheoryQ1,coaTheoryQ2,coaTheoryQ3,coaTheoryQ4,coaTheoryQ5,coaTheoryQ6,coaTheoryQ7,coaTheoryQ8,coaTheoryQ9,coaTheoryQ10,coaTheoryQ11,coaTheoryQ12,coaTheoryQ13,coaTheoryQ14,coaTheoryQ15,coaTheoryQ16,coaTheoryQ17,coaTheoryQ18,coaTheoryQ19,coaTheoryQ20,coaTheoryQ21, coaTheoryQ22, coaTheoryQ23,coaTheoryQ24,coaTheoryQ25,coaTheoryQ26,coaTheoryQ27,coaTheoryQ28,coaTheoryQ29,coaTheoryQ30;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +34,16 @@ public class coaTheory extends AppCompatActivity implements View.OnClickListener
         coaTheoryQ19= (TextView) findViewById(R.id.coaTheoryQ19);
         coaTheoryQ20= (TextView) findViewById(R.id.coaTheoryQ20);
         coaTheoryQ21= (TextView) findViewById(R.id.coaTheoryQ21);
+        coaTheoryQ22= (TextView) findViewById(R.id.coaTheoryQ22);
+        coaTheoryQ23= (TextView) findViewById(R.id.coaTheoryQ23);
+        coaTheoryQ24= (TextView) findViewById(R.id.coaTheoryQ24);
+        coaTheoryQ25= (TextView) findViewById(R.id.coaTheoryQ25);
+        coaTheoryQ26= (TextView) findViewById(R.id.coaTheoryQ26);
+        coaTheoryQ27= (TextView) findViewById(R.id.coaTheoryQ27);
+        coaTheoryQ28= (TextView) findViewById(R.id.coaTheoryQ28);
+        coaTheoryQ29= (TextView) findViewById(R.id.coaTheoryQ29);
+        coaTheoryQ30= (TextView) findViewById(R.id.coaTheoryQ30);
+
 
         coaTheoryQ1.setOnClickListener(this);
         coaTheoryQ2.setOnClickListener(this);
@@ -56,6 +66,15 @@ public class coaTheory extends AppCompatActivity implements View.OnClickListener
         coaTheoryQ19.setOnClickListener(this);
         coaTheoryQ20.setOnClickListener(this);
         coaTheoryQ21.setOnClickListener(this);
+        coaTheoryQ22.setOnClickListener(this);
+        coaTheoryQ23.setOnClickListener(this);
+        coaTheoryQ24.setOnClickListener(this);
+        coaTheoryQ25.setOnClickListener(this);
+        coaTheoryQ26.setOnClickListener(this);
+        coaTheoryQ27.setOnClickListener(this);
+        coaTheoryQ28.setOnClickListener(this);
+        coaTheoryQ29.setOnClickListener(this);
+        coaTheoryQ30.setOnClickListener(this);
 
 
     }
