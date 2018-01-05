@@ -186,5 +186,15 @@
     <item name="rateid" type="id">rateid</item>
     <item name="aboutid" type="id">aboutid</item>
     <item name="reportid" type="id">reportid</item>
+    <item name="cgTheoryQ21" type="id">cgTheoryQ21</item>
+    <item name="cgTheoryQ22" type="id">cgTheoryQ22</item>
+    <item name="cgTheoryQ23" type="id">cgTheoryQ23</item>
+    <item name="cgTheoryQ24" type="id">cgTheoryQ24</item>
+    <item name="cgTheoryQ25" type="id">cgTheoryQ25</item>
+    <item name="cgTheoryQ26" type="id">cgTheoryQ26</item>
+    <item name="cgTheoryQ27" type="id">cgTheoryQ27</item>
+    <item name="cgTheoryQ28" type="id">cgTheoryQ28</item>
+    <item name="cgTheoryQ29" type="id">cgTheoryQ29</item>
+    <item name="cgTheoryQ30" type="id">cgTheoryQ30</item>
 
 </resources>
