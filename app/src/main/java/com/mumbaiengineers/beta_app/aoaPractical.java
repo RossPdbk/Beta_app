@@ -13,11 +13,17 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class aoaPractical extends AppCompatActivity implements View.OnClickListener {
 
     TextView aoaPracticalP1, aoaPracticalP2, aoaPracticalP3, aoaPracticalP4, aoaPracticalP5, aoaPracticalP6, aoaPracticalP7;
     TextView aoaPracticalP8, aoaPracticalP9, aoaPracticalP10, aoaPracticalP11, aoaPracticalP12, aoaPracticalP13, aoaPracticalP14;
     TextView aoaPracticalP15, aoaPracticalP16, aoaPracticalP17, aoaPracticalP18, aoaPracticalP19;
+
+    private AdView mAdView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +38,17 @@ public class aoaPractical extends AppCompatActivity implements View.OnClickListe
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.colorPrimary));
         }
+
+        mAdView=(AdView)findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView.setAdListener(new AdListener(){
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.setVisibility(View.VISIBLE);
+            }
+        });
 
         aoaPracticalP1 = (TextView) findViewById(R.id.aoaPracticalP1);
         aoaPracticalP2 = (TextView) findViewById(R.id.aoaPracticalP2);

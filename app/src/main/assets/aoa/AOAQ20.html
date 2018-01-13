@@ -1,0 +1,60 @@
+<!doctype html> 
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+	<p><h3>Q20. Explain Strassen's Matrix Multiplication.</h3></p>
+</div>
+<div class="card">
+    <p>Let A and B be two n x n matrices. The product matrix C=AB is also an n x n matrix who's i<sup>th</sup> and j<sup>th</sup> element is formed by taking the elements in the ith row of A and the jth column of B and multiplying them to get<br>
+<img src="aoaQ2001.jpg" width="100%" /><br>
+for all i and j between 1 and n. To compute C(i,j) using this formula, we need n multiplications.<br><br>
+As the matrix C has n<sup>2</sup> elements, the time for the resulting matrix multiplication algorithm, which we refer to as conventional method
+is Ɵ(n<sup>3</sup>).
+    </p>
+</div>
+<div class="card">
+    <p>
+The divide and conquer strategy suggests another way to compute the product of two n x n matrices.<br> For simplicity we assume that n is the power to 2,
+that is there exists a non-negative integer k such that n=2<sup>k</sup>.
+The product of A abd B be can be computed by using above formula for the product of 2 x 2 matrices as<br>
+<img src="aoaQ2002.jpg" width="100%" /><br><br>
+    C<sub>11</sub>=A<sub>11</sub>B<sub>11</sub> + A<sub>12</sub>B<sub>21</sub><br>
+C<sub>12</sub>=A<sub>11</sub>B<sub>12</sub> + A<sub>12</sub>B<sub>22</sub><br>
+C<sub>21</sub>=A<sub>21</sub>B<sub>11</sub> + A<sub>22</sub>B<sub>21</sub><br>
+C<sub>22</sub>=A<sub>21</sub>B<sub>12</sub> + A<sub>22</sub>B<sub>22</sub> <br>
+    </p>
+</div>
+<div class="card">
+    <p>
+Volker Strassen has discovered a method to compute the Cij of the above equations using only 7 multiplications and 18 additions or substractions.<br>
+His method involves first computing 7 matrices P, O, R, S, T, U and V.<br><br>
+    P=(A<sub>11</sub> + A<sub>22</sub>)(B<sub>11</sub> + B<sub>22</sub>)<br>
+    Q=(A21 + A22)B11<br>
+    R=A<sub>11</sub>(B<sub>12</sub> - B<sub>22</sub>)<br>
+    S=A<sub>22</sub>(B<sub>21</sub> - B<sub>11</sub>)<br>
+    T=(A<sub>11</sub> + A<sub>12</sub>)B<sub>22</sub><br>
+    U=(A<sub>21</sub> - A<sub>11</sub>)(B<sub>11</sub> + B<sub>12</sub>)<br>
+    V=(A<sub>12</sub> - A<sub>22</sub>)(B<sub>21</sub> + B<sub>22</sub>)<br><br>
+    C<sub>11</sub>=P + S - T + V<br>
+    C<sub>12</sub>=R + T<br>
+    C<sub>21</sub>=Q + S<br>
+    C<sub>22</sub>=P + R - Q + U
+    </p>
+</div>
+<div class="card">
+    <p>
+The resulting recurrence relation for T(n) is.<br>
+<img src="aoaQ2003.jpg" width="100%" /><br>
+where a and b are constants. Working with this formula we get<br><br>
+T(n)= an<sup>2</sup>[1 + 7/4 + (7/4)<sup>2</sup>+..+(7/4)<sup>k-1</sup>]+ 7<sup>k</sup> T(1)<br>
+    = cn<sup>2</sup>(7/4)<sup>log<sub>2</sub>n</sup> + 7<sup>log<sub>2</sub>n</sup>, c a constant<br>
+    = cn<sup>log<sub>2</sub>4 + log<sub>2</sub>7 - log<sub>2</sub>4</sup> + n<sup>log<sub>2</sub>7</sup><br>
+    = O(n<sup>log<sub>2</sub>7</sup>)<br>
+    ≈ O(n<sup>2.81</sup>)
+    </p>
+</div>
+</body>
+</html>

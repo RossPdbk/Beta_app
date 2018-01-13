@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorPrimaryLight"
     tools:context="com.mumbaiengineers.beta_app.aoaTheory"
     android:orientation="vertical">
@@ -279,8 +280,78 @@
                 android:text="Q18.Explain 15 puzzle problem."
                 android:textColor="@color/black"/>
 
+            <TextView
+                android:background="@drawable/background"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@id/aoaTheoryQ19"
+                android:textSize="16sp"
+                android:layout_below="@id/aoaTheoryQ18"
+                android:text="Q19. What is Hamiltonian cycle? Write an algorithm to find all Hamiltonian cycles."
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:background="@drawable/background"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@id/aoaTheoryQ20"
+                android:textSize="16sp"
+                android:layout_below="@id/aoaTheoryQ19"
+                android:text="Q20. Explain Strassen's Matrix Multiplication."
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:background="@drawable/background"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@id/aoaTheoryQ21"
+                android:textSize="16sp"
+                android:layout_below="@id/aoaTheoryQ20"
+                android:text="Q21. Write an algorithm for Knuth Morrie-Pratte (KMP)"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:background="@drawable/background"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@id/aoaTheoryQ22"
+                android:textSize="16sp"
+                android:layout_below="@id/aoaTheoryQ21"
+                android:text="Q22. Explain longest common subsequence problem."
+                android:textColor="@color/black"/>
+
         </RelativeLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:visibility="gone"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+
+    </LinearLayout>
 
 </LinearLayout>

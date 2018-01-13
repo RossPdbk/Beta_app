@@ -74,6 +74,19 @@ WebView webviewAnswer;
             case R.id.aoaTheoryQ18:
                 webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ18.html");
                 break;
+            case R.id.aoaTheoryQ19:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ19.html");
+                break;
+            case R.id.aoaTheoryQ20:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ20.html");
+                break;
+            case R.id.aoaTheoryQ21:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ21.html");
+                break;
+            case R.id.aoaTheoryQ22:
+                webviewAnswer.loadUrl("file:///android_asset/aoa/AOAQ22.html");
+                break;
+
             //AoA cases ends here
 
 

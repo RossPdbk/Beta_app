@@ -13,9 +13,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class aoaTheory extends AppCompatActivity implements View.OnClickListener {
     TextView aoaTheoryQ1, aoaTheoryQ2, aoaTheoryQ3, aoaTheoryQ4, aoaTheoryQ5, aoaTheoryQ6, aoaTheoryQ7, aoaTheoryQ8, aoaTheoryQ9, aoaTheoryQ10;
-    TextView aoaTheoryQ11, aoaTheoryQ12, aoaTheoryQ13, aoaTheoryQ14, aoaTheoryQ15, aoaTheoryQ16, aoaTheoryQ17, aoaTheoryQ18;
+    TextView aoaTheoryQ11, aoaTheoryQ12, aoaTheoryQ13, aoaTheoryQ14, aoaTheoryQ15, aoaTheoryQ16, aoaTheoryQ17, aoaTheoryQ18, aoaTheoryQ19, aoaTheoryQ20, aoaTheoryQ21, aoaTheoryQ22;
+
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +37,17 @@ public class aoaTheory extends AppCompatActivity implements View.OnClickListener
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.colorPrimary));
         }
+
+        mAdView=(AdView)findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView.setAdListener(new AdListener(){
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.setVisibility(View.VISIBLE);
+            }
+        });
 
         aoaTheoryQ1 = (TextView) findViewById(R.id.aoaTheoryQ1);
         aoaTheoryQ2 = (TextView) findViewById(R.id.aoaTheoryQ2);
@@ -50,6 +67,10 @@ public class aoaTheory extends AppCompatActivity implements View.OnClickListener
         aoaTheoryQ16 = (TextView) findViewById(R.id.aoaTheoryQ16);
         aoaTheoryQ17 = (TextView) findViewById(R.id.aoaTheoryQ17);
         aoaTheoryQ18 = (TextView) findViewById(R.id.aoaTheoryQ18);
+        aoaTheoryQ19 = (TextView) findViewById(R.id.aoaTheoryQ19);
+        aoaTheoryQ20 = (TextView) findViewById(R.id.aoaTheoryQ20);
+        aoaTheoryQ21 = (TextView) findViewById(R.id.aoaTheoryQ21);
+        aoaTheoryQ22 = (TextView) findViewById(R.id.aoaTheoryQ22);
 
         aoaTheoryQ1.setOnClickListener(this);
         aoaTheoryQ2.setOnClickListener(this);
@@ -69,6 +90,10 @@ public class aoaTheory extends AppCompatActivity implements View.OnClickListener
         aoaTheoryQ16.setOnClickListener(this);
         aoaTheoryQ17.setOnClickListener(this);
         aoaTheoryQ18.setOnClickListener(this);
+        aoaTheoryQ19.setOnClickListener(this);
+        aoaTheoryQ20.setOnClickListener(this);
+        aoaTheoryQ21.setOnClickListener(this);
+        aoaTheoryQ22.setOnClickListener(this);
     }
 
     @Override

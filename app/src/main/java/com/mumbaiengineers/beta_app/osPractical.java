@@ -13,9 +13,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class osPractical extends AppCompatActivity implements View.OnClickListener {
 
     TextView osPracticalP1,osPracticalP2,osPracticalP3,osPracticalP4,osPracticalP5,osPracticalP6,osPracticalP7,osPracticalP8,osPracticalP9,osPracticalP10;
+
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +37,17 @@ public class osPractical extends AppCompatActivity implements View.OnClickListen
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.colorPrimary));
         }
+
+        mAdView=(AdView)findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView.setAdListener(new AdListener(){
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.setVisibility(View.VISIBLE);
+            }
+        });
 
         osPracticalP1 = (TextView)findViewById(R.id.osPracticalP1);
         osPracticalP2 = (TextView)findViewById(R.id.osPracticalP2);

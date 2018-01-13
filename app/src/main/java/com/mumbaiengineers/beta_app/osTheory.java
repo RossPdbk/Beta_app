@@ -13,11 +13,17 @@ import android.widget.TextView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 import org.w3c.dom.Text;
 
 public class osTheory extends AppCompatActivity implements View.OnClickListener {
     TextView osTheoryQ1,osTheoryQ2,osTheoryQ3,osTheoryQ4,osTheoryQ5,osTheoryQ6,osTheoryQ7,osTheoryQ8,osTheoryQ9,osTheoryQ10,osTheoryQ11,osTheoryQ12,
             osTheoryQ13,osTheoryQ14,osTheoryQ15,osTheoryQ16,osTheoryQ17,osTheoryQ18,osTheoryQ19,osTheoryQ20,osTheoryQ21,osTheoryQ22,osTheoryQ23,osTheoryQ24;
+
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +39,17 @@ public class osTheory extends AppCompatActivity implements View.OnClickListener 
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.colorPrimary));
         }
+
+        mAdView=(AdView)findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView.setAdListener(new AdListener(){
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.setVisibility(View.VISIBLE);
+            }
+        });
 
         osTheoryQ1 = (TextView) findViewById(R.id.osTheoryQ1);
         osTheoryQ2 = (TextView) findViewById(R.id.osTheoryQ2);

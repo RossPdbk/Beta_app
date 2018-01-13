@@ -1,0 +1,77 @@
+<!doctype html> 
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+	<p><h3>Q19. What is Hamiltonian cycle? Write an algorithm to find all Hamiltonian cycles.</h3></p>
+</div>
+<div class="card">
+    <ul>
+    <li>Let G=(V,E) be connected graph with n vertices.</li><br>
+    <li>A Hamiltonian cycle is a round trip path along n edges of G that visits every vertex once and returns to its starting position.</li><br>
+    <li>In other words is a Hamiltonian cycle begins at some vertex v<sub>1</sub> and the vertices of G are visited in order v<sub>1</sub>, v<sub>2</sub>, ... v<sub>n+1</sub> then
+        each vertex is distinct except v<sub>1</sub> and v<sub>n+1</sub> which are equal.</li>
+</ul>
+</div>
+<div class="card">
+<img src="aoaQ1901.jpg" width="100%"/><br>
+    <ul>
+        <li>The graph G1 of the given figure contains the Hamiltonian cycle 1, 2, 8, 7, 6, 5, 4, 3, 1.</li><br>
+<li>The graph G2 contains no Hamiltonian cycle. There is no known easy way to determine whether a given graph contains a Hamiltonian cycle.</li>
+    </ul>
+</div>
+<div class="card">
+	<ul>
+		<li>We begin by representing function NextValue(k), which determinses the possible next vertex of the proposed cycle.</li><br>
+		<li>Using NextValue we can particularize the recursive backtracking schema to find all Hamiltonian cycles. </li><br>
+		<li>This algorithm is started by first initializing the adjacency matrisx G[n,n], then setting x[n]=0 and x[1]=1 then executing Hamiltonian(2).</li><br>
+		<li>This tour is a Hamiltonian cycle. For the simple case of a graph all of those edge cost are identical, Hamiltonian will find a minimum cost
+		tour if a tour exits. </li><br>
+		<li>If the common edge cost is <i>c</i>, the cost of a tour is <i>cn</i> since there are n edges in a Hamiltonian cycle.</li>
+	</ul>
+</div>
+<div class="card">
+<pre>
+<b>Algorithm NextValue(k)</b>
+1.{
+2.  repeat
+3.  {
+4.      x[k]=(x[k+1] mod (k+1));
+5.      if (x[k]=0) then return;
+6.      if (G[x[k-1], x[k])!=0)
+7.      { //Is there an edge?
+8.          for j=1 to k-1
+9.          {
+10.             if(x[j]=x[k])
+11.                 break; //check for distinctness
+12.             if(j=k)
+13.             //if true then vertex is distinct
+14.             {
+15.                 if((k&lt;n) or(k=n) and G[x[n],x[1]]!=0)
+16.                 return;
+17.             }
+18.         }
+19.     }
+20. }until (false);
+21.}
+</pre>
+</div>
+<div class="card">
+<pre>
+<b>Algorithm Hamiltonian(k)</b>
+1.{
+2.  repeat
+3.  {
+4.      //Generate values for x[k]
+5.      NextValue(k)   //assign a legal next value to x[k]
+6.      if(x[k]=0) then return;
+7.      if(k=n) then write (x[n]);
+8.      else Hamiltonian(k+1);
+9. }until (false);
+10.}
+</pre>
+</div>
+</body>
+</html>

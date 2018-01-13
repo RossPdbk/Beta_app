@@ -15,10 +15,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class AoaHome extends AppCompatActivity implements View.OnClickListener {
 
     ImageView aoaTheory, aoaPractical;
     TextView aoaMfaQ1, aoaMfaQ2, aoaMfaQ3, aoaMfaQ4, aoaMfaQ5, aoaMfaQ6, aoaMfaQ7;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +39,17 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.colorPrimary));
         }
+
+        mAdView=(AdView)findViewById(R.id.adView);
+        AdRequest adRequest= new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView.setAdListener(new AdListener(){
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.setVisibility(View.VISIBLE);
+            }
+        });
 
         aoaTheory = (ImageView) findViewById(R.id.aoaTheory);
         aoaPractical = (ImageView) findViewById(R.id.aoaPractical);
