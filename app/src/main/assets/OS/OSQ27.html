@@ -1,0 +1,50 @@
+<html>
+
+	<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<div class="header">
+		<h4>
+			Q27. Write short note on Virtual memory.
+		</h4>
+		</div>
+
+		<div class="card">
+		<p>
+			A computer can address more memory than the amount physically installed on the system. This extra memory is actually called virtual memory and it is a section of a hard disk that's set up to emulate the computer's RAM.</p>
+
+			<p>The main visible advantage of this scheme is that programs can be larger than physical memory. Virtual memory serves two purposes. First, it allows us to extend the use of physical memory by using disk. Second, it allows us to have memory protection, because each virtual address is translated to a physical address.</p>
+
+			Following are the situations, when entire program is not required to be loaded fully in main memory.
+			<ol>
+
+			<li>User written error handling routines are used only when an error occurred in the data or computation.</li>
+
+			<li>Certain options and features of a program may be used rarely.</li>
+
+			<li>Many tables are assigned a fixed amount of address space even though only a small amount of the table is actually used.</li>
+
+			<li>The ability to execute a program that is only partially in memory would counter many benefits.</li>
+
+			<li>Less number of I/O would be needed to load or swap each user program into memory.</li>
+
+			<li>A program would no longer be constrained by the amount of physical memory that is available.</li>
+
+			<li>Each user program could take less physical memory, more programs could be run the same time, with a corresponding increase in CPU utilization and throughput.
+			</li>
+			</ol>
+
+			Modern microprocessors intended for general-purpose use, a memory management unit, or MMU, is built into the hardware. The MMU's job is to translate virtual addresses into physical addresses. A basic example is given below - <br>
+
+			<img src="virtual_memory.jpg" width=100%><br>
+
+
+			<p>Virtual memory is commonly implemented by demand paging. It can also be implemented in a segmentation system. Demand segmentation can also be used to provide virtual memory.
+			
+		</p>
+		</div>	
+	</body>
+
+</html>

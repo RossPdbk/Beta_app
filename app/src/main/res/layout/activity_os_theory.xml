@@ -376,6 +376,48 @@
             android:text="24. Write difference between Paging and Segmentation.">
         </TextView>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ25"
+            android:layout_below="@id/osTheoryQ24"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="25. What are differences between Deadlock Prevention and Deadlock avoidance. ">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ26"
+            android:layout_below="@id/osTheoryQ25"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="26. Short note on System calls ">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/osTheoryQ27"
+            android:layout_below="@id/osTheoryQ26"
+            android:background="@drawable/background"
+            android:textSize="16sp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="27. Write short note on Virtual memory. ">
+        </TextView>
+
     </RelativeLayout>
     </ScrollView>
 

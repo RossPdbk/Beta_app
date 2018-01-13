@@ -278,6 +278,20 @@ WebView webviewAnswer;
             case R.id.osTheoryQ24:
                 webviewAnswer.loadUrl("file:///android_asset/OS/OSQ24.html");
                 break;
+
+            case R.id.osTheoryQ25:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ25.html");
+                break;
+
+            case R.id.osTheoryQ26:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ26.html");
+                break;
+
+            case R.id.osTheoryQ27:
+                webviewAnswer.loadUrl("file:///android_asset/OS/OSQ27.html");
+                break;
+
+
             //OS cases ends here
 
 

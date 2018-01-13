@@ -1,0 +1,108 @@
+<html>
+
+	<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<div class="header">
+		<h4>
+			Q26. System calls
+		</h4>
+		</div>
+
+		<div class="card">
+		<p>
+			<ul>
+				<li>System calls provides an interface to the service made available by OS.</li><br>
+
+				<li>Application developers often do not have direct access to system calls, but can access them through an application programming interface (API).</li><br>
+
+				<li>When a programmer in user mode requires access to the RAM or hardware resource, It must ask the kernel to provide access to that resources. This is done via something called system calls.</li><br>
+
+				<li>When a programmer makes a system call, The mode is switched from user to kernel mode. this is called as context switch.</li><br>
+
+				<li>The a kernel provides resource which the program requested. After that another context switch happens which results in change of mode from kernel back to user mode.</li><br>
+
+				<li>For example, Below diagram will show the operating system handles a user application invoking the open() system call.</li>
+
+			</ul>
+		</p>
+		</div>
+		<div class="card">
+		<p>
+			<b>System call parameters</b><br>
+			Three methods to pass parameters : 
+
+			<ol>
+				<li>Parameters can be passed in registers.</li><br>
+
+				<li>When there are more parameters than registers, parameter can be stored in block &amp; the block address can be pass as parameter.</li><br>
+
+				<li>Parameters can also be pushed or popped</li>
+			</0l>
+		</p>
+		</div>
+		<div class="card">
+		<p>
+			<b>Types of System calls : </b><br>
+			<ol>
+				<li>Process control<br>
+					Functions : 
+					<ul>
+					<li>Eat, abort</li>
+					<li>load, execute</li>
+					<li>Create process, terminate process.</li>
+					<li>Wait for time</li>
+					<li>Wait event, Signal event</li>
+					<li>get/set process attribute</li>
+					</ul>
+
+				</li><br>
+
+				<li>File manipulation<br>
+					Functions : 
+					<ul>
+					<li>Create file, delete file.</li>
+					<li>Open file, Close file.</li>
+					<li>read, write, reposition</li>
+					</ul>
+				</li><br>
+
+
+				<li>Device management<br>
+					Functions : 
+					<ul>
+					<li>Request deviec, release device</li>
+					<li>Get/Set device attribute</li>
+					<li>read, write, reposition</li>
+					</ul>
+				</li><br>
+
+
+				<li>Information management<br>
+					Functions : 
+					<ul>
+					<li>Get/Set time and date.</li>
+					<li>Get/Set system data</li>
+					<li>Get/Set process, file or device attribute</li>
+					</ul>
+				</li><br>
+
+
+				<li>Communication<br>
+					Functions : 
+					<ul>
+					<li>Create, Delete communication connection</li>
+					<li>Send/Receive message</li>
+					</ul>
+				</li>
+
+			</0l>
+		</p>
+		</div>
+
+
+	</body>
+
+</html>

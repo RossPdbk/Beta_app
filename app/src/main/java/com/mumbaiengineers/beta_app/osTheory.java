@@ -21,7 +21,8 @@ import org.w3c.dom.Text;
 
 public class osTheory extends AppCompatActivity implements View.OnClickListener {
     TextView osTheoryQ1,osTheoryQ2,osTheoryQ3,osTheoryQ4,osTheoryQ5,osTheoryQ6,osTheoryQ7,osTheoryQ8,osTheoryQ9,osTheoryQ10,osTheoryQ11,osTheoryQ12,
-            osTheoryQ13,osTheoryQ14,osTheoryQ15,osTheoryQ16,osTheoryQ17,osTheoryQ18,osTheoryQ19,osTheoryQ20,osTheoryQ21,osTheoryQ22,osTheoryQ23,osTheoryQ24;
+            osTheoryQ13,osTheoryQ14,osTheoryQ15,osTheoryQ16,osTheoryQ17,osTheoryQ18,osTheoryQ19,osTheoryQ20,osTheoryQ21,osTheoryQ22,osTheoryQ23,osTheoryQ24
+            ,osTheoryQ25,osTheoryQ26,osTheoryQ27;
 
     private AdView mAdView;
 
@@ -75,6 +76,9 @@ public class osTheory extends AppCompatActivity implements View.OnClickListener 
         osTheoryQ22 = (TextView) findViewById(R.id.osTheoryQ22);
         osTheoryQ23 = (TextView) findViewById(R.id.osTheoryQ23);
         osTheoryQ24 = (TextView) findViewById(R.id.osTheoryQ24);
+        osTheoryQ25 = (TextView) findViewById(R.id.osTheoryQ25);
+        osTheoryQ26 = (TextView) findViewById(R.id.osTheoryQ26);
+        osTheoryQ27 = (TextView) findViewById(R.id.osTheoryQ27);
 
 
 
@@ -102,6 +106,9 @@ public class osTheory extends AppCompatActivity implements View.OnClickListener 
         osTheoryQ22.setOnClickListener(this);
         osTheoryQ23.setOnClickListener(this);
         osTheoryQ24.setOnClickListener(this);
+        osTheoryQ25.setOnClickListener(this);
+        osTheoryQ26.setOnClickListener(this);
+        osTheoryQ27.setOnClickListener(this);
 
 
     }

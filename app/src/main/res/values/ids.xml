@@ -202,5 +202,8 @@
     <item name="aoaTheoryQ22" type="id">aoaTheoryQ22</item>
     <item name="adView" type="id">adView</item>
     <item name="guideline1" type="id">guideline1</item>
+    <item name="osTheoryQ25" type="id">osTheoryQ25</item>
+    <item name="osTheoryQ26" type="id">osTheoryQ26</item>
+    <item name="osTheoryQ27" type="id">osTheoryQ27</item>
 
 </resources>
