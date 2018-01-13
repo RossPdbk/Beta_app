@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<style>
+			td,th{
+				border : 1px solid black;
+				padding : 3px;
+			}
+		</style>
+</head>
+
+<body>
+		<div class="header">
+		<h4> Q25. What are differences between Deadlock Prevention and Deadlock avoidance. </h4>
+	</div>
+
+	<div class="card">
+		<p>
+		<table width=100% Cellspacing=0>
+			<tr>
+				<th align = center>No.</th>
+				<th align = center>Deadlock Prevention</th>
+				<th align = center>Deadlock avoidance</th>
+			</tr>
+			<tr>
+				<td>1.</td>
+				<td>In deadlock prevention, We ensure that any of four necessary conditions dows not occur.</td>
+				<td>In deadlock avoidance, System needs additional information about how resources are to be requested and by knowing we try to avoid deadlock condition.</td>
+			</tr>
+			<tr>
+				<td>2.</td>
+				<td>It does not need knowledge of future resource request.</td>
+				<td>It requires all knowledge of all resource request at the beginning itself.</td>
+			</tr>
+			<tr>
+				<td>3.</td>
+				<td>Device utilization is low and throughput is reduced.</td>
+				<td>device utilization is high and throughput is increased as compared to prevention.</td>
+			</tr>
+			<tr>
+				<td>4.</td>
+				<td>Major drawback is degradation of system efficiency.</td>
+				<td>Major drawback is that it is difficult to have information of all resources needed at very first stage of process.</td>
+			</tr>
+			<tr>
+				<td>5.</td>
+				<td>It includes non-blocking synchro algorithm, dijkstra algorithm, serializing tokens etc.</td>
+				<td>For single instance of resource type --> Resouce allocation graph &amp; For multiple instance type --> Banker's algorithm.</td>
+			</tr>
+			<tr>
+				<td>6.</td>
+				<td>Preemtion happens.</td>
+				<td>No preemption.</td>
+			</tr>
+		</table>
+	</p>
+	</div>
+	
+</body>
+</html>

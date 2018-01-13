@@ -13,10 +13,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class cgTheory extends AppCompatActivity implements View.OnClickListener {
 
     TextView cgTheoryQ1,cgTheoryQ2,cgTheoryQ3,cgTheoryQ4,cgTheoryQ5,cgTheoryQ6,cgTheoryQ7,cgTheoryQ8,cgTheoryQ9,cgTheoryQ10,cgTheoryQ11,cgTheoryQ12,cgTheoryQ13,cgTheoryQ14,cgTheoryQ15,cgTheoryQ16,cgTheoryQ17, cgTheoryQ18,cgTheoryQ19,cgTheoryQ20,cgTheoryQ21,cgTheoryQ22,cgTheoryQ23,
             cgTheoryQ24,cgTheoryQ25,cgTheoryQ26,cgTheoryQ27,cgTheoryQ28,cgTheoryQ29,cgTheoryQ30;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +37,17 @@ public class cgTheory extends AppCompatActivity implements View.OnClickListener 
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.colorPrimary));
         }
+
+        mAdView=(AdView)findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView.setAdListener(new AdListener(){
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.setVisibility(View.VISIBLE);
+            }
+        });
 
         cgTheoryQ1 = (TextView) findViewById(R.id.cgTheoryQ1);
         cgTheoryQ2 = (TextView) findViewById(R.id.cgTheoryQ2);

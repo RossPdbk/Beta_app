@@ -12,9 +12,14 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class cgPractical extends AppCompatActivity implements View.OnClickListener {
 
     Button cgPracticalP1, cgPracticalP2, cgPracticalP3, cgPracticalP4;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,17 @@ public class cgPractical extends AppCompatActivity implements View.OnClickListen
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.colorPrimary));
         }
+
+        mAdView=(AdView)findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+        mAdView.setAdListener(new AdListener(){
+            @Override
+            public void onAdLoaded() {
+                super.onAdLoaded();
+                mAdView.setVisibility(View.VISIBLE);
+            }
+        });
 
         cgPracticalP1 = (Button) findViewById(R.id.cgPracticalP1);
         cgPracticalP2 = (Button) findViewById(R.id.cgPracticalP2);

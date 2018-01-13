@@ -29,7 +29,16 @@
         <activity android:name=".aoaPractical" />
         <activity android:name=".coaPractical" />
         <activity android:name=".cgPractical" />
-        <activity android:name=".osPractical"></activity>
+        <activity android:name=".osPractical"/>
+
+        <activity android:name="com.google.android.gms.ads.AdActivity" />
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 </manifest>

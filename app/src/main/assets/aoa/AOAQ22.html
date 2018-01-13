@@ -1,0 +1,34 @@
+<!doctype html> 
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="header">
+	<p><h3>Q22. Explain longest common subsequence problem.</h3></p>
+</div>
+<div class="card">
+The Longest Common Subsequence (LCS) problem is as follows. We are given two strings: string S of length n, and string T of length m. 
+Our goal is to produce their longest common subsequence: the longest sequence of characters that appear left-to-right (but not necessarily
+in a contiguous block) in both strings.
+For example, consider:
+S = ABAZDC
+T = BACBAD
+In this case, the LCS has length 4 and is the string ABAD. Another way to look at it is we are finding
+a 1-1 matching between some of the letters in S and some of the letters in T such that none of the
+edges in the matching cross each other.
+
+As subproblems we will look at the LCS of a prefix of S and a prefix of T, running over all pairs of prefixes. For simplicity, let’s
+worry first about finding the length of the LCS and then we can modify the algorithm to produce the actual sequence itself.
+Here’s
+what it looks like pictorially for the example above, with S along the leftmost column and T along
+the top row.
+IMAGE
+We just fill out this matrix row by row, doing constant amount of work per entry, so this takes O(mn) time overall. 
+The final answer (the length of the LCS of S and T) is in the lower-right
+corner.
+
+</div>
+
+</body>
+</html>
