@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -31,8 +31,9 @@
     </android.support.v7.widget.Toolbar>
 
     <ScrollView
+        android:layout_below="@id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -332,21 +333,31 @@
                 android:text="Q22. Explain longest common subsequence problem."
                 android:textColor="@color/black"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" Intentionally left blank   "
+                android:layout_below="@id/aoaTheoryQ22"
+                android:background="@drawable/background"
+                android:textColor="@color/black"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:textSize="16sp"/>
+
         </RelativeLayout>
 
     </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
 
         <com.google.android.gms.ads.AdView
             android:id="@id/adView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:gravity="center"
             android:visibility="gone"
             ads:adSize="BANNER"
@@ -354,4 +365,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</RelativeLayout>
