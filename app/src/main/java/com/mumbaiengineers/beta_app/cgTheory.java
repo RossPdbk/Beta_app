@@ -81,14 +81,6 @@ public class cgTheory extends BaseActivity implements View.OnClickListener {
         cgTheoryQ30 = (TextView) findViewById(R.id.cgTheoryQ30);
 
 
-
-
-
-
-
-
-
-
         cgTheoryQ1.setOnClickListener(this);
         cgTheoryQ2.setOnClickListener(this);
         cgTheoryQ3.setOnClickListener(this);
@@ -130,8 +122,4 @@ public class cgTheory extends BaseActivity implements View.OnClickListener {
 
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> ce53e825d3d85e52a908104b90c7c559f4d6c36e
 }

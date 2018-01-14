@@ -1,6 +1,7 @@
 package com.mumbaiengineers.beta_app;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
@@ -28,7 +29,7 @@ public class BaseActivity extends AppCompatActivity {
             case R.id.shareid: {
                 intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
-                intent.putExtra(Intent.EXTRA_TEXT, "Get simplifies answers for your exam questions(For Second year - Computer Engineering students only).\n www.twitter.com/imRohit_18\n\nFollow him for updates");
+                intent.putExtra(Intent.EXTRA_TEXT, "Get simplified answers for your exam questions(For Second year - Computer Engineering students only).\n\n www.twitter.com/imRohit_18\nFollow him for updates");
                 chooser = Intent.createChooser(intent, "Share with");
                 startActivity(chooser);
                 return true;
@@ -46,9 +47,18 @@ public class BaseActivity extends AppCompatActivity {
                 return true;
             }
 
-            case R.id.rateid:
-                Toast.makeText(this, "Rate Us clicked", Toast.LENGTH_SHORT).show();
-                return true;
+            case R.id.rateid :{
+                try {
+                    Uri marketUri = Uri.parse("market://details?id=" + getPackageName());
+                    intent = new Intent(Intent.ACTION_VIEW, marketUri);
+                    startActivity(intent);
+                }catch(ActivityNotFoundException e) {
+                    Uri marketUri = Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName());
+                    Intent marketIntent = new Intent(Intent.ACTION_VIEW, marketUri);
+                    startActivity(marketIntent);
+                }
+                return  true;
+            }
 
             case R.id.reportid: {
                 intent = new Intent(Intent.ACTION_SEND);
