@@ -42,13 +42,19 @@ public class aoaPractical extends AppCompatActivity implements View.OnClickListe
         mAdView=(AdView)findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
-        mAdView.setAdListener(new AdListener(){
+        mAdView.setAdListener( new AdListener() {
             @Override
-            public void onAdLoaded() {
+            public void onAdLoaded(){
                 super.onAdLoaded();
                 mAdView.setVisibility(View.VISIBLE);
             }
-        });
+
+            @Override
+            public void onAdFailedToLoad(int error) {
+                mAdView.setVisibility(View.GONE);
+            }
+
+        } );
 
         aoaPracticalP1 = (TextView) findViewById(R.id.aoaPracticalP1);
         aoaPracticalP2 = (TextView) findViewById(R.id.aoaPracticalP2);
