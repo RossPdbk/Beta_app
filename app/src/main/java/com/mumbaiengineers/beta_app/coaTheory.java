@@ -16,7 +16,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
-public class coaTheory extends AppCompatActivity implements View.OnClickListener {
+public class coaTheory extends BaseActivity implements View.OnClickListener {
     TextView coaTheoryQ1,coaTheoryQ2,coaTheoryQ3,coaTheoryQ4,coaTheoryQ5,coaTheoryQ6,coaTheoryQ7,coaTheoryQ8,coaTheoryQ9,coaTheoryQ10,coaTheoryQ11,coaTheoryQ12,coaTheoryQ13,coaTheoryQ14,coaTheoryQ15,coaTheoryQ16,coaTheoryQ17,coaTheoryQ18,coaTheoryQ19,coaTheoryQ20,coaTheoryQ21, coaTheoryQ22, coaTheoryQ23,coaTheoryQ24,coaTheoryQ25,coaTheoryQ26,coaTheoryQ27,coaTheoryQ28,coaTheoryQ29,coaTheoryQ30;
 
     private AdView mAdView;
@@ -121,37 +121,4 @@ public class coaTheory extends AppCompatActivity implements View.OnClickListener
         startActivity(intent);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-
-            case R.id.shareid:
-                Toast.makeText(this, "Share clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.feedbackid:
-                Toast.makeText(this, "Feedback clicked", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.rateid:
-                Toast.makeText(this, "Rate Us clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.reportid:
-                Toast.makeText(this, "Report Bug clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.aboutid:
-                Toast.makeText(this, "About us clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 }

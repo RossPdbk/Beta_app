@@ -19,7 +19,7 @@ import com.google.android.gms.ads.AdView;
 
 import org.w3c.dom.Text;
 
-public class osTheory extends AppCompatActivity implements View.OnClickListener {
+public class osTheory extends BaseActivity implements View.OnClickListener {
     TextView osTheoryQ1,osTheoryQ2,osTheoryQ3,osTheoryQ4,osTheoryQ5,osTheoryQ6,osTheoryQ7,osTheoryQ8,osTheoryQ9,osTheoryQ10,osTheoryQ11,osTheoryQ12,
             osTheoryQ13,osTheoryQ14,osTheoryQ15,osTheoryQ16,osTheoryQ17,osTheoryQ18,osTheoryQ19,osTheoryQ20,osTheoryQ21,osTheoryQ22,osTheoryQ23,osTheoryQ24
             ,osTheoryQ25,osTheoryQ26,osTheoryQ27;
@@ -121,37 +121,4 @@ public class osTheory extends AppCompatActivity implements View.OnClickListener 
         startActivity(intent);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-
-            case R.id.shareid:
-                Toast.makeText(this, "Share clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.feedbackid:
-                Toast.makeText(this, "Feedback clicked", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.rateid:
-                Toast.makeText(this, "Rate Us clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.reportid:
-                Toast.makeText(this, "Report Bug clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.aboutid:
-                Toast.makeText(this, "About us clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 }

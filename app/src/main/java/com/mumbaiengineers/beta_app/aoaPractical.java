@@ -17,7 +17,7 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
-public class aoaPractical extends AppCompatActivity implements View.OnClickListener {
+public class aoaPractical extends BaseActivity implements View.OnClickListener {
 
     TextView aoaPracticalP1, aoaPracticalP2, aoaPracticalP3, aoaPracticalP4, aoaPracticalP5, aoaPracticalP6, aoaPracticalP7;
     TextView aoaPracticalP8, aoaPracticalP9, aoaPracticalP10, aoaPracticalP11, aoaPracticalP12, aoaPracticalP13, aoaPracticalP14;
@@ -106,37 +106,4 @@ public class aoaPractical extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-
-            case R.id.shareid:
-                Toast.makeText(this, "Share clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.feedbackid:
-                Toast.makeText(this, "Feedback clicked", Toast.LENGTH_SHORT).show();
-                return true;
-            case R.id.rateid:
-                Toast.makeText(this, "Rate Us clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.reportid:
-                Toast.makeText(this, "Report Bug clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.aboutid:
-                Toast.makeText(this, "About us clicked", Toast.LENGTH_SHORT).show();
-                return true;
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
 }
