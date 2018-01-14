@@ -16,11 +16,14 @@ import android.widget.RelativeLayout;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 public class  MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     ImageView btnAoa, btnCoa, btnOs, btnCg;
     private AdView mAdView;
+    private InterstitialAd mInterstitialAd;
+    public int i=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +48,10 @@ public class  MainActivity extends AppCompatActivity implements View.OnClickList
             }
         });
 
+        mInterstitialAd = new InterstitialAd(this);
+        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/1033173712");
+        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
 
         btnAoa = (ImageView) findViewById(R.id.btn_aoa);
         btnCoa = (ImageView) findViewById(R.id.btn_coa);
@@ -60,22 +67,26 @@ public class  MainActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
-
+        i++;
         switch(v.getId()) {
             case R.id.btn_aoa:
                 Intent intent = new Intent(this,AoaHome.class);
+                intent.putExtra("counter",i);
                 startActivity(intent);
                 break;
             case R.id.btn_coa:
                 Intent intent1 = new Intent(this,coaHome.class);
+                intent1.putExtra("counter",i);
                 startActivity(intent1);
                 break;
             case R.id.btn_cg:
                 Intent intent2 = new Intent(this,cgHome.class);
+                intent2.putExtra("counter",i);
                 startActivity(intent2);
                 break;
             case R.id.btn_os:
                 Intent intent3 = new Intent(this,osHome.class);
+                intent3.putExtra("counter",i);
                 startActivity(intent3);
                 break;
         }
@@ -85,7 +96,9 @@ public class  MainActivity extends AppCompatActivity implements View.OnClickList
     public void onBackPressed(){
 
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-
+        if (mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        }
         builder.setMessage("Do you want to Exit?")
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override

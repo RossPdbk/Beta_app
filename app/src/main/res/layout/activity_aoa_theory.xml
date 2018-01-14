@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -30,10 +30,19 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <ScrollView
-        android:layout_below="@id/my_toolbar"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:elevation="1dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/mfaback"
+        >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -349,15 +358,16 @@
 
     </ScrollView>
 
+    </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_alignParentBottom="true">
+        android:layout_height="wrap_content">
 
         <com.google.android.gms.ads.AdView
             android:id="@id/adView"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:visibility="gone"
             ads:adSize="BANNER"
@@ -365,4 +375,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
