@@ -48,37 +48,135 @@
         android:layout_height="wrap_content">
 
 
-        <Button
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgPracticalP1"
+            android:text="1. DDA line drawing Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
 
-            android:text="P1">
-        </Button>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgPracticalP2"
             android:layout_below="@id/cgPracticalP1"
-            android:text="P2">
-        </Button>
+            android:text="2.Bresenham line drawing Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgPracticalP3"
             android:layout_below="@id/cgPracticalP2"
-            android:text="P3">
-        </Button>
+            android:text="3.Mid-Point Circle drawing Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
 
-        <Button
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@id/cgPracticalP4"
             android:layout_below="@id/cgPracticalP3"
-            android:text="P4">
-        </Button>
+            android:text="4.Mid-Point Ellipse drawing Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgPracticalP5"
+            android:layout_below="@id/cgPracticalP4"
+            android:text="5.Flood fill Algorithm. Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgPracticalP6"
+            android:layout_below="@id/cgPracticalP5"
+            android:text="6.Boundary fill Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgPracticalP7"
+            android:layout_below="@id/cgPracticalP6"
+            android:text="7.Scanline fill Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgPracticalP8"
+            android:layout_below="@id/cgPracticalP7"
+            android:text="8.Cohen-Sutherland line clipping Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@id/cgPracticalP9"
+            android:layout_below="@id/cgPracticalP8"
+            android:text="9. Laing -Barsky line clipping Algorithm."
+            android:background="@drawable/background"
+            android:textColor="@color/black"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:textSize="16sp">
+        </TextView>
+
+
+
+
 
     </RelativeLayout>
 

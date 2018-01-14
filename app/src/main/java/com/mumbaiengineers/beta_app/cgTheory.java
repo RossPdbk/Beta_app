@@ -130,4 +130,8 @@ public class cgTheory extends BaseActivity implements View.OnClickListener {
 
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ce53e825d3d85e52a908104b90c7c559f4d6c36e
 }

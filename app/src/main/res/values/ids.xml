@@ -205,5 +205,10 @@
     <item name="osTheoryQ25" type="id">osTheoryQ25</item>
     <item name="osTheoryQ26" type="id">osTheoryQ26</item>
     <item name="osTheoryQ27" type="id">osTheoryQ27</item>
+    <item name="cgPracticalP5" type="id">cgPracticalp5</item>
+    <item name="cgPracticalP6" type="id">cgPracticalP6</item>
+    <item name="cgPracticalP7" type="id">cgPracticalP7</item>
+    <item name="cgPracticalP8" type="id">cgPracticalP8</item>
+    <item name="cgPracticalP9" type="id">cgPracticalP9</item>
 
 </resources>

@@ -353,6 +353,42 @@ WebView webviewAnswer;
             case R.id.cgTheoryQ18 :
                 webviewAnswer.loadUrl("file:///android_asset/cg/q18.html");
                 break;
+            case R.id.cgTheoryQ19 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q19.html");
+                break;
+            case R.id.cgTheoryQ20 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q20.html");
+                break;
+            case R.id.cgTheoryQ21 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q21.html");
+                break;
+            case R.id.cgTheoryQ22 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q22.html");
+                break;
+            case R.id.cgTheoryQ23 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q23.html");
+                break;
+            case R.id.cgTheoryQ24 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q24.html");
+                break;
+            case R.id.cgTheoryQ25 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q25.html");
+                break;
+            case R.id.cgTheoryQ26 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q26.html");
+                break;
+            case R.id.cgTheoryQ27 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q27.html");
+                break;
+            case R.id.cgTheoryQ28 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q28.html");
+                break;
+            case R.id.cgTheoryQ29 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q29.html");
+                break;
+            case R.id.cgTheoryQ30 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/q30.html");
+                break;
             //CG cases ends here
 
 
@@ -470,16 +506,31 @@ WebView webviewAnswer;
 
             //CG Prac starts here
             case R.id.cgPracticalP1:
-                webviewAnswer.loadUrl("file:///android_asset/app/OS/Critical_section.html");
+                webviewAnswer.loadUrl("file:///android_asset/cg/pract1.html");
                 break;
             case R.id.cgPracticalP2 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/cg/bres.html");
                 break;
             case R.id.cgPracticalP3 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/cg/pract3.html");
                 break;
             case R.id.cgPracticalP4 :
-                webviewAnswer.loadUrl("file:///android_asset/app/COA/Theory/booth.html");
+                webviewAnswer.loadUrl("file:///android_asset/cg/pract4.html");
+                break;
+            case R.id.cgPracticalP5 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/pract5.html");
+                break;
+            case R.id.cgPracticalP6 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/pract6.html");
+                break;
+            case R.id.cgPracticalP7 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/pract7.html");
+                break;
+            case R.id.cgPracticalP8 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/pract8.html");
+                break;
+            case R.id.cgPracticalP9 :
+                webviewAnswer.loadUrl("file:///android_asset/cg/pract9.html");
                 break;
             //CG Prac ends here
 
