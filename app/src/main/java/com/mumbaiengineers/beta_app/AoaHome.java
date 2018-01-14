@@ -165,5 +165,4 @@ public class AoaHome extends AppCompatActivity implements View.OnClickListener {
             }
     }
 
-
 }

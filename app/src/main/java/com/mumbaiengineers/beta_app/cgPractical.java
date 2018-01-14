@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.ads.AdListener;
@@ -18,7 +19,7 @@ import com.google.android.gms.ads.AdView;
 
 public class cgPractical extends AppCompatActivity implements View.OnClickListener {
 
-    Button cgPracticalP1, cgPracticalP2, cgPracticalP3, cgPracticalP4;
+    TextView cgPracticalP1, cgPracticalP2, cgPracticalP3, cgPracticalP4 ,cgPracticalP5,cgPracticalP6,cgPracticalP7,cgPracticalP8,cgPracticalP9;
     private AdView mAdView;
 
     @Override
@@ -47,15 +48,25 @@ public class cgPractical extends AppCompatActivity implements View.OnClickListen
             }
         });
 
-        cgPracticalP1 = (Button) findViewById(R.id.cgPracticalP1);
-        cgPracticalP2 = (Button) findViewById(R.id.cgPracticalP2);
-        cgPracticalP3 = (Button) findViewById(R.id.cgPracticalP3);
-        cgPracticalP4 = (Button) findViewById(R.id.cgPracticalP4);
+        cgPracticalP1 = (TextView) findViewById(R.id.cgPracticalP1);
+        cgPracticalP2 = (TextView) findViewById(R.id.cgPracticalP2);
+        cgPracticalP3 = (TextView) findViewById(R.id.cgPracticalP3);
+        cgPracticalP4 = (TextView) findViewById(R.id.cgPracticalP4);
+        cgPracticalP5 = (TextView) findViewById(R.id.cgPracticalP5);
+        cgPracticalP6 = (TextView) findViewById(R.id.cgPracticalP6);
+        cgPracticalP7 = (TextView) findViewById(R.id.cgPracticalP7);
+        cgPracticalP8 = (TextView) findViewById(R.id.cgPracticalP8);
+        cgPracticalP9 = (TextView) findViewById(R.id.cgPracticalP9);
 
         cgPracticalP1.setOnClickListener(this);
         cgPracticalP2.setOnClickListener(this);
         cgPracticalP3.setOnClickListener(this);
         cgPracticalP4.setOnClickListener(this);
+        cgPracticalP5.setOnClickListener(this);
+        cgPracticalP6.setOnClickListener(this);
+        cgPracticalP7.setOnClickListener(this);
+        cgPracticalP8.setOnClickListener(this);
+        cgPracticalP9.setOnClickListener(this);
     }
 
     @Override

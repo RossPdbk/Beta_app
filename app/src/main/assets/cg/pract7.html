@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+<div class="header">
+    <p>
+    <h3>Scan line polygon fill</h3>
+</div>
+<div class="card">
+    <pre>
+        #include &lt;graphics.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;conio.h&gt;
+
+struct Node
+{
+    int x;
+    int y;
+    struct Node* next;
+};
+
+void fill (int pt[][2], int clr);
+void floodfill4 (int x, int y, int oldclr, int newclr);
+void insert (int x, int y, struct Node** last);
+
+void main()
+{
+    int i, j;
+    int pt[3][2];
+    int clr;
+	clrscr();
+	printf ("Enter the x- and y-coordinates for three points:\n");
+    for (i=0; i<3; i++)
+	for (j=0; j<2; j++)
+	    scanf ("%d", &pt[i][j]);
+
+    printf ("Enter the fill-colour: (Any number from 1 to 14) ");
+    scanf ("%d", &clr);
+    fill (pt, clr);
+}
+
+void fill (int pt[][2], int clr)
+{
+    int gd = DETECT, gm;
+    int seedx, seedy;
+
+    initgraph (&gd, &gm, "..\\bgi");
+
+    setcolor (WHITE);
+    line (pt[0][0], pt[0][1], pt[1][0], pt[1][1]);
+    line (pt[1][0], pt[1][1], pt[2][0], pt[2][1]);
+    line (pt[2][0], pt[2][1], pt[0][0], pt[0][1]);
+    getch();
+
+    seedx = (pt[0][0] + pt[1][0] + pt[2][0]) / 3;
+    seedy = (pt[0][1] + pt[1][1] + pt[2][1]) / 3;
+
+    floodfill4 (seedx, seedy, BLACK, clr);
+    getch();
+
+    closegraph();
+    return;
+}
+
+void floodfill4 (int x, int y, int oldclr, int newclr)
+{
+    struct Node* first, *last, *tmp;
+
+    first = (struct Node*) malloc (sizeof (struct Node));
+    if (first == NULL)
+    {
+	closegraph();
+	fprintf (stderr, "floodfill4: Out of memory.\n");
+	exit (2);
+    }
+    if (oldclr == newclr)
+    {
+	free (first);
+	return;
+    }
+
+    first-&gt;x = x;
+    first-&gt;y = y;
+    first-&gt;next = NULL;
+    last = first;
+
+    while (first != NULL)
+    {
+	putpixel (x, y, newclr);
+
+	if (getpixel (x, y-1) == oldclr)
+	{
+	    putpixel (x, y-1, newclr);
+	    insert (x, y-1, &last);
+	}
+
+
+	if (getpixel (x, y+1) == oldclr)
+	{
+	    putpixel (x, y+1, newclr);
+	    insert (x, y+1, &last);
+	}
+
+	if (getpixel (x-1, y) == oldclr)
+	{
+	    putpixel (x-1, y, newclr);
+	    insert (x-1, y, &last);
+	}
+
+	if (getpixel (x+1, y) == oldclr)
+	{
+	    putpixel (x+1, y, newclr);
+	    insert (x+1, y, &last);
+	}
+
+	tmp = first;
+	first = first->next;
+	x = first-&gt;x;
+	y = first-&gt;y;
+	free (tmp);
+    }
+}
+
+void insert (int x, int y, struct Node** last)
+{
+    struct Node* p;
+    p = (struct Node*) malloc (sizeof (struct Node));
+    if (p == NULL)
+    {
+	closegraph();
+	fprintf (stderr, "\n insert: Out of memory.\n");
+	exit (2);
+    }
+
+    p-&gt;x = x;
+    p-&gt;y = y;
+    p-&gt;next = NULL;
+    (*last)-&gt;next = p;
+    *last = (*last)-&gt;next;
+}
+
+    </pre>
+</div>
+<div>
+    <p><b>Output:</b></p>
+    <img src="scanline.PNG">
+</div>
+</body>
+</html>
