@@ -14,7 +14,6 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@color/colorPrimary"
-        android:layout_marginBottom="7dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
@@ -29,18 +28,13 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="90"
         android:elevation="1dp"
         android:layout_margin="5dp"
         android:background="@drawable/mfaback">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -54,6 +48,7 @@
                 android:text="Q1.Differentiate between Computer Architecture and Computer Organization."
                 android:background="@drawable/background"
                 android:textSize="16sp"
+                android:layout_marginTop="7dp"
                 android:layout_marginLeft="7dp"
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="7dp"
@@ -459,25 +454,9 @@
             android:text="Q30.Write short note on Scanner">
         </TextView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/coaTheoryQ21"
-                android:background="@drawable/background"
-                android:textSize="16sp"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="7dp"
-                android:textColor="@color/black"
-                android:text="   Intentionally left blank  ">
-            </TextView>
-
-
-
     </RelativeLayout>
 </ScrollView>
 
-    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
