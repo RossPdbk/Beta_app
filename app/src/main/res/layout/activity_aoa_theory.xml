@@ -29,15 +29,11 @@
 
     </android.support.v7.widget.Toolbar>
 
-
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="90"
-        android:elevation="1dp"
-        android:layout_margin="5dp"
-        android:background="@drawable/mfaback">
+        android:background="@drawable/rectangle_ad">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -337,18 +333,6 @@
                 android:layout_below="@id/aoaTheoryQ21"
                 android:text="Q22. Explain longest common subsequence problem."
                 android:textColor="@color/black"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text=" Intentionally left blank   "
-                android:layout_below="@id/aoaTheoryQ22"
-                android:background="@drawable/background"
-                android:textColor="@color/black"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="7dp"
-                android:textSize="16sp"/>
 
         </RelativeLayout>
 
