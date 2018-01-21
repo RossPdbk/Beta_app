@@ -33,8 +33,7 @@
         android:layout_height="match_parent"
         android:layout_weight="90"
         android:elevation="1dp"
-        android:layout_margin="5dp"
-        android:background="@drawable/mfaback"
+        android:background="@drawable/rectangle_ad"
         >
 
         <RelativeLayout
@@ -48,10 +47,7 @@
                 android:text="1. Banker's algorithm."
                 android:background="@drawable/background"
                 android:textSize="16sp"
-                android:layout_marginTop="7dp"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="7dp"
+                android:layout_margin="7dp"
                 android:textColor="@color/black">
             </TextView>
 
@@ -186,7 +182,9 @@
     </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        >
 
         <com.google.android.gms.ads.AdView
             android:id="@id/adView"

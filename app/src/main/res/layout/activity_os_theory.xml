@@ -48,10 +48,7 @@
             android:text="1. What is Operating system? Explain different function of OS?"
             android:background="@drawable/background"
             android:textSize="16sp"
-            android:layout_marginTop="7dp"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="7dp"
-            android:layout_marginBottom="7dp"
+            android:layout_margin="7dp"
             android:textColor="@color/black">
 
         </TextView>
