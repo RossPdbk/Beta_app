@@ -31,9 +31,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="90"
+<<<<<<< HEAD
         android:elevation="1dp"
+=======
+>>>>>>> 08f77f1a01aca0a206f1166b9d7e134f76877e03
         android:background="@drawable/rectangle_ad">
 
         <RelativeLayout

@@ -53,7 +53,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="This is an awsm app. It is based on engineering shit of sem IV"
+                android:text="This is an educational app. It is based on engineering subjects of sem IV"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:layout_below="@id/appTitle"
